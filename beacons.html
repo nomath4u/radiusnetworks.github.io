@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Message Radius</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/unicorn.login.css" />
+
+        <style>
+              body {
+        padding-top: 120px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+                <div class="container">
+                    <a href="index.html"><img class="mrlogo" src="img/rdlogo.svg"></a>
+                    <ul class="nav">
+                        <li class="active"><a href="apidocs.html">API Docs</a></li>
+                        <li><a href="apiform.html">Request Access</a></li>
+                        <li><a href="https://account.messageradius.com/users/sign_in">Log In</a></li>
+                        <li class="dropdown active"><a href="index.html" class="dropdown-toggle disabled" data-toggle="dropdown">Radius Networks</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div class="container">
+        <div class="sidebar-well sidebar-nav-fixed">
+        <ul class="nav nav-list" style="margin-top: -5px">
+            <li class="nav-header">API Docs</li>
+            <li><a href="apidocs.html">Overview</a></li>
+            <li class="nav-header">HTTP Infrastructre</li>
+            <li><a href="authorization.html">Authorization</a></li>
+            <li><a href="media_type.html">Media Type</a></li>
+            <li><a href="rest.html">RESTful API</a></li>
+            <li class="nav-header">Resources</li>
+            <li><a href="accounts.html">Accounts</a></li>
+            <li class="active"><a href="beacons.html">Beacons</a></li>
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li class="nav-header">Tools</li>
+            <li><a href="examples.html">Examples</a></li>
+            <li><a href="command_line.html">Command Line Tools</a></li>
+            <li><a href="sdk.html">Mobile SDK</a></li>
+          </ul>
+        </div>
+            <div class="row">
+            <div class="span8 span-fixed-sidebar">
+      <div class="featurette">
+        <h2 class="featurette-heading"><img class="api-image" src="img/beacon-dark.svg">Beacon Aggregate Data</h2>
+        <p class="lead"></p>
+        <p>Beacon data is aggregated into documents containing the data for a given day and for the current status of each beacon.</p>
+        <br>
+        <p class="lead"><b>List Beacons</b></p>
+        <p>Request</p>
+        <p class="well">rel: beacons<br>
+        method: GET</p>
+        <p>Follow the <code>beacons</code> link from the root document.</p>
+        <p>Response:</p>
+        <p class="well" style="overflow: auto;">[<br>
+  &nbsp;&nbsp;{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"id": "514728beef578d920f000002",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"name": "Lobby",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"address": "3333 Water St, NW, DC",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"bid": "FPI-1",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"account_id": "514728beef578d920f000001",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"active": false,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"current_device_count": 185,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"links": {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"self": { "href": "https://api.messageradius.com/api/beacons/10000.json" },<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"histories": { "href": "https://api.messageradius.com/api/beacons/10000/history.json" },<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"today": { "href": "https://api.messageradius.com/api/beacons/10000/history.json" },<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"status": { "href": "https://api.messageradius.com/api/beacons/10000/status.json" }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+  &nbsp;&nbsp;},<br>
+  &nbsp;&nbsp;{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"id": "51438db9ef578df4f4000001",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"name": null,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"address": null,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"bid": "fpi-1",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"account_id": null,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"active": null,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"current_device_count": 0,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"links": {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"self": { "href": "https://api.messageradius.com/api/beacons/fpi-1.json" },<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"histories": { "href": "https://api.messageradius.com/api/beacons/fpi-1/history.json" },<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"today": { "href": "https://api.messageradius.com/api/beacons/fpi-1/history.json" },<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"status": { "href": "https://api.messageradius.com/api/beacons/fpi-1/status.json" }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+  &nbsp;&nbsp;}<br>
+]</p>
+<hr>
+<p class="lead"><b>Show Beacon</b></p>
+<p>Request:</p>
+<p class="well">rel: beacon.self<br>
+                method: GET</p>
+<p>Follow the <code>self</code> link from the beacon listing</p>
+<p>Response:</p>
+<p class="well">{<br>
+  &nbsp;&nbsp;"id": "514728beef578d920f000002",<br>
+  &nbsp;&nbsp;"name": "Lobby",<br>
+  &nbsp;&nbsp;"address": "3333 Water St, NW, DC",<br>
+  &nbsp;&nbsp;"bid": "10000",<br>
+  &nbsp;&nbsp;"account_id": "514728beef578d920f000001",<br>
+  &nbsp;&nbsp;"active": true,<br>
+  &nbsp;&nbsp;"current_device_count": 234,<br>
+  &nbsp;&nbsp;"links": {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"self": { "href": "https://api.messageradius.com/api/beacons/10000.json" },<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"today": { "href": "https://api.messageradius.com/api/beacons/10000/history.json" },<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"status": { "href": "https://api.messageradius.com/api/beacons/10000/status.json" }<br>
+  &nbsp;&nbsp;}<br>
+}</p>
+<hr>
+<p class="lead"><b>Show Beacon Current Status Data</b></p>
+<p>Request:</p>
+<p class="well">rel: rel: status<br>
+                method: GET</p>
+<p>Either follow the <code>status</code> link from the Beacon resource.</p>
+<p>Response:</p>
+<p class="api-well">{<br>
+  &nbsp;&nbsp;"id": "514728be8a29ee1efe1c5cf5",<br>
+  &nbsp;&nbsp;"bid": "10000",<br>
+  &nbsp;&nbsp;"account_id": null,<br>
+  &nbsp;&nbsp;"updated_on": "2013-03-20T15:26:00+00:00",<br>
+  &nbsp;&nbsp;"active": true,<br>
+  &nbsp;&nbsp;"device_count": 234,<br>
+  &nbsp;&nbsp;"offline_seconds": 0,<br>
+  &nbsp;&nbsp;"devices": {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"ac38d33e798e9e40101ef3928eda8e59e106d7c0024be74d0340fd3cac193ebe": {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"oui": "ba:6b:27", "rssi_latest": -86, "last_timestamp": "2013-03-18 01:46:00 -0400", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"first_timestamp": "2013-03-17 21:46:00 -0400"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"ada62d766ae53b7ca3113a324dec51dcbf523752e92021a1155679fced81a23d": {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"oui": "ba:63:b1", "rssi_latest": -78, "last_timestamp": "2013-03-18 12:57:00 -0400", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"first_timestamp": "2013-03-18 08:57:00 -0400"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"adb0fd794e84f2c14b02a694f3a73c8afdd92e5104993687ac6eba4b27a7286c": {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"oui": "2d:26:85", "rssi_latest": -33, "last_timestamp": "2013-03-18 07:55:00 -0400", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"first_timestamp": "2013-03-18 07:55:00 -0400"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;"links": {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"self": { "href": "https://api.messageradius.com/api/beacons/10000/status.json" }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+]</p>
+      </div>
+      <hr />
+      <div class="footer">
+  </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/unicorn.login.js"></script>
+    <script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

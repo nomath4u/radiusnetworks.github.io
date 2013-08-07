@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Message Radius</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/unicorn.login.css" />
+
+        <style>
+              body {
+        padding-top: 120px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+                <div class="container">
+                    <a href="index.html"><img class="mrlogo" src="img/rdlogo.svg"></a>
+                    <ul class="nav">
+                        <li class="active"><a href="apidocs.html">API Docs</a></li>
+                        <li><a href="apiform.html">Request Access</a></li>
+                        <li><a href="https://account.messageradius.com/users/sign_in">Log In</a></li>
+                        <li class="dropdown active"><a href="index.html" class="dropdown-toggle disabled" data-toggle="dropdown">Radius Networks</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div class="container">
+        <div class="sidebar-well sidebar-nav-fixed">
+        <ul class="nav nav-list" style="margin-top: -5px">
+            <li class="nav-header">API Docs</li>
+            <li><a href="apidocs.html">Overview</a></li>
+            <li class="nav-header">HTTP Infrastructre</li>
+            <li class="active"><a href="authorization.html">Authorization</a></li>
+            <li><a href="media_type.html">Media Type</a></li>
+            <li><a href="rest.html">RESTful API</a></li>
+            <li class="nav-header">Resources</li>
+            <li><a href="accounts.html">Accounts</a></li>
+            <li><a href="beacons.html">Beacons</a></li>
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li class="nav-header">Tools</li>
+            <li><a href="examples.html">Examples</a></li>
+            <li><a href="command_line.html">Command Line Tools</a></li>
+            <li><a href="sdk.html">Mobile SDK</a></li>
+          </ul>
+        </div>
+          <div class="row">
+            <div class="span8 span-fixed-sidebar">
+      <div class="featurette">
+        <h2 class="featurette-heading"><img class="api-image" src="img/lock.svg">API Key</h2>
+        <p class="lead">The API Key is passed via the Authorization header:</p>
+        <p class="well">Authorization: Token token="secret"</p>
+        <p>The API Key is associated with your account and has access to all the resources associated with your account. Account-specific API keys have different permissions than the web login users that can interact with the dashboard, and the access may be different.</p>
+        <hr />
+        <h4>Example</h4>
+        <p class="well">curl -H "Accept: application/vnd.messageradius-v1+json" -H 'Authorization: Token token="sandbox"' "http://api.messageradius.com/"</p>
+        <p>This is a bit too verbose to type out every time you want to make a request, so we suggest using one of our <a href="command_line.html">Command Line Tools.</a></p>
+        <p>If you do not have an API key, please <a href="apiform.html">contact us</a> for one.</p>
+        <p><b>Note:</b> Per <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec2.html#sec2.2">RFC 2616</a> the Authorization Header's token must be surrounded by double quotes (").</p>
+
+      </div>
+      <hr />
+      <div class="footer">
+
+  </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/unicorn.login.js"></script>
+    <script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

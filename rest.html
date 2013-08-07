@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Message Radius</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/unicorn.login.css" />
+
+        <style>
+              body {
+        padding-top: 120px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+                <div class="container">
+                    <a href="index.html"><img class="mrlogo" src="img/rdlogo.svg"></a>
+                    <ul class="nav">
+                        <li class="active"><a href="apidocs.html">API Docs</a></li>
+                        <li><a href="apiform.html">Request Access</a></li>
+                        <li><a href="https://account.messageradius.com/users/sign_in">Log In</a></li>
+                        <li class="dropdown active"><a href="index.html" class="dropdown-toggle disabled" data-toggle="dropdown">Radius Networks</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div class="container">
+        <div class="sidebar-well sidebar-nav-fixed">
+        <ul class="nav nav-list" style="margin-top: -5px">
+            <li class="nav-header">API Docs</li>
+            <li><a href="apidocs.html">Overview</a></li>
+            <li class="nav-header">HTTP Infrastructre</li>
+            <li><a href="authorization.html">Authorization</a></li>
+            <li><a href="media_type.html">Media Type</a></li>
+            <li class="active"><a href="rest.html">REST API</a></li>
+            <li class="nav-header">Resources</li>
+            <li><a href="accounts.html">Accounts</a></li>
+            <li><a href="beacons.html">Beacons</a></li>
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li class="nav-header">Tools</li>
+            <li><a href="examples.html">Examples</a></li>
+            <li><a href="command_line.html">Command Line Tools</a></li>
+            <li><a href="sdk.html">Mobile SDK</a></li>
+          </ul>
+        </div>
+          <div class="row">
+            <div class="span8 span-fixed-sidebar">
+      <div class="featurette">
+        <h2 class="featurette-heading"><img class="api-image" src="img/rest.svg">REST</h2>
+        <br>
+        <p class="lead"><b>Base URL</b></p>
+        <p>All URLs referenced in the documentation have the following base:</p>
+        <p class="well">https://api.messageradius.com</p>
+        <p>The Message Radius REST API is served over HTTPS. To ensure data privacy, unencrypted HTTP is not supported.</p>
+        <br>
+        <p class="lead"><b>Links</b></p>
+        <p>All clients should start from the Base URL and use that to navigate to the resource they want via the rel attribute of a link.</p>
+        <p>Links are contained within a reserved <code>links</code> element. The <code>rel</code> of the link is simply the key within the hash:</p>
+        <p class="well">{<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;"links": {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"subscriptions": { "href": "https://api.messageradius.com/subscriptions" },<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"beacons": { "href": "https://api.messageradius.com/beacons" }<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}</p>
+<p>It is strongly encouraged to use this method of discovery for the API to keep your clients flexible and able to adjust to future changes in the Message Radius API. The ability to work over generic links allows us to scale as demands grow.</b>
+    <hr>
+    <div align="center">
+    <h4>RESTful Resources</h4>
+    <a class="btn-flat" href="accounts.html">Accounts</a>
+    <a class="btn-flat" href="beacons.html">Beacons</a>
+    <a class="btn-flat" href="subscriptions.html">Subscriptions</a>
+</div>
+      </div>
+      <hr />
+      <div class="footer">
+
+  </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/unicorn.login.js"></script>
+    <script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
