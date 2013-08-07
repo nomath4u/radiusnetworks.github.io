@@ -12,7 +12,7 @@
 
         <style>
               body {
-        padding-top: 120px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
       </style>
     </head>
@@ -24,7 +24,7 @@
                         <li class="active"><a href="apidocs.html">API Docs</a></li>
                         <li><a href="apiform.html">Request Access</a></li>
                         <li><a href="https://account.messageradius.com/users/sign_in">Log In</a></li>
-                        <li class="dropdown active"><a href="index.html" class="dropdown-toggle disabled" data-toggle="dropdown">Radius Networks</a>
+                        <li class="dropdown active"><a href="http://www.radiusnetworks.com" class="dropdown-toggle disabled" data-toggle="dropdown">Radius Networks</a>
                             </ul>
                         </li>
                     </ul>
@@ -52,71 +52,33 @@
           <div class="row">
             <div class="span8 span-fixed-sidebar">
       <div class="featurette">
-        <img class="featurette-image pull-right" src="img/dev.svg">
-        <h2 class="featurette-heading">Message Radius API</h2>
-        <p class="lead">Getting started with Message Radius is easy. We implement a solid RESTful Hypermedia API that is intuitive, understandable and discoverable. This documentation will break things down into two groups: the HTTP Infrastructure required to interact with the server and the RESTful resources that make up the business domain of our service.</p>
-        <hr />
-        <div class="herostuff">
-        <img class="centerimg" src="img/slide4.png">
-        </div>
-        <h2 class="featurette-heading">Overview</h2>
-        <p>The basic concept is this: A beacon will detect a device over wifi and report it to the Message Radius Server as important events occur, such as when a device arrives or departs.<br>
-        At this point the Message Radius Server does two things:<br>
-        <ul>
-          <li><a href="#">Collects, collates and sorts the data</a></li>
-          <li><a href="#">Fires webhook callbacks</a></li>
-        </ul></p>
-        <hr />
-        <div class="herostuff">
-        <img class="centerimg" src="img/tagline.svg">
-      </div>
-        <p>This enables you to have both the aggregate analytical data and to respond to important events as they happen.</p>
-        <hr />
-        <h2 class="featurette-heading">HTTP Infrastructure</h2>
-        <p>Since Message Radius strives to provide a clean maintainable and scalable API, we rely on a few fundamental aspects of HTTP. When consuming the API you should be aware of how we expect to use them.</p><hr />
-        <div class="row">
-          <div class="span2" style="padding-left: 50px;">
-        <img class="api-img" src="img/sitemap.svg">
-      </div>
-            <div class="span5" style="border-bottom: 1px solid #777;"><h4>Base URLS</h4>
-        <p>All URLs referenced in the documentation have the following base:</p>
-        <p><a href="#">https://api.messageradius.com</a></p>
-      </div>
-        <div class="span2" style="margin-top: 40px; padding-left: 50px;">
-        <img class="api-img" src="img/version.svg">
-        </div>
-        <div class="span5" style="border-bottom: 1px solid #777;"><h4>Resource Versions</h4>
-        <p>Versions are tracked through content negotiation in the Accept header:</p>
-        <p class="well">POST /accounts HTTP/1.1<br>Accept: application/vnd.messageradius-v1+json<br>Content-Type: application/json</p>
-      </div>
-        <div class="span2" style="padding-left: 50px;">
-        <img class="api-img" src="img/arrows.svg">
-        </div>
-        <div class="span5"><h4>Accessing the API</h4>
-        <p>We accomplish this by using a simple token Authorization header. For more detail see the <a href="#">Authorization Documentation</a>
-      </div>
-    </div>
-    <hr />
-      <p><b>NOTE:</b> The Message Radius REST API is served over HTTPS. To ensure data privacy, unencrypted HTTP is not supported.</p>
-      <hr />
-    <h2 class="featurette-heading">Root Resource</h2>
-        <p>The canonical source for all the resources is the root document.  Request:</p>
-        <p class="well">url: https://api.messageradius.com/<br>
-                        method: GET</p>
-        <p>Response: { "accounts": [ { "id": "5034fe38639184d116000001", "name": "Radius Networks" } ], "links": { "subscriptions": { "href": "<a href="#">https://api.messageradius.com/api/subscriptions.json</a>" }, "beacons": { "href": "<a href="#">https://api.messageradius.com/api/beacons.json</a>" } } }</p>
-    <hr />
-    <h2 class="featurette-heading">Resources</h2>
-    <h3 style="padding-top: 20px;"><img style="width:30px; margin-right: 5px; margin-top: -37px;" src="img/beacon.svg">Beacons</h3>
-    <p>A Beacon is the hardware component to our system that does the wifi monitoring. We break the beacons down into the following sub-resources:</p>
-    <ul>
-      <li><a href="beacon.html">Beacon</a></li>
-      <li><a href="beacon.html">History</a></li>
-      <li><a href="beacon.html">Status</a></li>
-    </ul>
-    <h3 style="padding-top: 20px;"><img style="width:30px; margin-right: 5px; margin-top: -10px;" src="img/subscription.svg">Subscriptions</h3>
-    <p>A Message Radius Subscription enables you to integrate our system into your service or application. This is essentially a pub-sub system that uses device MAC Addresses and Webhooks. For details on working with subscriptions see the <a href="subscriptions.html">Subscriptions Documentation.</a></p
-      </div>
-      <hr />
+        <h2 class="featurette-heading">Using our API</h2>
+        <p class="lead"><b>With Curl</b></p>
+        <p>To get the JSON of the base url you could use the following command:</p>
+        <p class="well">curl -H "Content-type: application/json" \<br>
+     -H "Accept: application/json" -H 'Authorization: Token token="my-token" \<br>
+     "http://api.messageradius.com/"</p>
+     <p>We suggest you use the <a href="command_line.html">mr-curl utility</a> to keep the command line requests sane.</p>
+     <hr>
+     <p class="lead"><b>Ruby</b></p>
+     <p>Simple example to resolve the beacon index url using <a href="https://github.com/technoweenie/faraday">faraday</a>:</p>
+        <p class="well">#!/usr/bin/env ruby<br>
+            require 'json'<br>
+            require 'faraday'<br><br>
+
+            url = 'http://api.messageradius.com'<br>
+            conn = Faraday.new(url: 'http://api.messageradius.com')
+            resp = conn.get do |req|<br>
+  &nbsp;&nbsp;req.url '/'<br>
+  &nbsp;&nbsp;# Note: This header is picky about using double quotes around the actual token<br>
+  &nbsp;&nbsp;req.headers['Authorization'] = "Token token=\"sandbox\""<br>
+  &nbsp;&nbsp;req.headers['Accept'] = "application/json"<br>
+end<br><br>
+
+body = JSON.parse(resp.body)<br>
+beacon_url = body["links"]["beacons"]["href"]<br>
+puts "The beacons index is #{beacon_url}"</p>
+<hr>
       <div class="footer">
 
   </div>

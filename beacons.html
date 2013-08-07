@@ -24,7 +24,7 @@
                         <li class="active"><a href="apidocs.html">API Docs</a></li>
                         <li><a href="apiform.html">Request Access</a></li>
                         <li><a href="https://account.messageradius.com/users/sign_in">Log In</a></li>
-                        <li class="dropdown active"><a href="index.html" class="dropdown-toggle disabled" data-toggle="dropdown">Radius Networks</a>
+                        <li class="dropdown active"><a href="http://www.radiusnetworks.com" class="dropdown-toggle disabled" data-toggle="dropdown">Radius Networks</a>
                             </ul>
                         </li>
                     </ul>
@@ -148,6 +148,92 @@
 ]</p>
       </div>
       <hr />
+<p class="lead"><b>Show Beacon Historical Data</b></p>
+<p>Beacon History represent a day's worth of aggregate data. Each day is broken down into buckets.</p>
+<p class="well">rel: beacon.self<br>
+                method: GET</p>
+<p>Follow the <code>self</code> link from the beacon listing</p>
+<table class="table table-bordered">
+  <tbody><tr>
+    <th>Field</th> 
+    <th>Description</th>
+  </tr>
+  <tr> 
+    <td> <code>bid</code></td>
+    <td>This is the Beacon ID. It is the same identifier you would see for a beacon in the dashboard.</td> 
+  </tr>
+  <tr> 
+    <td><code>day</code></td>        
+    <td>The daystamp from the beacon day. This uses a <code>YYYYMMDD</code> format.</td> 
+  </tr>
+  <tr> 
+    <td><code>devices</code></td>
+    <td>Array of devices that were tracked during the day. </td> 
+  </tr>
+  <tr> 
+    <td><code>data</code></td>       
+    <td>The day's worth of data. This is broken down into aggregate buckets. </td>
+  </tr>
+  <tr> 
+    <td><code>data.hour</code></td>  
+    <td>The hour bucket. The added events received during a given hour for the beacon are nested under a <code>year.month.day.hour</code> key. The value is the number of added events. </td> 
+  </tr>
+</tbody>
+</table>
+<p>Request:</p>
+<p class="well">rel: today<br>
+     history {daystamp}<br>
+method: GET</p>
+<p>Either follow the 'today' link or use the 'days' link template from the Beacon resource.</p>
+<p>Response:</p>
+<p class="well">[<br>
+  &nbsp;&nbsp;{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"bid": "10000",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"total_events": 293,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"day": "20130320",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"data": {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"hour": {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"2013": {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"03": {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"20": {<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "00": 30,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "01": 41,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "02": 32,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "03": 35,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "04": 11,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "05": 21,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "06": 26,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "07": 25,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "08": 1,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "09": 45,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "10": 26,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "11": 0<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"devices": {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"acb7c217aae20500f8888a7dc073e771a59f61a939e705ef0117127d36f1197e": {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"oui": "af:a3:64", "rssi_latest": -85, "last_timestamp": "2013-03-20 03:26:00 -0400", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"first_timestamp": "2013-03-20 01:26:00 -0400"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"af2fb81f380ae92df4fd640cea4db8030fa2d3039ad7e74f3eb454d096d9ec23": {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"oui": "bf:96:f4", "rssi_latest": -65, "last_timestamp": "2013-03-20 03:26:00 -0400", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"first_timestamp": "2013-03-20 03:26:00 -0400"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"a2cd166a5ce183c2f15042896f2b883955fa58a1ee072a828fcaea7d248a8998": {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"oui": "00:1b:e9", "rssi_latest": -85, "last_timestamp": "2013-03-20 03:26:00 -0400", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"first_timestamp": "2013-03-20 02:26:00 -0400"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"links": {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"self": { "href": "https://api.messageradius.com/api/beacons/10000/history.json" }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+  &nbsp;&nbsp;...<br>
+]</p>
+<p>Example:</p>
+<p class="well">mr-curl "http://api.messageradius.com/api/beacons/10000/history"</p>
+<p>For a specific day:</p>
+<p class="well">mr-curl "http://api.messageradius.com/api/beacons/10000/history/20121031"</p>
+<hr>
       <div class="footer">
   </div>
     <!-- Le javascript
