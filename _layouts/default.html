@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Radius Networks</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/unicorn.login.css" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <style>
+      body {
+        padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+  </head>
+  <body>
+    {% include header.html %}
+    <div class="container">
+      {% include side_nav.html %}
+      <div class="row">
+        <div class="span8 span-fixed-sidebar">
+          <div class="featurette">
+            {{ content }}
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/unicorn.login.js"></script>
+  </body>
+</html>
