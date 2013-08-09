@@ -3,7 +3,7 @@ layout: default
 ---
 
 <img class="featurette-image pull-right" src="img/dev.svg">
-# Subscribing to Beacon-Device Events ![Developer Image](img/dev.svg)
+# Subscribing to Beacon-Device Events
 
 Message Radius makes it easy to be notified when registered mobile devices are detected by our system. We handle this through the use of subscriptions. You can register a device, and Message Radius will fire a webhook when that device is "added" or "dropped" from a beacon in our system. In other words, notification occurs when the device is first noticed and when it leaves.
 

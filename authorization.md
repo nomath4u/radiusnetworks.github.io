@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## ![Api Lock](img/lock.svg)API Key
+## ![Api Lock](img/lock.svg) API Key
 
 The API Key is passed via the Authorization header:
 

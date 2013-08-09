@@ -1,4 +1,8 @@
-# REST
+---
+layout: default
+---
+
+## ![Rest](img/rest.svg)REST
 
 ## Base URL
 
