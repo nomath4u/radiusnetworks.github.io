@@ -3,7 +3,7 @@ layout: default
 ---
 # Moble SDK
 
-To register a device you need to collect the MAC Address and use that to create a [Message Radius Subscription](/docs/api/subscriptions).
+To register a device you need to collect the MAC Address and use that to create a [Message Radius Subscription](/subscriptions.html).
 
 This is easy using our iPhone SDK:
 
@@ -14,4 +14,4 @@ NSString macAddress = [mr getMacAddress];
 
 You can collect this mac, associate it with your user in your backend and use it to subscribe to updates.
 
-See the [Subscriptions Documentation](/docs/api/subscriptions) for details.
+See the [Subscriptions Documentation](/subscriptions.html) for details.

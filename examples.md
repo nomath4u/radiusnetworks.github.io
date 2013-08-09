@@ -14,7 +14,7 @@ curl -H "Content-type: application/json" \
      "http://api.messageradius.com/"
 {% endhighlight %}
 
-We suggest you use the [mr-curl utility](/docs/api/tools) to keep the command line requests sane.
+We suggest you use the [mr-curl utility](/command_line.html) to keep the command line requests sane.
 
 
 ### Ruby

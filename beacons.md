@@ -80,7 +80,7 @@ Response:
 }
 {% endhighlight %}
 
-<a name="status"></a>
+<a id="status"></a>
 ### Show Beacon Current Status Data
 
 Request:
@@ -121,7 +121,7 @@ Response:
 {% endhighlight %}
 
 
-<a name="history"></a>
+<a id="history"></a>
 ### Show Beacon Historical Data
 
 Beacon History represent a day's worth of aggregate data. Each day is broken down into buckets.
@@ -198,7 +198,7 @@ Response:
 Example:
 
     mr-curl "http://api.messageradius.com/api/beacons/10000/history"
-
+<a id="day"></a>
 For a specific day:
 
     mr-curl "http://api.messageradius.com/api/beacons/10000/history/20121031"

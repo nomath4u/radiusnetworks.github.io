@@ -7,7 +7,7 @@ layout: default
 
 Message Radius makes it easy to be notified when registered mobile devices are detected by our system. We handle this through the use of subscriptions. You can register a device, and Message Radius will fire a webhook when that device is "added" or "dropped" from a beacon in our system. In other words, notification occurs when the device is first noticed and when it leaves.
 
-If you would like more information on how you can integrate this into your Mobile App, please see our [Mobile SDK Documentation](/docs/api/mobile).
+If you would like more information on how you can integrate this into your Mobile App, please see our [Mobile SDK Documentation](/sdk.html).
 
 A subscription works by monitoring all of the beacons in your account against a specific list of mac addresses that you provide. When one of those mac addresses is detected, we will fire a webhook callback to your backend.
 

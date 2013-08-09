@@ -11,8 +11,8 @@ layout: default
 <p>The basic concept is this: A beacon will detect a device over wifi and report it to the Message Radius Server as important events occur, such as when a device arrives or departs.</p>
 <p>At this point the Message Radius Server does two things:</p>
 <ul>
-  <li><a href="#">Collects, collates and sorts the data</a></li>
-  <li><a href="#">Fires webhook callbacks</a></li>
+  <li><a href="beacons.html">Collects, collates and sorts the data</a></li>
+  <li><a href="subscriptions.html">Fires webhook callbacks</a></li>
 </ul>
 <hr />
 <div class="herostuff">
@@ -45,7 +45,7 @@ layout: default
   </div>
   <div class="span5">
     <h4>Accessing the API</h4>
-    <p>We accomplish this by using a simple token Authorization header. For more detail see the <a href="#">Authorization Documentation</a>
+    <p>We accomplish this by using a simple token Authorization header. For more detail see the <a href="authorization.html">Authorization Documentation</a>
   </div>
 </div>
 <hr />
@@ -61,9 +61,9 @@ method: GET</p>
 <h3 style="padding-top: 20px;"><img style="width:30px; margin-right: 5px; margin-top: -37px;" src="img/beacon.svg">Beacons</h3>
 <p>A Beacon is the hardware component to our system that does the wifi monitoring. We break the beacons down into the following sub-resources:</p>
 <ul>
-  <li><a href="beacon.html">Beacon</a></li>
-  <li><a href="beacon.html">History</a></li>
-  <li><a href="beacon.html">Status</a></li>
+  <li><a href="beacons.html">Beacon</a></li>
+  <li><a href="beacons.html">History</a></li>
+  <li><a href="beacons.html">Status</a></li>
 </ul>
 <h3 style="padding-top: 20px;"><img style="width:30px; margin-right: 5px; margin-top: -10px;" src="img/subscription.svg">Subscriptions</h3>
 <p>A Message Radius Subscription enables you to integrate our system into your service or application. This is essentially a pub-sub system that uses device MAC Addresses and Webhooks. For details on working with subscriptions see the <a href="subscriptions.html">Subscriptions Documentation.</a></p>

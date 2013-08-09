@@ -14,7 +14,7 @@ Example:
 
     curl -H "Accept: application/vnd.messageradius-v1+json" -H 'Authorization: Token token="sandbox"' "http://api.messageradius.com/"
 
-This is a bit too verbose to type out every time you want to make a request, so we suggest using one of our [Command Line Tools](/docs/api/tools).
+This is a bit too verbose to type out every time you want to make a request, so we suggest using one of our [Command Line Tools](/command_line.html).
 
 If you do not have an API key, [please contact us](mailto:support@messageradius.com?subject=Message Radius API Token Request) for one.
 

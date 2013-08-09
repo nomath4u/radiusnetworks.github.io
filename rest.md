@@ -29,8 +29,8 @@ It is strongly encouraged to use this method of discovery for the API to keep yo
 
 ## RESTful Resources
 
-* [Accounts](/docs/api/accounts)
-* [Beacon](/docs/api/beacons#beacon)
-  * [Beacon by Day](/docs/api/beacons#beacon_day)
-* [Subscriptions](/docs/api/subscriptions)
+* [Accounts](/accounts.html)
+* [Beacon](/beacons.html)
+  * [Beacon by Day](/beacons.html#day)
+* [Subscriptions](/subscriptions.html)
 
