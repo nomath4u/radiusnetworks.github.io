@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,78 +15,57 @@
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
-    <style>
-      body {
-        padding-top: 120px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
+    <!-- Shim in HTML5 -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+      document.createElement("nav");
+      document.createElement("header");
+      document.createElement("footer");
+      document.createElement("section");
+      document.createElement("aside");
+      document.createElement("article");
+    </script>
+    <![endif]-->
   </head>
   <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="container">
-      <a href="index.html"><img class="mrlogo" src="img/rdlogo.svg"></a>
-      <ul class="nav">
-        <li class="active"><a href="apidocs.html">API Docs</a></li>
-        <li><a href="apiform.html">Request Access</a></li>
-        <li><a href="https://account.messageradius.com/users/sign_in">Log In</a></li>
-        <li class="dropdown active"><a href="http://www.radiusnetworks.com" class="dropdown-toggle disabled" data-toggle="dropdown">Radius Networks</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="featurette-container">
+
+    {% include header.html %}
+    <div class="featurette-container">
       <div align="center">
         <h2 class="featurette-heading">Welcome Developers,</h2>
         <p class="lead">Welcome to the Radius Networks Developer Portal.  It's here you can request access to our API, read the documentation, and see examples of how to integrate our proximity API with your app.</p>
         <a class="btn-flat" href="apidocs.html" style="width:380px;">Get Started</a>
-      <hr>
+        <hr>
       </div>
       <br>
-        <div class="marketing info">
+      <div class="marketing info">
         <div class="span4">
           <img class="mktgimg" src="img/rest.svg">
           <h3>HTTP Infrastructure</h3><hr>
-            <a class="btn-flat" href="authorization.html" style="width:270px;">Authorization</a><br>
-            <a class="btn-flat" href="media_type.html" style="width:270px;">Media Type</a><br>
-            <a class="btn-flat" href="rest.html" style="width:270px;">REST API</a><br>
+          <a class="btn-flat" href="authorization.html" style="width:270px;">Authorization</a><br>
+          <a class="btn-flat" href="media_type.html" style="width:270px;">Media Type</a><br>
+          <a class="btn-flat" href="rest.html" style="width:270px;">REST API</a><br>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="mktgimg" src="img/beacon-lg.svg">
           <h3>Resources</h3><hr>
-            <a class="btn-flat" href="accounts.html" style="width:270px;">Accounts</a><br>
-            <a class="btn-flat" href="beacons.html" style="width:270px;">Beacons</a><br>
-            <a class="btn-flat" href="subscriptions.html" style="width:270px;">Subscriptions</a><br>
+          <a class="btn-flat" href="accounts.html" style="width:270px;">Accounts</a><br>
+          <a class="btn-flat" href="beacons.html" style="width:270px;">Beacons</a><br>
+          <a class="btn-flat" href="subscriptions.html" style="width:270px;">Subscriptions</a><br>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="mktgimg" src="img/tools.svg">
           <h3>Developer Tools</h3><hr>
-            <a class="btn-flat" href="examples.html" style="width:270px;">Examples</a><br>
-            <a class="btn-flat" href="command_line.html" style="width:270px;">Command Line Tools</a><br>
-            <a class="btn-flat" href="sdk.html" style="width:270px;">Mobile SDK</a><br>
+          <a class="btn-flat" href="examples.html" style="width:270px;">Examples</a><br>
+          <a class="btn-flat" href="command_line.html" style="width:270px;">Command Line Tools</a><br>
+          <a class="btn-flat" href="sdk.html" style="width:270px;">Mobile SDK</a><br>
         </div>
       </div>
       <hr>
     </div>
-    <div class="footer">
-      <br>
-    </div>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/unicorn.login.js"></script>
+    {% include footer.html %}
+
+    {% include javascript.html %}
   </body>
 </html>
