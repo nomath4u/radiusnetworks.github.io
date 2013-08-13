@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 ---
 
 ## ![Rest](img/rest.svg)REST

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 ---
 
 <img class="featurette-image pull-right" src="img/dev.svg">

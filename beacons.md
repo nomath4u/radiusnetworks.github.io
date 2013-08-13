@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 ---
 ## ![Dark Beacon](img/beacon-dark.svg)Beacon Aggregate Data
 

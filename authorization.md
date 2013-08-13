@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 ---
 
 ## ![Api Lock](img/lock.svg) API Key

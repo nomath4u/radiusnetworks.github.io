@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 ---
 # Using the Message Radius API
 

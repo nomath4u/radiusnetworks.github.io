@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 ---
 ## ![Satellite](img/satellite.svg)Versioning Resources
 

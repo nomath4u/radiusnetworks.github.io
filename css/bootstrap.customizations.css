@@ -1,0 +1,68 @@
+body {
+  padding-top: 105px; /* account for navbar size */
+}
+footer {
+  margin-top: 0px;
+  min-height: 0px;
+  background-color: transparent;
+}
+.navbar .brand {
+  padding: 0px 20px 0px;
+}
+#general article {
+  text-align: center;
+}
+#general article h2 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+#general article p {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+.featurette-container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.featurette-container-sm {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  padding-top: 70px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -40px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  margin-right: 40px;
+  max-height: 300px;
+}
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 30px;
+}
+.featurette-image.pull-right {
+  margin-left: 30px;
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
