@@ -1,5 +1,5 @@
 body {
-  padding-top: 105px; /* account for navbar size */
+  /*padding-top: 105px; /* account for navbar size */
 }
 footer {
   margin-top: 0px;
@@ -8,6 +8,9 @@ footer {
 }
 .navbar .brand {
   padding: 0px 20px 0px;
+}
+.navbar-static-top {
+  background-color: #fff;
 }
 #general article {
   text-align: center;
