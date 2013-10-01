@@ -69,3 +69,19 @@ footer {
   line-height: 1;
   letter-spacing: -1px;
 }
+#api article {
+}
+#api article h2 {
+  padding-bottom: 5px;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  border-bottom: 2px solid #999999;
+}
+#api article p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5;
+}
