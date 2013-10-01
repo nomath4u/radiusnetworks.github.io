@@ -1,3 +1,7 @@
+---
+layout: message_radius
+---
+
 ## Relay API
 
 This API provides rapid updates of all devices discovered or dropped from each Beacon.  It must be enabled on a per beacon basis to post the information to a receiving URL.  This receiving URL must be configured with the beacons by the Radius Networks engineering team.

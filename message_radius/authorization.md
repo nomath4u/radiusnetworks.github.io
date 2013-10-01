@@ -1,8 +1,8 @@
 ---
-layout: api
+layout: message_radius
 ---
 
-## ![Api Lock](img/lock.svg)API Key
+## API Key
 
 The API Key is passed via the Authorization header:
 

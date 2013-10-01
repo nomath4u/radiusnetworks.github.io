@@ -1,0 +1,65 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Radius Networks</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/unicorn.login.css" />
+    <link rel="stylesheet" href="/css/bootstrap.customizations.css" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Shim in HTML5 -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+      document.createElement("nav");
+      document.createElement("header");
+      document.createElement("footer");
+      document.createElement("section");
+      document.createElement("aside");
+      document.createElement("article");
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+
+    {% include header.html %}
+    {% include mr_head.html %}
+        <div class="featurette-container-sm" style="margin-top: 20px;">
+      <div align="center">
+        <p class="lead">Welcome to the Radius Networks Developer Portal.  It's here you can request access to our API, read the documentation, and see examples of how to integrate our proximity API with your app.</p>
+        <a class="btn btn-rad-blue" href="gettingstarted.md" style="width:380px;">Get Started</a>
+      </div>
+    </div>
+      <br>
+      <div class="row">
+      <div class="featurette-container" style="margin-top:-30px;">
+      <div class="marketing info">
+        <div class="span4 offset2">
+          <a class="btn btn-rad-blue" href="authorization.html" style="width:270px;">Authorization</a><br>
+          <a class="btn btn-rad-blue" href="types.html" style="width:270px;">Media Types</a><br>
+          <a class="btn btn-rad-blue" href="relay.html" style="width:270px;">Relay API</a><br>
+          <a class="btn btn-rad-blue" href="rest.html" style="width:270px;">REST API</a><br>
+          <a class="btn btn-rad-blue" href="accounts.html" style="width:270px;">Accounts</a><br>
+        </div>
+        <div class="span4">
+          <a class="btn btn-rad-blue" href="beacons.html" style="width:270px;">Beacons</a><br>
+          <a class="btn btn-rad-blue" href="subscriptions.html" style="width:270px;">Subscriptions</a><br>
+          <a class="btn btn-rad-blue" href="examples.html" style="width:270px;">Examples</a><br>
+          <a class="btn btn-rad-blue" href="tools.html" style="width:270px;">Command Line Tools</a><br>
+          <a class="btn btn-rad-blue" href="mobile.html" style="width:270px;">Mobile SDK</a><br>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include javascript.html %}
+  </body>
+</html>

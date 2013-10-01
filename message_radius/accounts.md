@@ -1,7 +1,8 @@
 ---
-layout: api
+layout: default
 ---
-# Accounts Resource
+
+## Accounts Resource
 
 The account resource is listed at the base url. This resource contains information about your account as well as links to the pertinent resources you have access to.
 
@@ -13,16 +14,14 @@ Request the `base` url; the account is contained in the root document.
 
 Response:
 
-{% highlight json %}
-{
-  "account_id": "5034fe38639184d116000001",
-  "name": "Radius Networks",
-  "links": {
-    "subscriptions": { "href": "https://api.messageradius.com/api/subscriptions" },
-    "beacons": { "href": "https://api.messageradius.com/api/beacons" }
-  }
-}
-{% endhighlight %}
+    {
+      "account_id": "5034fe38639184d116000001",
+      "name": "Radius Networks",
+      "links": {
+        "subscriptions": { "href": "https://api.messageradius.com/api/subscriptions" },
+        "beacons": { "href": "https://api.messageradius.com/api/beacons" }
+      }
+    }
 
 Example:
 
