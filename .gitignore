@@ -1,5 +1,6 @@
 _drafts/
 _site/
+_bundle/
 .DS_Store
 *.swp
 .ruby-gemset
