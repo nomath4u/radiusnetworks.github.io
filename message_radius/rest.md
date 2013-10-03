@@ -2,7 +2,7 @@
 layout: message_radius
 ---
 
-## REST
+## REST API
 
 ### Base URL
 
@@ -17,6 +17,7 @@ The Message Radius REST API is served over HTTPS. To ensure data privacy, unencr
 All clients should start from the Base URL and use that to navigate to the resource they want via the rel attribute of a link.
 
 Links are contained within a reserved `links` element. The `rel` of the link is simply the key within the hash:
+
     {
       "links": {
         "subscriptions": { "href": "https://api.messageradius.com/subscriptions" },
@@ -28,8 +29,8 @@ It is strongly encouraged to use this method of discovery for the API to keep yo
 
 ### RESTful Resources
 
-* [Accounts](/docs/api/accounts)
-* [Beacon](/docs/api/beacons#beacon)
-  * [Beacon by Day](/docs/api/beacons#beacon_day)
-* [Subscriptions](/docs/api/subscriptions)
+* [Accounts](/message_radius/accounts.html)
+* [Beacon](/message_radius/beacons.html)
+  * [Beacon by Day](/message_radius/beacons.html)
+* [Subscriptions](/message_radius/subscriptions.html)
 

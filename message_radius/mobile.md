@@ -38,4 +38,4 @@ Note: While it is also possible to use iBeacon detection with Android devices wi
 
 Once you collect the device identifer (either the mac or the idfa), you can use this identifier to subscribe to location updates.
 
-See the [Subscriptions Documentation](/docs/api/subscriptions) for details.
+See the [Subscriptions Documentation](/message_radius/subscriptions.html) for details.

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: message_radius
 ---
 
 ## Accounts Resource
