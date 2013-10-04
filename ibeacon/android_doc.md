@@ -2,7 +2,7 @@
 layout: ibeacon
 ---
 <div align="center">
-	<a class="btn btn-rad-blue" href="https://github.com/RadiusNetworks/android-ibeacon-service" style="width:240px; margin-top: -20px;"><img src="/img/git.svg">View on Githup</a>
+	<a class="btn btn-rad-blue" href="https://github.com/RadiusNetworks/android-ibeacon-service" style="width:240px; margin-top: -20px;"><img src="/img/git.svg">View on Github</a>
 </div>
 <br>
 ## Android iBeacon Service
