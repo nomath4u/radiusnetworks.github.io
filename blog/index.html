@@ -1,0 +1,57 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Radius Networks</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/unicorn.login.css" />
+    <link rel="stylesheet" href="/css/bootstrap.customizations.css" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Shim in HTML5 -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+      document.createElement("nav");
+      document.createElement("header");
+      document.createElement("footer");
+      document.createElement("section");
+      document.createElement("aside");
+      document.createElement("article");
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+
+    {% include header.html %}
+    {% include ibeacon_head.html %}
+        <div class="featurette-container-sm" style="margin-top: 20px;">
+      <div align="center">
+        <p class="lead">Recent Blog Posts</p>
+        <ul>
+          <li>
+            <a href='how-to-make-an-ibeacon-out-of-a-raspberry-pi.md'>How to Make an iBeacon Out of a Raspberry Pi</a>, October 8, 2013
+          </li>
+          <li>
+            <a href='android-ibeacon-library-now-available.md'>Android iBeacon Library Now Available</a>, October 7, 2013
+          </li>
+          <li>
+            <a href='reverse-engineering-the-ibeacon-profile.md'>Reverse Engineering the iBeacon Profile</a>, October 1, 2013
+          </li>
+        </ul>
+      </div>
+    </div>
+      <br>
+
+
+    {% include footer.html %}
+
+    {% include javascript.html %}
+  </body>
+</html>
