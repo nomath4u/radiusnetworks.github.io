@@ -2,15 +2,20 @@
 layout: blog 
 ---
 
-#Reverse Engineering the iBeacon Profile
+#Reverse Engineering 
+#the iBeacon Profile
 
 October 1, 2013
 
 When Apple announced iBeacons at WWDC back in June, many of us developers were excited about them.  Apple made a demo program available, <a href='https://developer.apple.com/downloads/index.action?name=WWDC%202013'>AirLocate</a>, which could make an iPhone or iPad act as an iBeacon for development purposes.  But there were lots of problems with using this for development.
 
+##The Problems
+
 First, many of us don't have a pile of extra iOS devices lying around -- especially the latest and greatest ones with the Bluetooth LE chipset (iPhone 4s+, iPad 3rd generation+) needed to run AirLocate.  Unless you have two such devices (one to act as an iBeacon and the other to host your app under development), you have to buy another one for $600+.  Second, you have to be a member of the iOS Developer Program to get Air Locate on your iOS devices.  That usually isn't the case for Android developers.  Finally, what if you want to build an iBeacon on your own hardware?  Apple so far hasn't told us how to do that.
 
 The first step to solving these problems is to figure out how iBeacons work.  That means it's time to do a little reverse engineering.
+
+##The Reverse Engineering Procedure
 
 Knowing that iBeacons use Bluetooth LE, we figured you could use a bluetooth sniffer to figure out what is going on.  Texas Instruments sells a Bluetooth LE designed for development tasks like sniffing, so we ordered one to see what we could do.
 
@@ -25,6 +30,8 @@ Parts:
 We started up the packet sniffer tool, selected "Bluetooth LE" as the protocol, and started a capture.  Not much was going on.  Then we fired up AirLocate, configured it to act as an iBeacon using AirLocate's default proximityUUID E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major 0 and minor 0.  As soon as we did this, we started seeing new bluetooth packets once per second.
 
 The results on the screen were encouraging.  It showed the raw hex bytes in the captured packets, and it was obvious that they included the proximityUUID.  But we needed to export the a full capture file to see if this was consistently true.
+
+##The Results
 
 The packet sniffer tool let us output its capture in a [binary format](http://e2e.ti.com/support/low_power_rf/f/155/t/240865.aspx) that I had to write Python script to parse.  Once I did, I could see the contents of the individual packets as hex bytes:
 
