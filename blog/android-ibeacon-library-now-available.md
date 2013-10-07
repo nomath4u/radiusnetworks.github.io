@@ -1,3 +1,6 @@
+---
+layout: blog 
+---
 #Android iBeacon Library Now Available
 
 By David G. Young
