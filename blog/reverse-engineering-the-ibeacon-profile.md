@@ -1,6 +1,9 @@
 ---
 layout: blog 
 ---
+
+#Reverse Engineering teh iBeacon Profile
+
 October 1, 2013
 
 When Apple announced iBeacons at WWDC back in June, many of us developers were excited about them.  Apple made a demo program available, <a href='https://developer.apple.com/downloads/index.action?name=WWDC%202013'>AirLocate</a>, which could make an iPhone or iPad act as an iBeacon for development purposes.  But there were lots of problems with using this for development.
@@ -64,6 +67,3 @@ c5 # The 2's complement of the calibrated Tx Power
 To validate that this was what was going on, we tried changing different values of major, minor and the profileUUID, and they changed exactly as we expected.
 
 Success!  We had reverse engineered the iBeacon bluetooth profile.
-```
-
-We should test this with different iOS devices acting as a beacon and different values of major, minor and profile uuid and see how it affects the advertising data to try and figure out what the other bytes mean.
