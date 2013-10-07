@@ -1,5 +1,5 @@
 ---
-layout: message_radius
+layout: messageradius
 ---
 
 ## Subscribing to Beacon-Device Events
@@ -72,8 +72,8 @@ Response:
           "account_id": "1",
           "devices": [
             {
-              device_token: "1827044dcec0a3856f993ca80bc4f37f5edbd04a406c941fd42ee763a9b8df88", 
-              id_type:"mac", 
+              device_token: "1827044dcec0a3856f993ca80bc4f37f5edbd04a406c941fd42ee763a9b8df88",
+              id_type:"mac",
               partner_id:"53c7a-6"
             }
           ],
@@ -89,23 +89,23 @@ Response:
           "account_id": "5034fe38639184d116000001",
           "devices": [
             {
-              device_token: "3a273038f956ffd6bd0fda2f75676872325723be14f783914f827f1368cc5811", 
-              id_type:"mac", 
+              device_token: "3a273038f956ffd6bd0fda2f75676872325723be14f783914f827f1368cc5811",
+              id_type:"mac",
               partner_id:"53c7a-6"
             },
             {
-              device_token: "5694f4ddbb326cda53dc0f4c6667d5a5bc34305b4dbac1dd14cc08c3b8641fc4", 
-              id_type:"mac", 
+              device_token: "5694f4ddbb326cda53dc0f4c6667d5a5bc34305b4dbac1dd14cc08c3b8641fc4",
+              id_type:"mac",
               partner_id:"9947-c9"
             },
             {
-              device_token: "38fbdde984330e50c02382e647c576b71f41cc5c45b193d4f3177e6ee8f22a78", 
-              id_type:"idfa", 
+              device_token: "38fbdde984330e50c02382e647c576b71f41cc5c45b193d4f3177e6ee8f22a78",
+              id_type:"idfa",
               partner_id:"376a-b2"
             },
             {
-              device_token: "c1582e87c802221899199e286ead9a7ed13eb3b5e3827be6cc149fb82a9e04f7", 
-              id_type:"mac", 
+              device_token: "c1582e87c802221899199e286ead9a7ed13eb3b5e3827be6cc149fb82a9e04f7",
+              id_type:"mac",
               partner_id:"367a0-4"
             }
           ],
@@ -140,18 +140,18 @@ Request Body:
       "webhook_url": "http://example.messageradius.com/webhook",
       "devices": [
         {
-          "device_id":"b8:f6:b1:13:48:6a", 
-          "id_type":"mac", 
+          "device_id":"b8:f6:b1:13:48:6a",
+          "id_type":"mac",
           "partner_id":"1001"},
         {
-          "device_id":"aebe52e7-03ee-455a-b3c4-e57283966239", 
-          "id_type":"idfa", 
+          "device_id":"aebe52e7-03ee-455a-b3c4-e57283966239",
+          "id_type":"idfa",
           "partner_id":"1002"},
         {
           "device_id":"2765af08-9f45-2270-6a29-736ab90024e6",
-          "id_type":"idfa", 
+          "id_type":"idfa",
           "partner_id":"1003"},
-          
+
 
       ]
     }
@@ -220,7 +220,7 @@ Will result in the mac list being merged:
               "device_token": "8080dd0e596549287647c334a159d5c176fc365c999ddf75d34b95097768964e"
             }
           ],
-        }    
+        }
       ]
     }
 

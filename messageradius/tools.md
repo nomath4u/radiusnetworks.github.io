@@ -1,5 +1,5 @@
 ---
-layout: message_radius
+layout: messageradius
 ---
 
 ## Tools

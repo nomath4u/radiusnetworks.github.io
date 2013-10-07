@@ -1,5 +1,5 @@
 ---
-layout: message_radius
+layout: messageradius
 ---
 
 ## REST API
@@ -29,8 +29,8 @@ It is strongly encouraged to use this method of discovery for the API to keep yo
 
 ### RESTful Resources
 
-* [Accounts](/message_radius/accounts.html)
-* [Beacon](/message_radius/beacons.html)
-  * [Beacon by Day](/message_radius/beacons.html)
-* [Subscriptions](/message_radius/subscriptions.html)
+* [Accounts](accounts.html)
+* [Beacon](beacons.html)
+  * [Beacon by Day](beacons.html)
+* [Subscriptions](subscriptions.html)
 

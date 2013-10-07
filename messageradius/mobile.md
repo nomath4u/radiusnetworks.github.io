@@ -1,5 +1,5 @@
 ---
-layout: message_radius
+layout: messageradius
 ---
 
 ## Moble SDK
@@ -15,7 +15,7 @@ For Apple iOS devices, we recommend using bluetooth iBeacon detection.  This req
     // Put this in the AppDelegate's didFinishLaunchingWithOptions method
     _mrClient = [[MRClient alloc] init];
 
-Once your app is running on a device, it will report any MessageRadius iBeacons it sees to the MessageRadius server, then fire any added and dropped subscriptions you set up to your servers.  
+Once your app is running on a device, it will report any MessageRadius iBeacons it sees to the MessageRadius server, then fire any added and dropped subscriptions you set up to your servers.
 
 In order to read the Apple Identifier for Advertisers (idfa) from the device, simply call:
 
@@ -26,7 +26,7 @@ Note: Wifi detection also works on iOS devices, but is not recommended.  As of i
 
 ### Android and other devices
 
-For Android and other devices, we recommend using wifi detection.  This does not require embedding a dedicated client library inside an app.  
+For Android and other devices, we recommend using wifi detection.  This does not require embedding a dedicated client library inside an app.
 
 In order to read the mac address of a device from your app on Android, simply call:
 
@@ -38,4 +38,4 @@ Note: While it is also possible to use iBeacon detection with Android devices wi
 
 Once you collect the device identifer (either the mac or the idfa), you can use this identifier to subscribe to location updates.
 
-See the [Subscriptions Documentation](/message_radius/subscriptions.html) for details.
+See the [Subscriptions Documentation](subscriptions.html) for details.
