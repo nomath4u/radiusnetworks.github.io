@@ -5,6 +5,8 @@ layout: blog
 #Reverse Engineering 
 #the iBeacon Profile
 
+By David G. Young
+
 October 1, 2013
 
 When Apple announced iBeacons at WWDC back in June, many of us developers were excited about them.  Apple made a demo program available, <a href='https://developer.apple.com/downloads/index.action?name=WWDC%202013'>AirLocate</a>, which could make an iPhone or iPad act as an iBeacon for development purposes.  But there were lots of problems with using this for development.
