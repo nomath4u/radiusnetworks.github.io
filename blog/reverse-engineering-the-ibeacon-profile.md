@@ -2,7 +2,7 @@
 layout: blog 
 ---
 
-#Reverse Engineering teh iBeacon Profile
+#Reverse Engineering the iBeacon Profile
 
 October 1, 2013
 
