@@ -44,6 +44,7 @@ d6 be 89 8e 40 24 5 a2 17 6e 3d 71 2 1 1a 1a ff 4c 0 2 15 e2 c5 6d b5 df fb 48 d
 As you can see from the above, the same packet is repeated over and over again.  And this packet contains the profile UUID of the iBeacon (E2C56DB5-DFFB-48D2-B060-D0F5A71096E0)
 
 But what do these bytes mean?  [TI's wiki pages helped a bit](http://processors.wiki.ti.com/index.php/BLE_sniffer_guide#Advertisement_packets) as did this page from the [EE Times](http://www.eetimes.com/document.asp?doc_id=1278927)  Based on the information here, I figured out the following about the packet structure:
+
 ```
 # Packet Header Starts Here
 d6 be 89 8e # Access address for advertising data (this is always the same fixed value)
