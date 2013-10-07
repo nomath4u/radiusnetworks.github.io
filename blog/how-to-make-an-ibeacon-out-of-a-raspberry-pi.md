@@ -9,20 +9,22 @@ October 8, 2013
 
 Want a standalone iBeacon to use for development?  Here's a procedure you can use to build your own for under $100.  If you don't want to go to the trouble, we can ship you a pre-built development kit including everything below (except the cell phone charger -- you probably have one already!)
 
-iBeacon Parts list:
+###iBeacon Parts list:
 
 1. [A Raspberry Pi computer board](http://www.raspberrypi.org/) (Model A or Model B)
 2. A 4GB or larger [SD card](http://www.amazon.com/SanDisk-Class-Flash-Memory-SDSDB-008G-AFFP/dp/B007JRB0TC)
 3. [A Bluetooth LE dongle.](http://www.amazon.com/dp/B007GFX0PY/ref=pe_385040_30332190_pe_175190_21431760_M3T1_ST1_dp_1)
 4. A standard miro-USB 5V cell phone charger
 
-Tools you will need:
+###Tools you will need:
 
 1. A USB Keyboard
 2. A USB Mouse
 3. A computer monitor with HDMI input
 4. An HDMI cable
 5. A network cable for internet access
+
+###Procedure
 
 Step 1.  Set up your Raspberry Pi
 
