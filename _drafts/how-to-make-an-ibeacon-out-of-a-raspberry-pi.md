@@ -1,11 +1,8 @@
 ---
 author: James Nebeker and David G. Young
+layout: post
+title: How to Make an iBeacon Out of a Raspberry Pi
 ---
-# How to Make an iBeacon Out of a Raspberry Pi
-
-By James Nebeker and David G. Young
-
-October 8, 2013
 
 Want a standalone iBeacon to use for development?  Here's a procedure you can use to build your own for under $100.  If you don't want to go to the trouble, we can ship you a pre-built development kit including everything below (except the cell phone charger -- you probably have one already!)
 

@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="content">
+  <div class="post">
+    <h2>{{ page.title }}</h2>
+    <div class="byline">{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}</div>
 
-<div class="post">
-{{ content }}
+    <div class="post">
+      {{ content }}
+    </div>
+  </div>
 </div>

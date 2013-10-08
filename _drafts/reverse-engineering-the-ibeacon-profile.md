@@ -1,13 +1,8 @@
 ---
-layout: blog 
+layout: post
+title: Reverse Engineering the iBeacon Profile
+author: David G. Young
 ---
-
-#Reverse Engineering 
-#the iBeacon Profile
-
-By David G. Young
-
-October 1, 2013
 
 When Apple announced iBeacons at WWDC back in June, many of us developers were excited about them.  Apple made a demo program available, <a href='https://developer.apple.com/downloads/index.action?name=WWDC%202013'>AirLocate</a>, which could make an iPhone or iPad act as an iBeacon for development purposes.  But there were lots of problems with using this for development.
 
@@ -68,7 +63,7 @@ d6 be 89 8e # Access address for advertising data (this is always the same fixed
 # Actual Advertising Data Starts Here
 02 01 1a 1a ff 4c 00 02 15 # Apple's static prefix to the advertising data -- this is always the same
 e2 c5 6d b5 df fb 48 d2 b0 60 d0 f5 a7 10 96 e0 # iBeacon profileUUID
-00 00 # major (LSB first)  
+00 00 # major (LSB first)
 00 00 # minor (LSB first)
 c5 # The 2's complement of the calibrated Tx Power
 # Actual Advertising Data Ends Here

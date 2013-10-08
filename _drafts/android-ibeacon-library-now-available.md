@@ -1,11 +1,8 @@
 ---
-layout: blog 
+layout: post
+title: Android iBeacon Library Now Available
+author: David G. Young
 ---
-#Android iBeacon Library Now Available
-
-By David G. Young
-
-October 7, 2013
 
 The release of iOS 7 last month has made it possible to develop some pretty cool proximity-aware apps for iPhone and iPad devices.
 But what about Android?  With our new Android iBeacon Library, you can now build the same cool proximity-aware apps on the world's
@@ -15,7 +12,7 @@ and sell it on the Google Play store.
 ## How it Works
 
 An iBeacon works by advertising Bluetooth Low Energy packets once per second.  It sends out a three part unique identifier that can be
-received by your app in real time.  When your app sees the identifier, it has a pretty good idea where it is.  iBeacons have a range of only 
+received by your app in real time.  When your app sees the identifier, it has a pretty good idea where it is.  iBeacons have a range of only
 a few hundred feet, and you can get an estimate of the actual distance to the iBeacon by analyzing the signal strength.  In iOS 7, built-in
 APIs perform all these functions for you.  On Android, you can get very similar APIs by using our library.  On both platforms, the APIs perform
 two basic functions:

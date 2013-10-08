@@ -1,11 +1,5 @@
+<div class="post">
 <h2 class='title'><a href="{{ post.url}}">{{ post.title }}</a></h2>
-<div class='byline'>{{ post.date | date_to_string }}</div>
-{% if hide_extended %}
-  {{ post.content }}
-  {% if post.extended.size > 5 %}
-    <p>Continue reading at <a href='{{ post.url }}'>{{ post.title }}</a>.</p>
-  {% endif %}
-{% else %}
-  {{ post.content }}
-  {{ post.extended }}
-{% endif %}
+<div class='byline'> {{ post.date | date_to_string }} {% if post.author %} by {{ post.author }} {% endif %}</div>
+{{ post.content }}
+</div>
