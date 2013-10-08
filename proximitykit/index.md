@@ -4,6 +4,16 @@ layout: proximitykit
 
 # Proximity Kit
 
-* [Proximity Kit Dashboard](http://proximitykit.com/maps)
-* [SDK Download and Install](http://proximitykit.com/download)
-* [Getting Started Guide](gettingstarted)
+## SDK Download and Install
+
+Download and install the configuration and framework for your iOS application.
+
+<a class="btn" href="http://proximitykit.com/download">SDK Download and Install</a>
+
+## Getting Started
+
+Quick start guide to adding Proximity Kit to your iOS application.
+
+<a class="btn" href="gettingstarted">Getting Started Guide</a>
+
+
