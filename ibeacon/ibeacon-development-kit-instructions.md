@@ -29,7 +29,7 @@ a ProximityUUID of E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major of 1 and minor of
 program, so you can use that to test that it is working.
 
 The ProximityUUID is a 16 byte indentifier, usually expressed as a series of hexadecimal digits separted by dashes.  Generally, you generate one ProximityUUID to use in all of your organization's iBeacons.  If you don't have one already, you can use
-any GUID/UUID generation tool that outputs an identifer that looke the the one above.
+any GUID/UUID generation tool that outputs an identifier that looke the the one above.
 
 The major and minor are both integers that can be between between 0 and 63335.  The major is used to put iBeacons into a logical group, like a building or a room.  And the minor is used to identify a single iBeacon.
 
@@ -70,7 +70,7 @@ export MINOR="00 01"
 export POWER="c9"
 ```
 
-Be sure to properly save the file and detach the SD card from your system before ejecting the card, otherwise the card my be corrupted.
+Be sure to properly save the file and detach the SD card from your system before ejecting the card, otherwise the card may be corrupted.
 
 ### Next Steps
 
