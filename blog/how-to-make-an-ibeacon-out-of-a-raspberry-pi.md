@@ -249,7 +249,7 @@ $ update-rc.d ibeacon defaults
 
 ### That's It!
 
-With these files in place, you can edit your iBeacon's identifiers by manipulating the ibeacon.conf file, and start and stop it with the ./start and ./stop commands.  Because
+With these files in place, you can edit your iBeacon's identifiers by manipulating the ibeacon.conf file, and start and stop it with the ./start and ./stop commands.  
 
 Now you have a fully functional iBeacon.  Unplug the ethernet cable, unplug the keyboard, and cycle power to your Raspberry Pi.  After about 60 seconds of boot time, you should see it start advertising automatically.
 
