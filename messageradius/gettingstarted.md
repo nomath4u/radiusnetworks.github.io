@@ -47,14 +47,25 @@ NOTE: The Message Radius REST API is served over HTTPS. To ensure data privacy, 
 
 The canonical source for all the resources is the root document.  Request:
 
-    url: https://api.messageradius.com/<br>
-    method: GET
-    Response: { "accounts": [ { "id": "5034fe38639184d116000001", "name": "Radius Networks" } ], "links": { "subscriptions": { "href": "<a href="#">https://api.messageradius.com/api/subscriptions.json</a>" }, "beacons": { "href": "<a href="#">https://api.messageradius.com/api/beacons.json</a>" } } }
-
-
+```text
+url: https://api.messageradius.com/<br>
+method: GET
+Response: {
+  "accounts": [{
+    "id": "5034fe38639184d116000001", "name": "Radius Networks"
+  }],
+  "links": {
+    "subscriptions": {
+      "href": "https://api.messageradius.com/api/subscriptions.json"
+    },
+    "beacons": {
+      "href": "https://api.messageradius.com/api/beacons.json"
+    }
+  }
+}
+```
 
 ##Resources
-
 
 ###Beacons
 

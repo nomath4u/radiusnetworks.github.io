@@ -1,28 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-
-    {% include header.html %}
-    {% include mr_top.html %}
-
-    <section id="api" class="container">
-      <article>
-        <div class="featurette-container-sm">
-          <br>
-        <div class="span9">
-            {{ content }}
-          </div>
-        </div>
-      </article>
-    </section>
+---
+layout: default
+---
+<div class="product">
+  <div class="product-content">
+    <a href="/messageradius"><div class="brand">Message Radius</div></a>
+    <ul>
+      <li><a href="http://app.messageradius.com">Dashboard</a></li>
+      </li>
+      <li>Message Radius API
+      <ul>
+        <a href="gettingstarted.html"><li>Getting Started</li></a>
+        <li><a href="authorization.html">Authorization</a></li>
+        <li><a href="types.html">Media Types</a></li>
+        <li><a href="relay.html">Relay API</a></li>
+        <li><a href="rest.html">REST API</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="beacons.html">Beacons</a></li>
+        <li><a href="subscriptions.html">Subscriptions</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li><a href="tools.html">Command Line Tools</a></li>
+        <li><a href="mobile.html">Mobile SDK</a></li>
+      </ul>
+      </li>
+    </ul>
   </div>
-
-    {% include footer.html %}
-
-    {% include javascript.html %}
-
-  </body>
-</html>
+</div>
+<div class="yo content">
+  {{ content }}
+</div>

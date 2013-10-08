@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-
-    {% include header.html %}
-    {% include pk_top.html %}
-
-    <section id="api" class="container">
-      <article>
-        <div class="featurette-container-sm">
-          <br>
-        <div class="span9">
-            {{ content }}
-          </div>
-        </div>
-      </article>
-    </section>
+---
+layout: default
+---
+<div class="product">
+  <div class="product-content">
+    <a href="/proximitykit"><div class="brand">Proximity Kit</div></a>
+    <ul>
+      <li><a href="http://proximitykit.com/maps">My Maps</a></li>
+      <li><a href="http://proximitykit.com/download">Downloads</a></li>
+      <li><a href="gettingstarted">Getting Started</a></li>
+    </ul>
   </div>
-
-    {% include footer.html %}
-
-    {% include javascript.html %}
-
-  </body>
-</html>
+</div>
+<div class="yo content">
+  {{ content }}
+</div>

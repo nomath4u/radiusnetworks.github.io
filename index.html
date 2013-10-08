@@ -1,70 +1,32 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Radius Networks</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/unicorn.login.css" />
-    <link rel="stylesheet" href="css/bootstrap.customizations.css" />
 
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
-
-    <!-- Shim in HTML5 -->
-    <!--[if lt IE 9]>
-    <script type="text/javascript">
-      document.createElement("nav");
-      document.createElement("header");
-      document.createElement("footer");
-      document.createElement("section");
-      document.createElement("aside");
-      document.createElement("article");
-    </script>
-    <![endif]-->
-  </head>
-  <body>
-
-    {% include header.html %}
-    <br>
-    <br>
-    <div class="featurette-container-sm">
-      <div align="center">
-        <h2 class="featurette-heading">Welcome Developers</h2>
-        <p class="lead">Welcome to the Radius Networks Developer Portal.  It's here you can request access to our API, read the documentation, and see examples of how to integrate our proximity API with your app.</p>
-      <br>
-      <div class="marketing info">
-        <div class="span3">
-          <a class="rad-blue" href="messageradius"><img class="mktgimg" src="img/message_radius_icon.svg" alt="Message Radius"></a>
-          <h3 itemprop="name">Message Radius</h3>
-          <p itemprop="description">Our Message Radius platform will help your business understand and engage your customers at the specific locations that make sense. </p>
-          <a itemprop="url" class="btn btn-rad-orange" style="margin-top: 15px;" href="messageradius">Documentation</a>
-        </div><!-- /.span4 -->
-        <div class="span3">
-          <a class="rad-blue" href="/ibeacon"><img class="mktgimg" src="img/ibeacon_icon.svg" alt="ibeacon services"></a>
-          <h3 itemprop="name">iBeacon Services</h3>
-          <p itemprop="description">Radius Networks' Android iBeacon Service library - make Android versions of your iOS apps that use iBeacons, or come up with new Android-only creations.</p>
-          <a itemprop="url" class="btn btn-rad-orange" style="margin-top: 15px;" href="ibeacon">Documentation</a>
-        </div><!-- /.span4 -->
-        <div class="span3">
-          <a class="rad-blue" href="http://proximitykit.com/maps"><img class="mktgimg" src="img/proximity_kit_icon.svg" alt="Proximity Kit Geofence Tool"></a>
-          <h3 itemprop="name">Proximity Kit</h3>
-          <p itemprop="description">Dead simple geofencing for iOS. Stop worrying about sync strategies and server operations; use our sync API and point-and-click map editor.</p>
-          <a itemprop="url" class="btn btn-rad-orange" style="margin-top: 15px;" href="/proximitykit">Learn More</a>
-        </div><!-- /.span4 -->
-        <br>
-        <div style="margin-top: 30px;">
-          &nbsp;
-      </div>
-      </div>
+<div class="content">
+  <div class="feature">
+  <h1>Welcome Developers</h1>
+  <p>Welcome to the Radius Networks Developer Portal.  It's here you can request access to our API, read the documentation, and see examples of how to integrate our proximity API with your app.</p>
+  </div>
+  <div class="tiles clearfix">
+    <div class="tile">
+      <a class="blue-circle" href="messageradius">
+        <img class="mktgimg" src="img/message_radius_icon.svg" alt="Message Radius">
+      </a>
+      <h3 itemprop="name">Message Radius</h3>
+      <p itemprop="description">Our Message Radius platform will help your business understand and engage your customers at the specific locations that make sense. </p>
+      <a itemprop="url" class="btn" href="messageradius">Documentation</a>
     </div>
-
-    {% include footer.html %}
-
-    {% include javascript.html %}
-  </body>
-</html>
+    <div class="tile">
+      <a class="blue-circle" href="ibeacon"><img class="mktgimg" src="img/ibeacon_icon.svg" alt="ibeacon services"></a>
+      <h3 itemprop="name">iBeacon Services</h3>
+      <p itemprop="description">Radius Networks' Android iBeacon Service library - make Android versions of your iOS apps that use iBeacons, or come up with new Android-only creations.</p>
+      <a itemprop="url" class="btn" href="ibeacon">Documentation</a>
+    </div>
+    <div class="tile">
+      <a class="blue-circle" href="proximitykit"><img class="mktgimg" src="img/proximity_kit_icon.svg" alt="Proximity Kit Geofence Tool"></a>
+      <h3 itemprop="name">Proximity Kit</h3>
+      <p itemprop="description">Dead simple geofencing for iOS. Stop worrying about sync strategies and server operations; use our sync API and point-and-click map editor.</p>
+      <a itemprop="url" class="btn" href="proximitykit">Learn More</a>
+    </div>
+  </div>
+</div>

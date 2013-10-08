@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+  color: #333333;
+}
+.content {
+  margin: 0 auto;
+  width: 800px;
+}
+
+a {
+  color: #3697D3;
+}

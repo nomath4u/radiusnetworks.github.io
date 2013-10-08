@@ -1,4 +1,5 @@
 ---
+layout: ibeacon
 ---
 
 ##iBeacon Development Kit Instructions
@@ -19,12 +20,12 @@ to start transmitting.
 
 ### Verifying it Works
 
-Use an iBeacon test program like Apple's iOS AirLocate to verify the iBeacon is transmitting.  See below for the iBeacon identifiers. 
+Use an iBeacon test program like Apple's iOS AirLocate to verify the iBeacon is transmitting.  See below for the iBeacon identifiers.
 
 ### Customizing the iBeacon identifiers
 
 iBeacons have a three part identifier consisting of the ProximityUUID, the major and the minor.  By default, the iBeacon will transmit with
-a ProximityUUID of E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major of 1 and minor of 1.  This matches the default test identifier of Apple's AirLocate 
+a ProximityUUID of E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major of 1 and minor of 1.  This matches the default test identifier of Apple's AirLocate
 program, so you can use that to test that it is working.
 
 The ProximityUUID is a 16 byte indentifier, usually expressed as a series of hexadecimal digits separted by dashes.  Generally, you generate one ProximityUUID to use in all of your organization's iBeacons.  If you don't have one already, you can use
@@ -40,7 +41,7 @@ E2 C5 6D B5 DF FB 48 D2 B0 60 D0 F5 A7 10 96 E0
 ```
 
 Encoding the major and minor in this format is a little bit harder because they first have to be converted to hex.  You can use any online decimal to hex conversion tool to do this.  But please note that if
-your major or minor number in hex is less than four digits, you must zero fill the left-hand side.  
+your major or minor number in hex is less than four digits, you must zero fill the left-hand side.
 
 For example, to encode a major value of 1225, you would first convert it to hex, which is 4C9.  Because that is only three characters, you put a zero in front like this: 04C9.
 Finally, you split it into two character pieces so it looks like this:
@@ -56,7 +57,7 @@ character segments you get:
 00 0D
 ```
 
-Once you have the identifiers in the proper format, you can put them onto the SD card.  The easiest way to do this is with a card reader.  Unplug the iBeacon, then remove the SD card and put it into your computer's SD card reader.  
+Once you have the identifiers in the proper format, you can put them onto the SD card.  The easiest way to do this is with a card reader.  Unplug the iBeacon, then remove the SD card and put it into your computer's SD card reader.
 After attaching it to your computer with a card reader, look for a volume with a file named ibeacon.conf in the root directory.  Open that file and change the identifiers to be
 your own, taking care to keep the quotation marks and other parts of the lines unchanged.
 

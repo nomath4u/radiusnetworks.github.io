@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-
-    {% include header.html %}
-    {% include ibeacon_top.html %}
-
-    <section id="api" class="container">
-      <article>
-        <div class="featurette-container-sm">
-          <br>
-        <div class="span9">
-            {{ content }}
-          </div>
-        </div>
-      </article>
-    </section>
+---
+layout: default
+---
+<div class="product">
+  <div class="product-content">
+    <a href="/ibeacon"><div class="brand">iBeacon Services</div></a>
   </div>
-
-    {% include footer.html %}
-
-    {% include javascript.html %}
-
-  </body>
-</html>
+</div>
+<div class="content">
+  {{ content }}
+</div>
