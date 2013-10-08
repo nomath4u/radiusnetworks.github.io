@@ -147,11 +147,26 @@ You can then disable advertising using the following command, and see them stop:
 $ sudo hciconfig hci0 noleadv
 ```
 
-### Putting it all together
+### Putting it all together (Optional)
 
-The steps above show you how you can log in to your Raspberry Pi and make it start advertising like an iBeacon by entering a series of commands.  Now we will combine
+The optional steps above show you how you can log in to your Raspberry Pi and make it start advertising like an iBeacon by entering a series of commands.  Now we will combine
 these commands into a script and a config file so that you can power on your Raspberry Pi without a keyboard or monitor and it will start 
-working as an iBeacon as soon as it boots up.  To do this, you will need to use a text editor to create three files and edit a fourth.  In the commands below, we use the
+working as an iBeacon as soon as it boots up.  To do this, you will need to use a text editor to create three files and edit a fourth.  
+
+It's not really realistic to type this all in manually at a keyboard connected to the Raspberry Pi.  Instead, you should use a ssh client to connect
+remotely to the Raspberry Pi over your network.   In order to do this, though, you'll need to know how to use an ssh client, and you'll need to be able to
+figure out the ip address of your Raspberry Pi so you can log into it.  If you are connected to the keyboard, you can find the ip address by typing:
+
+```
+$ sudo ifconfig
+eth0      Link encap:Ethernet  HWaddr 01:00:22:38:c6:44  
+          inet addr:192.168.1.80  Bcast:192.168.1.255  Mask:255.255.255.0
+```
+
+In the response above, the Raspberry Pi is on IP address 192.168.1.80.  Whatever answer you get, use IP address to connect to your PI from your
+workstation using an ssh client.  Then you can copy and paste the contents of the files below to get them on your Raspberry Pi.
+
+In the commands below, we use the
 vi editor, but you can use whatever text editor you want.  If using vi, you will need to type the i key to go into insert mode, paste in the contents of the file, then type the esc key followed by ZZ to save the file.
 
 
