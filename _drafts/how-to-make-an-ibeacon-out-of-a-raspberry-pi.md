@@ -1,5 +1,5 @@
 ---
-layout: blog 
+author: James Nebeker and David G. Young
 ---
 # How to Make an iBeacon Out of a Raspberry Pi
 
@@ -9,7 +9,7 @@ October 8, 2013
 
 Want a standalone iBeacon to use for development?  Here's a procedure you can use to build your own for under $100.  If you don't want to go to the trouble, we can ship you a pre-built development kit including everything below (except the cell phone charger -- you probably have one already!)
 
-<img src='pibeacon.jpg'/>
+<img style="margin:10px; height: 200px; border: thin solid #333;float:right;" src='/img/pibeacon.jpg'>
 
 If you want to build one yourself, you'll need basic Linux command line skills.  In the instructions, commands you type on the Raspberry Pi look like the block below.  Lines starting with $ are things you type (you do not actually type the $) and other lines are responses from the computer.
 
@@ -69,16 +69,16 @@ $ sudo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libic
 
 ####Step 6: Download and Uncompress BlueZ
 
-This is the the official Bluetooth stack for Linux and the 5.x series has introduced Bluetooth LE support. 
+This is the the official Bluetooth stack for Linux and the 5.x series has introduced Bluetooth LE support.
 
 ```
 $ sudo wget www.kernel.org/pub/linux/bluetooth/bluez-5.8.tar.xz
-$ sudo unxz bluez-5.8.tar.xz 
-$ sudo tar xvf bluez-5.8.tar 
+$ sudo unxz bluez-5.8.tar.xz
+$ sudo tar xvf bluez-5.8.tar
 $ cd bluez-5.8
 ```
 
-#### Step 7: Configure and Make BlueZ 
+#### Step 7: Configure and Make BlueZ
 
 Note: the second command below will take the better part of an hour.  Better find something to do!
 
@@ -134,7 +134,7 @@ The setting in this example corresponds to an iBeacon broadcasting Profile UUID 
 #### Step 9: Enable Advertising
 
 Use the following command to activate advertising on the dongle, this will allow the device to be detected and recognized as an iBeacon:
- 
+
 ```
 sudo hciconfig hci0 leadv 0
 ```
@@ -149,10 +149,10 @@ $ sudo hciconfig hci0 noleadv
 
 ### Putting it all together (optional)
 
-The steps above show you how you can log in to your Raspberry Pi and make it start advertising like an iBeacon by entering a series of commands.  
+The steps above show you how you can log in to your Raspberry Pi and make it start advertising like an iBeacon by entering a series of commands.
 Next, you can optionally combine
-these commands into a script and a config file so that you can power on your Raspberry Pi without a keyboard or monitor and it will start 
-working as an iBeacon as soon as it boots up.  To do this, you will need to use a text editor to create three files and edit a fourth.  
+these commands into a script and a config file so that you can power on your Raspberry Pi without a keyboard or monitor and it will start
+working as an iBeacon as soon as it boots up.  To do this, you will need to use a text editor to create three files and edit a fourth.
 
 It's not really realistic to type this all in manually at a keyboard connected to the Raspberry Pi.  Instead, you should use a ssh client to connect
 remotely to the Raspberry Pi over your network.   In order to do this, though, you'll need to know how to use an ssh client, and you'll need to be able to
@@ -160,7 +160,7 @@ figure out the ip address of your Raspberry Pi so you can log into it.  If you a
 
 ```
 $ sudo ifconfig
-eth0      Link encap:Ethernet  HWaddr 01:00:22:38:c6:44  
+eth0      Link encap:Ethernet  HWaddr 01:00:22:38:c6:44
           inet addr:192.168.1.80  Bcast:192.168.1.255  Mask:255.255.255.0
 ```
 
@@ -273,7 +273,7 @@ $ sudo update-rc.d ibeacon defaults
 
 ### That's It!
 
-With these files in place, you can edit your iBeacon's identifiers by manipulating the ibeacon.conf file, and start and stop it with the ./start and ./stop commands.  
+With these files in place, you can edit your iBeacon's identifiers by manipulating the ibeacon.conf file, and start and stop it with the ./start and ./stop commands.
 
 Now you have a fully functional iBeacon.  Unplug the ethernet cable, unplug the keyboard, and cycle power to your Raspberry Pi.  After about 60 seconds of boot time, you should see it start advertising automatically.
 
