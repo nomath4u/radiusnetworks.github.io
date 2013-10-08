@@ -12,6 +12,7 @@ Just plug it in with your own cell phone charger, and your app start getting iBe
 <img src='../blog/pibeacon.jpg'>
 
 Each fully assembled kit includes:
+
 * Raspberry Pi computer board
 * Bluetooth LE dongle
 * 8 MB SD Card, pre-loaded with iBeacon software that's fully compatible with Apple's iBeacon SDK
@@ -19,5 +20,6 @@ Each fully assembled kit includes:
 
 Order Today!
 
+Details:
  * Usually Shipped same day for orders placed by 10 a.m. Monday-Friday US Eastern Time.  Free domestic delivery is via US Priority mail (2-3 day service).  Express and international delivery available at additional cost.  
  ** Standard 5V micro USB charger (cell phone or tablet style) required, not included.  
