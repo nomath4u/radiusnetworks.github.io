@@ -24,7 +24,7 @@ Use an iBeacon test program like Apple's iOS AirLocate to verify the iBeacon is 
 ### Customizing the iBeacon identifiers
 
 iBeacons have a three part identifier consisting of the ProximityUUID, the major and the minor.  By default, the iBeacon will transmit with
-a ProximityUUID of E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major of 0 and minor of 0.  This matches the default test identifier of Apple's AirLocate 
+a ProximityUUID of E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major of 1 and minor of 1.  This matches the default test identifier of Apple's AirLocate 
 program, so you can use that to test that it is working.
 
 The ProximityUUID is a 16 byte indentifier, usually expressed as a series of hexadecimal digits separted by dashes.  Generally, you generate one ProximityUUID to use in all of your organization's iBeacons.  If you don't have one already, you can use
@@ -57,9 +57,16 @@ character segments you get:
 ```
 
 Once you have the identifiers in the proper format, you can put them onto the SD card.  The easiest way to do this is with a card reader.  Unplug the iBeacon, then remove the SD card and put it into your computer's SD card reader.  
-You then open the ibeacon.conf file, and replace its identifiers with your own:
+After attaching it to your computer with a card reader, look for a volume with a file named ibeacon.conf in the root directory.  Open that file and change the identifiers to be
+your own, taking care to keep the quotation marks and other parts of the lines unchanged.
 
 ```
+# All values must be in hex form separated by spaces between every two hex digits
+export BLUETOOTH_DEVICE=hci0
+export UUID="e2 c5 6d b5 df fb 48 d2 b0 60 d0 f5 a7 10 96 e0"
+export MAJOR="00 01"
+export MINOR="00 01"
+export POWER="c9"
 ```
 
 Be sure to properly save the file and detach the SD card from your system before ejecting the card, otherwise the card my be corrupted.
