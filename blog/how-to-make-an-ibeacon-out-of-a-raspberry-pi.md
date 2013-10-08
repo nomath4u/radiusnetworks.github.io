@@ -9,6 +9,8 @@ October 8, 2013
 
 Want a standalone iBeacon to use for development?  Here's a procedure you can use to build your own for under $100.  If you don't want to go to the trouble, we can ship you a pre-built development kit including everything below (except the cell phone charger -- you probably have one already!)
 
+<img src='pibeacon.jpg'/>
+
 If you want to build one yourself, you'll need basic Linux command line skills.  In the instructions, commands you type on the Raspberry Pi look like the block below.  Lines starting with $ are things you type (you do not actually type the $) and other lines are responses from the computer.
 
 ```
