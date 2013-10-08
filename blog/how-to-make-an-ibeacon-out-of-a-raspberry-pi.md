@@ -153,7 +153,10 @@ vi editor, but you can use whatever text editor you want.  If using vi, you will
 
 #### Step 10: Create an ibeacon.conf file
 
-```$ vi ibeacon.conf```
+
+```
+$ cd
+$ vi ibeacon.conf```
 
 And paste in the contents of this block:
 
@@ -206,7 +209,7 @@ chmod 777 stop
 
 ### Step 14: Make the start script execute automatically at boot
 
-```$ vi /etc/init.d/ibeacon```
+```$ sudo vi /etc/init.d/ibeacon```
 
 And paste in the contents of this block:
 
@@ -238,13 +241,13 @@ restart)
         exit 1
 esac
 
-
 ```
 
 Finally, type:
 
 ```
-$ update-rc.d ibeacon defaults
+$ sudo chmod 777 /etc/init.d/ibeacon
+$ sudo update-rc.d ibeacon defaults
 ```
 
 ### That's It!
