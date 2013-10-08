@@ -78,3 +78,5 @@ c5 # The 2's complement of the calibrated Tx Power
 To validate that this was what was going on, we tried changing different values of major, minor and the profileUUID, and they changed exactly as we expected.
 
 Success!  We had reverse engineered the iBeacon bluetooth profile.
+
+[See all blog posts](http://developer.radiusnetworks.com/blog)
