@@ -20,7 +20,7 @@ hello
 
 If you ever get asked for a password after entering a command, always enter raspberry in response.
 
-###iBeacon Parts list:
+###iBeacon parts list:
 
 1. [A Raspberry Pi computer board](http://www.raspberrypi.org/) (Model A or Model B)
 2. A 4GB or larger [SD card](http://www.amazon.com/SanDisk-Class-Flash-Memory-SDSDB-008G-AFFP/dp/B007JRB0TC)
@@ -147,9 +147,10 @@ You can then disable advertising using the following command, and see them stop:
 $ sudo hciconfig hci0 noleadv
 ```
 
-### Putting it all together (Optional)
+### Putting it all together (optional)
 
-The optional steps above show you how you can log in to your Raspberry Pi and make it start advertising like an iBeacon by entering a series of commands.  Now we will combine
+The steps above show you how you can log in to your Raspberry Pi and make it start advertising like an iBeacon by entering a series of commands.  
+Next, you can optionally combine
 these commands into a script and a config file so that you can power on your Raspberry Pi without a keyboard or monitor and it will start 
 working as an iBeacon as soon as it boots up.  To do this, you will need to use a text editor to create three files and edit a fourth.  
 
@@ -184,8 +185,8 @@ And paste in the contents of this block:
 # All values must be in hex form separated by spaces between every two hex digits
 export BLUETOOTH_DEVICE=hci0
 export UUID="e2 c5 6d b5 df fb 48 d2 b0 60 d0 f5 a7 10 96 e0"
-export MAJOR="00 01"
-export MINOR="00 01"
+export MAJOR="00 00"
+export MINOR="00 00"
 export POWER="c9"
 ```
 
