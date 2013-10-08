@@ -156,7 +156,8 @@ vi editor, but you can use whatever text editor you want.  If using vi, you will
 
 ```
 $ cd
-$ vi ibeacon.conf```
+$ vi ibeacon.conf
+```
 
 And paste in the contents of this block:
 
