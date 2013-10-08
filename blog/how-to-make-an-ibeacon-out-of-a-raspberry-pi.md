@@ -42,7 +42,9 @@ If you ever get asked for a password after entering a command, always enter rasp
 
 The Raspberry Pi is a nifty little computer board that is great for hobbyists.  In order to make it into an iBeacon you'll have to go through its basic setup, hooking it up to a keyboard, mouse and monitor, and plugging it into your router for internet access.  The biggest part of the setup involves preparing the SD card with its operating system.  To do this, follow [this guide](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf) and select the "raspbian" operating system option during install.
 
-####Step 2. Unplug the mouse, and plug in the keyboard, Bluetooth LE dongle, monitor, and ethernet cable
+####Step 2. Verify your connections to your Pi
+
+Unplug the mouse, and plug in the keyboard, Bluetooth LE dongle, monitor, and ethernet cable.  The other end of the ethernet cable must be connecte to a router that can give you internet access.
 
 ####Step 3. Log in to your Raspberry Pi
 
@@ -210,7 +212,7 @@ chmod 777 start
 chmod 777 stop
 ```
 
-### Step 14: Make the start script execute automatically at boot
+#### Step 14: Make the start script execute automatically at boot
 
 ```$ sudo vi /etc/init.d/ibeacon```
 
