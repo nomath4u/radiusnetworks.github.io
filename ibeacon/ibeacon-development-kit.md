@@ -9,7 +9,7 @@ layout: ibeacon
 Get started developing iBeacon apps now with your own dedicated hardware iBeacon.  
 Just plug it in with your own cell phone charger, and your app start getting iBeacon hits within seconds.  
 
-<img src='../blog/pibeacon.jpg'>
+<img class="mktg" src='/img/pibeacon.jpg'>
 
 Each fully assembled kit includes:
 

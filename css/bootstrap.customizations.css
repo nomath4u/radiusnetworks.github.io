@@ -293,3 +293,15 @@ footer {
   border: none;
   line-height: 20px;
 }
+
+.mktg {
+  width: 640px;
+    -webkit-border-radius: 7px;
+     -moz-border-radius: 7px;
+          border-radius: 7px;
+  overflow: auto;
+  border: 2px solid #f5f5f5;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
