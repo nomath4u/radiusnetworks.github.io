@@ -2,7 +2,7 @@
 layout: proximitykit
 ---
 
-# Proximity Kit
+<img style="width:800px;height:178px;" src="/img/proximitykit-logo.png" />
 
 ## SDK Download and Install
 
