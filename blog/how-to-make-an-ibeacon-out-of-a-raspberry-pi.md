@@ -254,3 +254,4 @@ With these files in place, you can edit your iBeacon's identifiers by manipulati
 Now you have a fully functional iBeacon.  Unplug the ethernet cable, unplug the keyboard, and cycle power to your Raspberry Pi.  After about 60 seconds of boot time, you should see it start advertising automatically.
 
 
+[See all blog posts](http://developer.radiusnetworks.com/blog)
