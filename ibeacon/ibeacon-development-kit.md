@@ -20,6 +20,5 @@ Each fully assembled kit includes:
 
 Order Today!
 
-Details:
- * Usually Shipped same day for orders placed by 10 a.m. Monday-Friday US Eastern Time.  Free domestic delivery is via US Priority mail (2-3 day service).  Express and international delivery available at additional cost.  
- ** Standard 5V micro USB charger (cell phone or tablet style) required, not included.  
+&#42; Usually shipped same day for orders placed by 10 a.m. Monday-Friday US Eastern Time.  Free domestic delivery is via US Priority mail (2-3 day service).  Express and international delivery available at additional cost.  
+&#42;&#42; Standard 5V micro USB charger (cell phone or tablet style) required, not included.  
