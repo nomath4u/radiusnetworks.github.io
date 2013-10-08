@@ -16,7 +16,7 @@ Each fully assembled kit includes:
 * Raspberry Pi computer board
 * Bluetooth LE dongle
 * 8 MB SD Card, pre-loaded with iBeacon software that's fully compatible with Apple's iBeacon SDK
-* Full instructions for customizing the iBeacon identifiers
+* [Full instructions](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html) for customizing the iBeacon identifiers
 
 Order Today!
 
