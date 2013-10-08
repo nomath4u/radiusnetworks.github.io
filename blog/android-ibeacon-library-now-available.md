@@ -31,7 +31,7 @@ coming months.  In addition to Android 4.3 (SDK version 18), devices also have t
 
 ## Capabilities not in iOS
 
-The library iOS 7 iBeacon APIs as much as possible.  But because Android is a more open platform, you can do some cool things with it
+The library matches the iOS 7 iBeacon APIs as much as possible.  But because Android is a more open platform, you can do some cool things with it
 that you can't on iOS.  For example, you can monitor or range *any* iBeacon in the world, even if you don't know its unique identifier.  You can also ranging in the background, and have your app come to life when you get a specific distance from an iBeacon.
 
 ## Getting Started
