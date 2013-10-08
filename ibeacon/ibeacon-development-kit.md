@@ -20,7 +20,11 @@ Each fully assembled kit includes:
 
 Order Today!
 
-US and Canada orders: <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
+US and Canada Orders:
+
+---
+
+<script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
 <script>
 RenderCBAButton = function(ordervalue) {
 var standard1 = new CBA.Widgets.StandardCheckoutWidget({
@@ -31,6 +35,7 @@ value: ordervalue}
 }).render("cbaxmlButton");
 }
 </script>
+
 <table><tr>
 <td>
 <div id="cbaxmlButton">
