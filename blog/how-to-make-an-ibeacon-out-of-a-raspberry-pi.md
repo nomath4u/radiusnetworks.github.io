@@ -55,6 +55,8 @@ PING www.google.com (74.125.228.116): 56 data bytes
 64 bytes from 74.125.228.116: icmp_seq=1 ttl=55 time=30.908 ms
 ```
 
+If you see output like above, your internet access is working.  Hit Ctrl-c to stop the ping.
+
 #### Step 5: Install Build Packages
 
 ```
@@ -63,7 +65,7 @@ $ sudo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libic
 
 ####Step 6: Download and Uncompress BlueZ
 
-This is the the official Bluetooth stack for Linux and the 5.x series has introduced Bluetooth LE support. The current version is 5.8, it requires a Linux kernel of at least 3.5.  
+This is the the official Bluetooth stack for Linux and the 5.x series has introduced Bluetooth LE support. 
 
 ```
 $ sudo wget www.kernel.org/pub/linux/bluetooth/bluez-5.8.tar.xz
@@ -72,7 +74,9 @@ $ sudo tar xvf bluez-5.8.tar
 $ cd bluez-5.8
 ```
 
-#### Step 7: Configure and Make BlueZ (Note: the make command will take the better part of an hour)
+#### Step 7: Configure and Make BlueZ 
+
+Note: the second command below will take the better part of an hour.  Better find something to do!
 
 ```
 $ sudo ./configure -disable-systemd
@@ -152,6 +156,7 @@ vi editor, but you can use whatever text editor you want.  If using vi, you will
 ```$ vi ibeacon.conf```
 
 And paste in the contents of this block:
+
 ```
 # All values must be in hex form separated by spaces between every two hex digits
 export BLUETOOTH_DEVICE=hci0
@@ -166,6 +171,7 @@ export POWER="c9"
 ```$ vi start```
 
 And paste in the contents of this block:
+
 ```
 #!/bin/sh
 . ./ibeacon.conf
@@ -182,6 +188,7 @@ echo "Complete"
 ```$ vi stop```
 
 And paste in the contents of this block:
+
 ```
 #!/bin/sh
 . ./ibeacon.conf
@@ -202,6 +209,7 @@ chmod 777 stop
 ```$ vi /etc/init.d/ibeacon```
 
 And paste in the contents of this block:
+
 ```
 #!/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:$PATH
@@ -234,6 +242,7 @@ esac
 ```
 
 Finally, type:
+
 ```
 $ update-rc.d ibeacon defaults
 ```
