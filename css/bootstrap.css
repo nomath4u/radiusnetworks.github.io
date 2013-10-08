@@ -5969,6 +5969,7 @@ a.badge:hover {
 
 .info {
   background-color: #transparent;
+  margin-bottom: 50px;
 }
 
 .info h3 {
@@ -5982,7 +5983,7 @@ a.badge:hover {
 footer {
   position: relative;
   min-height: 80px;
-  background-color: #333;
+  background-color: #999;
   color: #f1f1f1;
   bottom: 0;
   margin-top: 50px;
@@ -6139,7 +6140,7 @@ footer {
 }
 
 .marketing {
-margin-bottom: 30px;
+margin-bottom: 50px;
 margin-left: auto;
 margin-right: auto;
     }
