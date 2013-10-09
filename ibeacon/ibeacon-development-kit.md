@@ -21,7 +21,7 @@ Each fully assembled kit includes:
 
 * Raspberry Pi PC
 * Bluetooth LE Module
-* 8 MB SD Card, pre-loaded with iBeacon software that's fully compatible with Apple's iBeacon SDK
+* 8 GB SD Card, pre-loaded with iBeacon software that's fully compatible with Apple's iBeacon SDK
 * [Full instructions](ibeacon-development-kit-instructions.html) for customizing the iBeacon identifiers
 
 Order Today!
