@@ -1,11 +1,7 @@
-www.messageradius.com
+Radius Developer Site
 =====================
 
-Marketing Site for Message Radius
-
-
 This site uses Jekyll to generate the HTML. Please see the [documentation there](http://jekyllrb.com/) for how things work together.
-
 
 Blog Posts
 ----------
