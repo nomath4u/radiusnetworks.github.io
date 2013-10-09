@@ -15,8 +15,7 @@ layout: ibeacon
 
 ---
 
-Get started developing iBeacon apps now with your own dedicated hardware iBeacon.
-plugs in with a ordinary Micro USB A/C adapter, and your app will start getting iBeacon hits within seconds.
+Get started developing iBeacon apps with your own dedicated hardware iBeacon. Powered by a standard 5v micro USB power supply\*\*, you'll have everything you need to test out your awesome iBeacon proximity app ideas.
 
 Each fully assembled kit includes:
 
