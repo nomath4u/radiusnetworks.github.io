@@ -50,6 +50,9 @@ For a BLE Device to work with the Virtual Beacon, it must have low level USB com
 
 * IOGEAR Bluetooth 4.0 USB Micro Adapter (GBU521)
 
+###Reported to work with modifications:
+* Belikin Bluetooth v.4.0 adapter (Broadcom BCM20702 Chip set)  [See Modifications](#BCM20702)
+
 ###Known not to work:
 
 * Cambridge Semiconductor 8510 A10 (incompatible with Bluez stack)
@@ -59,3 +62,29 @@ For a BLE Device to work with the Virtual Beacon, it must have low level USB com
 ## Questions or Issues?
 
 Contact jnebeker _at_ radiusnetworks _dot_ com if you have any questions or need more information.
+
+
+## Notes for specific devices
+
+Note: These modifications have been reported by end-users and have not been verified by Radius Networks.
+
+1. <a name='BCM20702'>BCM20702</a>
+
+```
+Inspect /var/adm/kernel.log you will find something similar to
+
+P:  Vendor=0489 ProdID=e031 Rev=01.12
+S:  Manufacturer=Broadcom Corp
+S:  Product=BCM20702A0
+S:  SerialNumber=3859F9CD2AEE
+
+Execute the following:
+
+$ modprobe btusb
+$ echo "0489 e031" >> /sys/bus/usb/drivers/btusb/new_id
+ 
+Adjust the values in quotes above to match the Vendor and ProdID you find in the log file.
+
+```
+
+
