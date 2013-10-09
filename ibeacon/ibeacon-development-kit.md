@@ -5,7 +5,7 @@ layout: ibeacon
 
 ##iBeacon Development Kit
 
-<img style="margin:10px; height: 200px; border: thin solid #333;float:right;" src='/img/pibeacon.jpg'>
+<img style="margin:20px; height: 200px; border: 2px solid #f5f5f5; float:right; border-radius: 7px;" src='/img/pibeacon.jpg'>
 
 <div style="height: 60px;font-weight:700;padding-bottom:10px;" class="clearfix">
 <div style="height: 60px;float: left;font-size: 32px">$</div>
