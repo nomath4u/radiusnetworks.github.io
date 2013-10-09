@@ -44,17 +44,3 @@ header li {
   padding: 0 8px;
 }
 
-.btn {
-  padding: 5px 15px 5px;
-  color: #fff;
-  background-color: #E56326;
-  border-radius: 4px;
-}
-a.btn {
-  text-decoration:none;
-}
-a.btn:hover {
-  text-decoration:none;
-  color: #fff;
-}
-

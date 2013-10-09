@@ -1,0 +1,19 @@
+.btn {
+  padding: 5px 15px 5px;
+  color: #fff;
+  background-color: rgba(229, 99, 38, 1);
+  border-color: rgba(229, 99, 38, 1);
+  border-radius: 4px;
+  transition: .4s;
+}
+a.btn {
+  text-decoration:none;
+}
+a.btn:hover {
+  text-decoration:none;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: rgba(229, 99, 38, 0.8);
+}
