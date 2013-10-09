@@ -4,7 +4,7 @@ layout: post
 title: How to Make an iBeacon Out of a Raspberry Pi
 ---
 
-Want a standalone iBeacon to use for development?  Here's a procedure you can use to build your own for under $100.  If you don't want to go to the trouble, we can ship you a pre-built development kit including everything below (except the cell phone charger -- you probably have one already!)
+Want a standalone iBeacon to use for development?  Here's a procedure you can use to build your own for under $100.  If you don't want to go to the trouble, we can ship you a pre-built [development kit](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit.html) including everything below (except the cell phone charger -- you probably have one already!)
 
 <img style="margin:10px; height: 200px; border: thin solid #333;float:right;" src='/img/pibeacon.jpg'>
 
