@@ -35,5 +35,3 @@ that you can't on iOS.  For example, you can monitor or range *any* iBeacon in t
 
 If you want to get started using the library, check out the developer documentation in the [github project](https://github.com/RadiusNetworks/android-ibeacon-service).  Before long, you'll need to get your hands on an iBeacon.  If you have a Bluetooth LE-capable iOS device, you can use [Apple's AirLocate sample program](https://developer.apple.com/downloads/index.action?name=WWDC%202013).  We also provide a free [iBeacon Virtual machine](https://github.com/RadiusNetworks/android-ibeacon-service/wiki/Virtual-iBeacon), which requires only a Bluetooth LE dongle on  your computer.  If you want a standalone iBeacon, you can even make one out of a Raspberry Pi.  That's the subject of my next blog post.
 
-
-[See all blog posts](http://developer.radiusnetworks.com/blog)

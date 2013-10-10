@@ -74,4 +74,3 @@ To validate that this was what was going on, we tried changing different values 
 
 Success!  We had reverse engineered the iBeacon bluetooth profile.
 
-[See all blog posts](http://developer.radiusnetworks.com/blog)
