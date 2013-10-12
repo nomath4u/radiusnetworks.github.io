@@ -48,7 +48,9 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 </script>
 </td></tr></table>
 
-U.S. and Canada orders only. For international or express delivery orders, please contact [sales@radiusnetworks.com](mailto:sales@radiusnetworks.com)
+There is an additional cost for international shipping to Canada and Europe.  Shipment does not include extra fees from customs, or additional costs associated with your country. Any orders returned as undeliverable are refunded less actual shipping costs once product is verified in working order.
+
+For other international orders to destinations besides Europe and Canada, please contact [sales@radiusnetworks.com](mailto:sales@radiusnetworks.com)
 
 <div style="font-size:14px;color: #555;">&#42; Usually shipped same day for orders placed by 10 a.m. Monday-Friday US Eastern Time.  Free domestic delivery is via US Priority mail (2-3 day service).  Express and international delivery available at additional cost.</div>
 <div style="font-size:14px;color: #555;">&#42;&#42; Standard 5V micro USB charger (cell phone or tablet style) required, not included.</div>
