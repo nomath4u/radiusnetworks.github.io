@@ -11,7 +11,7 @@ layout: ibeacon
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div></div>
-<div style="font-size: 14px;">Shipping Included. Available now.</div>
+<div style="font-size: 14px;">Shipping Included.  Out of stock due to high demand.  New orders will be are expected to ship starting October 23.</div>
 
 ---
 
@@ -52,5 +52,5 @@ There is an additional cost for international shipping to Canada and Europe.  Sh
 
 For other international orders to destinations besides Europe and Canada, please contact [sales@radiusnetworks.com](mailto:sales@radiusnetworks.com)
 
-<div style="font-size:14px;color: #555;">&#42; Usually shipped same day for orders placed by 10 a.m. Monday-Friday US Eastern Time.  Free domestic delivery is via US Priority mail (2-3 day service).  Express and international delivery available at additional cost.</div>
+<div style="font-size:14px;color: #555;">&#42; Usually shipped same day for in stock orders placed by 10 a.m. Monday-Friday US Eastern Time.  Free domestic delivery is via US Priority mail (2-3 day service).  Express and international delivery available at additional cost.</div>
 <div style="font-size:14px;color: #555;">&#42;&#42; Standard 5V micro USB charger (cell phone or tablet style) required, not included.</div>
