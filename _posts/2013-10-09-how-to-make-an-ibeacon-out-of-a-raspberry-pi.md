@@ -136,7 +136,7 @@ Use the following command to activate advertising on the dongle, this will allow
 sudo hciconfig hci0 leadv 0
 ```
 
-Now take out your cell phone and verify you can see the iBeacon advertisements using AirLocate or iBeaconLocate.
+Now take out your cell phone and verify you can see the iBeacon advertisements using AirLocate or [iBeacon Locate](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en).
 
 You can then disable advertising using the following command, and see them stop:
 
