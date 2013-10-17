@@ -4,11 +4,12 @@
 
 ###Filtering iBeacons
 
-By default, iBeacon Locate will show all visible iBeacons.  You may filter the iBeacons the app sees by going to settings and editing the "iBeacon Region Filter"  These settings allow you to optionally select a proximityUUID, a major, and a minor identifier for the iBeacons you want to see.  Only iBeacons matching the selected field values will be visible by the app.
+By default, iBeacon Locate will show all visible iBeacons.  You may filter the iBeacons the app sees by going to settings and editing the "iBeacon Region Filter"  These settings allow you to optionally select a proximityUUID, a major, and a minor identifier for the iBeacons you want to see.  Only iBeacons matching the entered field values will be visible by the app.
+If you don't want to restrict visible iBeacons to having a field value, leave it blank.
 
 ###Alerting for iBeacons
 
-iBeacon Locate can alert you whenever one or more iBeacons are nearby by displaying an alert.
+iBeacon Locate can alert you whenever one or more iBeacons matching the active filter are nearby by displaying an alert.
 
 This feature can be configured by going to settings, selecting "Monitoring Configuration" and enabling the Notify on Entry, Notify on Exit options.
 
