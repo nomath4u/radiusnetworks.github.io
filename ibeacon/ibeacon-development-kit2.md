@@ -9,7 +9,7 @@ layout: ibeacon
 
 
 
-<table style="border-collapse:collapse;"><tr><td>
+<table style="border-collapse:collapse;"><tr><td style="padding:10px;">
 <div>
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
@@ -29,9 +29,8 @@ value: ordervalue}
 }).render("cbaxmlButton");
 }
 </script>
-
 <table><tr>
-<td style="padding:10px;">
+<td>
 <div id="cbaxmlButton">
 <img src="https://payments.amazon.com/gp/cba/button?cartOwnerId=A2X2PM2U930FCK&size=large&color=orange&background=white"/><br></div>
 <script language="javascript" type="text/javascript">
@@ -61,7 +60,6 @@ value: ordervalue}
 }).render("cbaxmlButton");
 }
 </script>
-
 <table><tr>
 <td>
 <div id="cbaxmlButton">
