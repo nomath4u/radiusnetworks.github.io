@@ -7,14 +7,13 @@ layout: ibeacon
 
 <img style="margin:20px; height: 200px; border: 2px solid #f5f5f5; float:right; border-radius: 7px;" src='/img/pibeacon.jpg'>
 
-<div style="height: 60px;font-weight:700;padding-bottom:10px;" class="clearfix">
+
 
 <table style="border-collapse:collapse;"><tr><td>
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
 <div style="height: 30px;font-size: 12px">Single iBeacon Model</div>
-<div>
 
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
 <script>
