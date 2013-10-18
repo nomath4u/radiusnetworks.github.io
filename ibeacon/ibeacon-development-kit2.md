@@ -9,7 +9,7 @@ layout: ibeacon
 
 <div style="height: 60px;font-weight:700;padding-bottom:10px;" class="clearfix">
 
-<div>
+<div style="float:left;">
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div></div>
@@ -35,7 +35,7 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 </td></tr></table>
 
 </div>
-<div>
+<div style="float:left;">
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div></div>
