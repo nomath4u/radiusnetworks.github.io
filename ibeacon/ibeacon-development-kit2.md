@@ -57,12 +57,12 @@ merchantId: "A2X2PM2U930FCK",
 orderInput: {
 format: "XML",
 value: ordervalue}
-}).render("cbaxmlButton");
+}).render("cbaxmlButton2");
 }
 </script>
 <table><tr>
 <td>
-<div id="cbaxmlButton">
+<div id="cbaxmlButton2">
 <img src="https://payments.amazon.com/gp/cba/button?cartOwnerId=A2X2PM2U930FCK&size=large&color=orange&background=white"/><br></div>
 <script language="javascript" type="text/javascript">
 RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5pZGstMDAxPC9TS1U+PE1lcmNoYW50SWQ+QTJYMlBNMlU5MzBGQ0s8L01lcmNoYW50SWQ+PFRpdGxlPkR1YWwgaUJlYWNvbiBEZXZlbG9wbWVudCBLaXQ8L1RpdGxlPjxEZXNjcmlwdGlvbj5Db21wdXRlciBib2FyZCwgMiBibHVldG9vdGggTEUgZG9uZ2xlLCBhbmQgU0QgY2FyZCB3aXRoIGlCZWFjb24gc29mdHdhcmU8L0Rlc2NyaXB0aW9uPjxQcmljZT48QW1vdW50PjE0OS45OTwvQW1vdW50PjxDdXJyZW5jeUNvZGU+VVNEPC9DdXJyZW5jeUNvZGU+PC9QcmljZT48UXVhbnRpdHk+MTwvUXVhbnRpdHk+PFdlaWdodD48QW1vdW50PjAuMjU8L0Ftb3VudD48VW5pdD5sYjwvVW5pdD48L1dlaWdodD48RnVsZmlsbG1lbnROZXR3b3JrPk1FUkNIQU5UPC9GdWxmaWxsbWVudE5ldHdvcms+PC9JdGVtPjwvSXRlbXM+PC9DYXJ0PjwvT3JkZXI+;signature:TrzPb9owYAqAe0n0wfwAHvv/lgs=");
