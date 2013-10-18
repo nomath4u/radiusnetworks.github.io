@@ -10,9 +10,11 @@ layout: ibeacon
 
 
 <table style="border-collapse:collapse;"><tr><td>
+<div>
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
+</div>
 <div style="height: 30px;font-size: 12px">Single iBeacon Model</div>
 <div>
 
@@ -40,9 +42,11 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 </div>
 </td>
 <td>
+<div>
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
+</div>
 <div style="height: 30px;font-size: 12px">Dual iBeacon Model</div>
 <div>
 
