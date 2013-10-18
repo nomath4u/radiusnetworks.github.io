@@ -15,7 +15,7 @@ layout: ibeacon
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
 </div>
-<div style="height: 30px;font-size: 12px">Single iBeacon Model</div>
+<div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">Single iBeacon Model</div>
 <div>
 
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
@@ -31,7 +31,7 @@ value: ordervalue}
 </script>
 
 <table><tr>
-<td>
+<td style="padding:10px;">
 <div id="cbaxmlButton">
 <img src="https://payments.amazon.com/gp/cba/button?cartOwnerId=A2X2PM2U930FCK&size=large&color=orange&background=white"/><br></div>
 <script language="javascript" type="text/javascript">
@@ -41,13 +41,13 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 
 </div>
 </td>
-<td>
+<td style="padding:10px;">
 <div>
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
 </div>
-<div style="height: 30px;font-size: 12px">Dual iBeacon Model</div>
+<div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">Dual iBeacon Model</div>
 <div>
 
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
