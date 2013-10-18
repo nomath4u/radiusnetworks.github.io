@@ -9,11 +9,11 @@ layout: ibeacon
 
 <div style="height: 60px;font-weight:700;padding-bottom:10px;" class="clearfix">
 
-<div style="float:left;">
+<table style="border-collapse:collapse;"><tr><td>
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
-
+<div>
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
 <script>
 RenderCBAButton = function(ordervalue) {
@@ -30,13 +30,14 @@ value: ordervalue}
 <script language="javascript" type="text/javascript">RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5pay0wMDE8L1NLVT48TWVyY2hhbnRJZD5BMlgyUE0yVTkzMEZDSzwvTWVyY2hhbnRJZD48VGl0bGU+aUJlYWNvbiBEZXZlbG9wbWVudCBLaXQ8L1RpdGxlPjxEZXNjcmlwdGlvbj5jb21wdXRlciBib2FyZCwgYmx1ZXRvb3RoIExFIGRvbmdsZSwgYW5kIFNEIGNhcmQgd2l0aCBpQmVhY29uIHNvZnR3YXJlPC9EZXNjcmlwdGlvbj48UHJpY2U+PEFtb3VudD45OS45OTwvQW1vdW50PjxDdXJyZW5jeUNvZGU+VVNEPC9DdXJyZW5jeUNvZGU+PC9QcmljZT48UXVhbnRpdHk+MTwvUXVhbnRpdHk+PFdlaWdodD48QW1vdW50PjAuMjU8L0Ftb3VudD48VW5pdD5sYjwvVW5pdD48L1dlaWdodD48RnVsZmlsbG1lbnROZXR3b3JrPk1FUkNIQU5UPC9GdWxmaWxsbWVudE5ldHdvcms+PC9JdGVtPjwvSXRlbXM+PC9DYXJ0PjwvT3JkZXI+;signature:h9VjCybDaCkHcZt66qgcaA+8YDA=");</script>
 </div>
 </div>
-
+</td>
+<td>
 <div style="float:left;">
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
 </div>
-
+</td></tr></table>
 
 <div style="font-size: 14px;">Shipping Included.  Backordered due to high demand.  New orders will ship starting October 23.</div>
 
