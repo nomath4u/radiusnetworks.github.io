@@ -1,9 +1,127 @@
 
-
 ## CoreBluetooth Doesn't Let You See iBeacons
 
+How about just passing a nil value for the ProximityUUID when constructing a CLBeaconRegion?  That doesn't work so well.  If you try this:
 
-If you try to pass a nil value to 
 ```
-2013-10-21 12:40:35.272 AirLocate[528:60b] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil'
+CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:nil identifier:@"myUniqueIdentifer"];
+```
+
+You will get:
+
+```
+2013-10-21 13:12:44.947 AirLocate[537:60b] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil'
+```
+
+Another alternative is to try the CoreBluetooth APIs to see iBeacons.  Since iBeacons are simply CoreBluetooth advertisements, it seems reasonable that we could just look for advertisements with these APIs, and read out the identifiers.
+
+I wrote up a simple app that attempts this.  See below:
+
+```
+#import "RCBeaconListViewController.h"
+#import <CoreBluetooth/CoreBluetooth.h>
+
+@interface RCBeaconListViewController ()
+{
+  CBCentralManager *mgr;
+  CBPeripheral *_peripheral;
+}
+@property (readwrite, nonatomic) CBCentralManager *mgr;
+@end
+
+@implementation RCBeaconListViewController
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _peripheral = nil;
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"loaded test view for finding beacons using core bluetooth");
+    [self scanForIBeaconsUsingCoreBluetooth];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)scanForIBeaconsUsingCoreBluetooth
+{
+    mgr = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+}
+    
+    
+- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
+        
+    NSLog([NSString stringWithFormat:@"I see an advertisement with identifer: %@, state: %@, name: %@, services: %@,  description: %@",[peripheral identifier],[peripheral state],[peripheral name],[peripheral services],[advertisementData description]]);
+    NSString *key;
+
+    if (_peripheral == nil) {
+        NSLog(@"Trying to connect to peripheral");
+        _peripheral = peripheral;
+        _peripheral.delegate = (id) self;
+        [central connectPeripheral:_peripheral options:nil];
+    }
+}
+
+-(void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral{
+    if (peripheral == nil) {
+        NSLog(@"connect callback has nil peripheral");
+    }
+    else {
+        NSLog([NSString stringWithFormat:@"Connected to peripheral with identifer: %@, state: %d, name: %@, services: %@",[peripheral identifier],[peripheral state],[peripheral name],[peripheral services]]);
+        
+        NSLog(@"discovering services...");
+        _peripheral = peripheral;
+        _peripheral.delegate = (id) self;
+        [_peripheral discoverServices:nil];
+    }
+}
+
+-(void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSArray *)serviceUuids {
+    NSLog(@"discovered a peripheral's services: %@", serviceUuids);
+}
+
+    
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central
+{
+        switch (central.state) {
+            case CBCentralManagerStatePoweredOn:
+            {
+                NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:NO], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
+                
+                [mgr scanForPeripheralsWithServices:nil options:options];
+                 NSLog(@"I just started scanning for peripherals");
+                
+                break;
+            }   
+                
+        }
+}
+
+@end
+
+```
+
+The results are:
+
+```
+2013-10-21 13:24:27.181 iBeacon Tester[558:60b] loaded test view for finding beacons using core bluetooth
+2013-10-21 13:24:27.206 iBeacon Tester[558:60b] I just started scanning for peripherals
+2013-10-21 13:24:33.041 iBeacon Tester[558:60b] I see an advertisement with identifer: <__NSConcreteUUID 0x1653a960> 1DA1386A-9830-FC00-59F8-CBC1A22531BB, state: (null), name: (null), services: (null),  description: {
+    kCBAdvDataChannel = 38;
+    kCBAdvDataIsConnectable = 1;
+}
+2013-10-21 13:24:33.043 iBeacon Tester[558:60b] Trying to connect to peripheral
+2013-10-21 13:24:35.620 iBeacon Tester[558:60b] Connected to peripheral with identifer: <__NSConcreteUUID 0x1653a960> 1DA1386A-9830-FC00-59F8-CBC1A22531BB, state: 2, name: (null), services: (null)
+2013-10-21 13:24:35.621 iBeacon Tester[558:60b] discovering services...
+
 ```
