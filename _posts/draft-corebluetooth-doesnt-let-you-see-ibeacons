@@ -1,0 +1,9 @@
+
+
+## CoreBluetooth Doesn't Let You See iBeacons
+
+
+If you try to pass a nil value to 
+```
+2013-10-21 12:40:35.272 AirLocate[528:60b] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil'
+```
