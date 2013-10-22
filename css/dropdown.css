@@ -40,7 +40,7 @@ ul.dropdown li ul li:first-child {
   border-top: thin solid #eee;
 }
 ul.dropdown li ul li:hover { background: #eee; }
-ul.dropdown li:hover ul {
+ul.dropdown li:hover ul, ul.dropdown li:target ul {
   display: block;
   opacity: 1;
   visibility: visible;
