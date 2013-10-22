@@ -4,11 +4,12 @@ layout: post
 title: CoreBluetooth Doesn't Let You See iBeacons
 ---
 
-One of the features of Radius Networks' [Android iBeacon Library](http://developer.radiusnetworks.com/ibeacon/android/) is the ability to monitor or range for any iBeacon regardless of its ProximityUUID.  
-Essentially, you can construct a Region object (the Android Library's equivalent of iOS' CLBeaconRegion) with the ProximityUUID set to null, allowing you to
+One of the features of Radius Networks' [Android iBeacon Library](http://developer.radiusnetworks.com/ibeacon/android/) is the ability to monitor or range for any iBeacon regardless of its ProximityUUID.  Essentially, you can construct a Region object (the Android Library's equivalent of iOS' CLBeaconRegion) with the ProximityUUID set to null, allowing you to
 see any iBeacon.
 
-This begs the question, is there any way to do this on iOS?  The short answer is no.  The long answer involves trying a couple of different ways:
+This begs the question, is there any way to do this on iOS?  The short answer is no.  
+
+The long answer involves trying a couple of different ways:
 
 ## CoreLocation APIs
 
@@ -100,7 +101,8 @@ This code does the follwing:
 1. It initializes the CBCentralManager in the viewDidLoad method.
 2. Once CBCentralManager is intitialized, the centralManagerDidUpdateState method starts scanning for any BluetoothLE peripheral, regardless of offered services.
 3. For each BluetoothLE advertisement that is seen, the didDiscoverPeripheral method is called, which logs everything visible about that peripheral.
-4. That same method then requests discovery of services for that peripheral, which are logged in the didDiscoverServices method.
+4. That same method then requests a connection to the peripheral, which causes the didConnectPeripheral method to be called.
+4. The didConnectPeripheral method then requests discovery of services for that peripheral, which are logged in the didDiscoverServices method.
 
 I ran this code on an iPhone while an iBeacon was transmitting in the vicinity, then looked at the logs.  As expected, I did see something show up in the logs once per second,
 and only when that iBeacon was transmitting.  What I saw, however, wasn't very useful:
@@ -123,6 +125,7 @@ proximityUUID.  And after writing out to the log every other field accessible fr
 fields of the iBeacon.  
 
 Just for fun, I also added code to request a list of services for the CBPeripheral.  (A more functional BluetoothLE device can be queried for the services it offers, but iBeacons are transmit only and don't respond to these queries.)  
+
 Not surprisingly, the iBeacon CBPeripheral doesn't give you a list of sevices.  The didDiscoverServices method never got called.
 
 ## Conclusions
