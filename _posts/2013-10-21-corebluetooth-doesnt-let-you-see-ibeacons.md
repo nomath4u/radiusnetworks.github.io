@@ -1,6 +1,10 @@
-# CoreBluetooth Doesn't Let You See iBeacons
+---
+author: David G. Young
+layout: post
+title: CoreBluetooth Doesn't Let You See iBeacons
+---
 
-One of the features of Radius Networks' Android iBeacon Library is the ability to monitor or range for any iBeacon regardless of its ProximityUUID.  
+One of the features of Radius Networks' [Android iBeacon Library](http://developer.radiusnetworks.com/ibeacon/android/) is the ability to monitor or range for any iBeacon regardless of its ProximityUUID.  
 Essentially, you can construct a Region object (the Android Library's equivalent of iOS' CLBeaconRegion) with the ProximityUUID set to null, allowing you to
 see any iBeacon.
 
