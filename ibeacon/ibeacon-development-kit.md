@@ -73,7 +73,7 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 </div>
 </td></tr></table>
 
-<div style="font-size: 14px;">Shipping Included.*  Backordered due to high demand.  New orders will ship starting October 23.</div>
+<div style="font-size: 14px;">Shipping Included.*  IN STOCK</div>
 
 ---
 
