@@ -31,7 +31,7 @@ If you ever get asked for a password after entering a command, always enter rasp
 3. A computer monitor with HDMI input
 4. An HDMI cable
 5. A network cable for internet access
-6. An iOS/Android device with AirLocate/iBeaconLocate, or some other tool you can use to see iBeacons
+6. An iOS/Android device with AirLocate / [iBeacon Locate](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en), or some other tool you can use to see iBeacons
 
 ###Procedure
 
@@ -80,7 +80,7 @@ $ cd bluez-5.8
 Note: the second command below will take the better part of an hour.  Better find something to do!
 
 ```
-$ sudo ./configure -disable-systemd
+$ sudo ./configure --disable-systemd
 $ sudo make
 $ sudo make install
 ```
@@ -136,7 +136,7 @@ Use the following command to activate advertising on the dongle, this will allow
 sudo hciconfig hci0 leadv 0
 ```
 
-Now take out your cell phone and verify you can see the iBeacon advertisements using AirLocate or iBeaconLocate.
+Now take out your cell phone and verify you can see the iBeacon advertisements using AirLocate or [iBeacon Locate](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en).
 
 You can then disable advertising using the following command, and see them stop:
 
