@@ -7,7 +7,7 @@ ul.dropdown {
   margin:0;
 }
 ul.dropdown li {
-  display: table-cell;
+  display: inline-block;
   position: relative;
   cursor: pointer;
   transition: all 0.2s;

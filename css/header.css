@@ -30,18 +30,17 @@ header .brand img {
 
 header ul.nav {
   float: right;
-  display:table;
+  display:block;
   list-style:none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 header li {
-  height:50px;
   display:table-cell;
   vertical-align:middle;
   font-size: 14px;
-  padding: 0 8px;
+  padding: 14px 8px;
 }
 
 header li ul li {
