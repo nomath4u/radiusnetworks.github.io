@@ -11,7 +11,7 @@ This begs the question, is there any way to do this on iOS?  The short answer is
 
 The long answer involves trying a couple of different ways:
 
-## CoreLocation APIs
+### CoreLocation APIs
 
 Using the CoreLocation APIs, the obvious way to look for all iBeacons is to pass a nil value for the ProximityUUID when constructing a CLBeaconRegion.  But that doesn't work.  If you try this:
 
@@ -27,7 +27,7 @@ You will get:
 
 Clearly, that doesn't work.  It's time to try something else.
 
-## CoreBluetooth APIs
+### CoreBluetooth APIs
 
 Another alternative is to try the CoreBluetooth APIs to see iBeacons.  Since iBeacons are simply BluetoothLE advertisements, it seems reasonable that we could just look for advertisements with these APIs, and read out the identifiers.
 This is exactly what the Android iBeacon Library does.
@@ -96,7 +96,7 @@ I wrote up a simple ViewController that tries to do this.  Here is an excerpt:
 
 ```
 
-This code does the follwing:
+This code does the following:
 
 1. It initializes the CBCentralManager in the viewDidLoad method.
 2. Once CBCentralManager is intitialized, the centralManagerDidUpdateState method starts scanning for any BluetoothLE peripheral, regardless of offered services.
@@ -128,7 +128,7 @@ Just for fun, I also added code to request a list of services for the CBPeripher
 
 Not surprisingly, the iBeacon CBPeripheral doesn't give you a list of sevices.  The didDiscoverServices method never got called.
 
-## Conclusions
+### Conclusions
 
 1. There doesn't seem to be any hack to look for an arbitrary iBeacon on iOS -- you have to know at least the ProximityUUID to see one.
 2. Using CoreBluetooth is pretty useless for working with iBeacons.  You can see their advertisements, and measure the signal strength, but you can't see any of the identifiers, and thus, you don't even know for sure if any advertisement you see is an iBeacon at all, versus any other BluetoothLE device.
