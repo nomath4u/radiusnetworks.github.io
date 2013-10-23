@@ -7,7 +7,7 @@ title: CoreBluetooth Doesn't Let You See iBeacons
 One of the features of Radius Networks' [Android iBeacon Library](http://developer.radiusnetworks.com/ibeacon/android/) is the ability to monitor or range for any iBeacon regardless of its ProximityUUID.  Essentially, you can construct a Region object (the Android Library's equivalent of iOS' CLBeaconRegion) with the ProximityUUID set to null, allowing you to
 see any iBeacon.
 
-This begs the question, is there any way to do this on iOS?  The short answer is no.  
+This begs the question, is there any way to do this on iOS?  The short answer is no.
 
 The long answer involves trying a couple of different ways:
 
@@ -15,7 +15,7 @@ The long answer involves trying a couple of different ways:
 
 Using the CoreLocation APIs, the obvious way to look for all iBeacons is to pass a nil value for the ProximityUUID when constructing a CLBeaconRegion.  But that doesn't work.  If you try this:
 
-```
+```objective-c
 CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:nil identifier:@"myUniqueIdentifer"];
 ```
 
@@ -34,8 +34,7 @@ This is exactly what the Android iBeacon Library does.
 
 I wrote up a simple ViewController that tries to do this.  Here is an excerpt:
 
-```
-
+```objective-c
 ...
 
 - (void)viewDidLoad
@@ -52,18 +51,18 @@ I wrote up a simple ViewController that tries to do this.  Here is an excerpt:
             case CBCentralManagerStatePoweredOn:
             {
                 NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
-                
+
                 [_manager scanForPeripheralsWithServices:nil options:options];
                  NSLog(@"I just started scanning for peripherals");
-                
+
                 break;
-            }   
-                
+            }
+
         }
 }
-    
+
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
-        
+
     NSLog([NSString stringWithFormat:@"I see an advertisement with identifer: %@, state: %@, name: %@, services: %@,  description: %@",[peripheral identifier],[peripheral state],[peripheral name],[peripheral services],[advertisementData description]]);
     NSString *key;
 
@@ -81,7 +80,7 @@ I wrote up a simple ViewController that tries to do this.  Here is an excerpt:
     }
     else {
         NSLog([NSString stringWithFormat:@"Connected to peripheral with identifer: %@, state: %d, name: %@, services: %@",[peripheral identifier],[peripheral state],[peripheral name],[peripheral services]]);
-        
+
         NSLog(@"discovering services...");
         _peripheral = peripheral;
         _peripheral.delegate = (id) self;
@@ -92,8 +91,6 @@ I wrote up a simple ViewController that tries to do this.  Here is an excerpt:
 -(void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSArray *)serviceUuids {
     NSLog(@"discovered a peripheral's services: %@", serviceUuids);
 }
-
-
 ```
 
 This code does the following:
@@ -117,14 +114,13 @@ and only when that iBeacon was transmitting.  What I saw, however, wasn't very u
 2013-10-21 13:24:33.043 iBeacon Tester[558:60b] Trying to connect to peripheral
 2013-10-21 13:24:35.620 iBeacon Tester[558:60b] Connected to peripheral with identifer: <__NSConcreteUUID 0x1653a960> 1DA1386A-9830-FC00-59F8-CBC1A22531BB, state: 2, name: (null), services: (null)
 2013-10-21 13:24:35.621 iBeacon Tester[558:60b] discovering services...
-
 ```
 
 The advertisement mentioned in the logs is indeed the iBeacon's advertisement.  If I stopped the iBeacon, I didn't see it.  But the UUID logged has nothing to do with the iBeacon's
 proximityUUID.  And after writing out to the log every other field accessible from the CBPeripheral class, it was clear that nothing would give me the ProximityUUID, the major or the minor
-fields of the iBeacon.  
+fields of the iBeacon.
 
-Just for fun, I also added code to request a list of services for the CBPeripheral.  (A more functional BluetoothLE device can be queried for the services it offers, but iBeacons are transmit only and don't respond to these queries.)  
+Just for fun, I also added code to request a list of services for the CBPeripheral.  (A more functional BluetoothLE device can be queried for the services it offers, but iBeacons are transmit only and don't respond to these queries.)
 
 Not surprisingly, the iBeacon CBPeripheral doesn't give you a list of sevices.  The didDiscoverServices method never got called.
 
