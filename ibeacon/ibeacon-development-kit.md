@@ -5,50 +5,32 @@ layout: ibeacon
 
 ##iBeacon Development Kit
 
-<img style="margin:20px; height: 200px; border: 2px solid #f5f5f5; float:right; border-radius: 7px;" src='/img/pibeacon.jpg'>
+<img style="height: 200px; border: 2px solid #f5f5f5; float:right; border-radius: 7px;" src='/img/pibeacon.jpg'>
 
 
 <style>.amazon-button p { display:none; }</style>
-<table style="border-collapse:collapse;"><tr><td style="padding:10px;">
-<div>
+<div style="">
+<table style="border-collapse:collapse;">
+<tr>
+<td style="padding:10px 10px 10px 0; float: left;">
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
-</div>
 <div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">Single iBeacon Model</div>
-
-<div class="amazon-button">
-
-<script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
-<script>
-RenderCBAButton = function(ordervalue) {
-var standard1 = new CBA.Widgets.StandardCheckoutWidget({
-merchantId: "A2X2PM2U930FCK",
-orderInput: {
-format: "XML",
-value: ordervalue}
-}).render("cbaxmlButton");
-}
-</script>
-<table><tr>
-<td>
-<div id="cbaxmlButton">
-<img src="https://payments.amazon.com/gp/cba/button?cartOwnerId=A2X2PM2U930FCK&size=large&color=orange&background=white"/><br></div>
-<script language="javascript" type="text/javascript">
-RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5pZGstMDAxPC9TS1U+PE1lcmNoYW50SWQ+QTJYMlBNMlU5MzBGQ0s8L01lcmNoYW50SWQ+PFRpdGxlPmlCZWFjb24gRGV2ZWxvcG1lbnQgS2l0PC9UaXRsZT48RGVzY3JpcHRpb24+Q29tcHV0ZXIgYm9hcmQsIGJsdWV0b290aCBMRSBkb25nbGUsIGFuZCBTRCBjYXJkIHdpdGggaUJlYWNvbiBzb2Z0d2FyZTwvRGVzY3JpcHRpb24+PFByaWNlPjxBbW91bnQ+OTkuOTk8L0Ftb3VudD48Q3VycmVuY3lDb2RlPlVTRDwvQ3VycmVuY3lDb2RlPjwvUHJpY2U+PFF1YW50aXR5PjE8L1F1YW50aXR5PjxXZWlnaHQ+PEFtb3VudD4wLjI1PC9BbW91bnQ+PFVuaXQ+bGI8L1VuaXQ+PC9XZWlnaHQ+PEZ1bGZpbGxtZW50TmV0d29yaz5NRVJDSEFOVDwvRnVsZmlsbG1lbnROZXR3b3JrPjwvSXRlbT48L0l0ZW1zPjwvQ2FydD48L09yZGVyPg==;signature:rhb41vV6MGCZDlMyNPmZ2rsb2us=");
-</script>
-</td></tr></table>
-
-</div>
 </td>
-<td style="padding:10px;">
-<div>
+<td style="padding:10px; float: left; margin-left: 10px;">
+
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
-</div>
 <div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">Dual iBeacon Model</div>
+</td>
+</tr>
+<tr>
+<td>
 <div class="amazon-button">
+<table>
+<tr>
 
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
 <script>
@@ -61,17 +43,26 @@ value: ordervalue}
 }).render("cbaxmlButton");
 }
 </script>
-<table><tr>
+
+
+<td>
+<select name="order-input" ONCHANGE="javascript:RenderCBAButton(this.options[this.selectedIndex].value);">
+<option value="type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5pYmstMDAxPC9TS1U+PE1lcmNoYW50SWQ+QTJYMlBNMlU5MzBGQ0s8L01lcmNoYW50SWQ+PFRpdGxlPlNpbmdsZSBpQmVhY29uIERldmVsb3BtZW50IEtpdDwvVGl0bGU+PERlc2NyaXB0aW9uPlNpbmdsZSBpQmVhY29uIERldmVsb3BtZW50IEtpdDwvRGVzY3JpcHRpb24+PFByaWNlPjxBbW91bnQ+OTkuOTk8L0Ftb3VudD48Q3VycmVuY3lDb2RlPlVTRDwvQ3VycmVuY3lDb2RlPjwvUHJpY2U+PFF1YW50aXR5PjE8L1F1YW50aXR5PjxXZWlnaHQ+PEFtb3VudD4uNTwvQW1vdW50PjxVbml0PmxiPC9Vbml0PjwvV2VpZ2h0PjxGdWxmaWxsbWVudE5ldHdvcms+TUVSQ0hBTlQ8L0Z1bGZpbGxtZW50TmV0d29yaz48L0l0ZW0+PC9JdGVtcz48L0NhcnQ+PC9PcmRlcj4=;signature:R8ErEMh+JJcPjW5qX5p5qVCblUg=">$99.99 - Single iBeacon Development Kit</option><option value="type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5pYmstMDAyPC9TS1U+PE1lcmNoYW50SWQ+QTJYMlBNMlU5MzBGQ0s8L01lcmNoYW50SWQ+PFRpdGxlPkR1YWwgaUJlYWNvbiBEZXZlbG9wbWVudCBLaXQ8L1RpdGxlPjxEZXNjcmlwdGlvbj5EdWFsIGlCZWFjb24gRGV2ZWxvcG1lbnQgS2l0PC9EZXNjcmlwdGlvbj48UHJpY2U+PEFtb3VudD4xNDkuOTk8L0Ftb3VudD48Q3VycmVuY3lDb2RlPlVTRDwvQ3VycmVuY3lDb2RlPjwvUHJpY2U+PFF1YW50aXR5PjE8L1F1YW50aXR5PjxXZWlnaHQ+PEFtb3VudD4uNzwvQW1vdW50PjxVbml0PmxiPC9Vbml0PjwvV2VpZ2h0PjxGdWxmaWxsbWVudE5ldHdvcms+TUVSQ0hBTlQ8L0Z1bGZpbGxtZW50TmV0d29yaz48L0l0ZW0+PC9JdGVtcz48L0NhcnQ+PC9PcmRlcj4=;signature:YZ7pyLvZP6oU7Cr7XitOJWOexJs=">$149.99 - Dual iBeacon Development Kit</option></select>
+</td>
 <td>
 <div id="cbaxmlButton">
-<img src="https://payments.amazon.com/gp/cba/button?cartOwnerId=A2X2PM2U930FCK&size=large&color=orange&background=white"/><br></div>
+<img src="https://payments.amazon.com/gp/cba/button?cartOwnerId=A2X2PM2U930FCK&size=medium&color=orange&background=white"/><br></div>
 <script language="javascript" type="text/javascript">
-RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5pZGstMDAxPC9TS1U+PE1lcmNoYW50SWQ+QTJYMlBNMlU5MzBGQ0s8L01lcmNoYW50SWQ+PFRpdGxlPkR1YWwgaUJlYWNvbiBEZXZlbG9wbWVudCBLaXQ8L1RpdGxlPjxEZXNjcmlwdGlvbj5Db21wdXRlciBib2FyZCwgMiBibHVldG9vdGggTEUgZG9uZ2xlLCBhbmQgU0QgY2FyZCB3aXRoIGlCZWFjb24gc29mdHdhcmU8L0Rlc2NyaXB0aW9uPjxQcmljZT48QW1vdW50PjE0OS45OTwvQW1vdW50PjxDdXJyZW5jeUNvZGU+VVNEPC9DdXJyZW5jeUNvZGU+PC9QcmljZT48UXVhbnRpdHk+MTwvUXVhbnRpdHk+PFdlaWdodD48QW1vdW50PjAuMjU8L0Ftb3VudD48VW5pdD5sYjwvVW5pdD48L1dlaWdodD48RnVsZmlsbG1lbnROZXR3b3JrPk1FUkNIQU5UPC9GdWxmaWxsbWVudE5ldHdvcms+PC9JdGVtPjwvSXRlbXM+PC9DYXJ0PjwvT3JkZXI+;signature:TrzPb9owYAqAe0n0wfwAHvv/lgs=");
+RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5pYmstMDAxPC9TS1U+PE1lcmNoYW50SWQ+QTJYMlBNMlU5MzBGQ0s8L01lcmNoYW50SWQ+PFRpdGxlPlNpbmdsZSBpQmVhY29uIERldmVsb3BtZW50IEtpdDwvVGl0bGU+PERlc2NyaXB0aW9uPlNpbmdsZSBpQmVhY29uIERldmVsb3BtZW50IEtpdDwvRGVzY3JpcHRpb24+PFByaWNlPjxBbW91bnQ+OTkuOTk8L0Ftb3VudD48Q3VycmVuY3lDb2RlPlVTRDwvQ3VycmVuY3lDb2RlPjwvUHJpY2U+PFF1YW50aXR5PjE8L1F1YW50aXR5PjxXZWlnaHQ+PEFtb3VudD4uNTwvQW1vdW50PjxVbml0PmxiPC9Vbml0PjwvV2VpZ2h0PjxGdWxmaWxsbWVudE5ldHdvcms+TUVSQ0hBTlQ8L0Z1bGZpbGxtZW50TmV0d29yaz48L0l0ZW0+PC9JdGVtcz48L0NhcnQ+PC9PcmRlcj4=;signature:R8ErEMh+JJcPjW5qX5p5qVCblUg=");
 </script>
-</td></tr></table>
-
+</td>
+</tr>
+</table>
 </div>
-</td></tr></table>
+</td>
+</tr>
+</table>
+</div>
 
 <div style="font-size: 14px;">Shipping Included.*  IN STOCK</div>
 
