@@ -48,7 +48,8 @@ For a BLE Device to work with the Virtual Beacon, it must have low level USB com
 
 ###Known to work:
 
-* IOGEAR Bluetooth 4.0 USB Micro Adapter GBU521 (Broadcomm BCM20702A0 Chip set)
+* [IOGEAR Bluetooth 4.0 USB Micro Adapter GBU521](http://www.amazon.com/dp/B007GFX0PY/ref=pe_385040_30332190_pe_175190_21431760_M3T1_ST1_dp_1) (Broadcomm BCM20702A0 Chip set)
+* [Plugable USB-BT4LE Bluetooth 4.0 USB Adapter for Windows and Linux PCs](http://plugable.com/products/usb-bt4le)
 
 ###Reported to work with modifications:
 * Belkin Bluetooth v.4.0 adapter (Broadcom BCM20702 Chip set)  [See Modifications](#BCM20702)
