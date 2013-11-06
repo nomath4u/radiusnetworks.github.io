@@ -20,7 +20,7 @@ Here are the main things your are going to need:
 
 After you’ve gotten your hands on a development kit and installed all the software listed above, it’s time to get to work!
 
-Here are the parts from the dev kit that we are going to be using.				
+Here are the parts from the dev kit that we are going to be using.
 
 <img style="margin-top:-40px; height: 200px; border: thin solid #999; float:right; border-radius: 4px;" src='/img/TI-2.png'>
 
@@ -54,13 +54,13 @@ For simplicity, we are going to work with the CC2540 configuration, but there ar
 
 ###Modify the Code
 
-In the App folder, double-click on the simpleBLEBroadcaster.c file to open it in the editing window. Scroll down until you find this section of code.
+In the App folder, double-click on the `simpleBLEBroadcaster.c` file to open it in the editing window. Scroll down until you find this section of code.
 
 ```
 // GAP - Advertisement data (max size = 31 bytes, though this is
 // best kept short to conserve power while advertisting)
-static uint8 advertData[] = 
-{ 
+static uint8 advertData[] =
+{
   // Flags; this sets the device to use limited discoverable
   // mode (advertises for 30 seconds at a time) instead of general
   // discoverable mode (advertises indefinitely)
@@ -78,27 +78,26 @@ static uint8 advertData[] =
 ```
 Let’s change this to get rid of those flags and to specify the advertising data to match the AirLocate example.
 
-
-<b>UUID: E2C56DB5-DFFB-48D2-B060-D0F5A71096E0</b>
-<b>Major: 1 (0x0001)</b>
-<b>Minor: 1 (0x0001)</b>
-<b>Measured Power: -59 (0xc5)</b>
+* UUID: `E2C56DB5-DFFB-48D2-B060-D0F5A71096E0`
+* Major: `1 (0x0001)`
+* Minor: `1 (0x0001)`
+* Measured Power: `-59 (0xc5)`
 
 Replace that code with this:
 
 ```
 // GAP - Advertisement data (max size = 31 bytes, though this is
 // best kept short to conserve power while advertisting)
-static uint8 advertData[] = 
-{ 
-  // 25 byte ibeacon advertising data"
+static uint8 advertData[] =
+{
+  // 25 byte ibeacon advertising data
   // Preamble: 0x4c000215
   // UUID: E2C56DB5-DFFB-48D2-B060-D0F5A71096E0
   // Major: 1 (0x0001)
   // Minor: 1 (0x0001)
   // Measured Power: -59 (0xc5)
-  0x1A,   // length of this data including the data type byte
-  GAP_ADTYPE_MANUFACTURER_SPECIFIC,      // manufacturer specific advertisement data type
+  0x1A, // length of this data including the data type byte
+  GAP_ADTYPE_MANUFACTURER_SPECIFIC, // manufacturer specific advertisement data type
   0x4c,
   0x00,
   0x02,
@@ -131,8 +130,8 @@ Where `0x4c000215` is the iBeacon preamble and the rest of the bytes correspond 
 Next, find this code which defines the advertisement type:
 
 ```
-//uint8 advType = GAP_ADTYPE_ADV_NONCONN_IND;   // use non-connectable advertisements
- uint8 advType = GAP_ADTYPE_ADV_DISCOVER_IND; // use scannable unidirected advertisements
+//uint8 advType = GAP_ADTYPE_ADV_NONCONN_IND;// use non-connectable advertisements
+uint8 advType = GAP_ADTYPE_ADV_DISCOVER_IND; // use scannable unidirected advertisements
 ```
 Change it to non-connectable by uncommenting the first line and commented out the second line.
 
@@ -144,46 +143,45 @@ Below this, you’ll find where we set the GAP Role parameters
 
 ```
 // Set the GAP Role Parameters
-	GAPRole_SetParameter( GAPROLE_ADVERT_ENABLED, sizeof( uint8 ), &initial_advertising_enable );
-	GAPRole_SetParameter( GAPROLE_ADVERT_OFF_TIME, sizeof( uint16 ), &gapRole_AdvertOffTime );
-	
-	GAPRole_SetParameter( GAPROLE_SCAN_RSP_DATA, sizeof ( scanRspData ), scanRspData );
-	GAPRole_SetParameter( GAPROLE_ADVERT_DATA, sizeof( advertData ), advertData );
-	GAPRole_SetParameter( GAPROLE_ADV_EVENT_TYPE, sizeof( uint8 ), &advType );
+GAPRole_SetParameter( GAPROLE_ADVERT_ENABLED, sizeof( uint8 ), &initial_advertising_enable );
+GAPRole_SetParameter( GAPROLE_ADVERT_OFF_TIME, sizeof( uint16 ), &gapRole_AdvertOffTime );
+
+GAPRole_SetParameter( GAPROLE_SCAN_RSP_DATA, sizeof ( scanRspData ), scanRspData );
+GAPRole_SetParameter( GAPROLE_ADVERT_DATA, sizeof( advertData ), advertData );
+GAPRole_SetParameter( GAPROLE_ADV_EVENT_TYPE, sizeof( uint8 ), &advType );
 ```
 
-Comment out the 2 lines setting the GAPROLE_ADVERT_OFF_TIME and the GAPROLE_SCAN_RSP_DATA since iBeacons don’t ever stop advertising and iBeacons don’t tell you their name or provide any other response data.
+Comment out the 2 lines setting the `GAPROLE_ADVERT_OFF_TIME` and the `GAPROLE_SCAN_RSP_DATA` since iBeacons don’t ever stop advertising and iBeacons don’t tell you their name or provide any other response data.
 
 ```
 // Set the GAP Role Parameters
-	GAPRole_SetParameter( GAPROLE_ADVERT_ENABLED, sizeof( uint8 ), &initial_advertising_enable );
-	//GAPRole_SetParameter( GAPROLE_ADVERT_OFF_TIME, sizeof( uint16 ), &gapRole_AdvertOffTime );
-	
-	//GAPRole_SetParameter( GAPROLE_SCAN_RSP_DATA, sizeof ( scanRspData ), scanRspData );
-	GAPRole_SetParameter( GAPROLE_ADVERT_DATA, sizeof( advertData ), advertData );
-	GAPRole_SetParameter( GAPROLE_ADV_EVENT_TYPE, sizeof( uint8 ), &advType );
+GAPRole_SetParameter( GAPROLE_ADVERT_ENABLED, sizeof( uint8 ), &initial_advertising_enable );
+//GAPRole_SetParameter( GAPROLE_ADVERT_OFF_TIME, sizeof( uint16 ), &gapRole_AdvertOffTime );
+
+//GAPRole_SetParameter( GAPROLE_SCAN_RSP_DATA, sizeof ( scanRspData ), scanRspData );
+GAPRole_SetParameter( GAPROLE_ADVERT_DATA, sizeof( advertData ), advertData );
+GAPRole_SetParameter( GAPROLE_ADV_EVENT_TYPE, sizeof( uint8 ), &advType );
 ```
-Make sure you save your changes, because as far as code changes go….that’s it! 
+Make sure you save your changes, because as far as code changes go….that’s it!
 
 ###Build and Verify the Project
 
 Now, do the following:
 
-```
-Select Project > Clean to clean the project.
-Select Project > Make to make the project.
-Select Project > Download and Debug to send the code to the CC2540 Key Fob
-Select Debug > Go to Run the code on the CC2540 Key Fob.
-```
+1. Select Project > Clean to clean the project.
+1. Select Project > Make to make the project.
+1. Select Project > Download and Debug to send the code to the CC2540 Key Fob
+1. Select Debug > Go to Run the code on the CC2540 Key Fob.
+
 You may see some warnings complaining about SFRs. This is to be expected and has to do with a mismatch in the debugger setup of the version of the workbench you are using and the sample code from TI. Just ignore them. In fact if you try to fix them, you’ll most likely mess up the configuration and have to start from scratch. Just let go and learn to live with uncertainty.
 
 Your CC2540’s LED should have illuminated RED and if you use the AirLocate iPhone app or the iBeacon Locate Android app you should be able to detect these advertisements. If you disconnect the CC2540 key fob from the CC Debugger, it will continue to run until you remove the battery.
 
 <img style="margin-right: 10px; width: 500px; border: thin solid #999; border-radius: 4px;" src='/img/TI-4.png'>
 
-In the Output folder, you will find a file named SimpleBLEBroadcaster.hex. This is the hex file containing your iBeacon embedded application. In the future, if you need to, you can flash this file to the CC2540 key fob module directly using the SmartRF Flash Programmer available from TI.
+In the Output folder, you will find a file named `SimpleBLEBroadcaster.hex`. This is the hex file containing your iBeacon embedded application. In the future, if you need to, you can flash this file to the CC2540 key fob module directly using the SmartRF Flash Programmer available from TI.
 
-###Enjoy!
+###  Enjoy!
 
 This is obviously quick and dirty, and you’d want to do a lot more cleanup on this code. explore the other configurations, and also apply these steps to the CC2540 USB Dongle and the CC2541 Sensor Tag, both of which can also be iBeacon-ized. But the essentials are all here for getting your CC2540-based iBeacon up and running and we hope it points you in the right direction for your development efforts. And don’t forget, when it comes to writing your proximity-enabled mobile app solutions, [Proximity Kit](http://ProximityKit.com) is the way to go!.
 
