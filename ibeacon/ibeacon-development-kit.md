@@ -31,6 +31,9 @@ layout: ibeacon
 <td>
 <div class="amazon-button">
 
+<table>
+<tr>
+
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
 <script>
 RenderCBAButton = function(ordervalue) {
