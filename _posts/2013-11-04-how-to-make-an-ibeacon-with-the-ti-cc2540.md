@@ -175,7 +175,7 @@ Now, do the following:
 
 You may see some warnings complaining about SFRs. This is to be expected and has to do with a mismatch in the debugger setup of the version of the workbench you are using and the sample code from TI. Just ignore them. In fact if you try to fix them, you’ll most likely mess up the configuration and have to start from scratch. Just let go and learn to live with uncertainty.
 
-Your CC2540’s LED should have illuminated RED and if you use the AirLocate iPhone app or the iBeacon Locate Android app you should be able to detect these advertisements. If you disconnect the CC2540 key fob from the CC Debugger, it will continue to run until you remove the battery.
+Your CC2540’s LED should have illuminated RED and if you use the iBeacon Locate app you should be able to detect these advertisements. If you disconnect the CC2540 key fob from the CC Debugger, it will continue to run until you remove the battery.
 
 <img style="margin-right: 10px; width: 500px; border: thin solid #999; border-radius: 4px;" src='/img/TI-4.png'>
 
