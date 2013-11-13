@@ -32,8 +32,7 @@ To stop the Virtual iBeacon, type: `stop` and press enter.
 
 Out of the box, the Virtual iBeacon sends out an advertisement once per second with the same proximityUUID used on Apple's AirLocate test app E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 with a major of 1 and a minor of 1.
 
-If you have a copy of Apple's AirLocate iOS test app, or Radius Networks' [iBeacon Locate app](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en) for Android, launch it and start it ranging.  You should see regular updates from the Virtual iBeacon.  If you have an Android device with Bluetooth LE, you can use Radius Networks' IBeaconLocate test app to do the same thing.
-
+If you have a copy of Radius Networks' free iBeacon Locate app for [iOS](https://itunes.apple.com/us/app/ibeacon-locate/id738709014) or [Android](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en), launch it and tap Locate iBeacons.  You should see regular updates from the Virtual iBeacon.  
 ## How to configure it
 
 You can set the three broadcast identifiers (UUID, MAJOR, MINOR) by editing the ibeacon.conf file.  Note that these identifiers must be entered as individual hexadecimal bytes separated by spaces.  For UUID, this means you don't type any dashes and put a space between each two characters.  For MAJOR and MINOR, numbers must be entered as two byte hexadecimal numbers, the most significant byte first.
