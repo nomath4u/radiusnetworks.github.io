@@ -31,7 +31,7 @@ If you ever get asked for a password after entering a command, always enter rasp
 3. A computer monitor with HDMI input
 4. An HDMI cable
 5. A network cable for internet access
-6. An iOS/Android device with AirLocate / [iBeacon Locate](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en), or some other tool you can use to see iBeacons
+6. An mobile device with Radius Networks' free iBeacon Locate app for [iOS](https://itunes.apple.com/us/app/ibeacon-locate/id738709014) and [Android](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en), or some other tool you can use to see iBeacons
 
 ###Procedure
 
