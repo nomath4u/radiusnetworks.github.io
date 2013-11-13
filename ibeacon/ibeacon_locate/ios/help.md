@@ -1,4 +1,5 @@
 ---
+layout: ibeacon-m
 ---
 ##iOS iBeacon Locate Help
 
