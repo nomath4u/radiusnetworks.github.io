@@ -20,7 +20,7 @@ to start transmitting.
 
 ### Verifying it Works
 
-Use an iBeacon test program like Apple's iOS AirLocate or Radius Networks' [Android iBeacon Locate](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en) to verify the iBeacon is transmitting.  See below for the iBeacon identifiers.
+Use an iBeacon test program like Radius Networks' free iBeacon Locate app for [iOS](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en) and [Android](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en) to verify the iBeacon is transmitting.  See below for the iBeacon identifiers.
 
 ### Customizing the iBeacon identifiers
 
