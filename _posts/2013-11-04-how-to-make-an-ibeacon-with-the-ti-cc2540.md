@@ -12,9 +12,9 @@ Here are the main things your are going to need:
 
 1. A Windows computer.
 2. The [IAR Embedded Workbench] (http://www.iar.com/Service-Center/Downloads/), which you can get with a 30-day evaluation license.
-3. An mobile device with Bluetooth 4.0 support and an app to test with.
-  * For Android, you can get our iBeacon Locate discovery app from the Google Play store here.
-  * For iPhone, you can use the [Apple WWDC 2013 AirLocate sample app] (https://developer.apple.com/downloads/index.action?name=WWDC%202013).
+3. An mobile device with Bluetooth 4.0 support and an app to test with, like our iBeacon Locate discovery app.
+  * For Android, you can get this app from the [Google Play Store.](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en)
+  * For iPhone, you can get the this app from the [App Store.](https://itunes.apple.com/us/app/ibeacon-locate/id738709014)
 4. The [CC2540DK-MINI development kit] (http://www.ti.com/tool/cc2540dk-mini) and supporting software from TI.
 
 
