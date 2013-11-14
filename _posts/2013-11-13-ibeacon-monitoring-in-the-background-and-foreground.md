@@ -12,19 +12,20 @@ The tables below summarizes whether you can get monitoring updates under various
 
 When the app is in the foreground:
 
-|Condition|Max time to detect a region change|
-|--- | --- |
-|App ranging    |1 second |
-|App not ranging|up to 15 minutes |
+
+Condition|Max time to detect a region change
+--- | --- 
+App ranging    |1 second 
+App not ranging|up to 15 minutes 
 
 When the app is not in the foreground:
 
-|Condition|Max time to detect a region change|
-|--- | --- |
-|Phone awakened, notifyEntryStateOnDisplay=YES|1 second |
-|Phone awakened, notifyEntryStateOnDisplay=NO|NEVER |
-|UIBackgroundModes=location ON|up to 15 minutes |
-|UIBackgroundModes=location OFF|up to 15 minutes |
+Condition|Max time to detect a region change|
+--- | --- |
+Phone awakened, notifyEntryStateOnDisplay=YES|1 second 
+Phone awakened, notifyEntryStateOnDisplay=NO|NEVER 
+UIBackgroundModes=location ON|up to 15 minutes 
+UIBackgroundModes=location OFF|up to 15 minutes 
 
 Note: "Phone awakened" means pressing either the shoulder button or the home button when the phone display was off.  The detection times, in this case, reflect the time from when the screen turns on.
 
@@ -179,6 +180,7 @@ Conclusion:  As you can see, when ranging the monitoring callback comes super qu
 ####TEST #6 - Foreground Monitoring While NOT Ranging
 
 For this test, ranging is not active, but the app is still left in the foreground for the duration of the test.
+
 ``` 
  2013-11-06 18:39:38.104 BackgroundDemo[459:60b] applicationDidFinishLaunching
  2013-11-06 18:39:38.126 BackgroundDemo[459:60b] applicationDidBecomeActive
