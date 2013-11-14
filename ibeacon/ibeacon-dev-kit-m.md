@@ -17,7 +17,7 @@ layout: ibeacon-m
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
 <div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">Single iBeacon Model</div>
 </td>
-<td style="padding: 0; float: left; margin-left: 10px;">
+<td style="padding: 0; float: left;">
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
