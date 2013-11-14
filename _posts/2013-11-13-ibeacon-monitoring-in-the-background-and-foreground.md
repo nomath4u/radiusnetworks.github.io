@@ -19,11 +19,11 @@ When the app is in the foreground:
   }
   table.rsum td{
     border: 1px solid black;
-    padding: 2px;
+    padding: 5px;
   }
   table.rsum th{
     border: 1px solid black;
-    padding: 2px;
+    padding: 5px;
   }
 
 </style>
