@@ -12,9 +12,17 @@ The tables below summarizes whether you can get monitoring updates under various
 
 When the app is in the foreground:
 
+<style type="text/css">
+  table.rsum {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  table.rsum td{
+    border: 1px solid black;
+  }
+</style>
 
-
-<table style="border: 1px solid black;">
+<table class="rsum">
 <tr><th>Condition</th><th>Max time to detect a region change</th></tr>
 <tr><td>App ranging    </td><td>1 second</td></tr> 
 <tr><td>App not ranging</td><td>up to 15 minutes</td></tr> 
@@ -22,7 +30,7 @@ When the app is in the foreground:
 
 When the app is not in the foreground:
 
-<table style="border: 1px solid black;">
+<table class="rsum">
 <tr><th>Condition</th><th>Max time to detect a region change</th></tr>
 <tr><td>Phone awakened, notifyEntryStateOnDisplay=YES</td><td>1 second </td></tr> 
 <tr><td>Phone awakened, notifyEntryStateOnDisplay=NO</td><td>NEVER </td></tr> 
