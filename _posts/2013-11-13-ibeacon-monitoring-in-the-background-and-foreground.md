@@ -53,7 +53,7 @@ The above tables show that two things are very important to maximizing the frequ
 
 1. For the fastest monitoring detection times in the foreground, do ranging whenever you are monitoring, even if you don't care about ranging updates.  Like this:
 
-  ```
+  ```objective-c
     CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6"] major: 1 minor: 1 identifier: @"region1"];
     region.notifyEntryStateOnDisplay = YES;
     [_locationManager startMonitoringForRegion:region];
@@ -62,7 +62,7 @@ The above tables show that two things are very important to maximizing the frequ
 
 1. If you want to get a guaranteed extra monitoring update in the background whenever the users wakes up their phone, set the notifyEntryStateOnDisplay option on your region as so:
 
-  ```
+  ```objective-c
     CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6"] major: 1 minor: 1 identifier: @"region1"];
     region.notifyEntryStateOnDisplay = YES;
     [_locationManager startMonitoringForRegion:region];
