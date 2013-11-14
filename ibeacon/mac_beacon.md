@@ -29,12 +29,12 @@ INSERT SCREENSHOT HERE
   <input type="hidden" name="referenceId" value="mb-001" >
   <input type="hidden" name="cobrandingStyle" value="logo" >
   <input type="hidden" name="immediateReturn" value="1" >
-  <input type="hidden" name="amount" value="USD 9.99" >
+  <input type="hidden" name="amount" value="USD 0.99" >
   <input type="hidden" name="description" value="Mac Beacon" >
-  <input type="hidden" name="abandonUrl" value="http://developer.radiusnetworks.com/ibeacon/mac_beacon.html" >
+  <input type="hidden" name="abandonUrl" value="http://www.radiusnetworks.com/macbeacon-app.html" >
   <input type="hidden" name="signatureVersion" value="2" >
-  <input type="hidden" name="signature" value="0FwID859a83t0YAflBcImsTpQhvbJu/IKpdH2jtJSSA=" >
-  <input type="image" src="http://g-ecx.images-amazon.com/images/G/01/asp/golden_small_paynow_withmsg_whitebg.gif" border="0">
+  <input type="hidden" name="signature" value="4/jKGNoyUGlEuwyusac3nRHKXzWXpMmYAE/BEw3uNyY=" >
+  <input type="image" src="http://g-ecx.images-amazon.com/images/G/01/asp/beige_small_paynow_withmsg_whitebg.gif" border="0">
 </form>
 
 
