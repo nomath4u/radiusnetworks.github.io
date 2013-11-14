@@ -14,14 +14,14 @@ When the app is in the foreground:
 
 
 Condition|Max time to detect a region change
---- | --- 
+---|--- 
 App ranging    |1 second 
 App not ranging|up to 15 minutes 
 
 When the app is not in the foreground:
 
-Condition|Max time to detect a region change|
---- | --- |
+Condition|Max time to detect a region change
+---|--- 
 Phone awakened, notifyEntryStateOnDisplay=YES|1 second 
 Phone awakened, notifyEntryStateOnDisplay=NO|NEVER 
 UIBackgroundModes=location ON|up to 15 minutes 
