@@ -14,11 +14,27 @@ When the app is in the foreground:
 
 
 <table>
-<tr><td>Condition</td><td>Max time to detect a region change</td></tr>
+  <tr>
+    <th>ID</th><th>Name</th><th>Rank</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td>
+  </tr>
+</table>
+
+<table>
+<tr><th>Condition</th><th>Max time to detect a region change</th></tr>
 <tr><td>App ranging    </td><td>1 second</td></tr> 
 <tr><td>App not ranging</td><td>up to 15 minutes</td></tr> 
+</table>
 
 When the app is not in the foreground:
+
+
+
 
 Condition|Max time to detect a region change
 ---|--- 
