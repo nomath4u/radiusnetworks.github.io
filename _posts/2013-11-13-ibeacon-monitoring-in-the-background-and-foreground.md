@@ -13,10 +13,10 @@ The tables below summarizes whether you can get monitoring updates under various
 When the app is in the foreground:
 
 
-Condition|Max time to detect a region change
----|--- 
-App ranging    |1 second 
-App not ranging|up to 15 minutes 
+<table>
+<tr><td>Condition</td><td>Max time to detect a region change</td></tr>
+<tr><td>App ranging    </td><td>1 second</td></tr> 
+<tr><td>App not ranging</td><td>up to 15 minutes</td></tr> 
 
 When the app is not in the foreground:
 
