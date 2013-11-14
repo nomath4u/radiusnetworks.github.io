@@ -2,6 +2,7 @@
 layout: ibeacon
 ---
 
+<img style="height: 200px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; float:left; border-radius: 7px;" src='/img/macbeacon-icon.png'>
 
 ##Download MacBeacon
 
