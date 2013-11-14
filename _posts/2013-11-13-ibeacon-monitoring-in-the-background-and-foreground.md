@@ -14,7 +14,7 @@ When the app is in the foreground:
 
 
 
-<table>
+<table style="border: 1px solid black;">
 <tr><th>Condition</th><th>Max time to detect a region change</th></tr>
 <tr><td>App ranging    </td><td>1 second</td></tr> 
 <tr><td>App not ranging</td><td>up to 15 minutes</td></tr> 
@@ -22,7 +22,7 @@ When the app is in the foreground:
 
 When the app is not in the foreground:
 
-<table>
+<table style="border: 1px solid black;">
 <tr><th>Condition</th><th>Max time to detect a region change</th></tr>
 <tr><td>Phone awakened, notifyEntryStateOnDisplay=YES</td><td>1 second </td></tr> 
 <tr><td>Phone awakened, notifyEntryStateOnDisplay=NO</td><td>NEVER </td></tr> 
