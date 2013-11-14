@@ -12,16 +12,17 @@ layout: ibeacon-m
 <table style="border-collapse:collapse;">
 <tr>
 <td style="padding:10px 10px 10px 0; float: left;">
-<div style="height: 60px;float: left;font-size: 22px">$</div>
-<div style="height: 60px;float: left;font-size: 62px;line-height:60px">99</div>
-<div style="height: 60px;float: left;font-size: 14px">.99</div>
+<div style="height: 60px;float: left;font-size: 32px">$</div>
+<div style="height: 60px;float: left;font-size: 72px;line-height:60px">99</div>
+<div style="height: 60px;float: left;font-size: 24px">.99</div>
 <div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">Single iBeacon Model</div>
 </td>
+</tr>
+<tr>
 <td style="padding:10px; float: left; margin-left: 10px;">
-
-<div style="height: 60px;float: left;font-size: 22px">$</div>
-<div style="height: 60px;float: left;font-size: 62px;line-height:60px">149</div>
-<div style="height: 60px;float: left;font-size: 14px">.99</div>
+<div style="height: 60px;float: left;font-size: 32px">$</div>
+<div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
+<div style="height: 60px;float: left;font-size: 24px">.99</div>
 <div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">Dual iBeacon Model</div>
 </td>
 </tr>
