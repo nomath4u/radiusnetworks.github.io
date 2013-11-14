@@ -13,17 +13,6 @@ The tables below summarizes whether you can get monitoring updates under various
 When the app is in the foreground:
 
 
-<table>
-  <tr>
-    <th>ID</th><th>Name</th><th>Rank</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td>
-  </tr>
-  <tr>
-    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td>
-  </tr>
-</table>
 
 <table>
 <tr><th>Condition</th><th>Max time to detect a region change</th></tr>
@@ -33,15 +22,13 @@ When the app is in the foreground:
 
 When the app is not in the foreground:
 
-
-
-
-Condition|Max time to detect a region change
----|--- 
-Phone awakened, notifyEntryStateOnDisplay=YES|1 second 
-Phone awakened, notifyEntryStateOnDisplay=NO|NEVER 
-UIBackgroundModes=location ON|up to 15 minutes 
-UIBackgroundModes=location OFF|up to 15 minutes 
+<table>
+<tr><th>Condition</th><th>Max time to detect a region change</th></tr>
+<tr><td>Phone awakened, notifyEntryStateOnDisplay=YES</td><td>1 second </td></tr> 
+<tr><td>Phone awakened, notifyEntryStateOnDisplay=NO</td><td>NEVER </td></tr> 
+<tr><td>UIBackgroundModes=location ON</td><td>up to 15 minutes </td></tr> 
+<tr><td>UIBackgroundModes=location OFF</td><td>up to 15 minutes </td></tr> 
+</table>
 
 Note: "Phone awakened" means pressing either the shoulder button or the home button when the phone display was off.  The detection times, in this case, reflect the time from when the screen turns on.
 
