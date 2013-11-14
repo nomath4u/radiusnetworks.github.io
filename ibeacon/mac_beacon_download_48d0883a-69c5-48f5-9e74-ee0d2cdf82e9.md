@@ -3,7 +3,7 @@ layout: ibeacon
 ---
 
 
-##Download Mac Beacon
+##Download MacBeacon
 
 Thank you for your purchase!
 
