@@ -22,6 +22,7 @@ Create a VM that will work like an iBeacon.
      *  If you receive an error message trying to capture your bluetooth device (it will look like this)
       <img style="height: 200px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; float:left; border-radius: 7px;" src='http://i.imgur.com/qzMirYi.png'>
         
+     
      A quick solution to this problem on OSX computers can be found [here](https://www.virtualbox.org/ticket/2372#comment:12)
 
 7. Now you can start the Virtual iBeacon manually by typing `start` into the command prompt and pressing enter.
