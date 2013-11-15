@@ -12,6 +12,14 @@ header .header-content{
   font-weight: 200;
 }
 
+header .header-content-m{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  font-weight: 200;
+}
+
 header a {
   text-decoration: none;
   color: #777777;
@@ -21,6 +29,10 @@ header a:hover {
 }
 
 header .brand {
+  float: left;
+}
+
+header .brand-m {
   float: left;
 }
 
