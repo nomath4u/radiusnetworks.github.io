@@ -24,6 +24,7 @@ Create a VM that will work like an iBeacon.
 
      A quick solution to this problem on OSX computers can be found [here](https://www.virtualbox.org/ticket/2372#comment:12)
 
+
 7. Now you can start the Virtual iBeacon manually by typing `start` into the command prompt and pressing enter.
 
 
