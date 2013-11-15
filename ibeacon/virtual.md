@@ -20,7 +20,8 @@ Create a VM that will work like an iBeacon.
 5. Start the virtual machine.  The Virtual iBeacon will attempt to startup automatically.
 6. If you receive a message in the virtual machine that no bluetooth device has been detected,  make sure the virtual machine has captured the device.  In the VirtualBox menu, select Devices -> USB Devices -> then select your BLE USB device in the menu that shows up so that there is a checkmark by it.
      *  If you receive an error message trying to capture your bluetooth device (it will look like this)
-      <img style="height: 150px; margin: 10px 130px 20px 0; border: 2px solid #f5f5f5; float:left; border-radius: 7px;" src='http://i.imgur.com/qzMirYi.png'>
+      
+     <img style="height: 150px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; float:left; border-radius: 7px;" src='http://i.imgur.com/qzMirYi.png'>
 
      A quick solution to this problem on OSX computers can be found [here](https://www.virtualbox.org/ticket/2372#comment:12)
 
