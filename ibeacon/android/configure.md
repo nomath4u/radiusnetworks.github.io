@@ -1,5 +1,5 @@
-----
-title: Android iBeacon Library - Configure
-----
+---
+layout: ibeacon
+---
 
 #Configuring the Android iBeacon Library
