@@ -2,7 +2,7 @@
 layout: android-ibeacon-library
 ---
 
-<div style="float:left">
+<div style="display:block">
 <img src="images/ibeacon.png" class="ibeacon">
 <div class="pull-right">
 
