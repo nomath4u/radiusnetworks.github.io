@@ -7,7 +7,7 @@ layout: android-ibeacon-library
 
 #### Eclipse 
 
-1. Download AndroidIBeaconLibrary.tar.gz
+1. Download the [tar.gz file](/ibeacon/android/download.html)
 2. Extract the above file
 3. Import the AndroidIBeaconLibrary as an existing project in the workspace
 4. In a new/existing Android Application project, go to Project -> Properties -> Android -> Library -> Add, then select the imported project from step 2.
@@ -24,7 +24,7 @@ layout: android-ibeacon-library
 6. Add the following service declarations to your AnroidManifest.xml, replacing {my app's package name} with the fully qualified package name of your Android application.
 
 
-```
+   ```
 		<service android:enabled="true"
          	android:exported="true"
          	android:isolatedProcess="false"
@@ -40,11 +40,11 @@ layout: android-ibeacon-library
 				<action android:name="{my app's package name}.DID_MONITORING" />
 			</intent-filter>
 		</service>  
-```
+   ```
 
 #### Android Studio / Gradle 
 
-1. Download the AAR file
+1. Download the [AAR file](/ibeacon/android/download.html)
 2. Create a /libs directory inside your project and copy the AAR file there.
 3. Edit your build.gradle file, and add a "flatDir" entry to your repositories like so:
 
@@ -59,9 +59,9 @@ layout: android-ibeacon-library
 
 4. Edit your build.gradle file to add this AAR as a dependency like so:
 
-```
-dependencies {
-  compile 'com.radiusnetworks:AndroidIBeaconLibrary:0.6@aar'
-}
-```
+   ```
+   dependencies {
+     compile 'com.radiusnetworks:AndroidIBeaconLibrary:0.6@aar'
+   }
+   ```
 
