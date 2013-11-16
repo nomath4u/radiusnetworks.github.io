@@ -1,5 +1,5 @@
 ---
-layout:android-ibeacon-library
+layout: android-ibeacon-library
 ---
 
 ## Reference Application
