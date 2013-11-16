@@ -4,7 +4,7 @@ layout: android-ibeacon-library
 
 
 <img src="images/ibeacon.png" style="display:block; float:left; width:30%"/>
-<p style="height:20px"></p>
+<p style="height:15px"></p>
 
 ###Think iBeacons only work with Apple devices?  Not anymore.
 
