@@ -2,15 +2,13 @@
 layout: android-ibeacon-library
 ---
 
-<div style="display:inline">
+<div style="display:block">
 <img src="images/ibeacon.png" class="ibeacon">
-<div class="pull-right">
-
-<h3>Think iBeacons only work with Apple devices?  Not anymore.</h3>
-<p>With Radius Networks' Android iBeacon Service library, you can make Android versions of your iOS apps that use iBeacons, or come up with new Android-only creations.  Best of all, the library is available for FREE!</p>  
-
 </div>
-</div>
+
+###Think iBeacons only work with Apple devices?  Not anymore.
+
+With Radius Networks' Android iBeacon Service library, you can make Android versions of your iOS apps that use iBeacons, or come up with new Android-only creations.  Best of all, the library is available for FREE!
 
 ## About iBeacons
 
