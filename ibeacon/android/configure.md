@@ -10,7 +10,7 @@ layout: android-ibeacon-library
 1. Download the [tar.gz file](/ibeacon/android/download.html)
 2. Extract the above file
 3. Import the AndroidIBeaconLibrary as an existing project in the workspace
-4. In a new/existing Android Application project, go to Project -> Properties -> Android -> Library -> Add, then select the imported project from step 2.
+4. In a new/existing Android Application project, go to Project -> Properties -> Android -> Library -> Add, then select the imported project from step 3.
 5. Add the follwoing sdk and permission declarations to your AndroidManifest.xml
 
    ```
