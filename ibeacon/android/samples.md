@@ -4,7 +4,7 @@ layout: android-ibeacon-library
 
 ## Reference Application
 
-A minimalist [reference application][https://github.com/RadiusNetworks/android-ibeacon-reference] is available on GitHub that demonstrates basic ranging and monitoring.  It is based on the examples below.
+A minimalist [reference application](https://github.com/RadiusNetworks/android-ibeacon-reference) is available on GitHub that demonstrates basic ranging and monitoring.  It is based on the examples below.
 
 
 ## Monitoring Example Code
