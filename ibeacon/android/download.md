@@ -8,7 +8,7 @@ layout: android-ibeacon-library
 Binary distributions are provided in two formats.  The aar format is recommended for users of gradle and Android Studio.  The .tar.gz format is recommended for Eclipse developers.
 See [configuring your project]() for more information on how to use the binary distribution.
 
-####Latest Stable Release 0.6</h4
+####Latest Stable Release 0.6
 
 <style>
   .close { 
