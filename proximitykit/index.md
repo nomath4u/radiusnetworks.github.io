@@ -16,4 +16,10 @@ Quick start guide to adding Proximity Kit to your iOS application.
 
 <a class="btn" href="gettingstarted">Getting Started Guide</a>
 
+## Example App
+
+A simple example of using Proximity Kit in an App.
+
+<a class="btn" href="https://github.com/RadiusNetworks/proximity-kit-ios-example">iOS Example App on GitHub</a>
+
 
