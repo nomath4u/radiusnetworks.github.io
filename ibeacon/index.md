@@ -8,11 +8,11 @@ Add iBeacon support to your Android Apps with the Radius Networks iBeacon Librar
 
 <a class="btn" href="android"><img src="/img/android.svg" />Android iBeacon Library</a>
 
-## MacBeacon for OSX
+## MacBeacon for OS X
 
-With the MacBeacon app you can turn any Macintosh computer running OSX 10.9 or higher, equipped with built-in or third party Bluetooth 4.0 into your own, fully-configurable iBeacon.
+With the MacBeacon app you can turn any Macintosh computer running OS X 10.9 or higher, equipped with built-in or third party Bluetooth 4.0 into your own, fully-configurable iBeacon.
 
-<a class="btn" href="http://www.radiusnetworks.com/macbeacon-app.html"><img src="/img/desktop.svg">MacBeacon for OSX</a>
+<a class="btn" href="http://www.radiusnetworks.com/macbeacon-app.html"><img src="/img/desktop.svg">MacBeacon for OS X</a>
 <form action="https://authorize.payments.amazon.com/pba/paypipeline" method="post">
   <input type="hidden" name="returnUrl" value="http://developer.radiusnetworks.com/ibeacon/mac_beacon_download_48d0883a-69c5-48f5-9e74-ee0d2cdf82e9" >
   <input type="hidden" name="processImmediate" value="1" >

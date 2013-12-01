@@ -20,10 +20,10 @@ Create a VM that will work like an iBeacon.
 5. Start the virtual machine.  The Virtual iBeacon will attempt to startup automatically.
 6. If you receive a message in the virtual machine that no bluetooth device has been detected,  make sure the virtual machine has captured the device.  In the VirtualBox menu, select Devices -> USB Devices -> then select your BLE USB device in the menu that shows up so that there is a checkmark by it.
      *  If you receive an error message trying to capture your bluetooth device (it will look like this)
-      
+
       <img style="height: 150px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; border-radius: 7px;" src='http://i.imgur.com/qzMirYi.png'>
 
-     A quick solution to this problem on OSX computers can be found [here](https://www.virtualbox.org/ticket/2372#comment:12)
+     A quick solution to this problem on OS X computers can be found [here](https://www.virtualbox.org/ticket/2372#comment:12)
 
 
 7. Now you can start the Virtual iBeacon manually by typing `start` into the command prompt and pressing enter.
@@ -39,7 +39,7 @@ To stop the Virtual iBeacon, type: `stop` and press enter.
 
 Out of the box, the Virtual iBeacon sends out an advertisement once per second with the same proximityUUID used on Apple's AirLocate test app E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 with a major of 1 and a minor of 1.
 
-If you have a copy of Radius Networks' free iBeacon Locate app for [iOS](https://itunes.apple.com/us/app/ibeacon-locate/id738709014) or [Android](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en), launch it and tap Locate iBeacons.  You should see regular updates from the Virtual iBeacon.  
+If you have a copy of Radius Networks' free iBeacon Locate app for [iOS](https://itunes.apple.com/us/app/ibeacon-locate/id738709014) or [Android](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en), launch it and tap Locate iBeacons.  You should see regular updates from the Virtual iBeacon.
 ## How to configure it
 
 You can set the three broadcast identifiers (UUID, MAJOR, MINOR) by editing the ibeacon.conf file.  Note that these identifiers must be entered as individual hexadecimal bytes separated by spaces.  For UUID, this means you don't type any dashes and put a space between each two characters.  For MAJOR and MINOR, numbers must be entered as two byte hexadecimal numbers, the most significant byte first.
@@ -89,7 +89,7 @@ Execute the following:
 
 $ modprobe btusb
 $ echo "0489 e031" >> /sys/bus/usb/drivers/btusb/new_id
- 
+
 Adjust the values in quotes above to match the Vendor and ProdID you find in the log file.
 
 ```
