@@ -38,7 +38,7 @@ With the ScanBeacon app you can scan for nearby iBeacon proximity beacons and di
 
 In the ScanBeacon application window, start scanning for beacons by clicking the ‘Start Scanning’ button. ScanBeacon will display a list of the detected beacons and their advertising details, as shown in the figure below. ScanBeacon will continuously update the list at 1 second intervals while it is actively scanning. iBeacons that have not transmitted an advertisement for at least 10 seconds are removed from the displayed list.
 
-<img style="width: 70%; margin: 5px 0 5px 70px;" src="/img/macbeacon-window.png">
+<img style="width: 70%; margin: 5px 0 5px 70px;" src="/img/scanbeacon-window.png">
 
 Clicking on the ‘Stop Scanning’ button will terminate the scanning process and leave a static display of the detected iBeacons that were in the list at the time that scanning was halted.
 
