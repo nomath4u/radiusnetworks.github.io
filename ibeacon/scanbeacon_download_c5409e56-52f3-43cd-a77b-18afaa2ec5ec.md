@@ -3,24 +3,24 @@ layout: ibeacon
 ---
 
 <div align="center">
-<img src="/img/macbeacon_icon.png" style="width: 100px; margin-top: 10px;">
-<h2>Download MacBeacon</h2>
+<img src="/img/scanbeacon_icon.png" style="width: 100px; margin-top: 10px;">
+<h2>Download ScanBeacon</h2>
 <p>Thank you for your purchase!<p>
-<p>Please <a href="https://s3.amazonaws.com/downloads.radiusnetworks.com/48d0883a-69c5-48f5-9e74-ee0d2cdf82e9/MacBeacon.app.zip">click here</a> to begin your download.</p>
+<p>Please <a href="https://s3.amazonaws.com/downloads.radiusnetworks.com/c5409e56-52f3-43cd-a77b-18afaa2ec5ec/ScanBeacon.app.zip">click here</a> to begin your download.</p>
 </div>
 <hr>
 
-##How-to Install MacBeacon
+##How-to Install ScanBeacon
 
-1. By clicking the link above, your download of the MacBeacon.app .zip file should begin automatically. Once the download is complete, browse to your download's destination folder and unzip the package.
+1. By clicking the link above, your download of the ScanBeacon.app.zip file should begin automatically. Once the download is complete, browse to your download's destination folder and unzip the package.
 
-2. Drag the Macbeacon icon <img src="/img/macbeacon_icon.png" style="width: 35px; padding-bottom: 5px;"> to your applications folder.
+2. Drag the ScanBeacon icon <img src="/img/scanbeacon_icon.png" style="width: 35px; padding-bottom: 5px;"> to your applications folder.
 
-3. When you are ready to launch Macbeacon, double click the icon.
+3. When you are ready to launch ScanBeacon, double click the icon.
 
-##Macbeacon Help
+##ScanBacon Help
 
-With the MacBeacon app you can turn any Macintosh computer running OS X® 10.9 or higher and equipped with built-in or third party Bluetooth 4.0 support into your own, fully-configurable, iBeacon proximity beacon.
+ScanBeacon is the iBeacon scanner for your Mac. With the ScanBeacon app from Radius Networks, you can discover and monitor nearby iBeacon proximity beacons using any Macintosh computer running OS X 10.9 and equipped with Bluetooth 4.0 support.
 
 ####What is an iBeacon?
 
@@ -32,55 +32,81 @@ For example, imagine you walk into a major retailer with the retailer’s mobile
 
 <img style="width: 70%; margin: 5px 0 5px 70px;" src="/img/store.png">
 
-##Configuring MacBeacon
+##Using ScanBeacon
 
-iBeacons are generally available as stand-alone devices using specialized hardware. With the MacBeacon app you can turn any Mac running OS X 10.9 or higher and equipped with built-in or third party Bluetooth 4.0 support into your own, fully-configurable, iBeacon proximity beacon.
+With the ScanBeacon app you can scan for nearby iBeacon proximity beacons and display their advertising details using any Macintosh computer running OS X® 10.9 or higher and equipped with built-in or third party Bluetooth 4.0 support.
 
-MacBeacon allows you to create a list of beacon profiles that you can easily adjust and switch between. In addition to providing the full functionaliy of an iBeacon for your own use, the ability to create and maintain multiple profiles makes MacBeacon a very effective tool for developing and testing iBeacon-based proximity solutions for your organization and your customers.
+In the ScanBeacon application window, start scanning for beacons by clicking the ‘Start Scanning’ button. ScanBeacon will display a list of the detected beacons and their advertising details, as shown in the figure below. ScanBeacon will continuously update the list at 1 second intervals while it is actively scanning. iBeacons that have not transmitted an advertisement for at least 10 seconds are removed from the displayed list.
 
 <img style="width: 70%; margin: 5px 0 5px 70px;" src="/img/macbeacon-window.png">
 
-MacBeacon is divided into two views, with the Beacon List shown on the left and the Beacon Detail shown on the right.
+Clicking on the ‘Stop Scanning’ button will terminate the scanning process and leave a static display of the detected iBeacons that were in the list at the time that scanning was halted.
 
-####Beacon List
+####iBeacon Advertising Details
 
-The Beacon List view is a table of the beacon profiles that you have currently defined. You can add and remove beacon profiles using the + and - buttons. Modifications and changes to the beacon profiles are done through the Beacon Detail view.
+The beacon list displays the detection status and the iBeacon details of detected beacons. The detail items for each listed beacon are defined as:
 
-####Beacon Detail
+Active – This indicator displays the advertising status of the the listed beacon. This value is derived based on the elapsed time since the last received iBeacon advertisement. The indicator is GREEN when an advertisement has been received within the last 5 seconds. The indicator is GREY when more than 5 seconds has elapsed since the last received advertisement. If more than 10 seconds has elapsed since the last received iBeacon advertisement, the entry in the list is removed.
 
-The Beacon Detail view displays the operational status and profile details of each beacon when you select that beacon from the Beacon List view. The Beacon Detail view also provides you a button for turning the beacon on and off.
-
-####Beacon Profiles
-
-Each beacon profile contains the operational parameters for that beacon. You can add, remove and change beacon profiles, but you must always have at least 1 profile defined. The operational parameters contained in a beacon profile are:
+<b>UUID</b> – The UUID identifier transmitted by the beacon. UUID identifiers use hexadecimal values (0-9 or A-F) in the following format: 01234567-89AB-CDEF-0123-4567890ABCDE. UUID identifiers are expected to be unique to the organization that deployed the beacon.
 
 <b>Major</b> – The group identifier that will be transmitted by the beacon. Group identifiers must be a decimal value between 0 and 65535.
 
 <b>Minor</b> – The individual identifier that will be transmitted by the beacon. Individual identifiers must be a decimal value between 0 and 65535.
 
-<b>Power</b> – The power value for the beacon. This value is adjustable to allow calibration of the beacon. The value reflects the received signal strength indicator (RSSI) value (measured in decibels) for the device, and represents the measured strength of the beacon from one meter away during ranging.
+<b>Power</b> – The measured power value transmitted by the beacon. This value is set during beacon deployment and calibration. The value is intended to reflect the received signal strength indicator (RSSI) value (measured in decibels) for the device, and represents the measured strength of the beacon from one meter away during ranging.
 
-MacBeacon ships with 4 default beacon profiles. Three of these profiles come from the Apple AirLocate sample app which is available to registered Apple iOS developers as an introduction into developing iBeacon-based mobile apps for iOS devices. The fourth is the Radius Networks Demo beacon profile which is used in sample applications made available by Radius Networks.
+<b>RSSI</b> – Relative Signal Strength Indication, this value is a measure of the power level of the signal being received by the scanner.
+
+<b>Distance</b> – The distance of the scanning receiver to the beacon. This value is derived from the Power and RSSI values and is largely dependent on the accuracy of these two values.
+
+<b>Proximity</b> – The proximity of the scanning receiver to the beacon. This is a qualitative value derived from the Distance calculation. In general, Proximity is evaluated as
+
+* Immediate – 0.0m to 0.5m
+* Near – 0.5m to 4.0m
+* Far – more than 4.0m
 
 ##Turning Beacons On and Off
 
 You can turn a beacon on and off by either double clicking on a beacon in the Beacon List or by selecting the beacon from the list and clicking the Turn Beacon On key to enable the beacon or the Turn Beacon Off key to disable the beacon. Only one beacon can be enabled at a time.
 
-##Beacon Status
+##Sharing iBeacon Scanning Results
 
-Operational status for each beacon is shown by the status indicator and at the left of each beacon name and the status label just below each beacon name in the Beacon List. Each beacon can be in one of three major states.
+Being able to copy and paste iBeacon advertisement information is very useful for quickly configuring other applications and for sharing scan result information with colleagues.
 
-<ul style="list-style-type: none;">
-  <li><b>Beacon On</b>: Represented by a <span style="color: #83D821;">GREEN</span> status indicator</li>
-  <li><b>Beacon Off</b>: Represented by a <span style="color: #999999;">GREY</span> status indicator</li>
-  <li><b>Beacon Error</b>: Represented by a <span style="color: #D83A21;">RED</span> status indicator</li>
-</ul>
+iBeacon information can be copied and pasted to other applications by selecting an iBeacon in the list and pressing the CMD-C key combination, or selecting ‘Copy Advertisement’ under the Beacon menu item or from the CTRL-click accessible context menu in the application window.
 
-The Beacon Error state indicates a problem with the Mac’s Bluetooth services. In the event of a Beacon Error, please check that your Mac supports Bluetooth 4.0 (Bluetooth Low Energy) and that Bluetooth is turned on in the System Preferences.
+Information copied to the clipboard as a textual representation and can be pasted into any application that will accept plain text. An example of the copied information is shown below.
 
-##Applications to Use for Testing
+        {
+            identifier = "E67DD696-409B-4B03-8156-1079926D7D31";
+            major = 0;
+            minor = 1;
+            power = "-59";
+            rssi = "-78";
+            timestamp = "1386087720.724988";
+            uuid = "74278BDA-B644-4520-8F0C-720EAF059935";
+        }
+        
+The complete results of a scan operation can be saved to a file which can be reloaded into any instance of the ScanBeacon application. Scan results are saved in JSON-encoded files with the .ibeacon extension.
 
-It’s early days in the market for iBeacon-based applications. Apple’s AirLocate sample app is a good starting point, and is available as one of several <a href="https://developer.apple.com/downloads/index.action?name=WWDC%202013">WWDC 2013</a> samples for registered iOS developers. Radius Networks’ iBeacon Locate app is currently available. You can find a link for this and other iBeacon related information on the <a href="http://www.radiusnetworks.com/ibeacon.html">Radius Networks iBeacon Services page</a>.
+To save the results of a scan operation, terminate any active scanning session and select ‘Save’ or ‘Save As...’ under the ‘File’ menu item. The .ibeacon file extension is added automatically to any filename that you specify.
+
+To load previously saved results, terminate any active scanning session and select ‘Open...’ under the ‘File’ menu item and select the file to load. The advertising information from the loaded file will be displayed in the beacon list along with the derived distance and proximity values calculated based on the RSSI value at the time the information was saved.
+
+##Applications & Tools to Use for Testing
+
+It’s early days in the market for iBeacon-based tools and technology. Radius Networks provides several ways for you to create iBeacons, including
+
+<b>iBeacon Development Kit</b> – A development platform for creating stand-alone iBeacons based on the Raspberry-Pi embedded computing paltform. <a href=http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit.html >More information is available here.</a>
+
+<b>MacBeacon</b> – An OS-X application that enables any Macintosh computer running OS X® 10.9 or higher and equipped with built-in or third party Bluetooth 4.0 support to implement a library of virtual iBeacons. <a href=http://radiusnetworks.com/macbeacon-app.html >More information is available here.</a>
+
+<b>Locate for iBeacon</b> – An iOS application that enables any iPhone, iPad or iPod Touch running iOS 7 and equipped with Bluetooth 4.0 to implement a library of virtual iBeacons and scan for iBeacons. <a href=https://itunes.apple.com/us/app/ibeacon-locate/id738709014?ls=1&mt=8 >More information is available here.</a>
+
+<b>iBeacon Locate</b> – An Android application that enables any Android device running Android 4.3 and equipped with Bluetooth 4.0 to implement a library of virtual iBeacons and scan for iBeacons. <a href=https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en >More information is available here.</a>
+
+At Radius Networks we have a whole portfolio of tools and services for iBeacon app developers. Visit the Radius Networks <a href=http://www.radiusnetworks.com/ibeacon.html >iBeacon Services</a> page to get the latest updates.
 
 ##For Application and Solution Developers
 
