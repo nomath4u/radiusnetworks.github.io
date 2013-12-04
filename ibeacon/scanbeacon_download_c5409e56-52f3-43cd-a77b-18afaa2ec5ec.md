@@ -120,8 +120,5 @@ Backed by Radius Networks proximity cloud services, Proximity Kit provides you e
 
 If you have problems configuring and operating the MacBeacon software. Support is available at <a href="http://www.radiusnetworks.com/suport.html">Radius Networks Customer Support.</a>
 
-a
-
-
 
 
