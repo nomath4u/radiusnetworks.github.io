@@ -6,7 +6,7 @@ layout: ibeacon
 <img src="/img/scanbeacon_icon.png" style="width: 100px; margin-top: 10px;">
 <h2>Download ScanBeacon</h2>
 <p>Thank you for your purchase!<p>
-<p>Please <a href="https://s3.amazonaws.com/downloads.radiusnetworks.com/c5409e56-52f3-43cd-a77b-18afaa2ec5ec/ScanBeacon.zip">click here</a> to begin your download.</p>
+<p>Please <a href="https://s3.amazonaws.com/downloads.radiusnetworks.com/c5409e56-52f3-43cd-a77b-18afaa2ec5ec/ScanBeacon.thisiscrazy.zip">click here</a> to begin your download.</p>
 </div>
 <hr>
 
