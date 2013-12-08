@@ -27,7 +27,7 @@ layout: android-ibeacon-library
    ```
 
 
-7. Note: Only perform this step if you are using a version prior to 0.7.1 or if you do not have manifest merging enabled per step 6.  If  manifest merging does not work, you may manually add the following service declarations to your AnroidManifest.xml, replacing {my app's package name} with the fully qualified package name of your Android application.
+7. <b>Only perform this step if you are using a version prior to 0.7.1 or if you do not have manifest merging enabled per step 6.</b>  If  manifest merging does not work, you must manually add the following service declarations to your AnroidManifest.xml, replacing {my app's package name} with the fully qualified package name of your Android application.
 
 
    ```
