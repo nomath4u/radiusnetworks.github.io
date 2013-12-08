@@ -21,7 +21,13 @@ layout: android-ibeacon-library
 	 <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
    ```
 
-6. Add the following service declarations to your AnroidManifest.xml, replacing {my app's package name} with the fully qualified package name of your Android application.
+6. Edit your project.properties file and add the line: 
+   ```
+     manifestmerger.enabled=true
+   ```
+
+
+7. Note: Only perform this step if you are using a version prior to 0.7.1 or if you do not have manifest merging enabled per step 6.  If  manifest merging does not work, you may manually add the following service declarations to your AnroidManifest.xml, replacing {my app's package name} with the fully qualified package name of your Android application.
 
 
    ```
@@ -61,7 +67,7 @@ layout: android-ibeacon-library
 
    ```
    dependencies {
-     compile 'com.radiusnetworks:AndroidIBeaconLibrary:0.6@aar'
+     compile 'com.radiusnetworks:AndroidIBeaconLibrary:0.7.1@aar'
    }
    ```
 
