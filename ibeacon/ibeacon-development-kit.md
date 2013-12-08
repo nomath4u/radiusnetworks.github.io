@@ -26,7 +26,7 @@ layout: ibeacon
 </td>
 </tr>
 
-
+<p style="color:red;">BACKORDERED - Expected ship date: December 11</p>
 <div class="amazon-button">
 
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
