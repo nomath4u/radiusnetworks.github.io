@@ -10,6 +10,8 @@ See [configuring your project]() for more information on how to use the binary d
 
 ####Latest Stable Release 0.7.1
 
+[Release Notes](releasenotes_0_7_1.html)
+
 <style>
   .close { 
     margin-top: 0px;
@@ -17,7 +19,7 @@ See [configuring your project]() for more information on how to use the binary d
   }
 </style>
 
-[AndroidIBeaconLibrary-0.7.1.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.aar)
+[AndroidIBeaconLibrary-0.7.1.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.aar)  
 
 [AndroidIBeaconLibrary-0.7.1.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.tar.gz)
 
