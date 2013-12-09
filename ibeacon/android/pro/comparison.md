@@ -9,7 +9,7 @@ layout: android-ibeacon-library
 <style>.featureimg { width:20px; height:20px; margin:0px; }</style>
 
 Feature                                  | Open Source | Pro 
----------------------------------------- |{-----------:|:---: 
+---------------------------------------- |:-----------:|:---: 
 Detects any standard iBeacon             | <img src='/img/check.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>       
 iBeacon Ranging and Monitoring           | <img src='/img/check.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>
 Auto launches app on iBeacon detection   | <img src='/img/redx.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>
