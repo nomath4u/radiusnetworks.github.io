@@ -55,7 +55,7 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 
 </div>
 
-<div style="font-size: 14px;"><p style="color:red;">BACKORDERED - Expected ship date: December 11</p>Shipping Included. *  </div>
+<div style="font-size: 14px;"><p style="color:red;">Expected ship date: December 11</p>Shipping Included. *  </div>
 
 ---
 
