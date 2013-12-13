@@ -136,13 +136,14 @@ Use the following command to activate advertising on the dongle, this will allow
 sudo hciconfig hci0 leadv 3
 ```
 
-Now take out your cell phone and verify you can see the iBeacon advertisements using [Locate for iBeacon (iOS)](https://itunes.apple.com/us/app/ibeacon-locate/id738709014), [iBeacon Locate (Android)](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en).
+Now take out your cell phone and verify you can see the iBeacon advertisements using [Locate for iBeacon (iOS)](https://itunes.apple.com/us/app/ibeacon-locate/id738709014) or [iBeacon Locate (Android)](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en).
 
 You can then disable advertising using the following command, and see them stop:
 
 ```
 $ sudo hciconfig hci0 noleadv
 ```
+
 EDIT: We've updated the advertising command to fix an issue where advertising was interrupted by a device attempting to connect to the iBeacon, details on the problem can be found [here](http://stackoverflow.com/questions/20252587/raspberry-pi-ibeacon-connection-timing-out) 
 
 ### Putting it all together (optional)
@@ -201,10 +202,11 @@ echo "Launching virtual iBeacon..."
 sudo hciconfig $BLUETOOTH_DEVICE up
 sudo hciconfig $BLUETOOTH_DEVICE noleadv
 sudo hcitool -i hci0 cmd 0x08 0x0008 1e 02 01 1a 1a ff 4c 00 02 15 $UUID $MAJOR $MINOR $POWER 00 00 00 00 00 00 00 00 00 00 00 00 00
-sudo hciconfig $BLUETOOTH_DEVICE leadv 0
+sudo hciconfig $BLUETOOTH_DEVICE leadv 3
 echo "Complete"
 ```
 
+EDIT: We've updated the advertising command to fix an issue where advertising was interrupted by a device attempting to connect to the iBeacon, details on the problem can be found [here](http://stackoverflow.com/questions/20252587/raspberry-pi-ibeacon-connection-timing-out) 
 #### Step 12: Create the stop script
 
 ```$ vi stop```
