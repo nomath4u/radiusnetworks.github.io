@@ -6,7 +6,7 @@ layout: android-ibeacon-library
 
 As an open source project, several options are available for free community support with the Anrdoid iBeacon Library:
 
-[StackOverflow](http://stackoverflow.com/questions/tagged/ibeacon)
+[StackOverflow](http://stackoverflow.com/questions/tagged/ibeacon-android)
 This option allows a whole community to help solve your problem.  This is appropriate for questions specific to your use case or project.
 
 [GitHub Issues](https://github.com/RadiusNetworks/android-ibeacon-service/issues)
