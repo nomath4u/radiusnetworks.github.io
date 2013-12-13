@@ -55,7 +55,7 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 
 </div>
 
-<div style="font-size: 14px;"><p style="font-weight: bold;">In Stock</p> Shipping Included. *  </div>
+<div style="font-size: 14px;"><p style="font-weight: bold;">In Stock</p> Shipping Included *  </div>
 
 ---
 
