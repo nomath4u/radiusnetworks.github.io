@@ -20,7 +20,7 @@ This suggests that it has the same limitation of the core Bluetooth LE libraries
 
 So I figured I’d write a little app to try this out. I got my hands on a Samsung Galaxy Tab 3 running Android 4.2. And followed the examples to write a little app to make it advertise.  The code looks like this:
 
-```
+```java
 public class MainActivity extends Activity {
 	BluetoothProfile.ServiceListener mProfileServiceListener;
 
