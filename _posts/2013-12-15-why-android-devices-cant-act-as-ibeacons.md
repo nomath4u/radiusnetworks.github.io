@@ -76,4 +76,4 @@ After scratching my head a bit, I realized the fundamental problem was misleadin
 
 Unfortunately, this means that the Samsung BLE SDKs can’t be used to make Android devices transmit as iBeacons either.   What we need is an Android BLE API that allows creation of a peripheral server.  Lots of folks were hoping that peripheral role support would be added in 4.4, but it wasn’t.  Maybe we can hope for its addition in Android 4.5 or 5.0.  There is a [feature request](https://code.google.com/p/android/issues/detail?id=59693) asking for this.    Add your name to the list!
 
-Don’t be too hard on Android, though.  Remember, OSX also only supported peripheral mode until Mavericks was released in October — and Apple has long been a far bigger booster of Bluetooth LE than Google.
+Don’t be too hard on Android, though.  Remember, OSX also only supported the central role until Mavericks was released in October — and Apple has long been a far bigger booster of Bluetooth LE than Google.
