@@ -2,7 +2,7 @@
 layout: android-ibeacon-library
 ---
 
-##Plans
+##Android iBeacon Pro Library Plans
 
 Developer FREE      | Basic $9/Mo           | Pro $49/Mo
 :------------------:|:---------------------:|:---------:
