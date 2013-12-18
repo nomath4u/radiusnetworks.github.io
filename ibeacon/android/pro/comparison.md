@@ -4,11 +4,11 @@ layout: android-ibeacon-library
 
 
 
-##Open Source vs. Pro Comparison
+##Open Source vs. Pro Library
 
 <style>.featureimg { width:20px; height:20px; margin:0px; }</style>
 
-<table class="table-price">
+<table>
 	<thead>
 		<th>Feature</th>
 		<th>Open Source</th>
@@ -55,5 +55,20 @@ layout: android-ibeacon-library
 		<td><span style="font-size: .6em;">From</span><span style="font-size: 1.5em"> $9/month</span></td>
 	</tr>
 </table>
+=======
+Feature                                  | Open Source | Pro 
+---------------------------------------- |:-----------:|:---: 
+Detects any standard iBeacon             | <img src='/img/check.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>       
+iBeacon Ranging and Monitoring           | <img src='/img/check.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>
+Easily track iBeacons in the background  | <img src='/img/redx.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>
+Auto launches app on iBeacon detection   | <img src='/img/redx.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>
+Sends notifications on iBeacon detection | <img src='/img/redx.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>
+Auto battery savings of 60 %             | <img src='/img/redx.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>
+Technical support included               | <img src='/img/redx.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/>              
+Free Upgrades                            | <img src='/img/check.png' class="featureimg"/> |  <img src='/img/check.png' class="featureimg"/> 
+Development licence cost                 | FREE        | FREE  
+Production license cost                  | FREE        | from $9/month   
+                                         | <a href='http://developer.radiusnetworks.com/ibeacon/android/download.html' class='btn-rad-blue'>Download 0.6</a>    | <a href='plans.html' class='btn-rad-blue'>Download 1.0</a>
+>>>>>>> 30cefd07e0cb02ab79be144206ad076dad93c4d5
 
 <a style="color:#fff;" href="/ibeacon/android" class="btn-rad-blue">Back</a>
