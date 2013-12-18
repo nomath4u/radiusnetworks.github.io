@@ -2,7 +2,7 @@
 layout: android-ibeacon-library
 ---
 
-##Please Pick a Plan
+##Choose Your Plan
 
 Pro Developer FREE  | Pro Basic $9/Mo       | Full Pro $49/Mo
 :------------------:|:---------------------:|:---------:
