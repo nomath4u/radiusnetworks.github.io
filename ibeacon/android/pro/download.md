@@ -4,7 +4,7 @@ layout: android-ibeacon-library
 
 
 
-##Choose your Download:  Open Source vs. Pro Library
+##Choose your Download:<br/> Open Source vs. Pro Library
 
 <style>.featureimg { width:20px; height:20px; margin:0px; }</style>
 
