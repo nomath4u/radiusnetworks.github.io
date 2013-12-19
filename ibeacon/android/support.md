@@ -14,7 +14,7 @@ If you have found a bug or want to propose a new feature, please create an issue
 
 ### Volunteers Wanted
 
-If you'd like to volunteer to help, we'd love to hear from you!  Please contact support@radiusnetworks.com.
+If you'd like to volunteer to help, we'd love to hear from you!  Please send a note to support@radiusnetworks.com.
 
 ### Consulting
 
