@@ -40,6 +40,11 @@ layout: android-ibeacon-library
 		<td><img src='/img/check.png' class="featureimg"/></td>
 	</tr>
 	<tr>
+		<td>Centrally manage messaging and other iBeacon-specific data</td>
+		<td><img src='/img/redx.png' class="featureimg"/></td>
+		<td><img src='/img/check.png' class="featureimg"/></td>
+	</tr>
+	<tr>
 		<td>Auto battery savings of 60 %</td>
 		<td><img src='/img/redx.png' class="featureimg"/></td>
 		<td><img src='/img/check.png' class="featureimg"/></td>
