@@ -23,12 +23,6 @@ layout: android-ibeacon-library
 		<td>iBeacon Ranging and Monitoring  </td>
 		<td><img src='/img/check.png' class="featureimg"/></td>
 		<td><img src='/img/check.png' class="featureimg"/></td>
-	</tr>
-		<tr>
-		<td>Free Upgrades</td>
-		<td><img src='/img/check.png' class="featureimg"/></td>
-		<td><img src='/img/check.png' class="featureimg"/></td>
-	</tr>
 	<tr>
 		<td>Auto launches app on iBeacon detection</td>
 		<td><img src='/img/redx.png' class="featureimg"/></td>
@@ -45,8 +39,14 @@ layout: android-ibeacon-library
 		<td><img src='/img/check.png' class="featureimg"/></td>
 	</tr>
 	<tr>
-		<td>Auto battery savings of 60 %</td>
+		<td>Battery Manager, savings of 60%</td>
 		<td><img src='/img/redx.png' class="featureimg"/></td>
+		<td><img src='/img/check.png' class="featureimg"/></td>
+	</tr>
+	</tr>
+		<tr>
+		<td>Free Upgrades</td>
+		<td><img src='/img/check.png' class="featureimg"/></td>
 		<td><img src='/img/check.png' class="featureimg"/></td>
 	</tr>
 	<tr>
