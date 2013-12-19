@@ -4,7 +4,7 @@ layout: android-ibeacon-library
 
 
 
-##Open Source vs. Pro Library
+##Choose your Download:  Open Source vs. Pro Library
 
 <style>.featureimg { width:20px; height:20px; margin:0px; }</style>
 
@@ -70,4 +70,4 @@ layout: android-ibeacon-library
 		<td><a style="color:#fff;" href='plans.html' class='btn-rad-blue'>Download 1.0</a></td>
 	</tr>
 </table>
--<a style="color:#fff;" href="/ibeacon/android" class="btn-rad-blue">Back</a>
+
