@@ -10,7 +10,8 @@ See [configuring your project]() for more information on how to use the binary d
 
 ####Latest Stable Release 0.7.2
 
-[Release Notes](releasenotes_0_7_1.html)
+[Release Notes 0.7.2](releasenotes_0_7_2.html)
+[Release Notes 0.7.1](releasenotes_0_7_1.html)
 
 <style>
   .close { 
