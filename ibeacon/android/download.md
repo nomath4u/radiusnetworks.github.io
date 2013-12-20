@@ -19,9 +19,9 @@ See [configuring your project]() for more information on how to use the binary d
   }
 </style>
 
-[AndroidIBeaconLibrary-0.7.1.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.aar)  
+[AndroidIBeaconLibrary-0.7.2.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.2.aar)  
 
-[AndroidIBeaconLibrary-0.7.1.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.tar.gz)
+[AndroidIBeaconLibrary-0.7.2.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.2.tar.gz)
 
 
 ####Archived Releases
