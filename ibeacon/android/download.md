@@ -19,16 +19,16 @@ See [configuring your project]() for more information on how to use the binary d
   }
 </style>
 
-[AndroidIBeaconLibrary-0.7.1.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.aar)  
+<i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.7.1.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.aar)  
 
-[AndroidIBeaconLibrary-0.7.1.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.tar.gz)
+<i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.7.1.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.tar.gz)
 
 
 ####Archived Releases
 
-[AndroidIBeaconLibrary-0.6.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.6.aar)
+<i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.6.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.6.aar)
 
-[AndroidIBeaconLibrary-0.6.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.6.tar.gz)
+<i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.6.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.6.tar.gz)
 
 ###Source Distribution###
 
