@@ -13,5 +13,7 @@ FREE<br><a href='http://www.proximitykit.com/android-download' class='btn-rad-bl
 
 Need more? Something different? [Get in touch](http://radiusnetworks.com/sales-request.html).
 
+Already have a license for the Pro Library?  Access your download page [on ProximityKit.com.](http://www.proximitykit.com/android-download)
+
 
 
