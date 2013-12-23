@@ -66,7 +66,7 @@ layout: android-ibeacon-library
 	</tr>
 	<tr>
 		<td></td>
-		<td><a style="color:#fff;" href='http://developer.radiusnetworks.com/ibeacon/android/download.html' class='btn-rad-blue'>Release 0.6</a></td>
+		<td><a style="color:#fff;" href='http://developer.radiusnetworks.com/ibeacon/android/download.html' class='btn-rad-blue'>Release 0.7</a></td>
 		<td><a style="color:#fff;" href='plans.html' class='btn-rad-blue'>Release 1.0</a></td>
 	</tr>
 </table>
