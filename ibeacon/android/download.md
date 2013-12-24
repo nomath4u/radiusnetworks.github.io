@@ -19,9 +19,9 @@ See [configuring your project]() for more information on how to use the binary d
   }
 </style>
 
-<i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.7.1.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.aar)  
+<i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.7.3.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.3.aar)  
 
-<i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.7.1.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.1.tar.gz)
+<i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.7.3.tar.gz](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.3.tar.gz)
 
 
 ####Archived Releases
