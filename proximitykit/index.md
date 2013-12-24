@@ -6,9 +6,12 @@ layout: proximitykit
 
 ## SDK Download and Install
 
-Download and install the configuration and framework for your iOS application.
+### iOS
 
-<a class="btn" href="http://proximitykit.com/download">SDK Download and Install</a>
+Download and install the configuration file and library.
+
+<a class="btn" href="http://proximitykit.com/download">iOS SDK Download and Install</a>
+<a class="btn" href="http://proximitykit.com/android-download">Android SDK Download and Install</a>
 
 ## Getting Started
 
