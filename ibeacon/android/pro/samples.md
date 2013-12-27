@@ -28,17 +28,6 @@ Here is the AndroidManifest.xml entry.  Note that it declares a custom Applicati
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        ...
-
-        <service android:enabled="true" android:exported="false"
-            android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor">
-			<meta-data android:name="background" android:value="true" />
-            <intent-filter 
-               android:priority="1" >
-                <action android:name="com.radiusnetworks.proximityreference.DID_RANGING" />
-                <action android:name="com.radiusnetworks.proximityreference.DID_MONITORING" />
-            </intent-filter>
-        </service> 
     </application>
 ```
 

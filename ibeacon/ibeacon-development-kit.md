@@ -26,7 +26,6 @@ layout: ibeacon
 </td>
 </tr>
 
-
 <div class="amazon-button">
 
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js"></script>
@@ -56,7 +55,7 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 
 </div>
 
-<div style="font-size: 14px;">Shipping Included. *  IN STOCK</div>
+<div style="font-size: 14px;"><p style="font-weight: bold;">In Stock</p> Shipping Included *  </div>
 
 ---
 
