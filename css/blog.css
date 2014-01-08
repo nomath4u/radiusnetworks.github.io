@@ -5,3 +5,7 @@
 .all-posts {
   border-top: thin solid #eee;
 }
+.post {
+  border-bottom: thin solid #888;
+  margin-bottom: 50px;
+}
