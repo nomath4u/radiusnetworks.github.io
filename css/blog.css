@@ -6,6 +6,7 @@
   border-top: thin solid #eee;
 }
 .post {
-  border-bottom: thin solid #888;
+  border-bottom: thin solid #999;
+  padding-bottom: 50px;
   margin-bottom: 50px;
 }
