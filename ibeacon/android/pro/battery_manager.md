@@ -12,7 +12,7 @@ iBeacons are Bluetooth LE radio transmitters, and detecting one with your Androi
 
 ####How it works
 
-The battery manager automatically slows down the Bluetooth LE scan rate when your app is in the background.  By default, it does a 30 second scan once every five minutes -- similar to the way iOS behaves when an app is not Ranging for iBeacons in the foreground.  But unlike iOS, the details are completely transparent and completely configurable.  You can reduce the background scan frequency further to save even more power, or increase it to make your app more reponsive -- it all depends on your requirements!
+The battery manager automatically slows down the Bluetooth LE scan rate when your app is in the background.  By default, it does a 30 second scan once every five minutes -- similar to the way iOS behaves when an app is not Ranging for iBeacons in the foreground.  But unlike iOS, the details are completely transparent and completely configurable.  You can reduce the background scan frequency further to save even more power, or increase it to make your app more responsive -- it all depends on your requirements!
 
 ####How much does it save?
 
@@ -39,7 +39,10 @@ public class MyApplication extends Application {
 
 ####How do I customize the background scan rate?
 
-You may alter the default background scan period and the time between scans using the methods on the IBeaconManager class:
+You may alter the default background scan period and the time between scans using the methods on the IBeaconManager class.  Doing this is easy, but be careful.  The longer you wait
+between scans, the longer it will take to detect an iBeacon.  And the more reduce the length of the scan, the more likely it is that you might miss an advertisement from an iBeacon.  We recommend not reducing the scan period to be less than 1.1 seconds, since many iBeacons only transmit at a frequency of 1 Hz.  But keep in mind that the radio may miss a single iBeacon advertisement, which is why we make the default background scan period 30 seconds to make extra, extra sure that any transmitting iBeacons get detected.
+
+Below is an example of a rather extreme battery savings configuration: 
 
 ```
 // set the duration of the scan to be 1.1 seconds
