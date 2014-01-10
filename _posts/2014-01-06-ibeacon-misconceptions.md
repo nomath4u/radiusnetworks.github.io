@@ -24,7 +24,7 @@ The fact of the matter is iBeacons are not immediately noticed all the time. Som
 
 # #4 iBeacon Distance is Accurate
 
-If speak with the Apple engineers explaining about iBeacons, you will notice they never say "distance" without first saying "estimated". This is because the distance is really just that, an estimate. The way the distance is estimated is with the RSSI, or the signal strength of the broadcast.
+If you speak with the Apple engineers explaining about iBeacons, you will notice they never say "distance" without first saying "estimated". This is because the distance is really just that, an estimate. The way the distance is estimated is with the RSSI, or the signal strength of the broadcast.
 
 But this is not to say that the distance estimate is not useful. It can be, the closer you are the more accurate, and it can be calibrated.
 
