@@ -22,7 +22,7 @@ Parts:
 * Apple's AirLocate program, installed on the iPad
 * Windows computer
 * Texas Instruments CC2540 Bluetooth LE dongle, inserted into the Windows computer
-* [TI SmartRF Packet Sniffer tool](www.ti.com/tool/packet-sniffer), loaded on the Windows computer
+* [TI SmartRF Packet Sniffer tool](http://www.ti.com/tool/packet-sniffer), loaded on the Windows computer
 
 We started up the packet sniffer tool, selected "Bluetooth LE" as the protocol, and started a capture.  Not much was going on.  Then we fired up AirLocate, configured it to act as an iBeacon using AirLocate's default proximityUUID E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major 0 and minor 0.  As soon as we did this, we started seeing new bluetooth packets once per second.
 
