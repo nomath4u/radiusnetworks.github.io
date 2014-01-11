@@ -6,7 +6,19 @@
   border-top: thin solid #eee;
 }
 .post {
-  border-bottom: thin solid #999;
   padding-bottom: 50px;
   margin-bottom: 50px;
+}
+div.post-footer, div.post-footer a {
+  color: #D5D5D5;
+}
+
+h2.title {
+  color #3A9AC4;
+  margin-bottom: 0;
+  border-bottom: thin solid #3A9AC4;
+}
+
+h2.title a {
+  text-decoration: none;
 }
