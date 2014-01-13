@@ -30,9 +30,9 @@ But this is not to say that the distance estimate is not useful. It can be, the 
 
 # #5 iBeacons can only be Detected by Apple Devices
 
-It is understandable that you iBeacons are not limited to iOS devices at all. Since an iBeacon just broadcasts a Bluetooth Low Energy signal any device that supports BLE should be able to detect them.
+Since Apple came up with the concept, it is understandable that people think iBeacons would limited to their hardware. Luckily an iBeacon just broadcasts a standard Bluetooth Low Energy signal, and any device that supports BLE should be able to detect it.
 
-Form mobile devices there is already good support. iOS has this capability built into CoreLocation. BLE enabled Android devices can take advantage of Radius' free and open source [Android iBeacon Library](http://developer.radiusnetworks.com/ibeacon/android/).
+iOS has this capability built into CoreLocation. BLE enabled Android devices can take advantage of Radius' free and open source [Android iBeacon Library](http://developer.radiusnetworks.com/ibeacon/android/).
 
 ## Building Blocks for a Bigger Solution
 
