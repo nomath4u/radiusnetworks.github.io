@@ -6,7 +6,7 @@ layout: messageradius
 
 ### Apple iOS
 
-For Apple iOS devices, we recommend using bluetooth iBeacon detection.  This requires embedding the [Message Radius Client Library](/downloads/libMRClient.zip) in your app, and enabling it with the following calls:
+For Apple iOS devices, we recommend using bluetooth iBeacon detection.  This requires embedding the [Message Radius Client Library](http://app.messageradius.com/downloads/libMRClient.zip) in your app, and enabling it with the following calls:
 
     #import "MRClient.h"
     ...

@@ -16,9 +16,9 @@ They don't know anything. They simply broadcast. There is no pairing, and no exc
 
 # #3 iBeacons Are Detected Immediately
 
-The fact of the matter is iBeacons are not immediately noticed all the time. Sometimes they are noticed quite quickly, but sometimes it can be [5 minutes or more](2013/11/13/ibeacon-monitoring-in-the-background-and-foreground.html) before a phone responds to an iBeacon. This is due to a number of factors including:
+The fact of the matter is iBeacons are not immediately noticed all the time. Sometimes they are noticed quite quickly, but sometimes it can be [5 minutes or more](/2013/11/13/ibeacon-monitoring-in-the-background-and-foreground.html) before a phone responds to an iBeacon. This is due to a number of factors including:
 
-1. How frequently a beacon broadcasts. That's right, the BTE radio has to announce it's identifiers. This is not a constant-on type thing. How frequently this happens is up to the folks that built the beacon. They could broadcast 10 times a second, or once a minute. This is especially a concern with battery powered iBeacons that are worried about a very long battery life.
+1. How frequently a beacon broadcasts. That's right, the BLE radio has to announce it's identifiers. This is not a constant-on type thing. How frequently this happens is up to the folks that built the beacon. They could broadcast 10 times a second, or once a minute. This is especially a concern with battery powered iBeacons that are worried about a very long battery life.
 
 2. How often the phone scans for a beacon. The trick here is that there needs to be an overlap from the broadcast and the scan. And just like the iBeacon manufacturer this can depend on the phone hardware. The newer iPhones have improved support for BLE, and our experimentation shows they respond faster.
 
@@ -28,14 +28,14 @@ If you speak with the Apple engineers explaining about iBeacons, you will notice
 
 But this is not to say that the distance estimate is not useful. It can be, the closer you are the more accurate, and it can be calibrated.
 
-# #5 iBeacons can be Automatically Updated
+# #5 iBeacons can only be Detected by Apple Devices
 
-Now this depends on the iBeacon, but for most off-the-shelf iBeacons there is no way to update in the field. Well, aside from getting physical access to the device and manually updating the information. Normally the expectation is that the iBeacon would have some way to check for updates with a server.
+Since Apple came up with the concept, it is understandable that people think iBeacons would limited to their hardware. Luckily an iBeacon just broadcasts a standard Bluetooth Low Energy signal, and any device that supports BLE should be able to detect it.
 
-Sure, iBeacon software running on a computer could do this pretty easily, but when you say iBeacon most people think that little button cell powered embedded device. They just can't be updated easily.
+iOS has this capability built into CoreLocation. BLE enabled Android devices can take advantage of Radius' free and open source [Android iBeacon Library](http://developer.radiusnetworks.com/ibeacon/android/).
 
 ## Building Blocks for a Bigger Solution
 
-All these limitations can be worked around. It normally involves building out a more sophisticated system. Radius Networks is working to build tools to help [with that](http://www.radiusnetworks.com/ibeacon-services.html).
+iBeacons are an exciting emerging technology, but they are just one critical building block in a complete proximity-enabled solution. Radius Networks is working hard to be your best choice for all the parts and pieces it takes to help developers take advantage of all the benefits that iBeacons and proximity can provide.
 
 
