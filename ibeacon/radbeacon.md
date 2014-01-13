@@ -5,9 +5,18 @@ layout: ibeacon
 
 ##RadBeacon
 
+
+
 <img style="height: 200px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; float:left; border-radius: 7px;" src='/img/radbeacon.png'>
 
-<table>
+<style>
+comparison td {
+padding: 4px;
+text-align: center;
+}
+</style>
+
+<table class="comparison">
 <tr>
 <td>Quantity</td>
 <td>Default IDs</td>
