@@ -24,7 +24,7 @@ search criteria, an notification is sent to your app which executes custom code 
 ####What are the limitations?
 
 Looking for iBeacons in the background can drain your users' battery, so by default, the library will only look for iBeacons once every five minutes.  If you need a faster response time, you may increase
-this frequency, but be aware that users may notice your app is draining their battery faster than before, and could decide to uninstall it.  See the [battery manager](battery-manager.html) section for more information.
+this frequency, but be aware that users may notice your app is draining their battery faster than before, and could decide to uninstall it.  See the [battery manager](battery_manager.html) section for more information.
 
 Another limitation is that on some phones, if the user has moved your app to the SD card, the Android iBeacon Service will not be able to start at boot, effectively disabling this feature.
 
