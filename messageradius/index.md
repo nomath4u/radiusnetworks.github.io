@@ -29,5 +29,4 @@ The topics available in this documentation
 * [Subscriptions](subscriptions.html)
 * [Examples](examples.html)
 * [Command Line Tools](tools.html)
-* [Mobile SDK](mobile.html)
 
