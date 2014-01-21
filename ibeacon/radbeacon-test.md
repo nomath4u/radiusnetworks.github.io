@@ -29,4 +29,8 @@ value: ordervalue}
 <script language="javascript" type="text/javascript">
 RenderCBAButtonById("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5yYmQtMTwvU0tVPjxNZXJjaGFudElkPkEyWDJQTTJVOTMwRkNLPC9NZXJjaGFudElkPjxUaXRsZT5URVNUIFJhZEJlYWNvbiBEZWZhdWx0IElEIC0gMSBQYWNrPC9UaXRsZT48UHJpY2U+PEFtb3VudD4yOTwvQW1vdW50PjxDdXJyZW5jeUNvZGU+VVNEPC9DdXJyZW5jeUNvZGU+PC9QcmljZT48UXVhbnRpdHk+MTwvUXVhbnRpdHk+PFdlaWdodD48QW1vdW50PjAuMjwvQW1vdW50PjxVbml0PmxiPC9Vbml0PjwvV2VpZ2h0PjxGdWxmaWxsbWVudE5ldHdvcms+TUVSQ0hBTlQ8L0Z1bGZpbGxtZW50TmV0d29yaz48L0l0ZW0+PC9JdGVtcz48L0NhcnQ+PC9PcmRlcj4=;signature:TINJc8XeisiBvg2HtR9vYMgaBQo=", "cbaxmlButton-pbRSIFNc8w-1390335642");
 </script>
+
+<script>
+window.addEventListener("unload", function() { indow.localStorage.setItem("lastViewedItemForPurchase", document.getElementsByTagName("option")[document.getElementsByTagName("select")[0].selectedIndex].innerHTML) } )
+</script>
 </td></tr></table>
