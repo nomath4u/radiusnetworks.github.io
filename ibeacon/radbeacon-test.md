@@ -1,5 +1,10 @@
+---
+layout: ibeacon
+---
 
+## RadBeacon test purchase page
 
+Try to buy an item below and see if you get asked about custom IDs.  Don't worry, this is just a standbox button so the orders won't actually go through.
 
 <script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/sandbox/PaymentWidgets.js"></script>
 <script>
