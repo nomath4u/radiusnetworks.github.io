@@ -31,6 +31,6 @@ RenderCBAButtonById("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0
 </script>
 
 <script>
-window.addEventListener("unload", function() { indow.localStorage.setItem("lastViewedItemForPurchase", document.getElementsByTagName("option")[document.getElementsByTagName("select")[0].selectedIndex].innerHTML) } )
+window.addEventListener("unload", function() { window.localStorage.setItem("lastViewedItemForPurchase", document.getElementsByTagName("option")[document.getElementsByTagName("select")[0].selectedIndex].innerHTML) } )
 </script>
 </td></tr></table>
