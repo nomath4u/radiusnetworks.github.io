@@ -24,4 +24,5 @@ if(decodeURIComponent(getCookie("lastViewedItemForPurchase")).indexOf("RadBeacon
 }
 
 
+
 </script>
