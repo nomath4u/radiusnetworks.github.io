@@ -32,10 +32,11 @@ RenderCBAButtonById("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0
 
 <script>
 
-document.cookie = "lastViewedItemForPurchase=,path=/;domain=radiusnetworks.com";
+document.cookie = "lastViewedItemForPurchase=NONE;path=/;domain=radiusnetworks.com";
 window.addEventListener("unload", function() { 
-document.cookie = "lastViewedItemForPurchase="+encodeURIComponent(document.getElementsByTagName("option")[document.getElementsByTagName("select")[0].selectedIndex].innerHTML)+",path=/;domain=radiusnetworks.com”;
+document.cookie = "lastViewedItemForPurchase="+encodeURIComponent(document.getElementsByTagName("option")[document.getElementsByTagName("select")[0].selectedIndex].innerHTML)+”;path=/;domain=radiusnetworks.com”;
 });
+
 </script>
 
 
