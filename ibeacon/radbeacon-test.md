@@ -1,0 +1,43 @@
+---
+layout: ibeacon
+---
+
+## RadBeacon test purchase page
+
+Try to buy an item below and see if you get asked about custom IDs.  Don't worry, this is just a standbox button so the orders won't actually go through.
+
+<script type="text/javascript" src="https://static-na.payments-amazon.com/cba/js/us/sandbox/PaymentWidgets.js"></script>
+<script>
+RenderCBAButtonById = function(ordervalue, buttonid) {
+var standard1 = new CBA.Widgets.StandardCheckoutWidget({
+merchantId: "A2X2PM2U930FCK",
+orderInput: {
+format: "XML",
+value: ordervalue}
+}).render(buttonid);
+}
+</script>
+
+<table><tr>
+<td>
+<select name="order-input" ONCHANGE="javascript:RenderCBAButtonById(this.options[this.selectedIndex].value, 'cbaxmlButton-pbRSIFNc8w-1390335642');">
+<option value="type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5yYmQtMTwvU0tVPjxNZXJjaGFudElkPkEyWDJQTTJVOTMwRkNLPC9NZXJjaGFudElkPjxUaXRsZT5URVNUIFJhZEJlYWNvbiBEZWZhdWx0IElEIC0gMSBQYWNrPC9UaXRsZT48UHJpY2U+PEFtb3VudD4yOTwvQW1vdW50PjxDdXJyZW5jeUNvZGU+VVNEPC9DdXJyZW5jeUNvZGU+PC9QcmljZT48UXVhbnRpdHk+MTwvUXVhbnRpdHk+PFdlaWdodD48QW1vdW50PjAuMjwvQW1vdW50PjxVbml0PmxiPC9Vbml0PjwvV2VpZ2h0PjxGdWxmaWxsbWVudE5ldHdvcms+TUVSQ0hBTlQ8L0Z1bGZpbGxtZW50TmV0d29yaz48L0l0ZW0+PC9JdGVtcz48L0NhcnQ+PC9PcmRlcj4=;signature:TINJc8XeisiBvg2HtR9vYMgaBQo=">$29.00 - TEST RadBeacon Default ID - 1 Pack</option><option value="type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5yYmQtMTA8L1NLVT48TWVyY2hhbnRJZD5BMlgyUE0yVTkzMEZDSzwvTWVyY2hhbnRJZD48VGl0bGU+VEVTVCBSYWRCZWFjb24gRGVmYXVsdCBJRCAtIDEwIFBhY2s8L1RpdGxlPjxQcmljZT48QW1vdW50PjI1MDwvQW1vdW50PjxDdXJyZW5jeUNvZGU+VVNEPC9DdXJyZW5jeUNvZGU+PC9QcmljZT48UXVhbnRpdHk+MTwvUXVhbnRpdHk+PFdlaWdodD48QW1vdW50PjAuMjwvQW1vdW50PjxVbml0PmxiPC9Vbml0PjwvV2VpZ2h0PjxGdWxmaWxsbWVudE5ldHdvcms+TUVSQ0hBTlQ8L0Z1bGZpbGxtZW50TmV0d29yaz48L0l0ZW0+PC9JdGVtcz48L0NhcnQ+PC9PcmRlcj4=;signature:PY/JrF7cykprVDMlMgLfOm+LfQg=">$250.00 - TEST RadBeacon Default ID - 10 Pack</option><option value="type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5yYmQtMTAwPC9TS1U+PE1lcmNoYW50SWQ+QTJYMlBNMlU5MzBGQ0s8L01lcmNoYW50SWQ+PFRpdGxlPlRFU1QgUmFkQmVhY29uIERlZmF1bHQgSUQgLSAxMDAgUGFjazwvVGl0bGU+PFByaWNlPjxBbW91bnQ+MTkwMDwvQW1vdW50PjxDdXJyZW5jeUNvZGU+VVNEPC9DdXJyZW5jeUNvZGU+PC9QcmljZT48UXVhbnRpdHk+MTwvUXVhbnRpdHk+PFdlaWdodD48QW1vdW50PjE8L0Ftb3VudD48VW5pdD5sYjwvVW5pdD48L1dlaWdodD48RnVsZmlsbG1lbnROZXR3b3JrPk1FUkNIQU5UPC9GdWxmaWxsbWVudE5ldHdvcms+PC9JdGVtPjwvSXRlbXM+PC9DYXJ0PjwvT3JkZXI+;signature:cvzlwuEkeBatGapIWCwUsBU83p8=">$1900.00 - TEST RadBeacon Default ID - 100 Pack</option><option value="type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5yYmMtMTwvU0tVPjxNZXJjaGFudElkPkEyWDJQTTJVOTMwRkNLPC9NZXJjaGFudElkPjxUaXRsZT5URVNUIFJhZEJlYWNvbiBDdXN0b20gSUQgLSAxIFBhY2s8L1RpdGxlPjxQcmljZT48QW1vdW50PjM5PC9BbW91bnQ+PEN1cnJlbmN5Q29kZT5VU0Q8L0N1cnJlbmN5Q29kZT48L1ByaWNlPjxRdWFudGl0eT4xPC9RdWFudGl0eT48V2VpZ2h0PjxBbW91bnQ+MC4yPC9BbW91bnQ+PFVuaXQ+bGI8L1VuaXQ+PC9XZWlnaHQ+PEZ1bGZpbGxtZW50TmV0d29yaz5NRVJDSEFOVDwvRnVsZmlsbG1lbnROZXR3b3JrPjwvSXRlbT48L0l0ZW1zPjwvQ2FydD48L09yZGVyPg==;signature:VhF0shEW8oh5wvSIL/ArBKRMStg=">$39.00 - TEST RadBeacon Custom ID - 1 Pack</option><option value="type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5yYmMtMTA8L1NLVT48TWVyY2hhbnRJZD5BMlgyUE0yVTkzMEZDSzwvTWVyY2hhbnRJZD48VGl0bGU+VEVTVCBSYWRCZWFjb24gQ3VzdG9tIElEIC0gMTAgUGFjazwvVGl0bGU+PFByaWNlPjxBbW91bnQ+MzMwPC9BbW91bnQ+PEN1cnJlbmN5Q29kZT5VU0Q8L0N1cnJlbmN5Q29kZT48L1ByaWNlPjxRdWFudGl0eT4xPC9RdWFudGl0eT48V2VpZ2h0PjxBbW91bnQ+MC4yPC9BbW91bnQ+PFVuaXQ+bGI8L1VuaXQ+PC9XZWlnaHQ+PEZ1bGZpbGxtZW50TmV0d29yaz5NRVJDSEFOVDwvRnVsZmlsbG1lbnROZXR3b3JrPjwvSXRlbT48L0l0ZW1zPjwvQ2FydD48L09yZGVyPg==;signature:NKPIWozXjeJq0onVfGifTjNqnIs=">$330.00 - TEST RadBeacon Custom ID - 10 Pack</option><option value="type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5yYmMtMTAwPC9TS1U+PE1lcmNoYW50SWQ+QTJYMlBNMlU5MzBGQ0s8L01lcmNoYW50SWQ+PFRpdGxlPlRFU1QgUmFkQmVhY29uIEN1c3RvbSBJRCAtIDEwMCBQYWNrPC9UaXRsZT48UHJpY2U+PEFtb3VudD4yMzAwPC9BbW91bnQ+PEN1cnJlbmN5Q29kZT5VU0Q8L0N1cnJlbmN5Q29kZT48L1ByaWNlPjxRdWFudGl0eT4xPC9RdWFudGl0eT48V2VpZ2h0PjxBbW91bnQ+MTwvQW1vdW50PjxVbml0PmxiPC9Vbml0PjwvV2VpZ2h0PjxGdWxmaWxsbWVudE5ldHdvcms+TUVSQ0hBTlQ8L0Z1bGZpbGxtZW50TmV0d29yaz48L0l0ZW0+PC9JdGVtcz48L0NhcnQ+PC9PcmRlcj4=;signature:3RHrr36CyfGTnalJRhgfvwnqZaM=">$2300.00 - TEST RadBeacon Custom ID - 100 Pack</option></select>
+</td>
+<td>
+<div id="cbaxmlButton-pbRSIFNc8w-1390335642">
+<img src="https://payments-sandbox.amazon.com/gp/cba/button?cartOwnerId=A2X2PM2U930FCK&size=medium&color=orange&background=white"/><br></div>
+<script language="javascript" type="text/javascript">
+RenderCBAButtonById("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48T3JkZXIgeG1sbnM9J2h0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDgtMTEtMzAvJz48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5yYmQtMTwvU0tVPjxNZXJjaGFudElkPkEyWDJQTTJVOTMwRkNLPC9NZXJjaGFudElkPjxUaXRsZT5URVNUIFJhZEJlYWNvbiBEZWZhdWx0IElEIC0gMSBQYWNrPC9UaXRsZT48UHJpY2U+PEFtb3VudD4yOTwvQW1vdW50PjxDdXJyZW5jeUNvZGU+VVNEPC9DdXJyZW5jeUNvZGU+PC9QcmljZT48UXVhbnRpdHk+MTwvUXVhbnRpdHk+PFdlaWdodD48QW1vdW50PjAuMjwvQW1vdW50PjxVbml0PmxiPC9Vbml0PjwvV2VpZ2h0PjxGdWxmaWxsbWVudE5ldHdvcms+TUVSQ0hBTlQ8L0Z1bGZpbGxtZW50TmV0d29yaz48L0l0ZW0+PC9JdGVtcz48L0NhcnQ+PC9PcmRlcj4=;signature:TINJc8XeisiBvg2HtR9vYMgaBQo=", "cbaxmlButton-pbRSIFNc8w-1390335642");
+</script>
+
+<script>
+
+document.cookie = "lastViewedItemForPurchase=;path=/;domain=radiusnetworks.com";
+window.addEventListener("unload", function() { 
+document.cookie = "lastViewedItemForPurchase="+encodeURIComponent(document.getElementsByTagName("option")[document.getElementsByTagName("select")[0].selectedIndex].innerHTML)+";path=/;domain=radiusnetworks.com";
+});
+
+</script>
+
+
+</td></tr></table>
