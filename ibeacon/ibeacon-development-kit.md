@@ -74,5 +74,10 @@ The Dual iBeacon Model also includes:
 
 [Replacement SD cards](/ibeacon/ibeacon-development-kit-sd-card.html) are also available.  For other special orders, please contact [sales@radiusnetworks.com](mailto:sales@radiusnetworks.com)
 
+<div style="font-size: 14px;"><p style="font-weight: bold;">Ordering multiple items?</p></div>
+
+Multiple orders of any of our products made to the same address will be shipped together and any extra shipping costs will be refunded.
+
+
 <div style="font-size:14px;color: #555;">&#42; Usually shipped same day for in stock orders placed by 10 a.m. Monday-Friday US Eastern Time.  Free domestic delivery is via US Priority mail (2-3 day service).  Express and international delivery available at additional cost.  Shipment does not include extra fees from customs, or additional costs associated with your country. Any orders returned as undeliverable are refunded less actual shipping costs once product is verified in working order.</div>
 <div style="font-size:14px;color: #555;">&#42;&#42; Standard 5V micro USB charger (cell phone or tablet style) required, not included.</div>
