@@ -74,7 +74,7 @@ The Dual iBeacon Model also includes:
 
 [Replacement SD cards](/ibeacon/ibeacon-development-kit-sd-card.html) are also available.  For other special orders, please contact [sales@radiusnetworks.com](mailto:sales@radiusnetworks.com)
 
-<div style="font-size: 14px;"><p style="font-weight: bold;">Ordering multiple items?</p></div>
+<p style="font-weight: bold;">Ordering multiple items?</p>
 
 Multiple orders of any of our products made to the same address will be shipped together and any extra shipping costs will be refunded.
 
