@@ -62,7 +62,7 @@ d6 be 89 8e # Access address for advertising data (this is always the same fixed
 05 a2 17 6e 3d 71 # Mac address.... note this does not seem to be the actual bluetooth mac of the iPad -- apparently it gets spoofed by iOS
 # Actual Advertising Data Starts Here
 02 01 1a 1a ff 4c 00 02 15 # Apple's static prefix to the advertising data -- this is always the same
-e2 c5 6d b5 df fb 48 d2 b0 60 d0 f5 a7 10 96 e0 # iBeacon profileUUID
+e2 c5 6d b5 df fb 48 d2 b0 60 d0 f5 a7 10 96 e0 # iBeacon ProximityUUID
 00 00 # major (LSB first)
 00 00 # minor (LSB first)
 c5 # The 2's complement of the calibrated Tx Power
