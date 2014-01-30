@@ -55,6 +55,8 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 
 </div>
 
+<a href="http://www.radiusnetworks.com/buy-beacons.html" class="btn btn-rad-blue">More iBeacons</a>
+
 <div style="font-size: 14px;"><p style="font-weight: bold;">In Stock</p> Shipping Included *  </div>
 
 ---
