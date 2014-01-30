@@ -20,6 +20,7 @@ a.btn:hover {
 
 .btn-rad-blue {
   background: #3abeee;
+  padding: 5px 15px 5px;
   border-radius: 4px;
   border: 1px solid #3abeee;
   color: #fff;
