@@ -151,7 +151,11 @@ public class AndroidProximityReferenceApplication extends Application implements
 
 ## Accessing iBeacon Data Example Code (Pro Library Only)
 
+<i>Important:  when using the Pro Library, be sure to use com.radiusnetworks.proximity.ibeacon.IBeaconManager instead of com.radiusnetworks.ibeacon.IBeaconManager, or you will get a DataProviderException.</i>
+
 ```
+import com.radiusnetworks.proximity.ibeacon.IBeaconManager;
+
 public class MainActivity extends Activity implements IBeaconConsumer, RangeNotifier, IBeaconDataNotifier
 {
     public static final String TAG = "MainActivity";
