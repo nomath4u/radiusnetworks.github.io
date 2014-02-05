@@ -22,7 +22,7 @@ layout: ibeacon
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
-<div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">&nbsp&nbsp&nbsp Dual iBeacon Model</div>
+<div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">&nbsp&nbsp&nbsp&nbsp&nbsp Dual iBeacon Model</div>
 </td>
 </tr>
 
