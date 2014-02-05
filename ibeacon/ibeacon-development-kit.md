@@ -61,7 +61,7 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 
 ---
 
-Get started developing iBeacon apps with your own dedicated hardware iBeacon. Powered by a standard 5v micro USB power supply\*\*, you'll have everything you need to test out your awesome iBeacon proximity app ideas.  With the iBeacon Development Kit, you can easily customize the broadcast identifiers of the iBeacon as well as its broadcast frequency, making it an invaluable tool in the development of iBeacon enabled apps for both iOS and Android.
+  Get started developing iBeacon apps with your own dedicated hardware iBeacon. Powered by a standard 5v micro USB power supply\*\*, you'll have everything you need to test out your awesome iBeacon proximity app ideas.  With the iBeacon Development Kit, you can easily customize the iBeacon broadcast identifiers and broadcast frequency, making it an invaluable tool in the development of iBeacon enabled apps for both iOS and Android.
 
 Each fully assembled kit includes:
 
