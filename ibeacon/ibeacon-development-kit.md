@@ -3,7 +3,7 @@ layout: ibeacon
 ---
 
 
-##iBeacon Development Kit
+#iBeacon Development Kit
 
 <img style="height: 200px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; float:left; border-radius: 7px;" src='/img/pibeacon.jpg'>
 
@@ -22,7 +22,7 @@ layout: ibeacon
 <div style="height: 60px;float: left;font-size: 32px">$</div>
 <div style="height: 60px;float: left;font-size: 72px;line-height:60px">149</div>
 <div style="height: 60px;float: left;font-size: 24px">.99</div>
-<div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">Dual iBeacon Model</div>
+<div style="height: 30px;font-size: 14px; clear: both; padding-top: 10px;">   Dual iBeacon Model</div>
 </td>
 </tr>
 
@@ -61,14 +61,14 @@ RenderCBAButton("type:cba-signed-order/sha1-hmac/2;order:PD94bWwgdmVyc2lvbj0nMS4
 
 ---
 
-Get started developing iBeacon apps with your own dedicated hardware iBeacon. Powered by a standard 5v micro USB power supply\*\*, you'll have everything you need to test out your awesome iBeacon proximity app ideas.
+Get started developing iBeacon apps with your own dedicated hardware iBeacon. Powered by a standard 5v micro USB power supply\*\*, you'll have everything you need to test out your awesome iBeacon proximity app ideas.  With the iBeacon Development Kit, you can easily customize the broadcast identifiers of the iBeacon as well as its broadcast frequency, making it an invaluable tool in the development of iBeacon enabled apps for both iOS and Android.
 
 Each fully assembled kit includes:
 
 * Raspberry Pi PC
 * Bluetooth LE Module
 * 8 GB SD Card, pre-loaded with iBeacon software that's fully compatible with Apple's iBeacon SDK
-* [Full instructions](ibeacon-development-kit-instructions.html) for customizing the iBeacon identifiers
+* [Full instructions](ibeacon-development-kit-instructions.html) for customizing the iBeacon identifiers and broadcast frequency
 
 The Dual iBeacon Model also includes:
 
