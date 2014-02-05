@@ -27,8 +27,7 @@ transmitting.
 ###Verifying it Works
 
 Use an iBeacon test program like Radius Networks’ “Locate for iBeacon” (iOS) or “iBeaconLocate” (Android) to verify the
-iBeacon is transmitting. See our website for information on how to download these free tools: 
-http://www.radiusnetworks.com/ibeacon-services.html
+iBeacon is transmitting. [Click here](http://www.radiusnetworks.com/ibeacon-services.html) for information on how to download these free tools. 
 
 ###Information on iBeacon identifiers
 
@@ -70,10 +69,10 @@ does nothing unless you have the dual model).
 
 ```    
 export UUID1=2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6`
-export MAJOR1=1`
-export MINOR1=1`
-export POWER1=-59
-export BROADCAST_FREQUENCY1=10
+ export MAJOR1=1`
+ export MINOR1=1`
+ export POWER1=-59
+ export BROADCAST_FREQUENCY1=10
 ```
 
 To change iBeacon identifiers simply edit the values for each of these parameters.  Just paste your UUID in the standard
@@ -107,7 +106,7 @@ Kit, logging in with username: pi, password: raspberry
 Step 5. In the console, use the following commands to control the iBeacon:
 
 ```
-	ibeacon start    # starts all iBeacons
+       ibeacon start    # starts all iBeacons
 	ibeacon stop     # stops all iBeacons
 	ibeacon start 1  # starts the first iBeacon
 	ibeacon stop 1   # stops the first iBeacon
@@ -126,6 +125,6 @@ If you have problems configuring or operating the iBeacon Development Kit, email
 Radius Networks is a proximity services company that provides solutions to help businesses and individuals enhance 
 their experience through mobile device detection and location awareness. Located in Washington DC, Radius was founded 
 in 2011 by experienced entrepreneurs to build applications and services around wireless technology and mobile devices. 
-Visit radiusnetworks.com to learn more about what Radius Networks services can do for you.
+Visit [radiusnetworks.com](www.radiusnetworks.com) to learn more about what Radius Networks services can do for you.
 
 
