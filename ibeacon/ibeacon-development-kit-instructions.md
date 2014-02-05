@@ -84,7 +84,7 @@ for it to be visible since iOS devices can only detect iBeacons with known UUIDs
 
 ###Next Steps
 Now it's time to start developing your app! If you are developing for Android, be sure to check out Radius Networks'
-Android iBeacon Library. When you are ready to deploy your iBeacons, visit radiusnetworks.com to buy models suitable
+Android iBeacon Library. When you are ready to deploy your iBeacons, visit [our products page](http://www.radiusnetworks.com/buy-beacons.html) to buy models suitable
 for production use.
 
 ##Controlling the iBeacon(s) Manually
