@@ -1,5 +1,5 @@
 ---
-layout: ibeacon
+layout: ibeacon-m
 ---
 
 ## Scavenger Hunt Codes
