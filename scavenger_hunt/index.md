@@ -1,6 +1,7 @@
 ---
-layout: ibeacon
+layout: ibeacon-m
 ---
+
 
 ## iBeacon Scavenger Hunt
 
