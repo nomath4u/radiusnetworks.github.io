@@ -4,6 +4,8 @@ layout: ibeacon
 
 ##iBeacon Development Kit Instructions
 
+Note: These instructions are for a previous version of the iBeacon Development Kit (shipped Oct. 2013 - Jan. 2014).  For instructions on the latest version (shipping February, 2014) [click here](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html). 
+
 ### Picking a power supply
 
 The iBeacon Development Kit requires a standard 5V power supply with a micro USB connector.  The Raspberry Pi computer can be sensitive to poorly performing chargers.
