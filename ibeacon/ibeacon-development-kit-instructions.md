@@ -69,9 +69,9 @@ blocks like the one below, these give the identifiers for each transmitter (Note
 does nothing unless you have the dual model).
 
 ```    
-export UUID1=2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6`
- export MAJOR1=1`
- export MINOR1=1`
+export UUID1=2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6
+ export MAJOR1=1
+ export MINOR1=1
  export POWER1=-59
  export BROADCAST_FREQUENCY1=10
 ```
@@ -107,13 +107,13 @@ Kit, logging in with username: pi, password: raspberry
 Step 5. In the console, use the following commands to control the iBeacon:
 
 ```
-        ibeacon start    # starts all iBeacons
-	ibeacon stop     # stops all iBeacons
-	ibeacon start 1  # starts the first iBeacon
-	ibeacon stop 1   # stops the first iBeacon
-	ibeacon start 2  # starts the second iBeacon (dual model only)
-	ibeacon stop 2   # stops the second iBeacon (dual model only)
-	ibeacon help     # prints out summary of the different ibeacon commands
+ibeacon start    # starts all iBeacons
+ ibeacon stop     # stops all iBeacons
+ ibeacon start 1  # starts the first iBeacon
+ ibeacon stop 1   # stops the first iBeacon
+ ibeacon start 2  # starts the second iBeacon (dual model only)
+ ibeacon stop 2   # stops the second iBeacon (dual model only)
+ ibeacon help     # prints out summary of the different ibeacon commands
 ```
 
 You may also adjust the identifiers through the console by editing the /boot/ibeacon.conf file.  If you change the 
