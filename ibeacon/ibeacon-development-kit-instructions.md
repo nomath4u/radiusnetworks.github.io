@@ -126,6 +126,6 @@ If you have problems configuring or operating the iBeacon Development Kit, email
 Radius Networks is a proximity services company that provides solutions to help businesses and individuals enhance 
 their experience through mobile device detection and location awareness. Located in Washington DC, Radius was founded 
 in 2011 by experienced entrepreneurs to build applications and services around wireless technology and mobile devices. 
-Visit [radiusnetworks.com](www.radiusnetworks.com) to learn more about what Radius Networks services can do for you.
+Visit [our main website](http://www.radiusnetworks.com) to learn more about what Radius Networks services can do for you.
 
 
