@@ -30,7 +30,7 @@ transmitting.
 Use an iBeacon test program like Radius Networks’ “Locate for iBeacon” (iOS) or “iBeaconLocate” (Android) to verify the
 iBeacon is transmitting. [Click here](http://www.radiusnetworks.com/ibeacon-services.html) for information on how to download these free tools. 
 
-###Information on iBeacon identifiers
+##Information on iBeacon identifiers
 
 iBeacons have a three part identifier consisting of ProximityUUID, Major, and Minor. By default, the iBeacon Development
 Kit will transmit with a ProximityUUID of 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major of 1, and Minor of 1.  If you have
