@@ -33,8 +33,8 @@ Root Document:
 ```
 {
   links: {
-    kits_url: "http://gamera.dev/api/v1/kits.json",
-    ibeacons_url: "http://gamera.dev/api/v1/ibeacons.json"
+    kits_url: "http://proximitykit.com/api/v1/kits.json",
+    ibeacons_url: "http://proximitykit.com/api/v1/ibeacons.json"
   }
 }
 ```
@@ -55,7 +55,7 @@ This will return a list of kits, ibeacons and associated attributes.
     {
       "name": "My Kit",
       "id": 1,
-      "url": "http://localhost:3000/api/v1/kits/12.json",
+      "url": "http://proximitykit.com/api/v1/kits/1.json",
       "ibeacons": [
         {
           "id": 1,
@@ -63,7 +63,7 @@ This will return a list of kits, ibeacons and associated attributes.
           "uuid": "d16eae19-6fce-4198-a5a5-469c9599b709",
           "major": 1,
           "minor": 1,
-          "url": "http://localhost:3000/api/v1/ibeacons/1.json",
+          "url": "http://proximitykit.com/api/v1/ibeacons/1.json",
           "attributes": [
             {
               "location": "register"
@@ -76,7 +76,7 @@ This will return a list of kits, ibeacons and associated attributes.
           "uuid": "d16eae19-6fce-4198-a5a5-469c9599b709",
           "major": 1,
           "minor": 2,
-          "url": "http://localhost:3000/api/v1/ibeacons/2.json",
+          "url": "http://proximitykit.com/api/v1/ibeacons/2.json",
           "attributes": []
         },
       ]
@@ -144,7 +144,7 @@ This will return a list of kits, ibeacons and associated attributes.
       "uuid": "d16eae19-6fce-4198-a5a5-469c9599b709",
       "major": 1,
       "minor": 1,
-      "url": "http://localhost:3000/api/v1/ibeacons/1.json",
+      "url": "http://proximitykit.com/api/v1/ibeacons/1.json",
       "attributes": [
         {
           "location": "register"
@@ -157,7 +157,7 @@ This will return a list of kits, ibeacons and associated attributes.
       "uuid": "d16eae19-6fce-4198-a5a5-469c9599b709",
       "major": 1,
       "minor": 2,
-      "url": "http://localhost:3000/api/v1/ibeacons/2.json",
+      "url": "http://proximitykit.com/api/v1/ibeacons/2.json",
       "attributes": []
     },
   ]
