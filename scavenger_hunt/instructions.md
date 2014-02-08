@@ -74,68 +74,42 @@ Once you receive confirmation that your code is live, you can try out your scave
 
 ##### Bare minimum for iPhone and Android Phones
 
-target1.png
-
-target1_found.png
+        target1.png
+        target1_found.png
 
 ##### Additional images required for iPhone retina displays
 
-target1@2x.png
-
-target1_found@2x.png
-
+        target1@2x.png
+        target1_found@2x.png
 
 
 ##### Additional images required for iPad
 
-target1_ipad.png
-
-target1_ipad@2x.png
-
-target1_found_ipad.png
-
-target1_found_ipad@2x.png
-
+        target1_ipad.png
+        target1_ipad@2x.png
+        target1_found_ipad.png
+        target1_found_ipad@2x.png
 
 
 ##### Additional images required for optimizing Android phone and tablet screen sizes and densities
 
-target1_mdpi.png
-
-target1_found_mdpi.png
-
-target1_tablet_mdpi.png
-
-target1_found_tablet_mdpi.png
-
-target1_ldpi.png
-
-target1_found_ldpi.png
-
-target1_tablet_ldpi.png
-
-target1_found_tablet_ldpi.png
-
-target1_hdpi.png
-
-target1_found_hdpi.png
-
-target1_tablet_hdpi.png
-
-target1_found_tablet_hdpi.png
-
-target1_xhdpi.png
-
-target1_found_xhdpi.png
-
-target1_found_tablet_xhdpi.png
-
-target1_tablet_xhdpi.png
-
-target1_xxhdpi.png
-
-target1_found_xxhdpi.png
-
-target1_tablet_xxhdpi.png
-
-target1_found_tablet_xxhdpi.png
+        target1_mdpi.png
+        target1_found_mdpi.png
+        target1_tablet_mdpi.png
+        target1_found_tablet_mdpi.png
+        target1_ldpi.png
+        target1_found_ldpi.png
+        target1_tablet_ldpi.png
+        target1_found_tablet_ldpi.png
+        target1_hdpi.png
+        target1_found_hdpi.png
+        target1_tablet_hdpi.png
+        target1_found_tablet_hdpi.png
+        target1_xhdpi.png
+        target1_found_xhdpi.png
+        target1_found_tablet_xhdpi.png
+        target1_tablet_xhdpi.png
+        target1_xxhdpi.png
+        target1_found_xxhdpi.png
+        target1_tablet_xxhdpi.png
+        target1_found_tablet_xxhdpi.png
