@@ -14,3 +14,5 @@ If you want to organize a scavenger hunt, you need to get one iBeacon for each t
 design skills to create the badge images that will appear in the app for each location.  Finally, you have to configure your target
 iBeacons using our ProximityKit web service.  This is free for 100 participants or fewer, and there is a small monthly cost for 
 larger number of participants.
+
+[Read full instructions.](instructions.html)
