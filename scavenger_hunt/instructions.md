@@ -49,7 +49,7 @@ specify the "image_url" for the basic image, because the variants will all be di
 
 When you are done, your setup should look like this for a single target:
 
-
+<img src='images/scavengerhunt-pk-setup.png'/>
 
 ###Step 5. Distribute your 8-digit hunt code.  
 
