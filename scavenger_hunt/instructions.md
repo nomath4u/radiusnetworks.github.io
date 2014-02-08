@@ -86,7 +86,7 @@ target1_found@2x.png
 
 
 
-#### Additional images required for iPad
+##### Additional images required for iPad
 
 target1_ipad.png
 
@@ -98,25 +98,15 @@ target1_found_ipad@2x.png
 
 
 
-#### Additional images required for optimizing Android phone and tablet screen sizes and densities
+##### Additional images required for optimizing Android phone and tablet screen sizes and densities
 
 target1_mdpi.png
 
 target1_found_mdpi.png
 
-
-
-# Required for Android Tablets
-
 target1_tablet_mdpi.png
 
 target1_found_tablet_mdpi.png
-
-
-
-# Required for Android Phones and Tablets for optimal resolutions
-
-
 
 target1_ldpi.png
 
