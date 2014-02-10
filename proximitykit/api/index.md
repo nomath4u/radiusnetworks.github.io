@@ -35,6 +35,7 @@ Root Document:
   links: {
     kits_url: "http://proximitykit.com/api/v1/kits.json",
     ibeacons_url: "http://proximitykit.com/api/v1/ibeacons.json"
+    ibeacon_attributes_url: "http://proximitykit.com/api/v1/ibeacon_attributes.json"
   }
 }
 ```
@@ -133,7 +134,7 @@ DELETE /api/v1/kit/{kit_id}
 GET /api/v1/ibeacons
 ```
 
-This will return a list of kits, ibeacons and associated attributes.
+This will return a list of all beacons and associated attributes.
 
 ```
 {
@@ -250,10 +251,10 @@ DELETE /api/v1/ibeacon/{ibeacon_id}
 ```
 "ibeacon_attributes": [
   {
-    id: 1,
-    key: "venue",
-    value: "arena",
-    url: "http://proximitykit.com/api/v1/ibeacon_attributes/3.json"
+    "id": 1,
+    "key": "venue",
+    "value": "arena",
+    "url": "http://proximitykit.com/api/v1/ibeacon_attributes/3.json"
   }
 ]
 ```
@@ -269,7 +270,7 @@ This will return a list of ibeacon attributes.
 
 ```
 {
-  "ibeacons_attributes": [
+  "ibeacon_attributes": [
       {
         id: 1,
         key: "venue",
@@ -281,9 +282,9 @@ This will return a list of ibeacon attributes.
 }
 ```
 
-## Creating a ibeacon
+## Creating an attribute
 
-To create a ibeacon make a post request to the `ibeacons_url`.
+To create an attribute make a post request to the `ibeacon_attributes_url`.
 
 ```
 POST /api/v1/ibeacon_attributes
@@ -293,7 +294,7 @@ Example:
 
 ```
 {
-  "ibeacons_attribute": { beacon_id: 1, key: "venue", value: "arena" }
+  "ibeacon_attribute": { "beacon_id": 1, "key": "venue", "value": "arena" }
 }
 ```
 
@@ -307,9 +308,9 @@ Parameters
 * `value` The data associated with the key
 
 
-## Updating a ibeacon
+## Updating an attribute
 
-To update a ibeacon make a put request to the `ibeacons_url`.
+To update an attribute make a put request to the `ibeacon_attribute_url`.
 
 ```
 PUT /api/v1/ibeacon_attributes/{ibeacon_attribute_id}
@@ -318,7 +319,9 @@ PUT /api/v1/ibeacon_attributes/{ibeacon_attribute_id}
 Example:
 
 ```
-"ibeacons_attribute": { beacon_id: 1, key: "venue", value: "arena" }
+{
+  "ibeacon_attribute": { beacon_id: 1, key: "venue", value: "arena" }
+}
 ```
 
 Required Parameters
@@ -331,9 +334,9 @@ Parameters
 * `value` The data associated with the key
 
 
-## Deleting a ibeacon
+## Deleting an attribute
 
-To delete a ibeacon make a delete request to the individual `ibeacon_url`.
+To delete an attribute make a delete request to the individual `ibeacon_attribute_url`.
 
 ```
 DELETE /api/v1/ibeacon_attributes/{ibeacon_attribute_id}
