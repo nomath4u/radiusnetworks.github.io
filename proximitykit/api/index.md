@@ -147,7 +147,10 @@ This will return a list of kits, ibeacons and associated attributes.
       "url": "http://proximitykit.com/api/v1/ibeacons/1.json",
       "attributes": [
         {
-          "location": "register"
+          id: 1,
+          key: "venue",
+          value: "arena",
+          url: "http://proximitykit.com/api/v1/ibeacon_attributes/1.json"
         }
       ]
     },
@@ -182,7 +185,7 @@ Example:
     "uuid": "d16eae19-6fce-4198-a5a5-469c9599b709",
     "major": 1,
     "minor": 1,
-    "attrs": { "venue": "arena" }
+    "attributes": { "venue": "arena" }
   }
 }
 ```
@@ -197,7 +200,7 @@ Parameters
 * `name` The name of the iBeacon
 * `major` The major iBeacon identifier
 * `minor` The minor iBeacon identifier
-* `attrs` A list of key value pairs associated with the iBeacon
+* `attributes` A list of key value pairs associated with the iBeacon
 
 
 ## Updating a ibeacon
@@ -218,7 +221,6 @@ Example:
     "uuid": "d16eae19-6fce-4198-a5a5-469c9599b709",
     "major": 1,
     "minor": 1,
-    "attrs": { "venue": "arena" }
   }
 }
 ```
@@ -233,7 +235,7 @@ Parameters
 * `name` The name of the iBeacon
 * `major` The major iBeacon identifier
 * `minor` The minor iBeacon identifier
-* `attrs` A list of key value pairs associated with the iBeacon
+* `attributes` A list of key value pairs associated with the iBeacon
 
 ## Deleting a ibeacon
 
@@ -241,4 +243,98 @@ To delete a ibeacon make a delete request to the individual `ibeacon_url`.
 
 ```
 DELETE /api/v1/ibeacon/{ibeacon_id}
+```
+
+## iBeacon Attributes
+
+```
+"ibeacon_attributes": [
+  {
+    id: 1,
+    key: "venue",
+    value: "arena",
+    url: "http://proximitykit.com/api/v1/ibeacon_attributes/3.json"
+  }
+]
+```
+# iBeacons Attributes
+
+## Listing iBeacons Attributes
+
+```
+GET /api/v1/ibeacon_attributes
+```
+
+This will return a list of ibeacon attributes.
+
+```
+{
+  "ibeacons_attributes": [
+      {
+        id: 1,
+        key: "venue",
+        value: "arena",
+        url: "http://proximitykit.com/api/v1/ibeacon_attributes/1.json"
+      }
+    ]
+  }
+}
+```
+
+## Creating a ibeacon
+
+To create a ibeacon make a post request to the `ibeacons_url`.
+
+```
+POST /api/v1/ibeacon_attributes
+```
+
+Example:
+
+```
+{
+  "ibeacons_attribute": { beacon_id: 1, key: "venue", value: "arena" }
+}
+```
+
+Required Parameters
+
+* `beacon_id` The ID of the associated iBeacon
+
+Parameters
+
+* `key` The key value
+* `value` The data associated with the key
+
+
+## Updating a ibeacon
+
+To update a ibeacon make a put request to the `ibeacons_url`.
+
+```
+PUT /api/v1/ibeacon_attributes/{ibeacon_attribute_id}
+```
+
+Example:
+
+```
+"ibeacons_attribute": { beacon_id: 1, key: "venue", value: "arena" }
+```
+
+Required Parameters
+
+* `beacon_id` The ID of the associated iBeacon
+
+Parameters
+
+* `key` The key value
+* `value` The data associated with the key
+
+
+## Deleting a ibeacon
+
+To delete a ibeacon make a delete request to the individual `ibeacon_url`.
+
+```
+DELETE /api/v1/ibeacon_attributes/{ibeacon_attribute_id}
 ```
