@@ -65,11 +65,7 @@ This will return a list of kits, ibeacons and associated attributes.
           "major": 1,
           "minor": 1,
           "url": "http://proximitykit.com/api/v1/ibeacons/1.json",
-          "attributes": [
-            {
-              "location": "register"
-            }
-          ]
+          "attributes": []
         },
         {
           "id": 2,
