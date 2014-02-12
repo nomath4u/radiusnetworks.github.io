@@ -11,19 +11,19 @@ With version 2.0, we made the kit more user friendly and added new features that
 
 The iBeacon Development Kit is now much easier to use and configure.  As before, you can easily configure the iBeacon identifiers by inserting the SD card into your laptop.  Now, instead of having to convert these values into hexadecimal form you can simply copy and paste your UUID in the standard format and enter all other values in plain decimal format.  We’ve also made controlling the iBeacon from the console much easier with simple commands for start and stop and a help command to explain everything (see the [instructions page](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html) for more info).  All in all, you’ll find that the latest version lets you get to developing much faster and with less hassle.  
 
-Also new in the latest version is the ability to customize the iBeacon advertising frequency.  The responsiveness of an iBeacon enabled app depends heavily on how often the iBeacon being detected by the app is broadcasting.  The higher the frequency the more responsive the app will be when being triggered.  However, higher frequency can mean a shorter battery life for iBeacons running on battery power.  Customizable broadcast frequency give you the ability to test and design an app for all types of iBeacons, whether they’re designed for high performance or power-saving.
+Also new in the latest version is the ability to customize the iBeacon advertising frequency.  The responsiveness of an iBeacon enabled app depends heavily on how often the iBeacon being detected by the app is broadcasting.  The higher the frequency the more responsive the app will be when being triggered.  However, higher frequency can mean a shorter battery life for iBeacons running on battery power.  Customizable broadcast frequency gives you the ability to test and design an app for all types of iBeacons, whether they’re designed for high performance or power-saving.
 
 Additionally, all iBeacon Development Kits now ship with a default advertising rate of 10 times per second instead of the previous 1 time per second.  This is the recommended value from Apple engineers and will allow much more responsive triggering of a mobile device.
 
 # How to Upgrade
 
-If you’ve purchased the previous version of the iBeacon Development Kit, or if you already have your own Raspberry Pi, bluetooth dongle, and a spare SD card, we’ve made the update available to download for free.  To upgade, first download the disk image for version 2.0 [here](https://s3.amazonaws.com/s3.messageradius.com/Public/IDK.gz).  Next, insert the SD card from your old development kit into your computer.  Now you will need to uncompress the downloaded disk image file and write it onto the SD card.  For Windows systems this can be accomplished with [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/), for OS X and Linux you can use command line tools.  Instructions for this are given below:
+If you’ve purchased the previous version of the iBeacon Development Kit, or if you already have your own Raspberry Pi, bluetooth dongle, and a spare SD card, we’ve made the update available to download for free.  To upgade, first download the disk image for version 2.0 [here](https://s3.amazonaws.com/s3.messageradius.com/Public/IDK.gz).  Next, insert the SD card from your old development kit into your computer.  Now you will need to uncompress the downloaded disk image file and write it onto the SD card.  For Windows systems this can be accomplished with [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/), for OSX and Linux you can use command line tools.  Instructions for these are given below:
 
 ## Windows
 
 1. Head to the start menu or screen and type "disk management." Open the disk management program and find your SD card in the list.
 1. Right-click and delete all the partitions on your SD card. When it's empty, right-click on it and format it (it doesn't matter what filesystem you format it to, your computer just needs to recognize it).
-1. Open Win32DiskImager and browse for the downloaded, uncompressed image file. Select the SD card from the “Device” dropdown.
+1. Open Win32DiskImager and browse for the downloaded, uncompressed disk image file. Select the SD card from the “Device” dropdown.
 1. Click "Write" to write the image to the SD card.
 1. When it finishes, eject the SD card and re-insert it into your Raspberry Pi. Now you’re upgraded to version 2.0!
 
