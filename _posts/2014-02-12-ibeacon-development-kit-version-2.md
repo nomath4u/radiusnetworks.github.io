@@ -31,28 +31,28 @@ If you’ve purchased the previous version of the iBeacon Development Kit, or if
 
 1. Open terminal and run the `diskutil list` command to identify your SD card, you should see something like this.
 
-```	
-$ diskutil list
-/dev/disk0
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *500.1 GB   disk0
-   1:                        EFI                         209.7 MB   disk0s1
-   2:                  Apple_HFS Macintosh HD            499.2 GB   disk0s2
-   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
-/dev/disk1
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                        *7.9 GB     disk1
-   1:             Windows_FAT_32                         58.7 MB    disk1s1
-   2:                      Linux                         7.9 GB     disk1s2
-```
+ ```	
+ $ diskutil list
+ /dev/disk0
+    #:                       TYPE NAME                    SIZE       IDENTIFIER
+    0:      GUID_partition_scheme                        *500.1 GB   disk0
+    1:                        EFI                         209.7 MB   disk0s1
+    2:                  Apple_HFS Macintosh HD            499.2 GB   disk0s2
+    3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+ /dev/disk1
+    #:                       TYPE NAME                    SIZE       IDENTIFIER
+    0:     FDisk_partition_scheme                        *7.9 GB     disk1
+    1:             Windows_FAT_32                         58.7 MB    disk1s1
+    2:                      Linux                         7.9 GB     disk1s2
+ ```
 
-In this example, `/dev/disk1` is the 8GB SD card.  
+ In this example, `/dev/disk1` is the 8GB SD card.  
 
-\2. Now use the `dd` command combined with the `gzip` command (see below) to unzip and write the disk image to the SD card.  You will need the full path to the disk image file and you should use `/dev/rdiskX` instead of `/dev/diskX`.  Note: it is very important that you enter the correct disk into the command, otherwise you could corrupt your computer’s hard disk, so be sure to double check before you press enter.  
+2. Now use the `dd` command combined with the `gzip` command (see below) to unzip and write the disk image to the SD card.  You will need the full path to the disk image file and you should use `/dev/rdiskX` instead of `/dev/diskX`.  Note: it is very important that you enter the correct disk into the command, otherwise you could corrupt your computer’s hard disk, so be sure to double check before you press enter.  
 
 `gzip -dc /path/to/IDK.gz | sudo dd of=/dev/rdisk1 bs=1m`
 
- 3. It should take a while for the command to finish, when it’s done you’ll see the command prompt return.  After it finishes, eject the SD card and re-insert it into your Raspberry Pi. Now you’re upgraded to version 2.0!
+3. It should take a while for the command to finish, when it’s done you’ll see the command prompt return.  After it finishes, eject the SD card and re-insert it into your Raspberry Pi. Now you’re upgraded to version 2.0!
 
 Once you update your kit be sure to read the updated [instructions](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html) to learn more about the new features and how to use them, happy developing!
 
