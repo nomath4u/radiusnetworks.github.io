@@ -73,3 +73,7 @@
   font-weight: 300;
 }
 
+.tile-image {
+  max-height: 166px;
+}
+
