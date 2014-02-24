@@ -6,6 +6,8 @@ layout: proximitykit
 
 Designed to help developers build location aware apps. By providing a rich SDK built on top of the latest Geofence and iBeacon technology, Proximity Kit gives you the events you need to keep your app relevent and useful to your users.
 
+---
+
 ## The Lifecycle of a Proximity Kit
 
 <div class="tiles clearfix">
