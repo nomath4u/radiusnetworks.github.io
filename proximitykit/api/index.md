@@ -32,9 +32,9 @@ Root Document:
 
 ```
 {
-  links: {
-    kits_url: "http://proximitykit.com/api/v1/kits.json",
-    ibeacons_url: "http://proximitykit.com/api/v1/ibeacons.json"
+  "links": {
+    "kits_url": "http://proximitykit.com/api/v1/kits.json",
+    "ibeacons_url": "http://proximitykit.com/api/v1/ibeacons.json"
   }
 }
 ```
@@ -64,11 +64,7 @@ This will return a list of kits, ibeacons and associated attributes.
           "major": 1,
           "minor": 1,
           "url": "http://proximitykit.com/api/v1/ibeacons/1.json",
-          "attributes": [
-            {
-              "location": "register"
-            }
-          ]
+          "attributes": []
         },
         {
           "id": 2,
@@ -113,7 +109,7 @@ Example:
 {"kit": { "name": "My New Name" } }
 ```
 
-Required Parameters
+Parameters
 
 * `name` The name of the kit
 
@@ -133,7 +129,7 @@ DELETE /api/v1/kit/{kit_id}
 GET /api/v1/ibeacons
 ```
 
-This will return a list of kits, ibeacons and associated attributes.
+This will return a list of all beacons and associated attributes.
 
 ```
 {
@@ -145,9 +141,13 @@ This will return a list of kits, ibeacons and associated attributes.
       "major": 1,
       "minor": 1,
       "url": "http://proximitykit.com/api/v1/ibeacons/1.json",
+      "attributes_url": "http://proximitykit.com/api/v1/ibeacons/1/attributes.json",
       "attributes": [
         {
-          "location": "register"
+          id: 1,
+          key: "venue",
+          value: "arena",
+	  url: "http://proximitykit.com/api/v1/ibeacons/1/attributes/1"
         }
       ]
     },
@@ -181,8 +181,7 @@ Example:
     "name": "My New Name",
     "uuid": "d16eae19-6fce-4198-a5a5-469c9599b709",
     "major": 1,
-    "minor": 1,
-    "attrs": { "venue": "arena" }
+    "minor": 1
   }
 }
 ```
@@ -197,8 +196,6 @@ Parameters
 * `name` The name of the iBeacon
 * `major` The major iBeacon identifier
 * `minor` The minor iBeacon identifier
-* `attrs` A list of key value pairs associated with the iBeacon
-
 
 ## Updating a ibeacon
 
@@ -218,7 +215,6 @@ Example:
     "uuid": "d16eae19-6fce-4198-a5a5-469c9599b709",
     "major": 1,
     "minor": 1,
-    "attrs": { "venue": "arena" }
   }
 }
 ```
@@ -226,14 +222,13 @@ Example:
 Required Parameters
 
 * `kit_id` The ID of the associated kit
-* `uuid` The iBeacon UUID
 
 Parameters
 
+* `uuid` The iBeacon UUID
 * `name` The name of the iBeacon
 * `major` The major iBeacon identifier
 * `minor` The minor iBeacon identifier
-* `attrs` A list of key value pairs associated with the iBeacon
 
 ## Deleting a ibeacon
 
@@ -241,4 +236,85 @@ To delete a ibeacon make a delete request to the individual `ibeacon_url`.
 
 ```
 DELETE /api/v1/ibeacon/{ibeacon_id}
+```
+
+```
+# iBeacons Attributes
+
+## Listing iBeacons Attributes
+
+```
+GET /api/v1/ibeacon_attributes
+```
+
+This will return a list of ibeacon attributes.
+
+```
+{
+  "ibeacon_attributes": [
+      {
+        id: 1,
+        key: "venue",
+        value: "arena",
+        url: "http://proximitykit.com/api/v1/ibeacons/1/attributes/1.json"
+      }
+    ]
+  }
+}
+```
+
+## Creating an attribute
+
+To create an attribute make a post request to the iBeacon's `attributes_url`.
+
+```
+POST /api/v1/ibeacons/{ibeacon_id}/attributes
+```
+
+Example:
+
+```
+{
+  "ibeacon_attribute": { "beacon_id": 1, "key": "venue", "value": "arena" }
+}
+```
+
+Required Parameters
+
+* `beacon_id` The ID of the associated iBeacon
+
+Parameters
+
+* `key` The key value
+* `value` The data associated with the key
+
+
+## Updating an attribute
+
+To update an attribute make a put request to the `ibeacon_attribute_url`.
+
+```
+PUT /api/v1/ibeacons{ibeacon_id}/attributes/{ibeacon_attribute_id}
+```
+
+Example:
+
+```
+{
+  "ibeacon_attribute": { key: "venue", value: "arena" }
+}
+```
+
+Parameters
+
+* `key` The key value
+* `value` The data associated with the key
+
+
+## Deleting an attribute
+
+To delete an attribute make a delete request to the individual `ibeacon_attribute_url`.
+
+```
+DELETE /api/v1/ibeacons/{ibeacon_id}/attributes/{ibeacon_attribute_id}
 ```

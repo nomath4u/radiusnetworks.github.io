@@ -24,19 +24,19 @@ three part identifier.  Write down which target is associated with which iBeacon
 ###Step 3. Create badge images for each target location
 
 Making badge images requires the most work.  You will need to make two different badge images for each location -- one to indicate a target that is not
-found and one to indicate a target that is found.  Depending on what platforms you want to support, you will need other variants of these badgets, too.
+found and one to indicate a target that is found.  Depending on what platforms you want to support, you will need other variants of these badges, too.
 
-At a minimum, you need one standard resolution badge pair (found / not found) for each target for use on non-retina iPhones and Android phones.  They should be named like below, and uploaded to a web server.  
+At a minimum, you need one standard resolution badge pair (found / not found) for each target for use on non-retina iPhones and smaller Android phones. They should be named like below, and uploaded to a web server.
 Once you have them uploaded, write down the mapping between each target and each image URL.
 
-        target1.png
-        target1_found.png
-        target2.png
-        target2_found.png
-        ...
+target1.png 
+target1_found.png 
+target2.png
+target2_found.png
+...
 
+Note: If you want the sharpest-looking images for higher density displays on iPhone and iPad, you will need to create another set of images for high density displays. If you want the sharpest-looking images for Android, you will need to make yet other versions of each badge image.  Full details on the image filenames needed to do this are at the bottom of this document.
 
-Note:  If you want the sharpest-looking images for higher density displays on iOS, you will need to create another set of images for high density displays. If you want the sharpest-looking images for Android, you will need to make four other versions of each badge image. Finallly, if you want to support tablets on iOS and Android, you'll need to make yet more versions of the images for all display densities for tablets.  Full details on the image filenames needed to do this are at the bottom of this document
 
 ###Step 4. Configure ProximityKit
 
@@ -49,7 +49,7 @@ specify the "image_url" for the basic image, because the variants will all be di
 
 When you are done, your setup should look like this for a single target:
 
-
+<img src='images/scavengerhunt-pk-setup.png'/>
 
 ###Step 5. Distribute your 8-digit hunt code.  
 
@@ -74,78 +74,33 @@ Once you receive confirmation that your code is live, you can try out your scave
 
 ##### Bare minimum for iPhone and Android Phones
 
-target1.png
-
+target1.png 
 target1_found.png
 
-##### Additional images required for iPhone retina displays
+These images should be 130x130 pixels.
 
-target1@2x.png
+#####Additional images required for iPhone retina displays:
 
-target1_found@2x.png
+target1_260.png
+target1_found_260.png
 
+These images should be 260x260 pixels.
 
+#####Additional images required for iPad
 
-#### Additional images required for iPad
+target1_312.png 
+target1_624.png 
+target1_found_312.png 
+target1_found_624.png
 
-target1_ipad.png
+These image sizes should be as indicated in the suffix.
 
-target1_ipad@2x.png
+#####Additional images required for optimizing Android phone and tablet screen sizes and densities:
 
-target1_found_ipad.png
+target1_438.png 
+target1_1040.png target1_found_438.png target1_found_1040.png
 
-target1_found_ipad@2x.png
+These image sizes should be as indicated in the suffix.
 
+The app will attempt to use the largest image available to fit the device's screen, falling back to the smallest image if the optimal size is not available.
 
-
-#### Additional images required for optimizing Android phone and tablet screen sizes and densities
-
-target1_mdpi.png
-
-target1_found_mdpi.png
-
-
-
-# Required for Android Tablets
-
-target1_tablet_mdpi.png
-
-target1_found_tablet_mdpi.png
-
-
-
-# Required for Android Phones and Tablets for optimal resolutions
-
-
-
-target1_ldpi.png
-
-target1_found_ldpi.png
-
-target1_tablet_ldpi.png
-
-target1_found_tablet_ldpi.png
-
-target1_hdpi.png
-
-target1_found_hdpi.png
-
-target1_tablet_hdpi.png
-
-target1_found_tablet_hdpi.png
-
-target1_xhdpi.png
-
-target1_found_xhdpi.png
-
-target1_found_tablet_xhdpi.png
-
-target1_tablet_xhdpi.png
-
-target1_xxhdpi.png
-
-target1_found_xxhdpi.png
-
-target1_tablet_xxhdpi.png
-
-target1_found_tablet_xxhdpi.png
