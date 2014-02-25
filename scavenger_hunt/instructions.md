@@ -18,7 +18,7 @@ for your iBeacons.
 
 ###Step 2. Get your iBeacons
 
-However many targets you have, you'll need to order at least the same number of iBeacons (and more if you want spares.)  Each one must be assigned a different
+However many targets you have, you'll need to order at least the same number of [iBeacons](http://www.radiusnetworks.com/buy-beacons.html) (and more if you want spares.)  Each one must be assigned a different
 three part identifier.  Write down which target is associated with which iBeacon three part identifier.
 
 ###Step 3. Create badge images for each target location
@@ -40,8 +40,7 @@ Note: If you want the sharpest-looking images for higher density displays on iPh
 
 ###Step 4. Configure ProximityKit
 
-If you don't have a ProximityKit account already, create one.  You can use the free service license if you expect to have 100 people or fewer
-playing your scavenger hunt.  See plans for details.
+If you don't have a [ProximityKit](http://www.proximitykit.com) account already, create one.  You can use the free service license if you expect to have 100 people or fewer playing your scavenger hunt.  See plans for details.
 
 Create a new Kit, then define one iBeacon for each scavenger hunt target.  For each one, you'll need to enter the three-part iBeacon identifier along wtih two key/value pairs.  The first key/value pair
 has a key of "hunt_id" and a value of your target number.  Put "1" for your first target, "2" for your second target, etc.  The second key/value pair is for your "image_url" of your badge image for that target.  You only need to 
