@@ -74,31 +74,33 @@ Once you receive confirmation that your code is live, you can try out your scave
 
 ##### Bare minimum for iPhone and Android Phones
 
-target1.png 
-target1_found.png
+      target1.png 
+      target1_found.png
 
 These images should be 130x130 pixels.
 
 #####Additional images required for iPhone retina displays:
 
-target1_260.png
-target1_found_260.png
+      target1_260.png
+      target1_found_260.png
 
 These images should be 260x260 pixels.
 
 #####Additional images required for iPad
 
-target1_312.png 
-target1_624.png 
-target1_found_312.png 
-target1_found_624.png
+      target1_312.png 
+      target1_624.png 
+      target1_found_312.png 
+      target1_found_624.png
 
 These image sizes should be as indicated in the suffix.
 
 #####Additional images required for optimizing Android phone and tablet screen sizes and densities:
 
-target1_438.png 
-target1_1040.png target1_found_438.png target1_found_1040.png
+      target1_438.png 
+      target1_found_438.png 
+      target1_1040.png 
+      target1_found_1040.png
 
 These image sizes should be as indicated in the suffix.
 
