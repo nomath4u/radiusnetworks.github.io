@@ -1,13 +1,13 @@
 ---
-layout: ibeacon-m
+layout: ibeacon
 ---
 
 
 ## iBeacon Scavenger Hunt Setup Instructions
 
 These instructions describe how to set up a scavenger hunt using Radius Networks' Beacon Scavenger Hunt app available in the iOS AppStore and the Google Play store.
-You may also customize the application itself, as we have releaed both the iOS and Android versions as open source.  The rest of this document 
-describes how to set up a new hunt with the Radius Networks Beacon Scavenger Hunt apps, although the same steps apply to your own app (except 
+You may also customize the application itself, as we have releaed both the iOS and Android versions as open source.  The rest of this document
+describes how to set up a new hunt with the Radius Networks Beacon Scavenger Hunt apps, although the same steps apply to your own app (except
 publishing a hunt code.)
 
 ###Step 1. Decide on your targets
@@ -29,8 +29,8 @@ found and one to indicate a target that is found.  Depending on what platforms y
 At a minimum, you need one standard resolution badge pair (found / not found) for each target for use on non-retina iPhones and smaller Android phones. They should be named like below, and uploaded to a web server.
 Once you have them uploaded, write down the mapping between each target and each image URL.
 
-target1.png 
-target1_found.png 
+target1.png
+target1_found.png
 target2.png
 target2_found.png
 ...
@@ -44,14 +44,14 @@ If you don't have a ProximityKit account already, create one.  You can use the f
 playing your scavenger hunt.  See plans for details.
 
 Create a new Kit, then define one iBeacon for each scavenger hunt target.  For each one, you'll need to enter the three-part iBeacon identifier along wtih two key/value pairs.  The first key/value pair
-has a key of "hunt_id" and a value of your target number.  Put "1" for your first target, "2" for your second target, etc.  The second key/value pair is for your "image_url" of your badge image for that target.  You only need to 
+has a key of "hunt_id" and a value of your target number.  Put "1" for your first target, "2" for your second target, etc.  The second key/value pair is for your "image_url" of your badge image for that target.  You only need to
 specify the "image_url" for the basic image, because the variants will all be discovered by following the filename conventions described in this document.
 
 When you are done, your setup should look like this for a single target:
 
 <img src='images/scavengerhunt-pk-setup.png'/>
 
-###Step 5. Distribute your 8-digit hunt code.  
+###Step 5. Distribute your 8-digit hunt code.
 
 Note:  This step is only necessary if you are using the Radius Networks app.  If you are using a custom app, users will not have to enter a hunt code because the configuration will
 be loaded automatically by embedding your ProximityKit.plist or ProximityKit.properties file in your app.
@@ -74,7 +74,7 @@ Once you receive confirmation that your code is live, you can try out your scave
 
 ##### Bare minimum for iPhone and Android Phones
 
-target1.png 
+target1.png
 target1_found.png
 
 These images should be 130x130 pixels.
@@ -88,16 +88,16 @@ These images should be 260x260 pixels.
 
 #####Additional images required for iPad
 
-target1_312.png 
-target1_624.png 
-target1_found_312.png 
+target1_312.png
+target1_624.png
+target1_found_312.png
 target1_found_624.png
 
 These image sizes should be as indicated in the suffix.
 
 #####Additional images required for optimizing Android phone and tablet screen sizes and densities:
 
-target1_438.png 
+target1_438.png
 target1_1040.png target1_found_438.png target1_found_1040.png
 
 These image sizes should be as indicated in the suffix.
