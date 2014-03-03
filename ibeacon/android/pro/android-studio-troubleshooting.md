@@ -21,6 +21,6 @@ of your app.iml should have entries that look similar to this:
         <orderEntry type="sourceFolder" forTests="false" />
         <orderEntry type="library" exported="" name="android-support-v4" level="project" />
         <orderEntry type="library" exported="" name="ComRadiusnetworksAndroidProximityLibrary1.aar" level="project" />
-        <orderEntry type="library" exported="" name="AndroidIBeaconLibrary" level="project" /
+        <orderEntry type="library" exported="" name="AndroidIBeaconLibrary" level="project" />
       </component>
     </module>
