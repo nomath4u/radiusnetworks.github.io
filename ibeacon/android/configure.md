@@ -4,6 +4,8 @@ layout: android-ibeacon-library
 
 ###Configuring the Android iBeacon Library
 
+Note:  if you are configuring the pro version of the library, [instructions are availble here](proximitykit.com/android-download).  [Also, see additional Android Studio troubleshooting info.](/ibeacon/android/pro/android-studio-troubleshooting.html)
+
 
 #### Eclipse 
 
