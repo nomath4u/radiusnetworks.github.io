@@ -16,7 +16,7 @@ Once an app is notified by the mobile device that it has seen an iBeacon, the ap
 
 The application provider may want information that confirms that their iBeacons are working correctly, or may want analytical information on how often specific users encounter specific iBeacons so that they can provider tailored and personalized services.  These are two very different scenarios with different privacy implications.  However, it is important to note that it is the mobile apps, not the iBeacons, that are reporting customer proximity information back to the app provider.
 
-As a member of the Future Privacy Forum's industry working group, Radius Networks is actively working to establish a responsible privacy framework and best-practice guidelines for apps reporting iBeacon proximity information.  For more details, please see the Mobile Location Analytics Code of Conduct.
+As a member of the Future Privacy Forum's industry working group, Radius Networks is actively working to establish a responsible privacy framework and best-practice guidelines for apps reporting iBeacon proximity information.  For more details, please see the [Mobile Location Analytics Code of Conduct](http://smartstoreprivacy.org/mobile-location-analytics-opt-out/about-mobile-location-analytics-technology/).
 
 The fact that a user can 'opt-out' of iBeacon proximity interaction, as described previously, gives the user the power to manage and control whether proximity information is available to the app providers.  In turn, companies providing apps should implement mechanisms that recognize the user's intent and be as transparent as possible with their customers to make sure that these options are properly communicated.
 
