@@ -25,7 +25,7 @@ In `AppDelegate.h` add the protocol for `PKManagerDelegate` and a property to st
 @interface AppDelegate : UIResponder <UIApplicationDelegate, PKManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property PKManager *proximityKitManager;
+@property (strong, nonatomic) PKManager *proximityKitManager;
 
 @end
 ```
