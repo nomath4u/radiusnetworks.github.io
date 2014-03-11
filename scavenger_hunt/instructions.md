@@ -36,7 +36,7 @@ Once you have them uploaded, write down the mapping between each target and each
     ...
 
 
-Note: If you want the sharpest-looking images for higher density displays on iPhone and iPad, you will need to create another set of images for high density displays. If you want the sharpest-looking images for Android, you will need to make yet other versions of each badge image.  Full details on the image filenames needed to do this are at the bottom of this document.
+You will also need to create another set of images for high density displays.  Full details on the image filenames needed to do this are at the bottom of this document.
 
 
 ###Step 4. Configure ProximityKit
