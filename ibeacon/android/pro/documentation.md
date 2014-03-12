@@ -25,7 +25,7 @@ layout: android-ibeacon-library
 <li><a href='proximity_kit.html'>Android Proximity Kit APIs</a></li>
 </ul>
 
-<p><a href='plans.html'><b>Download Here</b></a></p>
+### <a href='plans.html'>Download Here</a>
 
 
 
