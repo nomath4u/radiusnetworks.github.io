@@ -13,7 +13,7 @@ layout: android-ibeacon-library
 <li><a href='battery_manager.html'>Saving battery when your app is in the background</a></li>
 <li><a href='download.html'>Pro Library vs. Open Source Library comparison</a></li>
 <li><a href='plans.html'>License costs</a></li>
-<li><a href='license-faq.html'>License FAQ</a></li>
+<li><a href='/proximitykit/license-faq.html'>License FAQ</a></li>
 </ul>
 
 ### Code samples and API documentation
