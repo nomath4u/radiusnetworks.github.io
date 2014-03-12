@@ -6,10 +6,7 @@ author: David G. Young
 
 The release of iOS 7.1 has led to some hope that the new release will improve iBeacon background detection times.  Repeating [earlier tests](/2013/11/13/ibeacon-monitoring-in-the-background-and-foreground.html) on iOS 7.0 shows this not to be the case — it can still take up to 15 minutes to detect an iBeacon in the background.
 
-These tests used a iPhone 4S recently upgraded to iOS 7.1 running an [iBeacon BackgroundDemo program available on GitHub](https://github.com/RadiusNetworks/ibeacon-background-demo).  
-The same program had been used to test background detection times on iOS 7.0, 
-and the full test setup and procedure is described in an [accompanying blog post](/2013/11/13/ibeacon-monitoring-in-the-background-and-foreground.html).  
-For an iBeacon transmitter, the test used a [Dual Radius Networks iBeacon Development Kit](/ibeacon/ibeacon-development-kit.html) (with two transmitters), that send out advertisements at a frequency of 10Hz when enabled.  
+These tests used a iPhone 4S recently upgraded to iOS 7.1 running an [iBeacon BackgroundDemo program available on GitHub](https://github.com/RadiusNetworks/ibeacon-background-demo).  The same program had been used to test background detection times on iOS 7.0, and the full test setup and procedure is described in an [accompanying blog post](/2013/11/13/ibeacon-monitoring-in-the-background-and-foreground.html).   For an iBeacon transmitter, the test used a [Dual Radius Networks iBeacon Development Kit](/ibeacon/ibeacon-development-kit.html) (with two transmitters), that send out advertisements at a frequency of 10Hz when enabled.  
 Cycling these transmitters on and off produced the following annotated log file (annotations start with #):
 
 
