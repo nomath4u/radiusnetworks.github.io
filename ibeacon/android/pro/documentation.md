@@ -18,11 +18,11 @@ layout: android-ibeacon-library
 ### Code samples and API documentation
 
 <ul>
-<li><a href='http://proximitykit.com/android-download'>Download and project setup guide (Registration required)</a><li>
+<li><a href='http://proximitykit.com/android-download'>Download and project setup guide (Registration required)</a></li>
 <li><a href='/ibeacon/android/samples.html'>Code samples (for both open source and Pro versions)</a></li>
 <li><a href='https://github.com/RadiusNetworks/android-proximity-reference'>Reference application (Android Studio)</a></li>
 <li><a href='https://github.com/RadiusNetworks/android-proximity-reference/tree/eclipse'>Reference application (Eclipse)</a></li>
-<li><a href='proximity_kit.html'>Android Proximity Kit APIs</a><li>
+<li><a href='proximity_kit.html'>Android Proximity Kit APIs</a></li>
 </ul>
 
 
