@@ -17,3 +17,8 @@ body {
 a {
   color: #3697D3;
 }
+
+.content table th, .content table td {
+  border: 1px solid #ddd;
+  padding: 6px 13px;
+}
