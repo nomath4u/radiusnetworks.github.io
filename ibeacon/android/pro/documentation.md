@@ -24,6 +24,7 @@ layout: android-ibeacon-library
 <li><a href='https://github.com/RadiusNetworks/android-proximity-reference'>Reference application (Android Studio)</a></li>
 <li><a href='https://github.com/RadiusNetworks/android-proximity-reference/tree/eclipse'>Reference application (Eclipse)</a></li>
 <li><a href='proximity_kit.html'>Android Proximity Kit APIs</a></li>
+<li><a href='/ibeacon/android/pro/javadocs/'>API JavaDoc</a>
 </ul>
 
 ### <a href='plans.html'>Download Here</a>
