@@ -7,7 +7,7 @@ layout: android-ibeacon-library
 The full JavaDocs of the open-source APIs are available [here.](http://developer.radiusnetworks.com/android-ibeacon-service/doc/)
 
 The full JavaDocs of the Pro library APIs are available 
-[here.](/ibeacon/android/pro/javadocs/).  Additional documentation for the pro library is [here](/ibeacon/android/pro/documentation.html).
+[here](/ibeacon/android/pro/javadocs/).  Additional documentation for the pro library is [here](/ibeacon/android/pro/documentation.html).
 
 
 
