@@ -471,7 +471,7 @@ Example:
 {
   "ibeacon_attributes": [
     {
-      "id": 5,
+      "ibeacon_id": 5,
       "key": "venue",
       "value": "spaceship"
     }
