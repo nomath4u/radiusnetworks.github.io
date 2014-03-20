@@ -1,0 +1,14 @@
+com.radiusnetworks.ibeacon
+com.radiusnetworks.ibeacon.client
+com.radiusnetworks.ibeacon.service
+com.radiusnetworks.proximity
+com.radiusnetworks.proximity.api
+com.radiusnetworks.proximity.geofence
+com.radiusnetworks.proximity.ibeacon
+com.radiusnetworks.proximity.ibeacon.data
+com.radiusnetworks.proximity.ibeacon.data.proximitykit
+com.radiusnetworks.proximity.ibeacon.powersave
+com.radiusnetworks.proximity.ibeacon.startup
+com.radiusnetworks.proximity.licensing
+com.radiusnetworks.proximity.model
+com.radiusnetworks.proximity.proximitykit

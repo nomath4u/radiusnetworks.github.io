@@ -4,7 +4,12 @@ layout: android-ibeacon-library
 
 ### JavaDocs
 
-The full JavaDocs of the APIs are available [here.](http://developer.radiusnetworks.com/android-ibeacon-service/doc/)
+The full JavaDocs of the open-source APIs are available [here.](http://developer.radiusnetworks.com/android-ibeacon-service/doc/)
+
+The full JavaDocs of the Pro library APIs are available 
+[here](/ibeacon/android/pro/javadocs/).  Additional documentation for the pro library is [here](/ibeacon/android/pro/documentation.html).
+
+
 
 ### iOS API Mapping
 
@@ -37,7 +42,7 @@ Note:  The Kindle Fire HD supports Bluetooth 4.0, but there are currently no pla
 
 ### Known issues:
 
-* [On the Nexus 4, Bluetooth and WiFi do not work properly at the same time.](https://code.google.com/p/android/issues/detail?id=41631)  If this library is used on the Nexus 4 when WiFi is active, it may cause a dropped WiFi connection, inability to do Wifi scans, delays in seeing iBeacons, or a total inability to see iBeacons.  Turning off WiFi on the Nexus 4 solves these problems.  Similar problems have been reported, but uncomfirmed, with Nexus 7 devices
+* [On the Nexus 4 and the Moto G, Bluetooth and WiFi do not work properly at the same time.](https://code.google.com/p/android/issues/detail?id=41631)  If this library is used on the Nexus 4 when WiFi is active, it may cause a dropped WiFi connection, inability to do Wifi scans, delays in seeing iBeacons, or a total inability to see iBeacons.  Turning off WiFi on the Nexus 4 solves these problems.  Similar problems have been reported, but uncomfirmed, with Nexus 7 devices
 
 ### License
 
