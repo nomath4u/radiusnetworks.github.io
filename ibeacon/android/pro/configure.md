@@ -92,3 +92,5 @@ android {
 
    
 See [the reference app's build.gradle file](https://github.com/RadiusNetworks/android-proximity-reference/blob/master/AndroidProximityReference/build.gradle) for an example. 
+
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
