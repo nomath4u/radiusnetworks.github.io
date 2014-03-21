@@ -50,3 +50,6 @@ iBeaconManager.setBackgroundScanPeriod(1100l);
 // set the time between each scan to be 1 hour (3600 seconds)
 iBeaconManager.setBackgroundBetweenScanPeriod(3600000l);
 ```
+
+
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
