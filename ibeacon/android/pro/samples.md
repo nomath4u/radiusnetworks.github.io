@@ -81,3 +81,5 @@ public class AndroidProximityReference extends Application implements BootstrapN
 }
 
 ```
+
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
