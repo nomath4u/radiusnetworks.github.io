@@ -23,3 +23,5 @@ The library includes a battery saver that only looks for iBeacons every few minu
 The basic set up is the same for the [background launching example.](/ibeacon/android/samples.html)
 
 The additional code needed to send a notification is shown in the [reference application.](https://github.com/RadiusNetworks/android-proximity-reference)
+
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
