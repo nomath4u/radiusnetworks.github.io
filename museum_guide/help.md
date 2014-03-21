@@ -1,5 +1,4 @@
 ---
-layout: ibeacon
 ---
 
 ## Museum Guide Codes
