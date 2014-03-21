@@ -31,3 +31,4 @@ First, log in to www.proximitykit.com using the same username and password used 
 Once your data are configured, they will be available when your app detects the associated iBeacon.  The calls necessary to access these data are shown in the sample code [here.](
 /ibeacon/android/samples.html)
 
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
