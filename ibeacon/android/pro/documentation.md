@@ -30,5 +30,6 @@ layout: android-ibeacon-library
 ### <a href='plans.html'>Download Here</a>
 
 
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
 
 
