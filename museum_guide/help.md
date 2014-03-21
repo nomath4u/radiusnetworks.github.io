@@ -4,8 +4,8 @@
 ## Museum Guide Codes
 
 In order to use the Museum Guide, you need to obtain a six-digit code from the site offering the tour.
-If you don't have a code, but just want to see how it looks, you can see the example by entering 00000003.  When viewing
-the example you won't be able to find the targets unless you are visiting the virtual Fietze House Museum.
+If you don't have a code, but just want to see how it looks, you can see the example by entering 00000003.  This will show you the sample Fietze House Museum.  When viewing
+the example you will only be able to use the automatic mode to find the museum items if you set up your own iBeacons.  The sample museum uses iBeacons with UUID: 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major: 1, Minor 1-7 for the seven items in the museum. 
 
 ## How can I make a museum guide for my gallery?
 
