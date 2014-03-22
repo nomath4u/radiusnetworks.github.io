@@ -12,15 +12,15 @@ A developer license for up to 100 active installs is free.  Monthly license cost
 
 <table>
 <tr><td>100-1000</td><td>$9</td></tr>
-<tr><td>1000-10,000</td><td></td>$49</tr>
-<tr><td>10,000-25,000</td><td></td>$122</tr>
-<tr><td>25,000-50,000</td><td></td>$245</tr>
-<tr><td>50,000-75,000</td><td></td>$367</tr>
-<tr><td>75,000-100,000</td><td></td>$440</tr>
-<tr><td>100,000-250,000</td><td></td>$1100</tr>
-<tr><td>250,000-500,000</td><td></td>$2200</tr>
-<tr><td>500,000-1,000,000</td><td></td>$3300</tr>
-<tr><td>1,000,000+</td><td></td>$3900</tr>
+<tr><td>1000-10,000</td><td>$49</td></tr>
+<tr><td>10,000-25,000</td><td>$122</td></tr>
+<tr><td>25,000-50,000</td><td>$245</td></tr>
+<tr><td>50,000-75,000</td><td>$367</td></tr>
+<tr><td>75,000-100,000</td><td>$440</td></tr>
+<tr><td>100,000-250,000</td><td>$1100</td></tr>
+<tr><td>250,000-500,000</td><td>$2200</td></tr>
+<tr><td>500,000-1,000,000</td><td>$3300</td></tr>
+<tr><td>1,000,000+</td><td>$3900</td></tr>
 </table>
 
 ###Q: How are active installs counted?
