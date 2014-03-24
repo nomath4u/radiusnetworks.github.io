@@ -1,0 +1,1096 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PKManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Proximity Kit </a></h1>
+				<a id="developerHome" href="../index.html">Radius Networks</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PKManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/kit">&nbsp;&nbsp;&nbsp;&nbsp;kit</option>
+	
+	<option value="//api/name/locationManager">&nbsp;&nbsp;&nbsp;&nbsp;locationManager</option>
+	
+	<option value="//api/name/locationManagerDelegate">&nbsp;&nbsp;&nbsp;&nbsp;locationManagerDelegate</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/getVersion">&nbsp;&nbsp;&nbsp;&nbsp;+ getVersion</option>
+	
+	<option value="//api/name/managerWithDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;+ managerWithDelegate:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/getRegionForIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- getRegionForIdentifier:</option>
+	
+	<option value="//api/name/logLevel:">&nbsp;&nbsp;&nbsp;&nbsp;- logLevel:</option>
+	
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
+	
+	<option value="//api/name/startRangingIBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- startRangingIBeacons</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/stopRangingIBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- stopRangingIBeacons</option>
+	
+	<option value="//api/name/sync">&nbsp;&nbsp;&nbsp;&nbsp;- sync</option>
+	
+	<option value="//api/name/syncWithCompletionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- syncWithCompletionHandler:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/kit">kit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationManager">locationManager</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationManagerDelegate">locationManagerDelegate</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getVersion">getVersion</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/managerWithDelegate:">managerWithDelegate:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRegionForIdentifier:">getRegionForIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logLevel:">logLevel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRangingIBeacons">startRangingIBeacons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopRangingIBeacons">stopRangingIBeacons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sync">sync</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncWithCompletionHandler:">syncWithCompletionHandler:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PKManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PKManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">CLLocationManagerDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PKManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>PKManager</p>
+
+<p>This is the main class for used for interacting with the
+Proximity Kit SDK.</p>
+
+<p>More information can be found at <a href="http://proximitykit.com">http://proximitykit.com</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getVersion">+&nbsp;getVersion</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/managerWithDelegate:">+&nbsp;managerWithDelegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logLevel:">&ndash;&nbsp;logLevel:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sync">&ndash;&nbsp;sync</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncWithCompletionHandler:">&ndash;&nbsp;syncWithCompletionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locationManager">&nbsp;&nbsp;locationManager</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locationManagerDelegate">&nbsp;&nbsp;locationManagerDelegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/kit">&nbsp;&nbsp;kit</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRegionForIdentifier:">&ndash;&nbsp;getRegionForIdentifier:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRangingIBeacons">&ndash;&nbsp;startRangingIBeacons</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopRangingIBeacons">&ndash;&nbsp;stopRangingIBeacons</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>delegate</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign) id&lt;PKManagerDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>delegate</p>
+
+<p>Primary delegate for the PKManager.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/kit" title="kit"></a>
+	<h3 class="subsubtitle method-title">kit</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kit</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) PKKit *kit</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kit</p>
+
+<p>The representation of the Kit as defined in the Proximity Kit service.
+This contains lists of iBeacons and Geofences.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/locationManager" title="locationManager"></a>
+	<h3 class="subsubtitle method-title">locationManager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>locationManager</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CLLocationManager *locationManager</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>locationManager</p>
+
+<p>The instance of CLLocation manager that PKManager wraps and maintains.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/locationManagerDelegate" title="locationManagerDelegate"></a>
+	<h3 class="subsubtitle method-title">locationManagerDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>locationManagerDelegate</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign) id&lt;CLLocationManagerDelegate&gt; locationManagerDelegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>locationManagerDelegate</p>
+
+<p>Proxy for all of the CLLocationManager delgate methods. All of the
+non-deprecated methods from CLLocationManagerDelegate will be called
+on this object.</p>
+
+<p>This is useful for accessing the underlying core location functionality
+while using the same <a href="#//api/name/locationManager">locationManager</a> instance that Proximity Kit wraps
+and maintains.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getVersion" title="getVersion"></a>
+	<h3 class="subsubtitle method-title">getVersion</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>getVersion</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getVersion</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>getVersion</p>
+
+<p>Get the version string for the Proximity Kit Framework</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/managerWithDelegate:" title="managerWithDelegate:"></a>
+	<h3 class="subsubtitle method-title">managerWithDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>managerWithDelegate</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (PKManager *)managerWithDelegate:(id&lt;PKManagerDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>managerWithDelegate</p>
+
+<p>Creates the manager, assignes the <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getRegionForIdentifier:" title="getRegionForIdentifier:"></a>
+	<h3 class="subsubtitle method-title">getRegionForIdentifier:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>getRegionForIdentifier</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PKRegion *)getRegionForIdentifier:(NSString *)<em>identifier</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>getRegionForIdentifier</p>
+
+<p>Lookup the PKRegion for a given identifier.</p>
+
+<p>Returns nil if no region found.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logLevel:" title="logLevel:"></a>
+	<h3 class="subsubtitle method-title">logLevel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>logLevel
+Set the logging level. Follows syslog convention of levels 0-7.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)logLevel:(NSInteger)<em>level</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>logLevel
+Set the logging level. Follows syslog convention of levels 0-7.</p>
+
+<p>See <a href="../Classes/PKLogger.html">PKLogger</a>.h for more details</p>
+
+<p>Param: <code>logLevel</code></p>
+
+<p>Can take an integer value between 0 and 7, to represent the log level.</p>
+
+<pre>
+0 - Emergency: System is unusable
+1 - Alert: Action must be taken immediately
+2 - Critical: Critical conditions
+3 - Error: Error conditions
+4 - Warning: Warning conditions
+5 - Notice: Normal but significant condition
+6 - Informational: Informational messages
+7 - Debug: Debug-level messages
+</pre>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>start</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>start</p>
+
+<p>Sets up the manager and synchronizes data with the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRangingIBeacons" title="startRangingIBeacons"></a>
+	<h3 class="subsubtitle method-title">startRangingIBeacons</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>startRangingIBeacons</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startRangingIBeacons</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>startRangingIBeacons</p>
+
+<p>Start calculating ranges for iBeacons.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>stop</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>stop</p>
+
+<p>Unregister regions and beacons and stop automatic syncing.</p>
+
+<p>While the PKManager is stopped if <a href="#//api/name/sync"><code>sync</code></a> is called the api will be called
+and data downloaded and synced. However, any regions will not be
+registered with CoreLocation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopRangingIBeacons" title="stopRangingIBeacons"></a>
+	<h3 class="subsubtitle method-title">stopRangingIBeacons</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>stopRangingIBeacons</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopRangingIBeacons</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>stopRangingIBeacons</p>
+
+<p>Stop calculating ranges for iBeacons.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sync" title="sync"></a>
+	<h3 class="subsubtitle method-title">sync</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>sync</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sync</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>sync</p>
+
+<p>Force a sync with the server. This is not normally required.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncWithCompletionHandler:" title="syncWithCompletionHandler:"></a>
+	<h3 class="subsubtitle method-title">syncWithCompletionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>syncWithCompletionHandler</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)syncWithCompletionHandler:(void ( ^ ) ( UIBackgroundFetchResult ))<em>completionHandler</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>syncWithCompletionHandler</p>
+
+<p>Same as <a href="#//api/name/sync"><code>sync</code></a>, but accepts a block for the <a href="#//api/name/sync">sync</a> callbacks. This is
+particularly useful for updating the ProximityKit data when the
+application in in the background.</p>
+
+<p>To take advantage of this you need to implement
+<code>application:performFetchWithCompletionHandler:</code> on your in your
+application <a href="#//api/name/delegate">delegate</a>. Then Within that method you can simply call
+<code>syncWithCompletionHandler</code> and pass it the compleation block:</p>
+
+<pre>
+- (void) application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+// ...
+[pkManager syncWithCompletionHandler: completionHandler];
+}
+</pre>
+
+
+<p>Be sure to set the fetch interval in your didFinishLaunching method:</p>
+
+<pre>
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+// ...
+[application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+return YES;
+}
+</pre>
+
+
+<p>Finally make sure you add <code>UIBackgroundModes</code> to your info plist with a string set to &lsquo;fetch&rsquo;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Radius Networks. All rights reserved. (Last updated: 2014-03-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -32,24 +32,39 @@ Upon entering or leaving an iBeacon or Geofence region, Proximity Kit notifies y
 
 ---
 
-# SDK Download and Install
+# iBeacon Hardware
 
-### iOS
+One of the best resources we have for general iBeacon information is our [blog](/blog). There you can find information about [building](http://developer.radiusnetworks.com/2013/11/04/how-to-make-an-ibeacon-with-the-ti-cc2540.html) [iBeacons](http://developer.radiusnetworks.com/2013/10/09/how-to-make-an-ibeacon-out-of-a-raspberry-pi.html), common misconceptions about [how they work](http://developer.radiusnetworks.com/2014/01/10/ibeacon-misconceptions.html), as well tools to [simulate](http://www.radiusnetworks.com/macbeacon-app.html) and [detect](http://www.radiusnetworks.com/scanbeacon-app.html) iBeacons.
 
-Download and install the configuration file and library.
+---
 
-<a class="btn" href="http://proximitykit.com/download">iOS SDK Download and Install</a>
+# Android Resources
+
+The Proximity Kit Android Library is the same as the Android Pro Library. It is built upon our open source [Android iBeacon Library](/ibeacon/android/), and all the documentation that applies to those libraries is relevent to working with Proximity Kit.
+
+### Download the SDK
+
 <a class="btn" href="http://proximitykit.com/android-download">Android SDK Download and Install</a>
 
-## Getting Started
+### Additional Resources
 
-Quick start guide to adding Proximity Kit to your iOS application.
+<a class="btn" href="/ibeacon/android/configure.html">Quick Start Guide</a>
+<a class="btn" href="/ibeacon/android/samples.html">Sample Code</a>
+<a class="btn" href="/ibeacon/android/documentation.html">Documentation</a>
+
+---
+
+# iOS Resources
+
+The iOS Proximity Kit SDK is built upon Apple's CoreLocation, extending the functionality and web management.
+
+### Download the SDK
+
+<a class="btn" href="http://proximitykit.com/download">iOS SDK Download and Install</a>
+
+### Additional Resources
 
 <a class="btn" href="gettingstarted">Getting Started Guide</a>
-
-## Example App
-
-A simple example of using Proximity Kit in an App.
-
+<a class="btn" href="ios/docs">ProximityKit.framework Reference</a>
 <a class="btn" href="https://github.com/RadiusNetworks/proximity-kit-ios-example">iOS Example App on GitHub</a>
 
