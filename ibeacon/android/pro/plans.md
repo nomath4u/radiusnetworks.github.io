@@ -17,5 +17,5 @@ Need more? Something different? [Get in touch](http://www.radiusnetworks.com/sup
 
 Already have a license for the Pro Library?  Access your download page [on ProximityKit.com.](http://www.proximitykit.com/android-download)
 
-
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
 

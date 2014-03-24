@@ -24,3 +24,5 @@ of your app.iml should have entries that look similar to this:
         <orderEntry type="library" exported="" name="AndroidIBeaconLibrary" level="project" />
       </component>
     </module>
+
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.

@@ -71,3 +71,5 @@ layout: android-ibeacon-library
 	</tr>
 </table>
 
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
+

@@ -30,3 +30,5 @@ Yes.  This is possible with the IBeaconManager.  See the accessing iBeacon data 
 
 Use the ProximityKitManager if you have a simple iBeacon use case that displays an activity or notification based on seeing iBeacons and associated data pre-configured in the cloud.  For more complex use cases, especially if you need runtime control  over the iBeacon ranging and monitoring configurations, use the IBeaconManager.
 
+Pro Android iBeacon Library (c) 2013, 2014 Radius Networks, Inc.
+

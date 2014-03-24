@@ -8,7 +8,20 @@ layout: proximitykit
 
 ###A: The cost varies depending on active installs.
 
-A developer license for up to 100 active installs is free.  Up to 1000 active installs is $9 per month, and up to 10,000 active installs is $49 per month.  At higher quantities, a licence costs $0.01 per active install.
+A developer license for up to 100 active installs is free.  Monthly license costs for additional active install counts are:
+
+<table>
+<tr><td>100-1000</td><td>$9</td></tr>
+<tr><td>1000-10,000</td><td>$49</td></tr>
+<tr><td>10,000-25,000</td><td>$122</td></tr>
+<tr><td>25,000-50,000</td><td>$245</td></tr>
+<tr><td>50,000-75,000</td><td>$367</td></tr>
+<tr><td>75,000-100,000</td><td>$440</td></tr>
+<tr><td>100,000-250,000</td><td>$1100</td></tr>
+<tr><td>250,000-500,000</td><td>$2200</td></tr>
+<tr><td>500,000-1,000,000</td><td>$3300</td></tr>
+<tr><td>1,000,000+</td><td>$3900</td></tr>
+</table>
 
 ###Q: How are active installs counted?
 
