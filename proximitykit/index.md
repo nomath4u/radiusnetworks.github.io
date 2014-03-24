@@ -65,6 +65,6 @@ The iOS Proximity Kit SDK is built upon Apple's CoreLocation, extending the func
 ### Additional Resources
 
 <a class="btn" href="gettingstarted">Getting Started Guide</a>
-<a class="btn" href="ios/docs">ProximityKit.framework Reference</a>
+<a class="btn" href="ios/docs">SDK Reference</a>
 <a class="btn" href="https://github.com/RadiusNetworks/proximity-kit-ios-example">iOS Example App on GitHub</a>
 
