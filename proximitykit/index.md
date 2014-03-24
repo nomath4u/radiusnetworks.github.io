@@ -4,7 +4,7 @@ layout: proximitykit
 
 <img style="width:800px;height:178px;" src="/img/proximitykit-logo.png" />
 
-Designed to help developers build location aware apps. By providing a rich SDK built on top of the latest Geofence and iBeacon technology, Proximity Kit gives you the events you need to keep your app relevent and useful to your users.
+Designed to help developers build location aware apps. By providing a rich SDK built on top of the latest Geofence and iBeacon technology, Proximity Kit gives you the events you need to keep your app relevant and useful to your users.
 
 ---
 
@@ -19,7 +19,7 @@ Designed to help developers build location aware apps. By providing a rich SDK b
   <div class="tile">
     <img class="tile-image" src="/img/pk-cloud.png" />
     <h3> 2. Mobile SDK Syncs with Mobile Device </h3>
-    <p> When the app starts up the Proximity Kit Manager, it will sync with our backend. As that happens the SDK will register each reagion to monitor. Your region data and configuration is cached and updated in the background.</p>
+    <p> When the app starts up the Proximity Kit Manager, it will sync with our backend. As that happens the SDK will register each region to monitor. Your region data and configuration is cached and can be updated in the background.</p>
   </div>
   <div class="tile">
     <img class="tile-image" src="/img/pk-monitor.png" />
@@ -40,7 +40,7 @@ One of the best resources we have for general iBeacon information is our [blog](
 
 # Android Resources
 
-The Proximity Kit Android Library is the same as the Android Pro Library. It is built upon our open source [Android iBeacon Library](/ibeacon/android/), and all the documentation that applies to those libraries is relevent to working with Proximity Kit.
+The Proximity Kit Android Library is the same as the Android Pro Library. It is built upon our open source [Android iBeacon Library](/ibeacon/android/), and all the documentation that applies to those libraries is relevant to working with Proximity Kit.
 
 ### Download the SDK
 
@@ -48,9 +48,8 @@ The Proximity Kit Android Library is the same as the Android Pro Library. It is 
 
 ### Additional Resources
 
-<a class="btn" href="/ibeacon/android/configure.html">Quick Start Guide</a>
 <a class="btn" href="/ibeacon/android/samples.html">Sample Code</a>
-<a class="btn" href="/ibeacon/android/documentation.html">Documentation</a>
+<a class="btn" href="/ibeacon/android/pro/documentation.html">Documentation</a>
 
 ---
 
@@ -64,7 +63,7 @@ The iOS Proximity Kit SDK is built upon Apple's CoreLocation, extending the func
 
 ### Additional Resources
 
-<a class="btn" href="gettingstarted">Getting Started Guide</a>
+<a class="btn" href="gettingstarted">Getting Started</a>
 <a class="btn" href="ios/docs">SDK Reference</a>
-<a class="btn" href="https://github.com/RadiusNetworks/proximity-kit-ios-example">iOS Example App on GitHub</a>
+<a class="btn" href="https://github.com/RadiusNetworks/proximity-kit-ios-example">iOS Reference App</a>
 
