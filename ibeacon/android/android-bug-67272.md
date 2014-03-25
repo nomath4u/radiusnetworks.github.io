@@ -2,7 +2,8 @@
 layout: android-ibeacon-library
 ---
 
-###Android Bug 67272: "Unfortunately, Bluetooth Share has Stopped"
+##Android Bug 67272
+###"Unfortunately, Bluetooth Share has Stopped"
 
 ####Summary
 
@@ -11,7 +12,7 @@ This dialog will continue to appear periodically when the app is running.  It wi
 Estimote Android SDK, or any other app that does Bluetooth scanning.  During times that the dialog appears, Bluetooth scan results and iBeacon detections will
 not get correct results.  
 
-Once a phone gets into this state, it will remain in this state until Bluetooth is turned off and back on.
+Once a phone gets into this state, it will remain in this state until Bluetooth is turned off and back on.  Rebooting the phone will not clear the state.
 
 ####Cause
 
@@ -38,7 +39,7 @@ Step 3. Turn off Bluetooth.
 
 Step 4. Turn on Bluetooth.
 
-It is very important to exit all applications that perform Bluetooth scans, otherwise the above procedure will not work.
+It is very important to exit all applications that perform Bluetooth scans, otherwise the above procedure will not work.  Performing a factory reset is unnecessary.
 
 Radius Networks is currently researching automated workarounds.
 
