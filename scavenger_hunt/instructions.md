@@ -59,13 +59,6 @@ be loaded automatically by embedding your ProximityKit.plist or ProximityKit.pro
 When using the Radius iBeacon Scavenger Hunt apps, your hunt is selected by particpants by entry of an 8-digit code.  This code can then be distributed to your
 participants by posting it on a sign or a website, sending it to them via email, etc.  Turning on an 8-digit code will eventually be selectable in the ProximityKit web interface.  For now, creating this code is a manual process which must be requested with an email to support@radiusnetworks.com that must include your ProximityKit kit URL.
 
-Once the Radius support team receives this request, they will create a file in our Amazon S3 instance.  For the 00000000 code, the file is at s3.amazonaws.com/pkcode.radiusnetworks.com/api/configurations/00000000 and looks like this:
-
-        {
-            "api_token": "85d437ed764da689a1b0448236c494adb39d698e9581eec69363d5b3d13c30ce",
-            "PKKitURL": "http://www.proximitykit.com/api/kits/723"
-        }
-
 Once you receive confirmation that your code is live, you can try out your scavenger hunt.
 
 
