@@ -10,6 +10,9 @@ This guide should get your app working with Geofencing and the Proximity Kit ser
 
 If you have not downloaded the Proximity Kit framework and added it to your project you should [go do that first](http://proximitykit.com/download).
 
+Note: Users of the Proximity Kit client library agree to abide by the license terms as
+ specified for [iOS](proximity-kit-ios-license.txt) and [Android](proximity-kit-android-license.txt).
+
 ## Creating a Location Manager
 
 Proximity Kit adds a wrapper around the standard Core Location Manager. This allows for automatic registering of fences and iBeacons, but should give your app all the power and control it needs to use location data.

@@ -45,3 +45,4 @@ along with instructions for upgrading your license.  Again, don't worry -- your 
 If the license cost for your active installs spikes, just contact us and we can work out a plan that doesn't break the bank.  We're app developers too, so
 we understand these things happen.
 
+Users of the Proximity Kit client library agree to abide by the license terms as specified for [iOS](proximity-kit-ios-license.txt) and [Android](proximity-kit-android-license.txt).

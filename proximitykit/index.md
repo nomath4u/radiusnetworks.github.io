@@ -46,6 +46,9 @@ The Proximity Kit Android Library is the same as the Android Pro Library. It is 
 
 <a class="btn" href="http://proximitykit.com/android-download">Android SDK Download and Install</a>
 
+Users of the Proximity Kit client library agree to abide by the license terms as
+ specified for [Android](proximity-kit-android-license.txt).
+
 ### Additional Resources
 
 <a class="btn" href="/ibeacon/android/samples.html">Sample Code</a>
@@ -60,6 +63,9 @@ The iOS Proximity Kit SDK is built upon Apple's CoreLocation, extending the func
 ### Download the SDK
 
 <a class="btn" href="http://proximitykit.com/download">iOS SDK Download and Install</a>
+
+Users of the Proximity Kit client library agree to abide by the license terms as
+ specified for [iOS](proximity-kit-ios-license.txt).
 
 ### Additional Resources
 
