@@ -12,11 +12,11 @@ This dialog will continue to appear periodically when the app is running.  It wi
 Estimote Android SDK, or any other app that does Bluetooth scanning.  During times that the dialog appears, Bluetooth scan results and iBeacon detections will
 not get correct results.  
 
-Once a phone gets into this state, it will remain in this state until Bluetooth is turned off and back on.  Rebooting the phone will not clear the state.
+Once a phone gets into this state, it will remain in this state until a successful bluetooth discovery process completes.  Rebooting the phone will not clear the state.
 
 ####Cause
 
-The problem is caused by a low-level Android bug that does not properly handle an internal buffer holding recently scanned Bluetooth LE Mac addresses.  Once the buffer fills up, Android's 
+The problem is caused by a low-level Android bug that does not properly handle an internal buffer holding recently scanned Bluetooth LE Mac addresses.  Once the buffer fills up with 1,990 distinct bluetooth addresses, Android's 
 BluetoothService crashes and restarts itself.  The same problem happens the next time a Bluetooth device is scanned, causing repeated crashes and restarts of the BluetoothService.
 The "Unfortunately, Bluetooth Share has Stopped" dialog is a side effect, caused by a second bug Android's Bluetooth Share service, which does not cleanly handle the restart of the Bluetooth Service, causing itself to crash as well.
 
@@ -35,13 +35,11 @@ Step 1. Reboot your phone (optional, but it makes the next step easier)
 
 Step 2. Go to Settings -> Apps -> Running and stop any apps that may perform Bluetooth scans or use iBeacons.
 
-Step 3. Turn off Bluetooth.
-
-Step 4. Turn on Bluetooth.
+Step 3. Go to Settings -> Bluetooth and wait for the device discovery process to complete.  If you see a crash dialog, then another app is running doing bluetooth scans.  Go back to step 2.
 
 It is very important to exit all applications that perform Bluetooth scans, otherwise the above procedure will not work.  Performing a factory reset is unnecessary.
 
-Radius Networks is currently researching automated workarounds.
+Radius Networks has developed a module that can automatically perform the above steps, and has included it in its Android iBeacon Library and its iBeacon Locate app. 
 
 A fix for the low-level bug will require either an Android update or an update to the pre-installed Bluetooth apps.
 
