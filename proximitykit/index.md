@@ -74,3 +74,8 @@ Users of the Proximity Kit client library agree to abide by the license terms as
 <a class="btn" href="ios/docs">SDK Reference</a>
 <a class="btn" href="https://github.com/RadiusNetworks/proximity-kit-ios-example">iOS Reference App</a>
 
+---
+
+# Still want help?
+
+### If you have any other questions feel free to drop us a [note](mailto:support@radiusnetworks.com).
