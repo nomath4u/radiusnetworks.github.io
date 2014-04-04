@@ -70,6 +70,7 @@ Users of the Proximity Kit client library agree to abide by the license terms as
 ### Additional Resources
 
 <a class="btn" href="gettingstarted">Getting Started</a>
+<a class="btn" href="gettingstarted">10 Minute Tutorial</a>
 <a class="btn" href="ios/docs">SDK Reference</a>
 <a class="btn" href="https://github.com/RadiusNetworks/proximity-kit-ios-example">iOS Reference App</a>
 
