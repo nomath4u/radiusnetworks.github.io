@@ -6,7 +6,7 @@ layout: android-ibeacon-library
 <img src="images/ibeacon.png" style="display:block; float:left; width:30%"/>
 <p style="height:15px"></p>
 
-###Think iBeacon technology only work with Apple devices?  Not anymore.
+###Think iBeacon technology only works with Apple devices?  Not anymore.
 
 With Radius Networks' Android Beacon Service library, you can make Android versions of your iOS apps that use iBeacon technology, or come up with new Android-only creations.  Best of all, the library is available for FREE!
 
@@ -17,13 +17,13 @@ These are useful for building mobile apps that can "see" the beacons, and approx
 up to a hundred feet or so.
 Apple came up with the technology as part of iOS7, which natively contains APIs to interact with them.
 
-### What does this library do?
+### What Does This Library Do?
 
 It allows Android devices to use iBeacon technology much like iOS devices do.  An app can request to get notifications when one
 or more proximity beacons appear or disappear.  An app can also request to get a ranging update from one or more beacons
 at a frequency of 1Hz.  The [iBeacon Locate App](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en) in the Google Play store demonstrates these capabilities.
 
-### How do I get a Beacon?
+### How Do I Get a Beacon?
 
 Radius Networks offers many options.
 
