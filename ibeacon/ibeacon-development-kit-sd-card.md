@@ -3,16 +3,16 @@ layout: ibeacon
 ---
 
 
-##iBeacon Development Kit SD Card
+##Beacon Development Kit SD Card
 
 <img style="height: 200px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; float:left; border-radius: 7px;" src='/img/pibeacon.jpg'>
 
 <br>
 
-<a href="https://account.radiusnetworks.com/orders/new?sku=23" class="btn btn-rad-blue">Buy iBeacon Dev Kit SD Card ($20)</a>
+<a href="https://account.radiusnetworks.com/orders/new?sku=23" class="btn btn-rad-blue">Buy Beacon Dev Kit SD Card ($20)</a>
 
 
-Replacement 8Gb SD Card with software for existing iBeacon Development Kit units. Works with single and dual models. May also be used with your own Raspberry Pi Model B and an IOGEAR Bluetooth 4.0 USB Micro Adapter (GBU521)&#42;.
+Replacement 8Gb SD Card with software for existing Beacon Development Kit units. Works with single and dual models. May also be used with your own Raspberry Pi Model B and an IOGEAR Bluetooth 4.0 USB Micro Adapter (GBU521)&#42;.
 
 <br>
 <br>

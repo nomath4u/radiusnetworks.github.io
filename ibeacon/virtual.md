@@ -2,9 +2,9 @@
 layout: ibeacon
 ---
 
-# Virtual iBeacon
+# Virtual Beacon
 
-Create a VM that will work like an iBeacon.
+Create a VM that will work like a proximity beacon with iBeacon™ technology.
 
 ## What you need
 
@@ -17,7 +17,7 @@ Create a VM that will work like an iBeacon.
 2. Download the virtual machine [here](https://s3.amazonaws.com/s3.messageradius.com/Public/Virtual_iBeacon.ova).
 3. In VirtualBox, choose File -> Import Appliance, select the downloaded ova file, and follow the prompts to set it up.
 4. Plug in your Bluetooth LE Dongle
-5. Start the virtual machine.  The Virtual iBeacon will attempt to startup automatically.
+5. Start the virtual machine.  The Virtual Beacon will attempt to startup automatically.
 6. If you receive a message in the virtual machine that no bluetooth device has been detected,  make sure the virtual machine has captured the device.  In the VirtualBox menu, select Devices -> USB Devices -> then select your BLE USB device in the menu that shows up so that there is a checkmark by it.
      *  If you receive an error message trying to capture your bluetooth device (it will look like this)
 
@@ -26,27 +26,27 @@ Create a VM that will work like an iBeacon.
      A quick solution to this problem on OS X computers can be found [here](https://www.virtualbox.org/ticket/2372#comment:12)
 
 
-7. Now you can start the Virtual iBeacon manually by typing `start` into the command prompt and pressing enter.
+7. Now you can start the Virtual Beacon manually by typing `start` into the command prompt and pressing enter.
 
 
 
 ## How to start it and stop it
 
-To start the Virtual iBeacon, type: `start` into the command prompt and press enter.
-To stop the Virtual iBeacon, type: `stop` and press enter.
+To start the Virtual Beacon, type: `start` into the command prompt and press enter.
+To stop the Virtual Beacon, type: `stop` and press enter.
 
 ## How to tell if it is working
 
-Out of the box, the Virtual iBeacon sends out an advertisement once per second with the same proximityUUID used on Apple's AirLocate test app E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 with a major of 1 and a minor of 1.
+Out of the box, the Virtual Beacon sends out an advertisement once per second with the same proximityUUID used on Apple's AirLocate test app E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 with a major of 1 and a minor of 1.
 
-If you have a copy of Radius Networks' free iBeacon Locate app for [iOS](https://itunes.apple.com/us/app/ibeacon-locate/id738709014) or [Android](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en), launch it and tap Locate iBeacons.  You should see regular updates from the Virtual iBeacon.
+If you have a copy of Radius Networks' free Locate for iBeacon app for [iOS](https://itunes.apple.com/us/app/ibeacon-locate/id738709014) or [Android](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en), launch it and tap Locate iBeacons.  You should see regular updates from the Virtual iBeacon.
 ## How to configure it
 
 You can set the three broadcast identifiers (UUID, MAJOR, MINOR) by editing the ibeacon.conf file.  Note that these identifiers must be entered as individual hexadecimal bytes separated by spaces.  For UUID, this means you don't type any dashes and put a space between each two characters.  For MAJOR and MINOR, numbers must be entered as two byte hexadecimal numbers, the most significant byte first.
 
 If you don't know hex, you can use [this site](http://www.binaryhexconverter.com/decimal-to-hex-converter) to convert numbers for you.  Just know that you need to take the result and turn it into two bytes separated by spaces.  So for a decimal value of 12, you put the "C" hex result into the config file as "00 0C".  For the decimal value of 12345, you put the "3039" result into the config file as "30 39".
 
-You can also set the POWER measurement in the config file.  This is the calibrated Transmitter power, and the value you set is specific to your Bluetooth LE dongle.  Setting this is optional (a default value has been programmed), but if you don't configure it for your BLE device, you may get less accurate distance measurements.  Calibration involves using the AirLocate app (iOS) or IBeaconLocate (Android) calibration feature to measure the average RSSI of the beacon when the phone is held one meter away.  The resulting value is a negative number that must be encoded as hex.  You can do the hex encoding using the same converter as above, but in this case you use only the last two characters of the hex value.  So if the calibrated Tx Power is -98 RSSI, the converted hex value is "FFFFFFFFFFFFFF9E" and you would enter "9E" into the config file for POWER.
+You can also set the POWER measurement in the config file.  This is the calibrated Transmitter power, and the value you set is specific to your Bluetooth LE dongle.  Setting this is optional (a default value has been programmed), but if you don't configure it for your BLE device, you may get less accurate distance measurements.  Calibration involves using the AirLocate app (iOS) or iBeacon Locate (Android) calibration feature to measure the average RSSI of the beacon when the phone is held one meter away.  The resulting value is a negative number that must be encoded as hex.  You can do the hex encoding using the same converter as above, but in this case you use only the last two characters of the hex value.  So if the calibrated Tx Power is -98 RSSI, the converted hex value is "FFFFFFFFFFFFFF9E" and you would enter "9E" into the config file for POWER.
 
 ## Bluetooth LE Hardware Devices
 
