@@ -97,5 +97,5 @@ These image sizes should be as indicated in the suffix.
 
 These image sizes should be as indicated in the suffix.
 
-The app will attempt to use the largest image available to fit the device's screen, falling back to the smallest image if the optimal size is not available.
+
 
