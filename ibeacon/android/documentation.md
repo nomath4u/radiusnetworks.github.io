@@ -34,7 +34,7 @@ Android | iOS
 ### Supported Platforms
 
 This library requires Android 4.3 (SDK version 18), because that is earliest SDK that supports low energy Bluetooth. 
-The mobile device must also have a low energy Bluetooth chipset, sometimes called BLE or Bluetooth 4.0.  Most mid-range and above Android devices that started manufacturing in Mid-2012 or later have Bluetooth LE.
+The mobile device must also have a low energy Bluetooth chipset, sometimes called BLE or Bluetooth 4.0.  Most mid-range and above Android devices that started manufacturing in Mid-2012 or later have Bluetooth LE.  That said, it is still possibile to compile the library with apps targeting earlier versions as long as the APIs are only exercised on devices with Android 4.3+.
 
 As of December 2013, Android devices known to have BLE include: Samsung Galaxy S3/S4, Samsung Galaxy Note II, Sansung Galaxy Tab 3 7.0/8.1/10.0, Nexus 7 2013 edition, Nexus 4/5, HTC One HTC Butterfly, HTC Evo LTE, HTC Desire X, LG G Pad, LG Optimus G, LG G2, Sony Experia Tablet S/Z, Sony Experia Z/L/P/M, Motorola Droid DNA, Motorola Droid Razr I/HD/Maxx, Motorola Moto X, Huawei Ascend G610/G700/G740/Y511/P2/D2/Mate, Huawei A199
 
