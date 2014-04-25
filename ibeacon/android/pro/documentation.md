@@ -11,7 +11,7 @@ layout: android-ibeacon-library
 <li><a href='notifications.html'>Sending notifications on iBeacon detection</a></li>
 <li><a href='data.html'>Attaching user messages and other data to iBeacons</a></li>
 <li><a href='battery_manager.html'>Saving battery when your app is in the background</a></li>
-<li><a href='../backward_compatibility.html'>Using the library with apps targeting older Android versions</a></li>
+<li><a href='../backward-compatibility.html'>Using the library with apps targeting older Android versions</a></li>
 <li><a href='download.html'>Pro Library vs. Open Source Library comparison</a></li>
 <li><a href='plans.html'>License costs</a></li>
 <li><a href='/proximitykit/license-faq.html'>License FAQ</a></li>
