@@ -9,6 +9,7 @@ The full JavaDocs of the open-source APIs are available [here.](http://developer
 The full JavaDocs of the Pro library APIs are available 
 [here](/ibeacon/android/pro/javadocs/).  Additional documentation for the pro library is [here](/ibeacon/android/pro/documentation.html).
 
+Instructions for using the BeaconSimulator is [here](/ibeacon/android/beacon_simulator.html).
 
 
 ### iOS API Mapping
