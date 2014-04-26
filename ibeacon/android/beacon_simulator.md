@@ -6,9 +6,9 @@ layout: android-ibeacon-library
 
 
 You may simulate detection of iBeacons by creating a class within your project that overwrites the BeaconSimulator 
-class within the Android iBeacon Library. This is especially useful for when you are testing in an Emulator or on a 
+class found in the Android iBeacon Library. This is especially useful for when you are testing in an Emulator or on a 
 device without BluetoothLE capability. There is a sample of this built into the [Reference application for the Android iBeacon Service](http://github.com/RadiusNetworks/android-ibeacon-reference/) 
-called TimedBeaconSimulator.
+called [TimedBeaconSimulator](https://github.com/RadiusNetworks/android-ibeacon-reference/blob/master/src/com/radiusnetworks/ibeacon/TimedBeaconSimulator.java).
 
 To initialize a BeaconSimulator, place the following code within the onCreate method of your Activity, 
 making sure to place your Beacon Simulator class name within the < >.
