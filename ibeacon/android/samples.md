@@ -6,6 +6,8 @@ layout: android-ibeacon-library
 
 A minimalist [reference application](https://github.com/RadiusNetworks/android-ibeacon-reference) for the Open Source Library is available on GitHub that demonstrates basic ranging and monitoring.  It is based on the examples below.
 
+Instructions for using the Beacon Simulator class are found [here](/ibeacon/android/beacon_simulator.html).
+
 Additional features of the Pro Library are demonstrated in a separate [pro reference application](https://github.com/RadiusNetworks/android-proximity-reference).
 
 
