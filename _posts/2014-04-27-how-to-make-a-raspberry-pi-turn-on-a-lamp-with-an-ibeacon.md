@@ -114,10 +114,7 @@ $ ibeacon scan -b | ./welcome_light
 
 Once the scan is started, activate your beacon and you should see the light turn on automatically.  Check out the video clip below to see the demo in action.
 
-<iframe width="420" height="345"
-src="https://www.youtube.com/watch?v=hJ3OjPlCtsc">
-</iframe>
-
+<object width="560" height="315"><param name="movie" value="//www.youtube.com/v/qrbgthrUR68?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/qrbgthrUR68?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 For a homework assignment, you can build on this script to turn off the light when it no longer detects the beacon (i.e., when you leave the room).  	
 
 ## That’s it!
