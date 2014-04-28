@@ -123,7 +123,7 @@ identifiers, you will need to rerun the start command in order for the changes t
 
 ##iBeacon Scanning
 
-Visit our [developer blog](http://developer.radiusnetworks.com/blog/) for more information on the scanning feature, including a quick tutorial that takes advantage of the Raspberry Pi outpus pins to control external devices based on the proximity of nearby beacons.
+Visit our [developer blog](http://developer.radiusnetworks.com/blog/) for more information on the scanning feature, including a quick tutorial that takes advantage of the Raspberry Pi output pins to control external devices based on the proximity of nearby beacons.
 
 ##Getting Help 
 
