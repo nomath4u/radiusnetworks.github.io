@@ -4,7 +4,7 @@ layout: ibeacon
 
 #Beacon Development Kit Instructions (Version 3.0)
 
-Note: These instructions are for the latest version of the iBeacon Development Kit (shipping as of May, 2014), instructions for [Version 2.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version2.html) and [Version 1.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version1.html) are also available.
+Note: These instructions are for the latest version of the Beacon Development Kit (shipping as of May, 2014), previous instructions for [Version 2.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version2.html) and [Version 1.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version1.html) are also available.
 
 ##Getting Started
 
@@ -49,7 +49,7 @@ The Major and Minor are both integers that can be between between 0 and 65535. T
 logical group, like a building or a room. The Minor is used to identify an individual iBeacon within the group.
 
 Power is a measure of signal strength received by a device one meter from the iBeacon.  This is used by another device
-to calibrate distance estimates from the iBeacon.  The iBeacon Development Kit comes preconfigured with the default 
+to calibrate distance estimates from the iBeacon.  The Beacon Development Kit comes preconfigured with the default 
 value for the included bluetooth adapter (-59) so you only need to change this value if using another adapter.  If you
 decide to use another adapter, you can use Radius Networks’ iBeacon test apps to find its calibrated power value.
 
@@ -97,12 +97,12 @@ line skills, an ethernet cable, and access to a router.
 Step 1. Using an ethernet cable, plug one end into the ethernet port on the Raspberry Pi computer and the other end 
 into your router.
 
-Step 2. Power on the iBeacon Development Kit.
+Step 2. Power on the Beacon Development Kit.
 
-Step 3. Using a computer, go to your router’s administration page and determine the IP address of the iBeacon 
+Step 3. Using a computer, go to your router’s administration page and determine the IP address of the Beacon 
 Development Kit.  It should show up on your router’s attached devices list as “Raspberry Pi”
 
-Step 4. On your computer connected to the same router, open up a ssh client and connect to the iBeacon Development
+Step 4. On your computer connected to the same router, open up a ssh client and connect to the Beacon Development
 Kit, logging in with username: pi, password: raspberry
 
 Step 5. In the console, use the following commands to control the iBeacon:
