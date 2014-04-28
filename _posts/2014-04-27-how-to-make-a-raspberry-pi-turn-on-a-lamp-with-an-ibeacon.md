@@ -6,6 +6,9 @@ author: James Nebeker
 
 iBeacon proximity technology is an exciting tool already being used by retailers and developers to build location-aware apps to improve user experience and much more.  In this post, we’ll show you an easy way to harness iBeacon technology in your own home, without having to do any serious programming or developing.  In this simple example, we’ll be using a Raspberry Pi to turn on a light whenever it detects a specific beacon.
 
+<img style="margin:10px; height: 200px; border: thin solid #333;float:right;" src='/img/pibeacon.jpg'>
+
+
 ###Parts list:
 
 1. [Beacon Development Kit](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit.html) (alternately, you can supply your own Raspberry Pi, bluetooth LE dongle, and SD card)
