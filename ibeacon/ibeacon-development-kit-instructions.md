@@ -2,15 +2,15 @@
 layout: ibeacon
 ---
 
-#iBeacon Development Kit Instructions (Version 2.0)
+#Beacon Development Kit Instructions (Version 3.0)
 
-Note: These instructions are for the latest version of the iBeacon Development Kit (shipping as of February, 2014), for instructions for previous versions (Oct. 2013 - Jan. 2014) [click here](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version1.html).
+Note: These instructions are for the latest version of the iBeacon Development Kit (shipping as of May, 2014), instructions for [Version 2.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version2.html) and [Version 1.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version1.html) are also available.
 
 ##Getting Started
 
 ###Picking a power supply
 
-The iBeacon Development Kit requires a standard 5V power supply with a micro USB connector. The Raspberry Pi computer
+The Beacon Development Kit requires a standard 5V power supply with a micro USB connector. The Raspberry Pi computer
 can be sensitive to poorly performing chargers. If your charger works, you should see a red LED illuminated when the
 board is powered, and a green LED that flashes intermittently. If this doesn't happen, try a different charger.
 
@@ -21,7 +21,7 @@ to a wall socket and the micro USB connector on the board.
 
 ###Powering on the iBeacon
 
-There is no power switch for the iBeacon Development Kit. As soon as the 5V micro USB adapter is connected to a wall
+There is no power switch for the Beacon Development Kit. As soon as the 5V micro USB adapter is connected to a wall
 socket and the computer board, the iBeacon will start up automatically. It takes about 60 seconds for it to begin
 transmitting.
 
@@ -32,9 +32,9 @@ iBeacon is transmitting. [Click here](http://www.radiusnetworks.com/ibeacon-serv
 
 ##Information on iBeacon identifiers
 
-iBeacons have a three part identifier consisting of ProximityUUID, Major, and Minor. By default, the iBeacon Development
+iBeacons have a three part identifier consisting of ProximityUUID, Major, and Minor. By default, the Beacon Development
 Kit will transmit with a ProximityUUID of 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major of 1, and Minor of 1.  If you have
-the Dual iBeacon Development Kit model, it will also transmit as a second iBeacon with 
+the Dual Beacon Development Kit model, it will also transmit as a second iBeacon with 
 ProximityUUID of 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major of 1, and Minor of 2.  These values are included in the 
 default identifier list in Radius Networks’ iBeacon test apps for iOS and Android so these tools can be used to test 
 if the iBeacon is working.
@@ -60,7 +60,7 @@ times per second, which is the setting recommended by Apple engineers.
 
 ##Customizing the iBeacon identifiers
 
-With the Radius Networks iBeacon Development Kit, you can easily customize the identifiers being broadcast by the 
+With the Radius Networks Beacon Development Kit, you can easily customize the identifiers being broadcast by the 
 iBeacon.  The easiest way to do this is with a card reader and a computer (if your computer doesn’t have an SD card 
 reader skip to the next section to connect to the Raspberry Pi and edit these values in the console). Unplug the 
 iBeacon, then remove the SD card and put it into your computer's SD card reader. After attaching it to your computer, 
@@ -83,11 +83,12 @@ corrupted.  Note: if you change to a custom UUID you will need to add this UUID 
 for it to be visible since iOS devices can only detect iBeacons with known UUIDs.
 
 ###Next Steps
+
 Now it's time to start developing your app! If you are developing for Android, be sure to check out Radius Networks'
-Android iBeacon Library. When you are ready to deploy your iBeacons, visit [our products page](http://www.radiusnetworks.com/buy-beacons.html) to buy models suitable
-for production use.
+Android iBeacon Library. When you are ready to deploy your iBeacons, visit [our products page](http://www.radiusnetworks.com/buy-beacons.html) to buy models suitable for production use.
 
 ##Controlling the iBeacon(s) Manually
+
 While developing, you may find it useful to start and stop the iBeacon without having to power cycle it and wait another
 60 seconds.  Additionally, if you have the dual model, it may be useful for testing purposes to dynamically start and 
 stop the two transmitters independently.  In order to control the iBeacon manually, you will need basic Linux command 
@@ -120,9 +121,11 @@ You may also adjust the identifiers through the console by editing the /boot/ibe
 identifiers, you will need to rerun the start command in order for the changes to take effect.
 
 ##Getting Help 
-If you have problems configuring or operating the iBeacon Development Kit, email us at support@radiusnetworks.com
+
+If you have problems configuring or operating the Beacon Development Kit, email us at support@radiusnetworks.com
 
 ##About Radius Networks
+
 Radius Networks is a proximity services company that provides solutions to help businesses and individuals enhance 
 their experience through mobile device detection and location awareness. Located in Washington DC, Radius was founded 
 in 2011 by experienced entrepreneurs to build applications and services around wireless technology and mobile devices. 
