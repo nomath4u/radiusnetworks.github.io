@@ -10,7 +10,7 @@ image, downloadable for free. To upgrade, first download the disk image for the 
 [here](https://s3.amazonaws.com/s3.radiusnetworks.com/Public/IDK3.gz) (currently Version 3.0). 
 Next, insert the SD card from your old development kit into your computer. Now you will need to uncompress the 
 downloaded disk image file and write it onto the SD card. For Windows systems this can be accomplished with 
-[Win32DiskImager](http://www.google.com/url?q=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fwin32diskimager%2F&sa=D&sntz=1&usg=AFQjCNEGjd7OCg0nNPNtVNqTJqPm4EG3GA), 
+[Win32DiskImager](http://sourceforge.net/projects/win32diskimager/), 
 for OSX and Linux you can use command line tools. Instructions for these are given below:
 
 ##Windows
