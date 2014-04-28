@@ -26,7 +26,7 @@ iBeacon proximity technology is an exciting tool already being used by retailers
 5. Small flat-head screwdriver
 6. Network cable for internet access (optional)
 
-Before we put this all together let’s go over each part individually, for starters we’ll assume you have your Raspberry Pi already set up (with BlueZ, the Linux bluetooth stack, installed) and have some familiarity with basic Linux command line operations.  If not, or if you want a quick introduction to the Raspberry Pi and iBeacons, check out our blog post, [How to Make an iBeacon Out of a Raspberry Pi](http://developer.radiusnetworks.com/2013/10/09/how-to-make-an-ibeacon-out-of-a-raspberry-pi.html), to get acquainted with Linux,  the Raspberry Pi, and iBeacons.  
+Before we put this all together let’s go over each part individually, for starters we’ll assume you have your Raspberry Pi already set up (with BlueZ, the Linux bluetooth stack, installed) and have some familiarity with basic Linux command line operations.  If not, or if you want a quick introduction to the Raspberry Pi and iBeacons, check out our blog post, [How to Make an iBeacon Out of a Raspberry Pi](http://developer.radiusnetworks.com/2013/10/09/how-to-make-an-ibeacon-out-of-a-raspberry-pi.html), to get acquainted with Linux,  the Raspberry Pi, and iBeacon technology.  
 
 ## Scanning for beacons
 
@@ -71,14 +71,14 @@ To control the light we will be taking advantage of the GPIO pins on the Raspber
 Once everything is connected, go ahead and plug the power switch into the wall and plug your light into the switch.  Make sure any switches on the light itself are in the on position.  Now we’re ready to test the power switch, to control the voltage on the GPIO pins we’ll be using the [Wiring PI](https://projects.drogon.net/raspberry-pi/wiringpi/) library which is installed by default on the Beacon Development Kit.  The first step is to change GPIO 1 into `OUT` mode.  Then command the pin to turn on, which will activate the power switch and turn the light on.  To do this run the following commands (shouting “Let there be light!” is optional ):
 
 ```
-gpio mode 1 out
-gpio write 1 1 
+$ gpio mode 1 out
+$ gpio write 1 1 
 ```
 
 You can turn the light off by switching GPIO 1 off:
 
 ```
-gpio write 1 0
+$ gpio write 1 0
 ```
 
 Now all that’s left is to combine this with beacon scanning and we’ll have an automated iBeacon lightswitch.  
@@ -88,7 +88,7 @@ Now all that’s left is to combine this with beacon scanning and we’ll have a
 We’re going to write a little bash script that will read the input from a beacon scan line by line and search for a specific beacon’s identifiers.  Once it detects the beacon it will switch on the light, if you exit the script with control-C the light will be switched off.  Use your favorite text editor (e.g., vi, nano) to create the `welcome_light` script seen below:
 
 ```
-nano welcome_light
+$ nano welcome_light
 ```
 
 Paste in the contents of this block:
@@ -110,7 +110,7 @@ Be sure to change the iBeacon identifiers in the if statement to the ones you'll
 Save this file and get your beacon ready, make sure it is off for to start the test.  Now run the following command to start the scan and light switch sequence, it starts a beacon scan with the bare output option, piping its output into our `welcome_light` script.  If you made your own scan script, just run that script and pipe its output to `welcome_light`.
 
 ```
-ibeacon scan -b | ./welcome_light
+$ ibeacon scan -b | ./welcome_light
 ```
 
 Once the scan is started, activate your beacon and you should see the light turn on automatically.  Check out the video clip below to see the demo in action.
