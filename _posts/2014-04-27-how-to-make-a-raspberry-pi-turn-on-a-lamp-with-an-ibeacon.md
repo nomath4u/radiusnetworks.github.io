@@ -66,7 +66,7 @@ Now that we can detect nearby beacons with the Raspberry Pi, the next step is tu
 
 To control the light we will be taking advantage of the GPIO pins on the Raspberry Pi, which can supply a voltage when commanded, and the PowerSwitch Tail II, which switches power from a wall socket with a small control voltage.  The first step is to connect the power switch to the GPIO pins on your Raspberry Pi, we recommend using [jumper wires](http://www.robotmesh.com/jumper-wires-7-8-f-m-10-pack) to make things easier.  The diagram below shows the wiring configuration, the ground pin on the Raspberry Pi is attached to the negative input on the switch and the GPIO1 pin on the Pi is attached to the positive input on the switch.  Use a small flat-head screwdriver to secure the wires into the two slots on the power switch.
 
-<img style="margin:10px; height: 200px; border: thin solid #333;float:middle;" src='http://i.imgur.com/3bHlrVG.png'>
+<img style="margin:10px; height: 400px; float:middle;" src='http://i.imgur.com/3bHlrVG.png'>
 
 Once everything is connected, go ahead and plug the power switch into the wall and plug your light into the switch.  Make sure any switches on the light itself are in the on position.  Now we’re ready to test the power switch, to control the voltage on the GPIO pins we’ll be using the [Wiring PI](https://projects.drogon.net/raspberry-pi/wiringpi/) library which is installed by default on the Beacon Development Kit.  The first step is to change GPIO 1 into `OUT` mode.  Then command the pin to turn on, which will activate the power switch and turn the light on.  To do this run the following commands (shouting “Let there be light!” is optional ):
 
