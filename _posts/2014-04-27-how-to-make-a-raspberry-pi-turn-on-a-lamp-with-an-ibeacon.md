@@ -72,7 +72,7 @@ Once everything is connected, go ahead and plug the power switch into the wall a
 
 ```
 $ gpio mode 1 out
-$ gpio write 1 1 
+ $ gpio write 1 1 
 ```
 
 You can turn the light off by switching GPIO 1 off:
@@ -96,14 +96,14 @@ Paste in the contents of this block:
 ```
 #!/bin/bash
 
-gpio mode 1 out
-trap "gpio write 1 0" exit
-while read line
-do
-  if [[ `echo $line | grep "2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6 1 1" ` ]]; then
-    gpio write 1 1
-  fi
-done
+ gpio mode 1 out
+ trap "gpio write 1 0" exit
+ while read line
+ do
+   if [[ `echo $line | grep "2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6 1 1" ` ]]; then
+     gpio write 1 1
+   fi
+ done
 ```
 
 Be sure to change the iBeacon identifiers in the if statement to the ones you'll be broadcasting with your test beacon. Save this file and get your beacon ready, make sure it is off for to start the test.  Now run the following command to start the scan and light switch sequence, it starts a beacon scan with the bare output option, piping its output into our `welcome_light` script.  If you made your own scan script, just run that script and pipe its output to `welcome_light`.
