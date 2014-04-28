@@ -91,7 +91,7 @@ Android iBeacon Library. When you are ready to deploy your iBeacons, visit [our 
 
 While developing, you may find it useful to start and stop the iBeacon without having to power cycle it and wait another
 60 seconds.  Additionally, if you have the dual model, it may be useful for testing purposes to dynamically start and 
-stop the two transmitters independently.  In order to control the iBeacon manually, you will need basic Linux command 
+stop the two transmitters independently.  With the scan feature, you can also search for nearby beacons and see their identifiers on your display.  In order to control the iBeacon manually, you will need basic Linux command 
 line skills, an ethernet cable, and access to a router.
 
 Step 1. Using an ethernet cable, plug one end into the ethernet port on the Raspberry Pi computer and the other end 
