@@ -68,7 +68,7 @@ To control the light we will be taking advantage of the GPIO pins on the Raspber
 
 <img style="margin:10px; height: 400px; float:middle;" src='http://i.imgur.com/3bHlrVG.png'>
 
-Once everything is connected, go ahead and plug the power switch into the wall and plug your light into the switch.  Make sure any switches on the light itself are in the on position.  Now we’re ready to test the power switch, to control the voltage on the GPIO pins we’ll be using the [Wiring PI](https://projects.drogon.net/raspberry-pi/wiringpi/) library which is installed by default on the Beacon Development Kit.  The first step is to change GPIO 1 into `OUT` mode.  Then command the pin to turn on, which will activate the power switch and turn the light on.  To do this run the following commands (shouting “Let there be light!” is optional ):
+Once everything is connected, go ahead and plug the power switch into the wall and plug your light into the switch.  Make sure any switches on the light itself are in the on position.  Now we’re ready to test the power switch, to control the voltage on the GPIO pins we’ll be using the [Wiring Pi](https://projects.drogon.net/raspberry-pi/wiringpi/) library which is installed by default on the Beacon Development Kit.  The first step is to change GPIO 1 into `OUT` mode.  Then command the pin to turn on, which will activate the power switch and turn the light on.  To do this run the following commands (shouting “Let there be light!” is optional):
 
 ```
 $ gpio mode 1 out
@@ -106,8 +106,7 @@ do
 done
 ```
 
-Be sure to change the iBeacon identifiers in the if statement to the ones you'll be broadcasting with your test beacon.  
-Save this file and get your beacon ready, make sure it is off for to start the test.  Now run the following command to start the scan and light switch sequence, it starts a beacon scan with the bare output option, piping its output into our `welcome_light` script.  If you made your own scan script, just run that script and pipe its output to `welcome_light`.
+Be sure to change the iBeacon identifiers in the if statement to the ones you'll be broadcasting with your test beacon. Save this file and get your beacon ready, make sure it is off for to start the test.  Now run the following command to start the scan and light switch sequence, it starts a beacon scan with the bare output option, piping its output into our `welcome_light` script.  If you made your own scan script, just run that script and pipe its output to `welcome_light`.
 
 ```
 $ ibeacon scan -b | ./welcome_light
