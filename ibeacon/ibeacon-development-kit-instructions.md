@@ -108,7 +108,8 @@ Kit, logging in with username: pi, password: raspberry
 Step 5. In the console, use the following commands to control the iBeacon:
 
 ```
-ibeacon start    # starts all iBeacons
+ibeacon scan      # scans for other nearby beacons 
+ ibeacon start    # starts all iBeacons
  ibeacon stop     # stops all iBeacons
  ibeacon start 1  # starts the first iBeacon
  ibeacon stop 1   # stops the first iBeacon
@@ -118,7 +119,11 @@ ibeacon start    # starts all iBeacons
 ```
 
 You may also adjust the identifiers through the console by editing the /boot/ibeacon.conf file.  If you change the 
-identifiers, you will need to rerun the start command in order for the changes to take effect.
+identifiers, you will need to rerun the start command in order for the changes to take effect. 
+
+##iBeacon Scanning
+
+Visit our [developer blog](http://developer.radiusnetworks.com/blog/) for more information on the scanning feature, including a quick tutorial that takes advantage of the Raspberry Pi outpus pins to control external devices based on the proximity of nearby beacons.
 
 ##Getting Help 
 
