@@ -108,7 +108,7 @@ Kit, logging in with username: pi, password: raspberry
 Step 5. In the console, use the following commands to control the iBeacon:
 
 ```
-ibeacon scan      # scans for other nearby beacons 
+ibeacon scan     # scans for other nearby beacons 
  ibeacon start    # starts all iBeacons
  ibeacon stop     # stops all iBeacons
  ibeacon start 1  # starts the first iBeacon
