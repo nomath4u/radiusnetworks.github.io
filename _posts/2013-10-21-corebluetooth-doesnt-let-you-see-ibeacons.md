@@ -55,7 +55,7 @@ I wrote up a simple ViewController that tries to do this.  Here is an excerpt:
                 CBCentralManagerScanOptionAllowDuplicatesKey: @YES
             };
             [_manager scanForPeripheralsWithServices:nil
-	                                     options:options];
+                                             options:options];
             NSLog(@"I just started scanning for peripherals");
             break;
         }
