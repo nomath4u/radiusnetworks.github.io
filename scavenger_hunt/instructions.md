@@ -24,10 +24,11 @@ three part identifier.  Write down which target is associated with which iBeacon
 ###Step 3. Create badge images for each target location
 
 Making badge images requires the most work.  You will need to make two different badge images for each location -- one to indicate a target that is not
-found and one to indicate a target that is found.  Depending on what platforms you want to support, you will need other variants of these badges, too.
+found and one to indicate a target that is found.  Depending on what platforms you want to support, you may want to include other variants of these badges, too.
 
-At a minimum, you need one standard resolution badge pair (found / not found) for each target for use on non-retina iPhones and smaller Android phones. They should be named like below, and uploaded to a web server.
-Once you have them uploaded, write down the mapping between each target and each image URL.
+At a minimum, you need one standard resolution badge pair (found / not found) for each target that is at least 260 pixels by 260 pixels in size. Smaller images will work, but will appear blurry on most devices. Ideally, these images should be square so that they fit the display space provided within the app properly. 
+
+They should be named like below, and uploaded to a web server. Once you have them uploaded, write down the mapping between each target and each image URL.
 
     target1.png
     target1_found.png
@@ -36,7 +37,7 @@ Once you have them uploaded, write down the mapping between each target and each
     ...
 
 
-You will also need to create another set of images for high density displays.  Full details on the image filenames needed to do this are at the bottom of this document.
+You may want to create another set of images for high density displays, but this is only to optimize the sharpness of your image and is completely unnecessary. Full details on the high density image filenames needed to do this are at the bottom of this document.
 
 
 ###Step 4. Configure ProximityKit
@@ -72,14 +73,14 @@ Once you receive confirmation that your code is live, you can try out your scave
 
 These images should be 130x130 pixels.
 
-#####Additional images required for iPhone retina displays:
+#####Additional images for iPhone retina displays:
 
     target1_260.png
     target1_found_260.png
 
 These images should be 260x260 pixels.
 
-#####Additional images required for iPad
+#####Additional images for iPad
 
     target1_312.png
     target1_624.png
@@ -88,7 +89,7 @@ These images should be 260x260 pixels.
 
 These image sizes should be as indicated in the suffix.
 
-#####Additional images required for optimizing Android phone and tablet screen sizes and densities:
+#####Additional images for optimizing Android phone and tablet screen sizes and densities:
 
     target1_438.png
     target1_found_438.png
