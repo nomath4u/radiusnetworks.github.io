@@ -17,7 +17,7 @@ might be expected.  Start small and add more after you get a few working.
 ###Step 2. Get your iBeacons
 
 However many items you have on your tour, you'll need to order at least the same number of [iBeacons](http://www.radiusnetworks.com/buy-beacons.html) (and more if you want spares.)  Each one must be assigned a different
-three part identifier.  Write down which target is associated with which iBeacon three part identifier.
+three part identifier.  Write down which item is associated with which iBeacon three part identifier.
 
 ###Step 3. Create images for each item
 
@@ -50,9 +50,9 @@ When you are done, your setup should look like this for a single target:
 
 <img src='images/museumguide-pk-setup.png'/>
 
-###Step 6. Distribute your 8-digit hunt code.
+###Step 6. Distribute your 8-digit museum code.
 
-When using the Radius Museum Guide apps, your museum or tour is selected by particpants by entry of an 8-digit code.  This code can then be distributed to your
+When using the Radius Museum Guide apps, your museum or tour is selected by visitors by entry of an 8-digit code.  This code can then be distributed to your
 participants by posting it on a sign or a website, sending it to them via email, etc.  You may request an 8-digit code by sending an email to support@radiusnetworks.com including your ProximityKit kit URL.
 
 Once you receive confirmation that your code is live, you can try out your museum guide.
