@@ -34,8 +34,8 @@ images or other multimedia elements.  The file must be uploaded to a web server.
 If you don't have a [ProximityKit](http://www.proximitykit.com) account already, create one.  You can use the free service license if you expect to have 100 people or fewer playing your scavenger hunt.  See plans for details.
 
 Create a new Kit, then define one iBeacon for each museum guide item.  For each one, you'll need to enter the three-part iBeacon identifier along wtih two key/value pairs.  The first key/value pair
-has a key of "item_id" and a value of your item or catalog number.  If you don't have a museum catalog number, put "1" for your first item, "2" for your second item, etc.  
-The second key/value pair is for your "image_url" of your picture image for that target.  The third key/value pair is the "html_url" of the description page for your item.  The fourth key/value pair is the
+has a key of `item_id` and a value of your item or catalog number.  If you don't have a museum catalog number, put "1" for your first item, "2" for your second item, etc.  
+The second key/value pair is for your `image_url` of your picture image for that target.  The third key/value pair is the `html_url` of the description page for your item.  The fourth key/value pair is the
 "title" of your item.  In the example museum guide, the first item is set up like this:
 
     Key         Value
