@@ -19,8 +19,8 @@ AndroidManifest.xml files.
 
 1. Download the [AAR file](/ibeacon/android/download.html) for the desired version of the library.
 2. Use a zip extractor tool to uncompress the file.
-3. Rename the classes.jar file to android-ibeacon-library.jar 
-4. Rename the AndroidManifest.xml file to AndroidIBeaconLibraryManifest.xml
+3. Copy the /lib/classes.jar file to /lib/android-ibeacon-library.jar 
+4. Copy the /AndroidManifest.xml file to /AndroidIBeaconLibraryManifest.xml
 
 ###Copying the files into your project
 
