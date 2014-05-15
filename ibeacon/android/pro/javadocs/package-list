@@ -1,6 +1,8 @@
+com.radiusnetworks.bluetooth
 com.radiusnetworks.ibeacon
 com.radiusnetworks.ibeacon.client
 com.radiusnetworks.ibeacon.service
+com.radiusnetworks.ibeacon.simulator
 com.radiusnetworks.proximity
 com.radiusnetworks.proximity.api
 com.radiusnetworks.proximity.geofence
