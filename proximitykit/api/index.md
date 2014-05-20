@@ -67,8 +67,8 @@ Root Document:
 }
 ```
 
-Key                | Value
------------------- |---------------------------------------
+Key                  | Value
+------------------   |---------------------------------------
 `version`            | The media type version
 `links[users.kits]`  | The url template for a kit resource
 `users[links][kits]` | List of kit IDs that belong to a user
@@ -90,20 +90,20 @@ Curl Example:
 
 `GET /api/v1/kits/:id`
 
-Return the kit resource, describing the attributes and related iBeacons.
+Return the kit resource, describing the attributes and related beacons.
 
 ```json
 {
   "version": "1.0",
   "links": {
-    "kits.ibeacons": "http://proximitykit.com/api/v1/ibeacons/{kits.ibeacons}"
+    "kits.beacons": "http://proximitykit.com/api/v1/beacons/{kits.beacons}"
   },
   "kits": [
     {
       "name": "Ancient Rome",
       "id": 52,
       "links": {
-        "ibeacons": [2,3,4,5]
+        "beacons": [2,3,4,5]
       }
     }
   ]
@@ -113,8 +113,8 @@ Return the kit resource, describing the attributes and related iBeacons.
 Key                     | Value
 ----------------------- | ------------------------------------------
 `version`               | The media type version
-`links[kits.ibeacons]`  | The url template for an ibeacon resource
-`kits[links][ibeacons]` | List of kit IDs that belong to a user
+`links[kits.beacons]`   | The url template for an beacon resource
+`kits[links][beacons]`  | List of kit IDs that belong to a user
 
 
 Curl Example:
@@ -144,14 +144,14 @@ Return a paginated of kit resources.
     "last": "http://proximitykit.com/api/v1/kits?page=10"
   },
   "links": {
-    "kits.ibeacons": "http://proximitykit.com/api/v1/ibeacons/{kits.ibeacons}"
+    "kits.beacons": "http://proximitykit.com/api/v1/beacons/{kits.beacons}"
   },
   "kits": [
     {
       "name": "Ancient Rome",
       "id": 52,
       "links": {
-        "ibeacons": [ 2, 3, 4, 5 ]
+        "beacons": [ 2, 3, 4, 5 ]
       }
     },
     //...
@@ -162,8 +162,8 @@ Return a paginated of kit resources.
 Key                     | Value
 ----------------------- | ------------------------------------------
 `version`               | The media type version
-`links[kits.ibeacons]`  | The url template for an ibeacon resource
-`kits[links][ibeacons]` | List of kit IDs that belong to a user
+`links[kits.beacons]`   | The url template for an beacon resource
+`kits[links][beacons]`  | List of kit IDs that belong to a user
 `meta[next]`            | URI of the next page of results
 `meta[previous]`        | URI of the previous page of results
 `meta[first]`           | URI of the first page of results
@@ -211,7 +211,7 @@ Curl Example:
     {
       "name": "My Name",
       "id": 56,
-      "links": { "ibeacons": [] }
+      "links": { "beacons": [] }
     }
   ]
 }
@@ -268,20 +268,20 @@ Curl Example:
 < HTTP/1.1 204 No Content
 ```
 
-# iBeacons
+# Beacons
 
-## iBeacon Resource
+## Beacon Resource
 
-`GET /api/v1/ibeacons/:id`
+`GET /api/v1/beacons/:id`
 
-This will return an iBeacon resource.
+This will return an beacon resource.
 
 ```
 {
   "links": {
-    "ibeacons.attributes": "http://proximitykit.com/api/v1/ibeacon_attributes/{ibeacons.attributes}"
+    "beacons.attributes": "http://proximitykit.com/api/v1/beacon_attributes/{beacons.attributes}"
   },
-  "ibeacons": [
+  "beacons": [
     {
       "id": 6,
       "name": "Earth",
@@ -299,12 +299,12 @@ This will return an iBeacon resource.
 Key                           | Value
 ----------------------------- | ---------------------------------------------------
 `version`                     | The media type version
-`links[ibeacons.attributes]`  | The url template for an ibeacon_attribute resource
-`ibeacons[name]`              | Display name for the ibeacon
-`ibeacons[uuid]`              | Orgnization level proximity identifier
-`ibeacons[major]`             | Group level proximity identifier
-`ibeacons[minor]`             | Physical beacion proximity identifier
-`ibeacons[links][attributes]` | List of attribute IDs that belong to the ibeacon
+`links[beacons.attributes]`   | The url template for a beacon attribute resource
+`beacons[name]`               | Display name for the beacon
+`beacons[uuid]`               | Orgnization level proximity identifier
+`beacons[major]`              | Group level proximity identifier
+`beacons[minor]`              | Physical beacion proximity identifier
+`beacons[links][attributes]`  | List of attribute IDs that belong to the beacon
 
 Curl Example:
 
@@ -313,24 +313,24 @@ Curl Example:
        -X GET \
        -H 'Authorization: Token token="secret"' \
        -H "Content-Type: application/vnd.api+json" \
-       http://proximitykit.com/api/v1/ibeacons/6
+       http://proximitykit.com/api/v1/beacons/6
 ```
 
-## Creating a iBeacon
+## Creating a beacon
 
-To create a ibeacon make a POST request to the `/api/v1/ibeacons/:id`
+To create a beacon make a POST request to the `/api/v1/beacons/:id`
 
 Parameters
 
 Parameter | Description                  | &nbsp;
 --------- | -----------                  | ------
 `kit_id`  | The ID of the associated kit | Required
-`uuid`    | The iBeacon UUID             | Required
-`name`    | The name of the iBeacon      |
-`major`   | The major iBeacon identifier |
-`minor`   | The minor iBeacon identifier |
+`uuid`    | The beacon UUID              | Required
+`name`    | The name of the beacon       |
+`major`   | The major beacon identifier  |
+`minor`   | The minor beacon identifier  |
 
-`POST /api/v1/ibeacons`
+`POST /api/v1/beacons`
 
 The response will include the JSON representation of the newly created kit as well as a `Location` header with the URI of the resource.
 
@@ -339,9 +339,9 @@ Example:
 ```json
 {
   "links": {
-    "ibeacons.attributes": "http://proximitykit.com/api/v1/ibeacon_attributes/{ibeacons.attributes}"
+    "beacons.attributes": "http://proximitykit.com/api/v1/beacon_attributes/{beacons.attributes}"
   },
-  "ibeacons": [
+  "beacons": [
     {
       "id": 6,
       "name": "Earth",
@@ -363,34 +363,34 @@ Curl Example:
      -X POST \
      -H 'Authorization: Token token="secret"' \
      -H "Content-Type: application/vnd.api+json" \
-     -d '{"ibeacons": [{"kit_id":52, "name": "Earth 2", "uuid": "E58171D9-8398-4453-A991-5593682DDB56", "major": 1002, "minor": 1}]}' \
-     http://proximitykit.com/api/v1/ibeacons
+     -d '{"beacons": [{"kit_id":52, "name": "Earth 2", "uuid": "E58171D9-8398-4453-A991-5593682DDB56", "major": 1002, "minor": 1}]}' \
+     http://proximitykit.com/api/v1/beacons
 < HTTP/1.1 201 Created
-< Location: http://proximitykit.com/api/v1/ibeacons/7
+< Location: http://proximitykit.com/api/v1/beacons/7
 ```
 
-## Updating an iBeacon
+## Updating an beacon
 
-To update a ibeacon make a put request `/api/v1/ibeacons/:id`
+To update a beacon make a put request `/api/v1/beacons/:id`
 
 Parameters
 
 Parameter | Description                  | &nbsp;
 --------- | ------------                 | ------
 `kit_id`  | The ID of the associated kit | Required
-`uuid`    | The iBeacon UUID             |
-`name`    | The name of the iBeacon      |
-`major`   | The major iBeacon identifier |
-`minor`   | The minor iBeacon identifier |
+`uuid`    | The beacon UUID              |
+`name`    | The name of the beacon       |
+`major`   | The major beacon identifier  |
+`minor`   | The minor beacon identifier  |
 
 
-`PUT /api/v1/ibeacon/{ibeacon_id}`
+`PUT /api/v1/beacon/{beacon_id}`
 
 Example:
 
 ```
 {
-  "ibeacons": [
+  "beacons": [
     {
       "kit_id": 1,
       "name": "My New Name",
@@ -403,11 +403,11 @@ Example:
 ```
 
 
-## Deleting an iBeacon
+## Deleting a Beacon
 
-To delete a ibeacon make a delete request to `api/v1/ibeacon/:id`.
+To delete a beacon make a delete request to `api/v1/beacon/:id`.
 
-`DELETE /api/v1/ibeacon/:id`
+`DELETE /api/v1/beacon/:id`
 
 Curl Example:
 
@@ -416,21 +416,21 @@ Curl Example:
        -X DELETE \
        -H 'Authorization: Token token="secret"' \
        -H "Content-Type: application/vnd.api+json" \
-       http://proximitykit.com/api/v1/ibeacons/7
+       http://proximitykit.com/api/v1/beacons/7
 < HTTP/1.1 204 No Content
 ```
 
-# iBeacons Attributes
+# Beacon Attributes
 
-## iBeacons Attributes Resource
+## Beacon Attributes Resource
 
-`GET /api/v1/ibeacon_attributes/:id`
+`GET /api/v1/beacon_attributes/:id`
 
-This will return a list of ibeacon attributes.
+This will return a list of beacon attributes.
 
 ```
 {
-  "ibeacon_attributes": [
+  "beacon_attributes": [
     {
       "id": 4,
       "key": "population",
@@ -447,31 +447,31 @@ Curl Example:
        -X GET \
        -H 'Authorization: Token token="secret"' \
        -H "Content-Type: application/vnd.api+json" \
-       http://proximitykit.com/api/v1/ibeacon_attributes/4
+       http://proximitykit.com/api/v1/beacon_attributes/4
 ```
 
 ## Creating an attribute
 
-To create an attribute make a post request to `api/v1/ibeacon_attributes`
+To create an attribute make a post request to `api/v1/beacon_attributes`
 
 Parameters
 
 Parameter   | Description                      | &nbsp;
 ---------   | ------------                     | ------
-`beacon_id` | The ID of the associated iBeacon | Required
+`beacon_id` | The ID of the associated beacon  | Required
 `key`       | The key value                    |
 `value`     | The data associated with the key |
 
 
-`POST /api/v1/ibeacon_attributes`
+`POST /api/v1/beacon_attributes`
 
 Example:
 
 ```json
 {
-  "ibeacon_attributes": [
+  "beacon_attributes": [
     {
-      "ibeacon_id": 5,
+      "beacon_id": 5,
       "key": "venue",
       "value": "spaceship"
     }
@@ -484,31 +484,31 @@ Example:
        -X POST \
        -H 'Authorization: Token token="secret"' \
        -H "Content-Type: application/vnd.api+json" \
-       -d '{ "ibeacon_attributes": [ { "ibeacon_id": 5, "key": "venue", "value": "spaceship" } ]}' \
-       http://proximitykit.com/api/v1/ibeacon_attributes
+       -d '{ "beacon_attributes": [ { "beacon_id": 5, "key": "venue", "value": "spaceship" } ]}' \
+       http://proximitykit.com/api/v1/beacon_attributes
 < HTTP/1.1 201 Created
-< Location: http://proximitykit.com/api/v1/ibeacon_attributes/5.5
+< Location: http://proximitykit.com/api/v1/beacon_attributes/5.5
 ```
 
 ## Updating an attribute
 
-To update an attribute make a post request to `api/v1/ibeacon_attributes/:id`.
+To update an attribute make a post request to `api/v1/beacon_attributes/:id`.
 
 Parameters
 
 Parameter    | Description                      | &nbsp;
 ---------    | ------------                     | ------
-`ibeacon_id` | The ID of the parent ibeacon     | Required
+`beacon_id`  | The ID of the parent beacon      | Required
 `key`        | The key value                    | Required
 `value`      | The data associated with the key | Required
 
-`PUT /api/v1/ibeacon_attributes/:id`
+`PUT /api/v1/beacon_attributes/:id`
 
 Example:
 
 ```json
 {
-  "ibeacon_attributes": [
+  "beacon_attributes": [
     {
       "key": "venue",
       "value": "spaceship with dinosaurs"
@@ -524,16 +524,16 @@ Curl Example:
        -X PUT \
        -H 'Authorization: Token token="secret"' \
        -H "Content-Type: application/vnd.api+json" \
-       -d '{ "ibeacon_attributes": [ { "key": "venue", "value": "spaceship with dinosaurs" } ]}' \
-       http://proximitykit.com/api/v1/ibeacon_attributes/5
+       -d '{ "beacon_attributes": [ { "key": "venue", "value": "spaceship with dinosaurs" } ]}' \
+       http://proximitykit.com/api/v1/beacon_attributes/5
 < HTTP/1.1 204 No Content
 ```
 
 ## Deleting an attribute
 
-To delete an attribute make a delete request to the individual `ibeacon_attribute_url`.
+To delete an attribute make a delete request to the individual `beacon_attribute_url`.
 
-`DELETE /api/v1/ibeacon_attributes/:id`
+`DELETE /api/v1/beacon_attributes/:id`
 
 Curl Example:
 
@@ -542,7 +542,7 @@ Curl Example:
        -X DELETE \
        -H 'Authorization: Token token="secret"' \
        -H "Content-Type: application/vnd.api+json" \
-       http://proximitykit.com/api/v1/ibeacon_attributes/4
+       http://proximitykit.com/api/v1/beacon_attributes/4
 < HTTP/1.1 204 No Content
 ```
 
