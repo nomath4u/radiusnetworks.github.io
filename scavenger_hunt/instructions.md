@@ -28,7 +28,7 @@ found and one to indicate a target that is found.  Depending on what platforms y
 
 At a minimum, you need one standard resolution badge pair (found / not found) for each target that is at least 260 pixels by 260 pixels in size. Smaller images will work, but will appear blurry on most devices. Ideally, these images should be square so that they fit the display space provided within the app properly. 
 
-They should be named like below, and uploaded to a web server. Once you have them uploaded, write down the mapping between each target and each image URL.
+They should be named like below, and uploaded to a web server.  (See Appendix B below for information on how to set up a web server to host your images.)   Once you have them uploaded, write down the mapping between each target and each image URL.
 
     target1.png
     target1_found.png
@@ -98,5 +98,14 @@ These image sizes should be as indicated in the suffix.
 
 These image sizes should be as indicated in the suffix.
 
+## Appendix B: How to host your images on a web server
+
+In order to make a scavenger hunt, you will need a web server where you can host the images for each badge associtated with a target.  The hosting server or service must allow you to specify the filename of the image on the URL, making some free services like imgur.com unworkable, because they change the filename of your image.
+
+If you do not have your own web server, two good options are Github (free) and Amazon S3.  
+
+With Github, you can create a free account and a new *public* repository, then upload each image to the repository.  After you do so, you can use the Github raw URL to specify the image location.  You can see an example of how this is set up for the scavenger hunt example by looking at the public repository for the [scavenger hunt sample images](https://github.com/RadiusNetworks/scavenger-hunt-sample-images).  An example raw URL for a scavenger hunt images in this case is found by clicking on the "raw" link for each image, which gives you something like: https://raw.githubusercontent.com/RadiusNetworks/scavenger-hunt-sample-images/master/target1.png
+
+Details on how to set up Amazon S3 for website hosting can be found [here.](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 
 
