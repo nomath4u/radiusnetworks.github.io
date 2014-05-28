@@ -27,7 +27,7 @@ Or keep reading for a full details.
 
 # Create a Kit
 
-In the Proximity Kit echo system a Kit is 1:1 to an App. Since we are going to make a new app, lets add a kit. Simply Log into [proximitykit.com](http://proximitykit.com) and click on Kits. If you don't have any you will see a page like this. Click that big "Create New Kit" button.
+In the Proximity Kit ecosystem a Kit is 1:1 to an App. Since we are going to make a new app, lets add a kit. Simply Log into [proximitykit.com](http://proximitykit.com) and click on Kits. If you don't have any you will see a page like this. Click that big "Create New Kit" button.
 
 ![No Kit](no-kit.png)
 
@@ -47,12 +47,12 @@ I am going to add 3 beacons. One for Work, Home and a Theater. I want to use the
 | Home    | 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6 | 13    | 2     |
 | Theater | 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6 | 13    | 3     |
 
-But as I add them I am going to associate a bit a meta data with each. This is where the real power of Proximity Kit starts to peak through. We can associate and manage data on top of beacon identifiers and have it synced to the device for you.
+But as I add them I am going to associate a bit a meta data with each. This is where the real power of Proximity Kit starts to peek through. We can associate and manage data on top of beacon identifiers and have it synced to the device for you.
 
 ![Add Beacon Identifiers](add-beacon-values.png)
 
 
-For WebBeacon I need a URL to for each. So I will add the following to each beacon:
+For WebBeacon I want a URL associated with each beacon. So I will add the following to each beacon:
 
 | name    | key  | value                                 |
 | ----    | ---- | -----                                 |
@@ -68,9 +68,9 @@ Then add a "url" attribute with "http://s3.proximitykit.com/doc/a.html"
 
 ![Add Beacon Metadata](add-beacon-metadata.png)
 
-Just repete this process for the other two beacons, setting a different minor value and url for each.
+Just repeat this process for the other two beacons, setting a different minor value and url for each.
 
-Lets go ahead and download the framework and config file for Xcode.
+Let's go ahead and download the framework and config file for Xcode.
 
 ![download framework](download-framework.png)
 ![download plist](download-plist.png)
@@ -87,7 +87,7 @@ Open Xcode and:
 
 ![Drag to Xcode](xcode-drag.png)
 
-Cool. Now you have an empty xcode project. It's a good idea to build at this point and make srue everything works.
+Cool. Now you have a skeleton Xcode project. It's a good idea to build at this point and make sure everything works.
 
 ## Import and create a PKManager
 
@@ -119,7 +119,7 @@ Your app delegate might look something like this:
 Open your `AppDelegate.m` and:
 
 1. Create the `PKManager`
-1. Implement the did enter callback
+1. Implement the didEnter: callback
 
 
 ```objective-c
@@ -171,13 +171,13 @@ In the viewcontroller add a `UIWebView` to the storyboard and wire it up to an o
 }
 ```
 
-That's it. You should have an app that will respond to an iBeacon. Lets test it out.
+That's it. You should have an app that will respond to an iBeacon. Let's test it out.
 
-The easiset thing to use is our [MacBeacon](http://www.radiusnetworks.com/macbeacon-app.html) or the [iBeacon-CLI](https://github.com/RadiusNetworks/ibeacon-cli).
+The easiest thing to use is our [MacBeacon](http://www.radiusnetworks.com/macbeacon-app.html) or the [iBeacon-CLI](https://github.com/RadiusNetworks/ibeacon-cli).
 
 Run your app on your phone (the simulator cannot detect iBeacons) then fire up MacBeacon.
 ![Mac Beacon Screen](mac-beacon.png)
 
-After the app is running turn the beacon on and within a few seconds the web view will update load the webpage that was associated with the beacon.
+After the app is running turn the beacon on and within a few seconds the web view will load the webpage that was associated with the beacon.
 
 Any questions? Drop us a <a href="mailto:support@radiusnetworks.com">note</a>.
