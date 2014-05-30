@@ -9,7 +9,7 @@ Binary distributions are provided in two formats.  The aar format is recommended
 See [configuring your project]() for more information on how to use the binary distribution.
 
 
-####Latest Stable Release 0.7.6
+####Latest Stable Release 0.7.7
 
 
 <i class="fa fa-cloud-download" style="color: #3abeee;"></i>  [AndroidIBeaconLibrary-0.7.7.aar](https://s3.amazonaws.com/android-ibeacon-library.radiusnetworks.com/AndroidIBeaconLibrary-0.7.7.aar)
