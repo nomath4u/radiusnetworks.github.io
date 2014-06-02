@@ -1,5 +1,5 @@
 ---
-layout: proximitykit
+layout: proximitykit-ios
 ---
 
 # Getting started with Proximity Kit
