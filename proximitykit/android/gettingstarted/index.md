@@ -1,5 +1,5 @@
 ---
-layout: proximitykit
+layout: proximitykit-android
 ---
 
 # Getting started with Proximity Kit
