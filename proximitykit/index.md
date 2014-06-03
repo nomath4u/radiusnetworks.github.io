@@ -51,6 +51,7 @@ Users of the Proximity Kit client library agree to abide by the license terms as
 
 ### Additional Resources
 
+<a class="btn" href="/proximitykit/android/gettingstarted">Getting Started</a>
 <a class="btn" href="/ibeacon/android/samples.html">Sample Code</a>
 <a class="btn" href="/ibeacon/android/pro/documentation.html">Documentation</a>
 
@@ -69,12 +70,12 @@ Users of the Proximity Kit client library agree to abide by the license terms as
 
 ### Additional Resources
 
-<a class="btn" href="gettingstarted">Getting Started</a>
-<a class="btn" href="webbeacon">10 Minute Tutorial</a>
-<a class="btn" href="ios/docs">SDK Reference</a>
+<a class="btn" href="/proximitykit/ios/gettingstarted">Getting Started</a>
+<a class="btn" href="/proximitykit/webbeacon">10 Minute Tutorial</a>
+<a class="btn" href="/proximitykit/ios/docs">SDK Reference</a>
 
 <a class="btn" href="https://github.com/RadiusNetworks/proximity-kit-ios-example">iOS Reference App</a>
-<a class="btn" href="ios/tracking_beacons.html">Tracking Beacons Example</a>
+<a class="btn" href="/proximitykit/ios/tracking_beacons.html">Tracking Beacons Example</a>
 
 ---
 
