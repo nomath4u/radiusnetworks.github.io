@@ -5,6 +5,11 @@ layout: default
   <div class="product-content">
     <a href="/proximitykit"><div class="brand">Proximity Kit</div></a>
     <ul class="dropdown">
+      <li>
+        <a href={{ page.url | replace_first: 'ios', 'android' | remove: 'index.html' }}>
+          <div class="lang-toggle">Looking for Android?</div>
+        </a>
+      </li>
       <li><a href="http://proximitykit.com/kits">My Kits</a></li>
       <li><a href="/proximitykit/ios/gettingstarted">Getting Started</a></li>
     </ul>
