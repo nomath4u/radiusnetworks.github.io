@@ -68,7 +68,7 @@ Below is an outline for a fix to the common error where the host machine capture
 
 * Make sure you have the latest version of VirtualBox
 * Before you launch the virtual machine, plug in your bluetooth USB dongle and set up a filter so your VM will capture it    automatically (Settings --> Ports --> USB).  It should look like this:
-    <img style="height: 150px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; border-radius: 7px;"             src='http://i.imgur.com/DlY9dkk.png'>
+    <img style="height: 300px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; border-radius: 7px;"             src='http://i.imgur.com/DlY9dkk.png'>
 * Exit settings and unplug the bluetooth dongle from your computer
 * Now launch your VM and wait until it boots to plug in the bluetooth dongle
 * The VM should capture the dongle automatically.  To verify this, type `hciconfig` into the command line and you should     see a `hci0` device listed.
