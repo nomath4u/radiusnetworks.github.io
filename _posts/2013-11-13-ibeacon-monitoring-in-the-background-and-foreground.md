@@ -230,6 +230,8 @@ However, this 15 minutes does not seem to be set in stone.   The exact time inte
 
 ##Other important observations
 
-1. If a monitored region in an app has region.notifyEntryStateOnDisplay = true, then each time the screen is turned on (by the shoulder button or the home button), then the app gets a callback in about a second.  In order for this to happen, iOS probably does a bluetooth scan right when the screen comes on and sends “in the region” notifications as soon as an iBeacon is seen, and “out of the region” notifications if no matching iBeacon is seen after a few seconds of scanning.  Notice that in all of the tests above "out of region" notifications always come a couple of seconds after "in the region" notifications.  This is probably because iOS doesn't consider an iBeacon to have disappeared until it doesn't show up in the scan results for a few cycles.
+1. If a monitored region in an app has region.notifyEntryStateOnDisplay = true, then each time the screen is turned on (by the shoulder button or the home button), then the app gets a callback in about a second.  In order for this to happen, iOS probably does a bluetooth scan right when the screen comes on and sends “in the region” notifications as soon as an iBeacon is seen.
 
-2. If you reboot the phone and start the app, no monitoring notifications are received for a few minutes after the phone boots, even though the bluetooth indicator is on.  My guess is that iOS doesn't start some parts of CoreLocation or CoreBluetooth right away.
+2. Notice that in all of the tests above "out of region" notifications always come a couple of seconds after "in the region" notifications.  This is probably because iOS doesn't consider an iBeacon to have disappeared until it doesn't show up in the scan results for a few cycles.
+
+3. If you reboot the phone and start the app, no monitoring notifications are received for a few minutes after the phone boots, even though the bluetooth indicator is on.  My guess is that iOS doesn't start some parts of CoreLocation or CoreBluetooth right away.
