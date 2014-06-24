@@ -132,7 +132,7 @@ $$ reboot
 
 ##One More Catch
 
-Astute observers who are in-the-know about iBeacons might notice one more catch:  the advertisement above is missing the 25th byte of the standard iBeacon transmission.  This byte is used to send the calibration power value for the Bluetooth transmitter.  Unfortunately, due to a bug in Android's GattService.java file, manufacturer advertisements are currently limited to 24 bytes instead of the 26 bytes that should be allowed.  Hopefully, this bug will be fixed in the next Android version.  Until then, you can't transmit this power calibration value, meaning that iBeacon detectors won't be able to estimate the distance to an Android iBeacon.  Note in the screenshot that no “accuracy” distance estimate is provided.
+Astute observers who are in-the-know about iBeacons might notice one more catch:  the advertisement above is missing the 25th byte of the standard iBeacon transmission.  This byte is used to send the calibration power value for the Bluetooth transmitter.  Unfortunately, due to a [bug in Android's GattService.java file](https://code.google.com/p/android/issues/detail?id=72304), manufacturer advertisements are currently limited to 24 bytes instead of the 26 bytes that should be allowed.  Hopefully, this bug will be fixed in the next Android version.  Until then, you can't transmit this power calibration value, meaning that iBeacon detectors won't be able to estimate the distance to an Android iBeacon.  Note in the screenshot that no “accuracy” distance estimate is provided.
 
 ##Phones Without Root
 
