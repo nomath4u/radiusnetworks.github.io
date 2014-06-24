@@ -19,15 +19,11 @@ Create a VM that will work like a proximity beacon with iBeacon™ technology.
 4. Plug in your Bluetooth LE Dongle
 5. Start the virtual machine.  The Virtual Beacon will attempt to startup automatically.
 6. If you receive a message in the virtual machine that no bluetooth device has been detected,  make sure the virtual machine has captured the device.  In the VirtualBox menu, select Devices -> USB Devices -> then select your BLE USB device in the menu that shows up so that there is a checkmark by it.
-     *  If you receive an error message trying to capture your bluetooth device (it will look like this)
+     *  If you receive an error message trying to capture your bluetooth device (see image below), a quick solution to this problem is outlined below.
 
       <img style="height: 150px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; border-radius: 7px;" src='http://i.imgur.com/qzMirYi.png'>
 
-     A quick solution to this problem on OS X computers can be found [here](https://www.virtualbox.org/ticket/2372#comment:12)
-
-
 7. Now you can start the Virtual Beacon manually by typing `start` into the command prompt and pressing enter.
-
 
 
 ## How to start it and stop it
@@ -66,9 +62,24 @@ For a BLE Device to work with the Virtual Beacon, it must have low level USB com
 * TI CC2540 USB Dongle (does not work with Bluez stack in default configuration)
 * Internal MacBook Pro Bluetooth LE device (cannot be captured by Virtual Machine)
 
-## Questions or Issues?
+## Bluetooth Device Capture Error
 
-Contact jnebeker _at_ radiusnetworks _dot_ com if you have any questions or need more information.
+Below is an outline for a fix to the common error where the host machine captures the bluetooth dongle before it can be captured by the virtual machine:
+
+* Make sure you have the latest version of VirtualBox
+* Before you launch the virtual machine, plug in your bluetooth USB dongle and set up a filter so your VM will capture it    automatically (Settings --> Ports --> USB).  It should look like this:
+    <img style="height: 300px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; border-radius: 7px;"             src='http://i.imgur.com/DlY9dkk.png'>
+* Exit settings and unplug the bluetooth dongle from your computer
+* Now launch your VM and wait until it boots to plug in the bluetooth dongle
+* The VM should capture the dongle automatically.  To verify this, type `hciconfig` into the command line and you should     see a `hci0` device listed.
+* Now you should be able to type `start` to begin broadcasting as an ibeacon
+
+If this doesn't work, you can also try another fix (for OS X) found [here](https://www.virtualbox.org/ticket/2372#comment:12)
+
+
+## Other Questions or Issues?
+
+Contact support _at_ radiusnetworks _dot_ com if you have any questions or need more information.
 
 
 ## Notes for specific devices
