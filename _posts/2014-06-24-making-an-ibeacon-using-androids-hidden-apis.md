@@ -24,7 +24,7 @@ If you want to develop against these APIs, then you have to take another step, t
 
 An iBeacon is a great example of such an app.  To transmit as a peripheral, you first need to verify that your app has the android.permission.BLUETOOTH_PRIVILEGED permission otherwise none of this will work.  Again, to get this permission, you must put the APK file in the /system/priv-app directory:
 
-```javas
+```java
 		if ((this.getApplicationInfo().flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
 			Log.d(TAG, "This is a system application");
 		} else {
