@@ -4,7 +4,7 @@ layout: post
 title: Making an iBeacon&trade; with Android's hidden APIs
 ---
 
-Since Android added Bluetooth LE support in last year's 4.3 release, the lack of peripheral mode support has been driving many developers crazy.   Without peripheral mode, Android devices can't advertise Bluetooth LE services to other devices.  And while they can detect iBeacons around them, they can't act as iBeacons, because doing so requires advertising as a peripheral. 
+Since Android added Bluetooth LE support in last year's 4.3 release, the lack of peripheral mode support has been driving many developers crazy.   Without peripheral mode, Android devices can't advertise Bluetooth LE services to other devices.  And while they can detect iBeacons around them, they can't act as iBeacons, because doing so requires advertising as a peripheral.
 
 This has left some developers sitting on the edge of their seats waiting for the next Android release, hoping that peripheral mode will be added to Android 4.5 — perhaps as soon as the Google I/O conference this week.
 
@@ -16,7 +16,7 @@ To demonstrate this, I built a demo iBeacon transmitter app for Android, then in
 
 ##How This Works
 
-The APIs needed to do this are published on the AOSP repo in the [BluetoothAdapter](https://github.com/android/platform_frameworks_base/blob/master/core/java/android/bluetooth/BluetoothAdapter.java) class.    Note the methods startAdvertising(), stopAdvertising() and getAdvScanData(), which allows you to read and write the raw information sent out in the advertisement.   As it stands, these API calls are blocked from use unless an app has android.permission.BLUETOOTH_PRIVILEGED.  This is a system-level permission, so the only way to get this is for your custom app is to root your phone, and install your app in the /system/priv-app directory. 
+The APIs needed to do this are published on the AOSP repo in the [BluetoothAdapter](https://github.com/android/platform_frameworks_base/blob/master/core/java/android/bluetooth/BluetoothAdapter.java) class.    Note the methods startAdvertising(), stopAdvertising() and getAdvScanData(), which allows you to read and write the raw information sent out in the advertisement.   As it stands, these API calls are blocked from use unless an app has android.permission.BLUETOOTH_PRIVILEGED.  This is a system-level permission, so the only way to get this is for your custom app is to root your phone, and install your app in the /system/priv-app directory.
 
 If you want to develop against these APIs, then you have to take another step, too.  The method calls mentioned above are all marked with an @hide annotation in the Android source, which causes them to be kept out the standard SDK file that you download to build apps against API Level 19.  To get around this, you have to compile the SDK from the AOSP source (after removing these annotations from BluetoothAdapter.java,  BluetoothAdvScanData.java, and running make `update-api`.  Once you build a new SDK with these APIs no longer hidden, you can use this SDK in Eclipse or AndroidStudio to make a custom app that acts as a Bluetooth LE peripheral.
 
@@ -55,53 +55,53 @@ Once you have the proper permissions, you simply have to set up your advertiseme
 
 ```java
 		byte[] advertisingBytes;
-		advertisingBytes = new byte[] { 
+		advertisingBytes = new byte[] {
 		(byte) 0x4c, (byte) 0x00,   // Apple manufacturer ID
 		(byte) 0x02, (byte) 0x15,   // iBeacon advertisement identifier
-		// 16-byte Proximity UUID follows  
+		// 16-byte Proximity UUID follows
 		(byte) 0x2F, (byte) 0x23, (byte) 0x44, (byte) 0x54, (byte) 0xCF, (byte) 0x6D, (byte) 0x4a, (byte) 0x0F,
 		(byte) 0xAD, (byte) 0xF2, (byte) 0xF4, (byte) 0x91, (byte) 0x1B, (byte) 0xA9, (byte) 0xFF, (byte) 0xA6,
 		(byte) 0x00, (byte) 0x01,   // major: 1
 		(byte) 0x00, (byte) 0x02 }; // minor: 2
 ```
 
-In order to tell Android to transmit this byte sequence, you have to first get an instance of the BluetoothAdapter, and get the current value of the BluetoothAdvScanData, which can be used to set the advertisement bytes: 
+In order to tell Android to transmit this byte sequence, you have to first get an instance of the BluetoothAdapter, and get the current value of the BluetoothAdvScanData, which can be used to set the advertisement bytes:
 
 ```java
 BluetoothManagerbluetoothManager = (BluetoothManager) this.getApplicationContext().getSystemService(Context.BLUETOOTH_SERVICE);
-BluetoothAdapter bluetoothAdapter = bluetoothManager.getAdapter();		
-BluetoothAdvScanData scanData = bluetoothAdapter.getAdvScanData();		
+BluetoothAdapter bluetoothAdapter = bluetoothManager.getAdapter();
+BluetoothAdvScanData scanData = bluetoothAdapter.getAdvScanData();
 ```
 Once you have this scan data, you need to set these bytes.  The Android APIs allow you to set both ManufacturerData (which will be sent out with Bluetooth AD type 0xFF) and ServiceData (which will be sent out with Bluetooth AD type 0x16)  For the purposes of transmitting as an iBeacon, we must use the ManufacturerData, because iOS devices looking for iBeacons expect to see the 0xFF Bluetooth AD type.
 
 ```java
 		scanData.removeManufacturerCodeAndData(0x01);
 		scanData.setManufacturerData((int) 0x01, advertisingBytes);
-		scanData.setServiceData(new byte[]{});	// clear out service data.  
+		scanData.setServiceData(new byte[]{});	// clear out service data.
 ```
 
 The last step is to start advertising:
 
 ```java
-		bluetoothAdapter.startAdvertising(advertiseCallback);	
+		bluetoothAdapter.startAdvertising(advertiseCallback);
 ```
 
 You'll note that this requires an advertiseCallback definition, which we will define like this:
 
 ```java
 		private AdvertiseCallback advertiseCallback = new AdvertiseCallback() {
-	
+
 			@Override
 			public void onAdvertiseStart(int result) {
 				if (result == BluetoothAdapter.ADVERTISE_CALLBACK_SUCCESS) {
-					Log.d(TAG, "started advertising successfully.");					
+					Log.d(TAG, "started advertising successfully.");
 				}
 				else {
 					Log.d(TAG, "did not start advertising successfully");
 				}
-				
-			}	
-	
+
+			}
+
 			@Override
 			public void onAdvertiseStop(int result) {
 				if (result == BluetoothAdapter.ADVERTISE_CALLBACK_SUCCESS) {
@@ -110,9 +110,9 @@ You'll note that this requires an advertiseCallback definition, which we will de
 				else {
 					Log.d(TAG, "did not stop advertising successfully");
 				}
-				
+
 			}
-   	 	
+
 		};
 ```
 
@@ -125,7 +125,7 @@ using the steps below.  **WARNING:  Only perform these steps if you know what yo
 		$$ su
 		$$ mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
 		$$ cp /sdcard/AndroidBeaconTransmitter.apk /system/priv-app/
-		$$ chmod 644 /system/priv-app/AndroidBeaconTransmitter.apk 
+		$$ chmod 644 /system/priv-app/AndroidBeaconTransmitter.apk
 		$$ mount -o remount,ro -t yaffs2 /dev/block/mtdblock3 /system
 		$$ reboot
 ```
