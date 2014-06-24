@@ -12,6 +12,7 @@ But what if I told you that you don't have to wait?  The Android phone you have 
 
 To demonstrate this, I built a demo iBeacon transmitter app for Android, then installed it on my Nexus 5 running Android 4.4.3.  You can see the beacon transmission get picked up by an iPhone 4S by its side.
 
+<img style="margin:10px; height: 400px; float:middle;" src='/img/android-transmitter.jpg'>
 
 
 ##How This Works
@@ -139,7 +140,7 @@ But what about folks without rooted phones?  Phone makers like Motorola, Samsung
 
 ##Final Thoughts
 
-We here at Radius Networks are excited to see Android catching up with iOS in this area.  Many of our developer-partners and customers have been asking us for this functionality.  No, we finally have some parity.
+We here at Radius Networks are excited to see Android catching up with iOS in this area.  Many of our developer-partners and customers have been asking us for this functionality.  Now, we finally have some parity.
 
-* iBeacon is an Apple trademark
+Note: iBeacon is an Apple trademark
 
