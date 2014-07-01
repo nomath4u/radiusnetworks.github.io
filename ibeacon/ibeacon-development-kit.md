@@ -8,8 +8,8 @@ layout: ibeacon
 <img style="height: 200px; margin: 10px 30px 20px 0; border: 2px solid #f5f5f5; float:left; border-radius: 7px;" src='/img/pibeacon.jpg'>
 
 <br>
-<a href="http://www.radiusnetworks.com/ibeacon/ibeacon-dev-kit.html" class="btn btn-rad-blue">Buy a Beacon Dev Kit</a>
-<a href="http://www.radiusnetworks.com/buy-beacons.html" class="btn btn-rad-blue">More Beacons</a>
+<a href="http://store.radiusnetworks.com/collections/all/products/beacon-development-kit" class="btn btn-rad-blue">Buy a Beacon Dev Kit</a>
+<a href="http://store.radiusnetworks.com/collections/all" class="btn btn-rad-blue">More Beacons</a>
 
 ---
 
