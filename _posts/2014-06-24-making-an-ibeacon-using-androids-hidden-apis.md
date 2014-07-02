@@ -1,7 +1,7 @@
 ---
 author: David G. Young
 layout: post
-title: Making an iBeacon&trade; with Android's hidden APIs
+title: Making an iBeacon with Android's hidden APIs
 ---
 
 Since Android added Bluetooth LE support in last year's 4.3 release, the lack of peripheral mode support has been driving many developers crazy.   Without peripheral mode, Android devices can't advertise Bluetooth LE services to other devices.  And while they can detect iBeacons around them, they can't act as iBeacons, because doing so requires advertising as a peripheral. 
