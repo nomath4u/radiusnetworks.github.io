@@ -26,7 +26,9 @@ There are several items of good news in Android L when it comes to iBeacons and 
   table.rsum {
     border-collapse: collapse;
     border: 1px solid black;
+    margin-left: 45px;
   }
+
   table.rsum td{
     border: 1px solid black;
     padding: 5px;
