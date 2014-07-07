@@ -58,12 +58,12 @@ There are several items of good news in Android L when it comes to iBeacons and 
 </td></tr>
 </table>
 
-* Another setting allows you to configure the transmitter frequency by choosing one of three settings.  This is important because the more frequent the transmissions, the more accurate the distance estimates can be for an Android or iOS device detecting the beacon.  The settings below correspond to the following frequencies.  The frequencies were measured by counting packets detected by a Mac bluetooth scanner, so they may not be exact.  Note that the ADVERTISE_MODE_LOW_POWER setting actually transmits the most frequently -- something that should use more power (possibly signifying a bug in the naming of the settings).
+* Another setting allows you to configure the transmitter frequency by choosing one of three settings.  This is important because the more frequent the transmissions, the more accurate the distance estimates can be for an Android or iOS device detecting the beacon.  The settings below correspond to the following frequencies.  The frequencies were measured by counting packets detected by a Mac Bluetooth scanner, so they may not be exact.  Note that the `ADVERTISE_MODE_LOW_POWER` setting actually transmits the most frequently -- something that should use more power (possibly signifying a bug in the naming of the settings).
 
 <table class="rsum">
 <tr><th>Setting
 </th><th>Transmit Frequency
-<th><tr><td>ADVERTISE_MODE_LOW_LATENCY
+</th></tr><tr><td>ADVERTISE_MODE_LOW_LATENCY
 </td><td>approx 1 Hz
 </td></tr><tr><td>ADVERTISE_MODE_BALANCED
 </td><td>approx 3 Hz
@@ -77,6 +77,7 @@ All these changes are possible because Android now has brand new APIs for  inter
 To some extent, these appear to wrap the same Bluedroid drivers under the hood, but the changes are significant.  Source code for Nexus device configurations was released a few days ago, but the more important source code for the APIs is still not available, nor is full documentation.   
 
 But based on what we can derive from interacting with the the binary preview SDK, a new Java API layer for interacting with bluetooth LE has little resemblance to what was in Android 4.4.3.  Some of the hidden APIs needed to transmit as a bluetooth LE peripheral have been moved to the android.bluetooth.le package, and lots of new APIs have been added.  The old public APIs are still available, but the new APIs offer much more functionality.
+
 
 The code needed to transmit as an iBeacon with Android L’s android.bluetooth.le APIs is a bit different from the way we did it with the android.bluetooth APIs in Android 4.4.3.   The first difference to note is that you no longer need the special android.permission.BLUETOOTH_PRIVILEGED permission to transmit an advertisement -- just  the standard android.permission.BLUETOOTH_ADMIN permission in your AndroidManifest.xml.
 
@@ -160,8 +161,3 @@ private AdvertiseCallback advertiseCallback = new AdvertiseCallback() {
 That’s it!  Execute this code, and your Android L device will start transmitting.  
 
 The transmissions can be picked up on any iPhone or Android device running our Android iBeacon Library, and unlike our version for Android 4.4.3, the distance estimates work, too.   Now we just have to wait for Android L to get in everybody’s hands.
-
-
-
-
-
