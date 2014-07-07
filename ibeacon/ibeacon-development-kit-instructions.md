@@ -108,7 +108,7 @@ Kit, logging in with username: pi, password: raspberry
 Step 5. In the console, use the following commands to control the iBeacon:
 
 ```
-ibeacon scan     # scans for other nearby beacons 
+ibeacon scan     # scans for other nearby beacons (use the -h option for more information)
  ibeacon start    # starts all iBeacons
  ibeacon stop     # stops all iBeacons
  ibeacon start 1  # starts the first iBeacon
@@ -123,7 +123,22 @@ identifiers, you will need to rerun the start command in order for the changes t
 
 ##iBeacon Scanning
 
-Visit our [developer blog](http://developer.radiusnetworks.com/blog/) for more information on the scanning feature, including a [quick tutorial](http://developer.radiusnetworks.com/2014/04/27/how-to-make-a-raspberry-pi-turn-on-a-lamp-with-an-ibeacon.html) that takes advantage of the Raspberry Pi output pins to control external devices based on the proximity of nearby beacons.
+With iBeacon scanning, your Raspberry Pi can now be aware of other beacons in its vicinity, which leads to tons of cool applications for the development kit.  For example check out our [developer blog](http://developer.radiusnetworks.com/2014/04/27/how-to-make-a-raspberry-pi-turn-on-a-lamp-with-an-ibeacon.html) for quick tutorial that takes advantage of the Raspberry Pi output pins to control external devices based on the proximity of nearby beacons.
+
+We've added some features to the scanning ability in the latest version.  You can now set two optional parameters for the scan command: scan interval and sleep time.  Scan interval is the length (in seconds) an individual scan will run before the program terminates it and starts a new one. Sleep time is the time that the program will sleep between individual scans. These options were implemented to increase the stability of scanning for long periods of time in areas with many beacons.  The Raspberry Pi has a tendency to lock up the bluetooth dongle  after a while when trying to scan for many beacons.  Decreasing the scan interval and increasing the sleep time will help prevent this from occuring.  For example:
+
+```
+ibeacon scan -i 5 -s 5
+```
+
+In addition, you can further improve the stability of the bluetooth dongle by lowering the USB speed of the Raspberry Pi from 2.0 to 1.1.  To do this, edit the `/boot/cmdline.txt` file and add the following entry:
+
+```
+dwc_otg.speed=1
+```
+
+<div style="font-weight: bold;">Warning:</div> lowering the USB speed to 1.1 means that keyboards and other USB devices that require 2.0 will no longer work with your Raspberry Pi.  If your keyboard stops functioning you will have to connect to the Pi via local network to control it (see steps above).
+
 
 ##Getting Help 
 
