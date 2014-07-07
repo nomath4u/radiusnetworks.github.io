@@ -4,7 +4,7 @@ layout: post
 title: Making an iBeacon with Android L
 ---
 
-Our last blog post showed how you could access hidden APIs in a rooted Android 4.4.3 device to make an iBeacon Transmitter.  Now we can demonstrate this same functionality -- and more -- with public APIs inside the Android L operating system, which is expected to be released this fall.
+Our last blog post showed how you could access hidden APIs in a rooted Android 4.4.3 device to make an iBeacon&trade; Transmitter.  Now we can demonstrate this same functionality -- and more -- with public APIs inside the Android L operating system, which is expected to be released this fall.
 
 A preview version of Google’s latest operating system for the Android platform was released during Google I/O a just over a week ago.  Developers can flash this bleeding-edge operating system onto Nexus 5 and Nexus 7 phones using images [downloadable from Google.](https://developer.android.com/preview/setup-sdk.html)
 
@@ -163,3 +163,5 @@ private AdvertiseCallback advertiseCallback = new AdvertiseCallback() {
 That’s it!  Execute this code, and your Android L device will start transmitting.  
 
 The transmissions can be picked up on any iPhone or Android device running our Android iBeacon Library, and unlike our version for Android 4.4.3, the distance estimates work, too.   Now we just have to wait for Android L to get in everybody’s hands.
+
+Note:  iBeacon is an Apple trademark
