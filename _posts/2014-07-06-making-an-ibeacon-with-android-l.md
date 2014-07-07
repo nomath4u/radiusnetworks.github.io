@@ -67,7 +67,7 @@ There are several items of good news in Android L when it comes to iBeacons and 
 </td><td>approx 1 Hz
 </td></tr><tr><td>ADVERTISE_MODE_BALANCED
 </td><td>approx 3 Hz
-</td><td>ADVERTISE_MODE_LOW_POWER
+</td></tr><tr><td>ADVERTISE_MODE_LOW_POWER
 </td><td>approx 10 Hz
 </td></tr></table>
 
