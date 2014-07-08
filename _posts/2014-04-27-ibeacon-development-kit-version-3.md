@@ -4,7 +4,7 @@ title: Announcing Beacon Development Kit Version 3.0
 author: James Nebeker
 ---
 
-<div style="font-weight: bold;">Update 7/8/2014:</div> We've released Version 3.1 to address stability issues when scanning for beacons and add some new features.  This update can be downloaded [here](http://developer.radiusnetworks.com/ibeacon/beacon-dev-kit-update.html) and you can read more about these features in the updated [instructions page](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html).
+**Update 7/8/2014:** We've released Version 3.1 to address stability issues when scanning for beacons and add some new features.  This update can be downloaded [here](http://developer.radiusnetworks.com/ibeacon/beacon-dev-kit-update.html) and you can read more about these features in the updated [instructions page](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html).
 
 ---
 
@@ -18,4 +18,4 @@ The Beacon Development Kit has always been a powerful tool in developing iBeacon
 
 If you have a previous version of the Beacon Development Kit, we’ve made the latest version available to download [here](http://developer.radiusnetworks.com/ibeacon/beacon-dev-kit-update.html), just follow the instructions and you’ll be up to date in no time. 
 
-<div style="font-weight: bold;">Note:</div> You may experience some instability when using the new scan feature for extended periods of time in high-traffic areas due to an error where the bluetooth adapter enters a bad state.  The only way to recover from this state is to power cycle the adapter or reboot the machine.  We are continuing to work to minimize this issue and will be providing additional updates.   
+**Note:** You may experience some instability when using the new scan feature for extended periods of time in high-traffic areas due to an error where the bluetooth adapter enters a bad state.  The only way to recover from this state is to power cycle the adapter or reboot the machine.  We are continuing to work to minimize this issue and will be providing additional updates.   
