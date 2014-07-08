@@ -4,8 +4,9 @@ title: Announcing Beacon Development Kit Version 3.0
 author: James Nebeker
 ---
 
-Update 7/8/2014: We've released Version 3.1 to address stability issues when scanning for beacons and add some new features.  This update can be downloaded [here](http://developer.radiusnetworks.com/ibeacon/beacon-dev-kit-update.html) and you can read more about these features in the updated [instructions page](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html).
+<div style="font-weight: bold;">Update 7/8/2014:</div> We've released Version 3.1 to address stability issues when scanning for beacons and add some new features.  This update can be downloaded [here](http://developer.radiusnetworks.com/ibeacon/beacon-dev-kit-update.html) and you can read more about these features in the updated [instructions page](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html).
 
+---
 
 We’re thrilled to announce a major update to the [Beacon Development Kit](http://www.radiusnetworks.com/ibeacon/ibeacon-dev-kit.html), now with the ability to scan for nearby beacons!  
 
