@@ -118,7 +118,7 @@ ibeacon scan     # scans for other nearby beacons (use the -h option for more in
  ibeacon help     # prints out summary of the different ibeacon commands
 ```
 
-You may also adjust the identifiers through the console by editing the /boot/ibeacon.conf file.  If you change the 
+You may also adjust the identifiers through the console by editing the `/boot/ibeacon.conf` file.  If you change the 
 identifiers, you will need to rerun the start command in order for the changes to take effect. 
 
 ##iBeacon Scanning
