@@ -125,7 +125,7 @@ identifiers, you will need to rerun the start command in order for the changes t
 
 With iBeacon scanning, your Raspberry Pi can now be aware of other beacons in its vicinity, which leads to tons of cool, location aware applications.  For example, check out our [developer blog](http://developer.radiusnetworks.com/2014/04/27/how-to-make-a-raspberry-pi-turn-on-a-lamp-with-an-ibeacon.html) for a quick tutorial that takes advantage of the Raspberry Pi output pins to control external devices based on the proximity of nearby beacons.
 
-We've added some features in the latest version to improve scanning performance.  You can now set two optional parameters for the scan command: scan interval and sleep time.  Scan interval is the length (in seconds) an individual scan will run before the program terminates it and starts a new one. Sleep time is the time that the program will sleep between individual scans. These options were implemented to increase the stability of scanning for long periods of time in areas with many beacons.  The Raspberry Pi has a tendency to lock up the bluetooth dongle  after a while when trying to scan for many beacons.  Decreasing the scan interval and increasing the sleep time will help prevent this from occuring.  For example, this command will scan for five seconds at a time and sleep for five seconds in between:
+We've added some features in the latest version to improve scanning performance.  You can now set two optional parameters for the scan command: scan interval and sleep time.  Scan interval is the length (in seconds) an individual scan will run before the program terminates it and starts a new one. Sleep time is the time that the program will sleep between individual scans. These options were implemented to increase the stability of scanning for long periods of time in areas with many beacons.  The Raspberry Pi has a tendency to lock up the bluetooth dongle  after a while when trying to scan for many beacons.  Decreasing the scan interval and increasing the sleep time will help prevent this from occurring.  For example, this command will scan for five seconds at a time and sleep for five seconds in between:
 
 ```
 ibeacon scan -i 5 -s 5
@@ -137,7 +137,7 @@ In addition, you can further improve the stability of the bluetooth dongle by lo
 dwc_otg.speed=1
 ```
 
-<div style="font-weight: bold;">Warning:</div> lowering the USB speed to 1.1 means that keyboards and other USB devices that require 2.0 will no longer work with your Raspberry Pi.  If your keyboard stops functioning you will have to connect to the Pi via local network to control it (see steps above).
+<div style="font-weight: bold;">Warning:</div> lowering the USB speed to 1.1 means that keyboards and other USB devices that require 2.0 will no longer work with your Raspberry Pi.  If your keyboard stops functioning, you will have to connect to the Pi via local network to control it (see steps above).
 
 
 ##Getting Help 
