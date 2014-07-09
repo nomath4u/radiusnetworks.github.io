@@ -7,7 +7,7 @@ layout: ibeacon
 If you’ve purchased a previous version of the Beacon Development Kit, or if you already have your own Raspberry Pi, 
 bluetooth dongle, and a spare SD card, we’ve made the Beacon Development Kit software available as a Raspberry Pi disk 
 image, downloadable for free. To upgrade, first download the disk image for the latest version 
-[here](https://s3.amazonaws.com/s3.radiusnetworks.com/Public/IDK3.gz) (currently Version 3.0). 
+[here](https://s3.amazonaws.com/s3.radiusnetworks.com/Public/IDK3-1.gz) (currently Version 3.1). 
 Next, insert the SD card from your old development kit into your computer. Now you will need to uncompress the 
 downloaded disk image file and write it onto the SD card. For Windows systems this can be accomplished with 
 [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/), 
@@ -57,5 +57,5 @@ Once you update your kit be sure to read the updated [instructions](http://devel
 
 More information on these steps can be found [here](http://lifehacker.com/how-to-clone-your-raspberry-pi-sd-card-for-super-easy-r-1261113524) and [here](http://raspberrypi.stackexchange.com/questions/311/how-do-i-backup-my-raspberry-pi).
 
-Note: You may experience some instability when using the new scan feature for extended periods of time in high-traffic areas due to an error where the bluetooth adapter enters a bad state.  The only way to recover from this state is to power cycle the adapter or reboot the machine.  We are continuing to work to minimize this issue and will be providing additional updates.    
+Note: You may experience some instability when using the new scan feature for extended periods of time in high-traffic areas due to an error where the bluetooth adapter enters a bad state.  The only way to recover from this state is to power cycle the adapter or reboot the machine.  Read the [instructions](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html) page for some tips on preventing this error and improving scanning stability.
 
