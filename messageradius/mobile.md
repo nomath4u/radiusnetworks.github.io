@@ -6,7 +6,7 @@ layout: messageradius
 
 ### Apple iOS
 
-For Apple iOS devices, we recommend using bluetooth iBeacon detection.  This requires embedding the [Message Radius Client Library](http://app.messageradius.com/downloads/libMRClient.zip) in your app, and enabling it with the following calls:
+For Apple iOS devices, we recommend using bluetooth beacon detection.  This requires embedding the [Message Radius Client Library](http://app.messageradius.com/downloads/libMRClient.zip) in your app, and enabling it with the following calls:
 
     #import "MRClient.h"
     ...
@@ -15,7 +15,7 @@ For Apple iOS devices, we recommend using bluetooth iBeacon detection.  This req
     // Put this in the AppDelegate's didFinishLaunchingWithOptions method
     _mrClient = [[MRClient alloc] init];
 
-Once your app is running on a device, it will report any MessageRadius iBeacons it sees to the MessageRadius server, then fire any added and dropped subscriptions you set up to your servers.
+Once your app is running on a device, it will report any MessageRadius beacons it sees to the MessageRadius server, then fire any added and dropped subscriptions you set up to your servers.
 
 In order to read the Apple Identifier for Advertisers (idfa) from the device, simply call:
 
@@ -32,7 +32,7 @@ In order to read the mac address of a device from your app on Android, simply ca
 
     String mac = context.getSystemService(Context.WIFI_SERVICE).getConnectionInfo().getMacAddress();
 
-Note: While it is also possible to use iBeacon detection with Android devices with a low energy bluetooth chipset running Android 4.3 and later, only a small percentage of Android devices meet these criteria.
+Note: While it is also possible to use beacon detection with Android devices with a low energy bluetooth chipset running Android 4.3 and later, only a small percentage of Android devices meet these criteria.
 
 ### Registring devices
 

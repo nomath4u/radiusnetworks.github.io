@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Announcing iBeacon Development Kit Version 2.0
+title: Announcing Beacon Development Kit Version 2.0
 author: James Nebeker
 ---
 
-We are excited to announce an update to our top-selling [iBeacon Development Kit](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit.html).
-With version 2.0, we made the kit more user friendly and added new features that make it even more valuable in the development of iBeacon enabled apps.  This post will outline these new features and how they can be helpful as well as instruct you on how to upgrade your existing IDK to the new version.
+We are excited to announce an update to our top-selling [Beacon Development Kit](http://store.radiusnetworks.com/collections/all/products/beacon-development-kit).
+With version 2.0, we made the kit more user friendly and added new features that make it even more valuable in the development of beacon-enabled apps.  This post will outline these new features and how they can be helpful as well as instruct you on how to upgrade your existing IDK to the new version.
 
 # What’s New in Version 2.0?
 
-The iBeacon Development Kit is now much easier to use and configure.  As before, you can easily configure the iBeacon identifiers by inserting the SD card into your laptop.  Now, instead of having to convert these values into hexadecimal form you can simply copy and paste your UUID in the standard format and enter all other values in plain decimal format.  We’ve also made controlling the iBeacon from the console much easier with simple commands for start and stop and a help command to explain everything (see the [instructions page](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html) for more info).  All in all, you’ll find that the latest version lets you get to developing much faster and with less hassle.  
+The Beacon Development Kit is now much easier to use and configure.  As before, you can easily configure the beacon identifiers by inserting the SD card into your laptop.  Now, instead of having to convert these values into hexadecimal form you can simply copy and paste your UUID in the standard format and enter all other values in plain decimal format.  We’ve also made controlling the beacon from the console much easier with simple commands for start and stop and a help command to explain everything (see the [instructions page](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html) for more info).  All in all, you’ll find that the latest version lets you get to developing much faster and with less hassle.  
 
-Also new in the latest version is the ability to customize the iBeacon advertising frequency.  The responsiveness of an iBeacon enabled app depends heavily on how often the iBeacon being detected by the app is broadcasting.  The higher the frequency the more responsive the app will be when being triggered.  However, higher frequency can mean a shorter battery life for iBeacons running on battery power.  Customizable broadcast frequency gives you the ability to test and design an app for all types of iBeacons, whether they’re designed for high performance or power-saving.
+Also new in the latest version is the ability to customize the beacon advertising frequency.  The responsiveness of an beacon enabled app depends heavily on how often the beacon being detected by the app is broadcasting.  The higher the frequency the more responsive the app will be when being triggered.  However, higher frequency can mean a shorter battery life for beacons running on battery power.  Customizable broadcast frequency gives you the ability to test and design an app for all types of beacons, whether they’re designed for high performance or power-saving.
 
-Additionally, all iBeacon Development Kits now ship with a default advertising rate of 10 times per second instead of the previous 1 time per second.  This is the recommended value from Apple engineers and will allow much more responsive triggering of a mobile device.
+Additionally, all Beacon Development Kits now ship with a default advertising rate of 10 times per second instead of the previous 1 time per second.  This is the recommended value from Apple engineers and will allow much more responsive triggering of a mobile device.
 
 # How to Upgrade
 
-If you’ve purchased the previous version of the iBeacon Development Kit, or if you already have your own Raspberry Pi, bluetooth dongle, and a spare SD card, we’ve made the update available to download for free.  To upgade, first download the disk image for version 2.0 [here](https://s3.amazonaws.com/s3.messageradius.com/Public/IDK.gz).  Next, insert the SD card from your old development kit into your computer.  Now you will need to uncompress the downloaded disk image file and write it onto the SD card.  For Windows systems this can be accomplished with [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/), for OSX and Linux you can use command line tools.  Instructions for these are given below:
+If you’ve purchased the previous version of the Beacon Development Kit, or if you already have your own Raspberry Pi, bluetooth dongle, and a spare SD card, we’ve made the update available to download for free.  To upgade, first download the disk image for version 2.0 [here](https://s3.amazonaws.com/s3.messageradius.com/Public/IDK.gz).  Next, insert the SD card from your old development kit into your computer.  Now you will need to uncompress the downloaded disk image file and write it onto the SD card.  For Windows systems this can be accomplished with [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/), for OSX and Linux you can use command line tools.  Instructions for these are given below:
 
 ## Windows
 

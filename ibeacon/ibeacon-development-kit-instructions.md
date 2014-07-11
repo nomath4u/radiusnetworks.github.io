@@ -27,21 +27,21 @@ transmitting.
 
 ###Verifying it works
 
-Use an iBeacon test program like Radius Networks’ “Locate” (iOS) or “iBeaconLocate” (Android) to verify the
-beacon is transmitting. [Click here](http://www.radiusnetworks.com/ibeacon-services.html) for information on how to download these free tools. 
+Use an beacon test program like Radius Networks’ “Locate” (iOS) to verify the
+beacon is transmitting. [Click here](http://store.radiusnetworks.com/collections/all) for information on how to download these free tools. 
 
-##Information on iBeacon Identifiers
+##Information on Beacon Identifiers
 
-Proximity beacons using iBeacon technology have a three part identifier consisting of ProximityUUID, Major, and Minor. By default, the Beacon Development Kit will transmit with a ProximityUUID of 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major of 1, and Minor of 1.  If you have
+Proximity beacons using iBeacon™ technology have a three part identifier consisting of ProximityUUID, Major, and Minor. By default, the Beacon Development Kit will transmit with a ProximityUUID of 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major of 1, and Minor of 1.  If you have
 the Dual Beacon Development Kit model, it will also transmit as a second beacon with 
 ProximityUUID of 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major of 1, and Minor of 2.  These values are included in the 
-default identifier list in Radius Networks’ iBeacon test apps for iOS and Android so these tools can be used to test 
+default identifier list in Radius Networks’ beacon test apps so these tools can be used to test 
 if the beacon is working.
 
 The ProximityUUID is a 16 byte identifier, usually expressed as a series of hexadecimal digits separated by dashes. 
 Generally, you generate one ProximityUUID to use in all of your organization's beacons. If you don't have one already,
 you can use any GUID/UUID generation tool (for example: the `uuidgen` command in OS X) to create your own identifier
-similar to the one listed above.  Radius Networks’ iBeacon test apps (listed above) also have tools to generate your own
+similar to the one listed above.  Radius Networks’ beacon test apps (listed above) also have tools to generate your own
 UUID.
 
 The Major and Minor are both integers that can be between between 0 and 65535. The Major is used to put beacons into a
@@ -50,14 +50,14 @@ logical group, like a building or a room. The Minor is used to identify an indiv
 Power is a measure of signal strength received by a device one meter from the beacon.  This is used by another device
 to calibrate distance estimates from the beacon.  The Beacon Development Kit comes preconfigured with the default 
 value for the included Bluetooth adapter (-59) so you only need to change this value if using another adapter.  If you
-decide to use another adapter, you can use Radius Networks’ iBeacon test apps to find its calibrated power value.
+decide to use another adapter, you can use Radius Networks’ beacon test apps to find its calibrated power value.
 
 Broadcast Frequency indicates how often the beacon will broadcast its advertisement -- in times per second 
 (Max = 10, Min = 0.25).  With this feature you can select how often the beacon broadcasts, which will help you 
 determine how your app will respond to beacons with different advertising rates.  By default this value is set to 10 
 times per second, which is the setting recommended by Apple engineers.
 
-##Customizing the iBeacon Identifiers
+##Customizing the beacon Identifiers
 
 With the Radius Networks Beacon Development Kit, you can easily customize the identifiers being broadcast by the 
 beacon.  The easiest way to do this is with a card reader and a computer (if your computer doesn’t have an SD card 
@@ -83,8 +83,7 @@ for it to be visible since iOS devices can only detect beacons with known UUIDs.
 
 ###Next Steps
 
-Now it's time to start developing your app! If you are developing for Android, be sure to check out Radius Networks'
-Android iBeacon Library. When you are ready to deploy beacons, visit [our products page](http://www.radiusnetworks.com/buy-beacons.html) to buy models suitable for production use.
+Now it's time to start developing your app! When you are ready to deploy beacons, visit [our products page](http://store.radiusnetworks.com/collections/all) to buy models suitable for production use.
 
 ##Controlling the Beacon(s) Manually
 
@@ -120,9 +119,9 @@ ibeacon scan     # scans for other nearby beacons (use the -h option for more in
 You may also adjust the identifiers through the console by editing the `/boot/ibeacon.conf` file.  If you change the 
 identifiers, you will need to rerun the start command in order for the changes to take effect. 
 
-##iBeacon Scanning
+##Beacon Scanning
 
-With iBeacon scanning, your Raspberry Pi can now be aware of other beacons in its vicinity, which leads to tons of cool, location aware applications.  For example, check out our [developer blog](http://developer.radiusnetworks.com/2014/04/27/how-to-make-a-raspberry-pi-turn-on-a-lamp-with-an-ibeacon.html) for a quick tutorial that takes advantage of the Raspberry Pi output pins to control external devices based on the proximity of nearby beacons.
+With beacon scanning, your Raspberry Pi can now be aware of other beacons in its vicinity, which leads to tons of cool, location aware applications.  For example, check out our [developer blog](http://developer.radiusnetworks.com/2014/04/27/how-to-make-a-raspberry-pi-turn-on-a-lamp-with-an-ibeacon.html) for a quick tutorial that takes advantage of the Raspberry Pi output pins to control external devices based on the proximity of nearby beacons.
 
 We've added some features in the latest version to improve scanning performance.  You can now set two optional parameters for the scan command: scan interval and sleep time.  Scan interval is the length (in seconds) an individual scan will run before the program terminates it and starts a new one. Sleep time is the time that the program will sleep between individual scans. These options were implemented to increase the stability of scanning for long periods of time in areas with many beacons.  The Raspberry Pi has a tendency to lock up the Bluetooth dongle  after a while when trying to scan for many beacons.  Decreasing the scan interval and increasing the sleep time will help prevent this from occurring.  For example, this command will scan for five seconds at a time and sleep for five seconds in between:
 

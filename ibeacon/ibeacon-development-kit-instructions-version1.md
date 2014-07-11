@@ -2,40 +2,40 @@
 layout: ibeacon
 ---
 
-#iBeacon Development Kit Instructions (Version 1.0)
+#Beacon Development Kit Instructions (Version 1.0)
 
-Note: These instructions are for a previous version of the iBeacon Development Kit (shipped Oct. 2013 - Jan. 2014).  For instructions on the latest version (shipping February, 2014) [click here](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html). 
+Note: These instructions are for a previous version of the Beacon Development Kit (shipped Oct. 2013 - Jan. 2014).  For instructions on the latest version (shipping February, 2014) [click here](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html). 
 
 ### Picking a power supply
 
-The iBeacon Development Kit requires a standard 5V power supply with a micro USB connector.  The Raspberry Pi computer can be sensitive to poorly performing chargers.
+The Beacon Development Kit requires a standard 5V power supply with a micro USB connector.  The Raspberry Pi computer can be sensitive to poorly performing chargers.
 If your charger works, you should see a red LED illuminated when the board is powered, and a green LED that flashes intermittently.  If this doesn't happen, try a different charger.
 
 ### Verifying connections
 
 Verify that the SD and the Bluetooth dongle are properly seated in their sockets, and that the power supply is connected to a wall socket and the micro USB connector on the board.
 
-### Powering on the iBeacon
+### Powering on the Beacon
 
-There is no power switch for the iBeacon.  As soon as the 5V micro USB adapter is connected to a wall socket and the computer board, the iBeacon will start up.  It takes about 60 seconds for it
+There is no power switch for the beacon.  As soon as the 5V micro USB adapter is connected to a wall socket and the computer board, the beacon will start up.  It takes about 60 seconds for it
 to start transmitting.
 
 ### Verifying it Works
 
-Use an iBeacon test program like Radius Networks' free iBeacon Locate app for [iOS](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en) and [Android](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate&hl=en) to verify the iBeacon is transmitting.  See below for the iBeacon identifiers.
+Use an beacon test program like Radius Networks' free Beacon Locate app for [iOS](http://store.radiusnetworks.com/collections/all/products/locate-ibeacon-app) to verify the beacon is transmitting.  See below for the beacon identifiers.
 
-### Customizing the iBeacon identifiers
+### Customizing the Beacon identifiers
 
-iBeacons have a three part identifier consisting of the ProximityUUID, the major and the minor.  By default, the iBeacon will transmit with
+Beacons have a three part identifier consisting of the ProximityUUID, the major and the minor.  By default, the beacon will transmit with
 a ProximityUUID of E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major of 1 and minor of 1.  This matches the default test identifier of Apple's AirLocate
 program, so you can use that to test that it is working.
 
-The ProximityUUID is a 16 byte indentifier, usually expressed as a series of hexadecimal digits separted by dashes.  Generally, you generate one ProximityUUID to use in all of your organization's iBeacons.  If you don't have one already, you can use
+The ProximityUUID is a 16 byte indentifier, usually expressed as a series of hexadecimal digits separted by dashes.  Generally, you generate one ProximityUUID to use in all of your organization's beacons.  If you don't have one already, you can use
 any GUID/UUID generation tool that outputs an identifier that looke the the one above.
 
-The major and minor are both integers that can be between between 0 and 63335.  The major is used to put iBeacons into a logical group, like a building or a room.  And the minor is used to identify a single iBeacon.
+The major and minor are both integers that can be between between 0 and 63335.  The major is used to put beacons into a logical group, like a building or a room.  And the minor is used to identify a single beacon.
 
-In order to put your own iBeacon identifiers into the iBeacon Development Kit hardware, you must put them in the proper format, which means hexadecimal bytes spearated by spaces.  For the
+In order to put your own beacon identifiers into the Beacon Development Kit hardware, you must put them in the proper format, which means hexadecimal bytes spearated by spaces.  For the
 Proximity UUID, this is easy.  Just remove any dashes and put a space after every two characters.  For the example above, the proper format is:
 
 ```
@@ -59,7 +59,7 @@ character segments you get:
 00 0D
 ```
 
-Once you have the identifiers in the proper format, you can put them onto the SD card.  The easiest way to do this is with a card reader.  Unplug the iBeacon, then remove the SD card and put it into your computer's SD card reader.
+Once you have the identifiers in the proper format, you can put them onto the SD card.  The easiest way to do this is with a card reader.  Unplug the beacon, then remove the SD card and put it into your computer's SD card reader.
 After attaching it to your computer with a card reader, look for a volume with a file named ibeacon.conf in the root directory.  Open that file and change the identifiers to be
 your own, taking care to keep the quotation marks and other parts of the lines unchanged.
 
@@ -76,7 +76,7 @@ Be sure to properly save the file and detach the SD card from your system before
 
 ### Next Steps
 
-Now it's time to start developing your app!  If you are developing for Android, be sure to check out Radius Networks' Android iBeacon Library.  And when you are ready to deploy your iBeacons, contact Radius Networks to buy models suitable for production use.
+Now it's time to start developing your app!  And when you are ready to deploy your iBeacons, contact Radius Networks to buy models suitable for production use.
 
 
 

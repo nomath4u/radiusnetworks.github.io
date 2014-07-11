@@ -1,17 +1,17 @@
 ---
 layout: post
-title: How To Make a Raspberry Pi Turn on a Lamp with an iBeacon
+title: How To Make a Raspberry Pi Turn on a Lamp with iBeacon™ Technology
 author: James Nebeker
 ---
 
-iBeacon proximity technology is an exciting tool already being used by retailers and developers to build location-aware apps to improve user experience and much more.  In this post, we’ll show you an easy way to harness iBeacon technology in your own home, without having to do any serious programming or developing.  In this simple example, we’ll be using a Raspberry Pi to turn on a light whenever it detects a specific beacon.
+iBeacon™ proximity technology is an exciting tool already being used by retailers and developers to build location-aware apps to improve user experience and much more.  In this post, we’ll show you an easy way to harness iBeacon™ technology in your own home, without having to do any serious programming or developing.  In this simple example, we’ll be using a Raspberry Pi to turn on a light whenever it detects a specific beacon.
 
 <img style="margin:10px; height: 200px; border: thin solid #333;float:right;" src='/img/pibeacon.jpg'>
 
 
 ###Parts list:
 
-1. [Beacon Development Kit](http://www.radiusnetworks.com/ibeacon/ibeacon-dev-kit.html) (alternately, you can supply your own Raspberry Pi, bluetooth LE dongle, and SD card)
+1. [Beacon Development Kit](http://store.radiusnetworks.com/collections/all/products/beacon-development-kit) (alternately, you can supply your own Raspberry Pi, bluetooth LE dongle, and SD card)
 2. Standard micro-USB 5V cell phone charger
 3. [PowerSwitch Tail II](http://www.amazon.com/POWERSWITCHTAIL-COM-PowerSwitch-Tail-II/dp/B00B888VHM/ref=sr_sp-atf_title_1_1?ie=UTF8&qid=1398462203&sr=8-1&keywords=powerswitch+tail)
 4. [Jumper wires](http://www.robotmesh.com/jumper-wires-7-8-f-m-10-pack) (recommended) or household wire
@@ -19,20 +19,20 @@ iBeacon proximity technology is an exciting tool already being used by retailers
 
 ###Other tools you will need:
 
-1. [Proximity Beacon](http://www.radiusnetworks.com/ibeacon/buy-beacons.html) (compatible with iBeacon technology)
+1. [Proximity Beacon](http://store.radiusnetworks.com/collections/all) (compatible with iBeacon™ technology)
 2. USB Keyboard
 3. Computer monitor with HDMI input
 4. HDMI cable
 5. Small flat-head screwdriver
 6. Network cable for internet access (optional)
 
-Before we put this all together let’s go over each part individually, for starters we’ll assume you have your Raspberry Pi already set up (with BlueZ, the Linux bluetooth stack, installed) and have some familiarity with basic Linux command line operations.  If not, or if you want a quick introduction to the Raspberry Pi and iBeacons, check out our blog post, [How to Make an iBeacon Out of a Raspberry Pi](http://developer.radiusnetworks.com/2013/10/09/how-to-make-an-ibeacon-out-of-a-raspberry-pi.html), to get acquainted with Linux,  the Raspberry Pi, and iBeacon technology.  
+Before we put this all together let’s go over each part individually, for starters we’ll assume you have your Raspberry Pi already set up (with BlueZ, the Linux bluetooth stack, installed) and have some familiarity with basic Linux command line operations.  If not, or if you want a quick introduction to the Raspberry Pi and iBeacon™ technology, check out our blog post, [How to Make an Beacon Out of a Raspberry Pi](http://developer.radiusnetworks.com/2013/10/09/how-to-make-an-ibeacon-out-of-a-raspberry-pi.html), to get acquainted with Linux,  the Raspberry Pi, and iBeacon™ technology.  
 
 ## Scanning for beacons
 
-The ability to scan for nearby proximity beacons is the latest feature of the Beacon Development Kit, new to [Version 3.0](http://developer.radiusnetworks.com/2014/04/27/ibeacon-development-kit-version-3.html).  In this guide we will be using the newest development kit software to do the scanning.  Information on how to download this update can be found [here](http://developer.radiusnetworks.com/ibeacon/beacon-dev-kit-update.html).  If you already have your own Raspberry Pi and bluetooth dongle you can create your own iBeacon scan script using the steps I’ve outlined in [this post](http://stackoverflow.com/a/21790504/1461050).  
+The ability to scan for nearby proximity beacons is the latest feature of the Beacon Development Kit, new to [Version 3.0](http://developer.radiusnetworks.com/2014/04/27/ibeacon-development-kit-version-3.html).  In this guide we will be using the newest development kit software to do the scanning.  Information on how to download this update can be found [here](http://developer.radiusnetworks.com/ibeacon/beacon-dev-kit-update.html).  If you already have your own Raspberry Pi and bluetooth dongle you can create your own beacon scan script using the steps I’ve outlined in [this post](http://stackoverflow.com/a/21790504/1461050).  
 
-Before we can start scanning we need to make sure we have a beacon nearby to test with.  The easiest way to do this is probably to download our free [Locate for iBeacon](https://itunes.apple.com/us/app/locate-for-ibeacon/id738709014?mt=8) app for iOS.  You can also check out our [products page](http://www.radiusnetworks.com/ibeacon/buy-beacons.html) for other beacons to test with.  For this tutorial, I will be using a test beacon with the following identifiers:
+Before we can start scanning we need to make sure we have a beacon nearby to test with.  The easiest way to do this is probably to download our free [Locate for iBeacon](https://itunes.apple.com/us/app/locate-for-ibeacon/id738709014?mt=8) app for iOS.  You can also check out our [products page](http://store.radiusnetworks.com/collections/all) for other beacons to test with.  For this tutorial, I will be using a test beacon with the following identifiers:
 
 * UUID: 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6 
 * MAJOR: 1 
@@ -81,7 +81,7 @@ You can turn the light off by switching GPIO 1 off:
 $ gpio write 1 0
 ```
 
-Now all that’s left is to combine this with beacon scanning and we’ll have an automated iBeacon lightswitch.  
+Now all that’s left is to combine this with beacon scanning and we’ll have an automated beacon lightswitch.  
  
 ## Putting it all together
 
@@ -106,7 +106,7 @@ Paste in the contents of this block:
  done
 ```
 
-Be sure to change the iBeacon identifiers in the if statement to the ones you'll be broadcasting with your test beacon. Save this file and get your beacon ready, make sure it is off for to start the test.  Now run the following command to start the scan and light switch sequence, it starts a beacon scan with the bare output option, piping its output into our `welcome_light` script.  If you made your own scan script, just run that script and pipe its output to `welcome_light`.
+Be sure to change the beacon identifiers in the if statement to the ones you'll be broadcasting with your test beacon. Save this file and get your beacon ready, make sure it is off for to start the test.  Now run the following command to start the scan and light switch sequence, it starts a beacon scan with the bare output option, piping its output into our `welcome_light` script.  If you made your own scan script, just run that script and pipe its output to `welcome_light`.
 
 ```
 $ ibeacon scan -b | ./welcome_light
