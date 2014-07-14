@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Note From the CEO
+title: A Note from the CEO
 author: Marc Wallace
 ---
 
