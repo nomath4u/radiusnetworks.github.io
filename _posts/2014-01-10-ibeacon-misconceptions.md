@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5 fundamental misconceptions about iBeacon™ technology
+title: 5 fundamental misconceptions about Beacon technology
 author: Christopher Sexton
 ---
 
