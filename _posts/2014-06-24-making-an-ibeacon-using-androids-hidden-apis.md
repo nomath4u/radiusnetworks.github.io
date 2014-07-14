@@ -1,7 +1,7 @@
 ---
 author: David G. Young
 layout: post
-title: Making an iBeacon with Android's hidden APIs
+title: Making an Beacon with Android's hidden APIs
 ---
 
 **UPDATE: The new Android L operating system allows you to [make an even better iBeacon transmitter](http://developer.radiusnetworks.com/2014/07/06/making-an-ibeacon-with-android-l.html).**
