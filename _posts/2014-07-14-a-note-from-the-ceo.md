@@ -18,12 +18,13 @@ As a certified Apple iBeacon partner, we feel that it is important to respect th
 
 We understand that you, our valued customers and partners, may be impacted by these changes.  Please be assured that we also understand and appreciate how important it is to provide proximity solutions for multiple mobile device platforms, so we ask that you stay tuned, as we have additional exciting solutions that we will be introducing very soon.  We believe that these new updates will ultimately create stronger and more robust solutions for our customers and our partners.
 
-<em>Sincerely,</em>
+Sincerely,
 
 Marc Wallace
+
 Co-Founder & CEO
 
 
-<p style="font-size: .7em; font-weight: 300; color: #999999;">iBeacon is a trademark of Apple Inc.</p>
+<p style="font-size: .7em; font-weight: 300; color: #999999;"><em>iBeacon is a trademark of Apple Inc.</em></p>
 
 
