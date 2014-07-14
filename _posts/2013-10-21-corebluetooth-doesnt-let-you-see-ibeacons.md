@@ -1,7 +1,7 @@
 ---
 author: David G. Young
 layout: post
-title: CoreBluetooth Doesn't Let You See Proximity Beacons
+title: CoreBluetooth Doesn't Let You See Beacons
 ---
 
 So, is there any way to to monitor or range for any beacon regardless of its ProximityUUID on iOS?  The short answer is no.
