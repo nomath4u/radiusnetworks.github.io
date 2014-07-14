@@ -5,7 +5,7 @@ author: James Nebeker
 ---
 
 We are excited to announce an update to our top-selling [Beacon Development Kit](http://store.radiusnetworks.com/collections/all/products/beacon-development-kit).
-With version 2.0, we made the kit more user friendly and added new features that make it even more valuable in the development of beacon-enabled apps.  This post will outline these new features and how they can be helpful as well as instruct you on how to upgrade your existing IDK to the new version.
+With version 2.0, we made the kit more user friendly and added new features that make it even more valuable in the development of beacon-enabled apps.  This post will outline these new features and how they can be helpful as well as instruct you on how to upgrade your existing BDK to the new version.
 
 # What’s New in Version 2.0?
 

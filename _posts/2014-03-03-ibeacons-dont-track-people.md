@@ -6,9 +6,9 @@ author: Marc Wallace
 
 We see a lot comments and posts in the media that mistakenly tout proximity beacons as a way to 'track' customers.  This has become yet another common misconception of beacons, so I'd like to clarify how beacons relate to the issue of privacy.
 
-Beacons are transmit only. They do not receive or collect any signals from mobile devices. Beacons don't detect the presence of your mobile device and therefore have no ability to know you are near or track your location.  The bottom line, iBeacon™ technology is inherently privacy friendly.  You can see them, but they can't see you.
+Beacons are transmit only. They do not receive or collect any signals from mobile devices. Beacons don't detect the presence of your mobile device and therefore have no ability to know you are near or track your location.  The bottom line, beacon technology is inherently privacy friendly. You can see them, but they can't see you.
 
-With iBeacon™ technology, your mobile device is actually what detects the iBeacons. More specifically, an app installed on the mobile device can ask to be notified when the device sees a specific beacon. This works very similar to how geofences work when a mobile device crosses into a specific geographic location.
+Your mobile device is actually what detects the iBeacons. More specifically, an app installed on the mobile device can ask to be notified when the device sees a specific beacon. This works very similar to how geofences work when a mobile device crosses into a specific geographic location.
 
 Keep in mind that in order for a mobile device to detect and react to an beacon, an app MUST reside on the device and have requested the specific beacon identifiers it is interested in. The benefit of this approach is that it gives the user ultimate control.  If a user does not want to interact with beacons, he or she can opt-out by not allowing the app to use location services (iOS), turning Bluetooth off, or uninstalling the app on their phone.
 

@@ -27,8 +27,7 @@ transmitting.
 
 ###Verifying it Works
 
-Use an beacon test program like Radius Networks’ “Locate iBeacon” (iOS) orto verify the
-beacon is transmitting. [Click here](http://www.radiusnetworks.com/ibeacon-services.html) for information on how to download this free tool.
+Use an beacon test program like Radius Networks’ “Locate Beacon” (iOS) orto verify the beacon is transmitting. Click here for information on how to download this free tool.
 
 ##Information on Beacon identifiers
 
@@ -79,8 +78,7 @@ export UUID1=2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6
 To change beacon identifiers simply edit the values for each of these parameters.  Just paste your UUID in the standard
 format (both uppercase and lowercase letters are acceptable) and enter the other values in decimal format.  Be sure to 
 properly save the file and detach the SD card from your system before ejecting the card, otherwise the card may be 
-corrupted.  Note: if you change to a custom UUID you will need to add this UUID to your ‘Locate iBeacon’ iOS app 
-for it to be visible since iOS devices can only detect Beacons with known UUIDs.
+corrupted.  Note: if you change to a custom UUID you will need to add this UUID to your ‘Locate Beacon’ iOS app for it to be visible since iOS devices can only detect Beacons with known UUIDs.
 
 ###Next Steps
 Now it's time to start developing your app!  Wisit [our products page](http://store.radiusnetworks.com/collections/all) to buy models suitable

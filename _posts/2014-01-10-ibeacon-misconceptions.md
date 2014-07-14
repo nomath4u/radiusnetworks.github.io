@@ -28,12 +28,6 @@ If you speak with the Apple engineers explaining about beacons, you will notice 
 
 But this is not to say that the distance estimate is not useful. It can be, the closer you are the more accurate, and it can be calibrated.
 
-# #5 Beacons can only be Detected by Apple Devices
-
-Since Apple came up with the concept, it is understandable that people think beacons would limited to their hardware. Luckily an beacon just broadcasts a standard Bluetooth Low Energy signal, and any device that supports BLE should be able to detect it.
-
-iOS has this capability built into CoreLocation. BLE enabled Android devices can take advantage of Radius' free and open source [Android iBeacon Library](http://developer.radiusnetworks.com/ibeacon/android/).
-
 ## Building Blocks for a Bigger Solution
 
 Beacons are an exciting emerging technology, but they are just one critical building block in a complete proximity-enabled solution. Radius Networks is working hard to be your best choice for all the parts and pieces it takes to help developers take advantage of all the benefits that beacons and proximity can provide.

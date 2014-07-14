@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Android Devices Can’t Act as beacons
+title: Why Android Devices Can’t Act as Beacons
 author: David G. Young
 ---
 
