@@ -7,7 +7,7 @@ layout: proximitykit
 
 Watch the video [here](http://youtu.be/Ux5R2vZBleI).
 
-One common request with proximity kit is "How can have an app show the user something when they are near an iBeacon?"
+One common request with proximity kit is "How can I have an app show the user something when they are near an iBeacon?"
 
 Turns out this is fairly straightforward, there are a few steps. And you will be writing code, but Proximity Kit should handle the heavy lifting.
 
