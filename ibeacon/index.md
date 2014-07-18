@@ -18,5 +18,3 @@ With the ScanBeacon app you search for proximity beacons from any Macintosh comp
 ## Beacon Development Kit
 
 Prepackage components proven to work as a fully functional proximity beacon with iBeacon technology. Raspberry Pi complete with BTLE radio and necessary software pre-installed.
-
-<a class="btn" href="ibeacon-development-kit.html">Beacon Development Kit</a>
