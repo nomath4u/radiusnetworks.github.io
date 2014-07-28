@@ -2,9 +2,11 @@
 layout: ibeacon
 ---
 
-#Beacon Development Kit Instructions (Version 2.0)
+#Beacon Development Kit Instructions (Version 3.0)
 
-Note: These instructions are for a previous version of the Beacon Development Kit (shipped Feb. 2014 - Apr. 2014). For instructions on the latest version (shipping May, 2014) [click here](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html).
+Note: These instructions are for a previous version of the Beacon Development Kit (shipped May. 2014 - Jun. 2014). For instructions on the latest version (shipping July, 2014) [click here](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html). 
+
+
 
 ##Getting Started
 
@@ -27,16 +29,17 @@ transmitting.
 
 ###Verifying it Works
 
-Use an beacon test program like Radius Networks’ “Locate Beacon” (iOS) orto verify the beacon is transmitting. Click here for information on how to download this free tool.
+Use a beacon test program like Radius Networks’ “Locate iBeacon” app for iOS to verify the
+iBeacon is transmitting. [Click here](http://store.radiusnetworks.com/collections/all) for information on how to download these free tools. 
 
-##Information on Beacon identifiers
+##Information on Beacon Identifiers
 
 Beacons have a three part identifier consisting of ProximityUUID, Major, and Minor. By default, the Beacon Development
 Kit will transmit with a ProximityUUID of 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major of 1, and Minor of 1.  If you have
-the Dual Beacon Development Kit model, it will also transmit as a second beacon with 
+the Dual Beacon Development Kit model, it will also transmit as a second iBeacon with 
 ProximityUUID of 2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6, Major of 1, and Minor of 2.  These values are included in the 
-default identifier list in Radius Networks’ beacon test apps so these tools can be used to test 
-if the beacon is working.
+default identifier list in Radius Networks’ beacon test apps for iOS and Android so these tools can be used to test 
+if the eacon is working.
 
 The ProximityUUID is a 16 byte identifier, usually expressed as a series of hexadecimal digits separated by dashes. 
 Generally, you generate one ProximityUUID to use in all of your organization's beacons. If you don't have one already,
@@ -78,16 +81,18 @@ export UUID1=2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6
 To change beacon identifiers simply edit the values for each of these parameters.  Just paste your UUID in the standard
 format (both uppercase and lowercase letters are acceptable) and enter the other values in decimal format.  Be sure to 
 properly save the file and detach the SD card from your system before ejecting the card, otherwise the card may be 
-corrupted.  Note: if you change to a custom UUID you will need to add this UUID to your ‘Locate Beacon’ iOS app for it to be visible since iOS devices can only detect Beacons with known UUIDs.
+corrupted.  Note: if you change to a custom UUID you will need to add this UUID to your ‘Locate iBeacon’ iOS app 
+for it to be visible since iOS devices can only detect beacons with known UUIDs.
 
 ###Next Steps
-Now it's time to start developing your app!  Wisit [our products page](http://store.radiusnetworks.com/collections/all) to buy models suitable
-for production use.
+
+Now it's time to start developing your app! When you are ready to deploy your iBeacons, visit [our products page](http://store.radiusnetworks.com/collections/all) to buy models suitable for production use.
 
 ##Controlling the Beacon(s) Manually
+
 While developing, you may find it useful to start and stop the beacon without having to power cycle it and wait another
 60 seconds.  Additionally, if you have the dual model, it may be useful for testing purposes to dynamically start and 
-stop the two transmitters independently.  In order to control the beacon manually, you will need basic Linux command 
+stop the two transmitters independently.  With the scan feature, you can also search for nearby beacons and see their identifiers on your display.  In order to control the beacon manually, you will need basic Linux command 
 line skills, an ethernet cable, and access to a router.
 
 Step 1. Using an ethernet cable, plug one end into the ethernet port on the Raspberry Pi computer and the other end 
@@ -104,23 +109,31 @@ Kit, logging in with username: pi, password: raspberry
 Step 5. In the console, use the following commands to control the beacon:
 
 ```
-ibeacon start    # starts all iBeacons
- ibeacon stop     # stops all iBeacons
- ibeacon start 1  # starts the first iBeacon
- ibeacon stop 1   # stops the first iBeacon
- ibeacon start 2  # starts the second iBeacon (dual model only)
- ibeacon stop 2   # stops the second iBeacon (dual model only)
- ibeacon help     # prints out summary of the different ibeacon commands
+ibeacon scan     # scans for other nearby beacons 
+ ibeacon start    # starts all beacons
+ ibeacon stop     # stops all beacons
+ ibeacon start 1  # starts the first beacon
+ ibeacon stop 1   # stops the first beacon
+ ibeacon start 2  # starts the second beacon (dual model only)
+ ibeacon stop 2   # stops the second beacon (dual model only)
+ ibeacon help     # prints out summary of the different beacon commands
 ```
 
 You may also adjust the identifiers through the console by editing the /boot/ibeacon.conf file.  If you change the 
-identifiers, you will need to rerun the start command in order for the changes to take effect.
+identifiers, you will need to rerun the start command in order for the changes to take effect. 
+
+##Beacon Scanning
+
+Visit our [developer blog](http://developer.radiusnetworks.com/blog/) for more information on the scanning feature, including a [quick tutorial](http://developer.radiusnetworks.com/2014/04/27/how-to-make-a-raspberry-pi-turn-on-a-lamp-with-an-ibeacon.html) that takes advantage of the Raspberry Pi output pins to control external devices based on the proximity of nearby beacons.
 
 ##Getting Help 
+
 If you have problems configuring or operating the Beacon Development Kit, email us at support@radiusnetworks.com
 
 ##About Radius Networks
+
 Radius Networks is a proximity services company that provides solutions to help businesses and individuals enhance 
 their experience through mobile device detection and location awareness. Located in Washington DC, Radius was founded 
 in 2011 by experienced entrepreneurs to build applications and services around wireless technology and mobile devices. 
 Visit our [main website](http://www.radiusnetworks.com) to learn more about what Radius Networks services can do for you.
+

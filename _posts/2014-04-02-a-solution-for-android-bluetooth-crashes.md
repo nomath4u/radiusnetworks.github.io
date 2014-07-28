@@ -4,7 +4,7 @@ title: A Solution for Android Bluetooth Crashes
 author: David G. Young
 ---
 
-Lots of folks using iBeacons with Android devices have been suffering from repeat error dialogs saying "Unfortunately, Bluetooth Share has Stopped".  These annoying dialogs are caused by low-level [bug #67272](https://code.google.com/p/android/issues/detail?id=67272) in the Bluedroid stack, which is a layer between the operating system and the Bluetooth hardware.  
+Lots of folks using proximity beacons with Android devices have been suffering from repeat error dialogs saying "Unfortunately, Bluetooth Share has Stopped".  These annoying dialogs are caused by low-level [bug #67272](https://code.google.com/p/android/issues/detail?id=67272) in the Bluedroid stack, which is a layer between the operating system and the Bluetooth hardware.  
 
 While the bug has been around since Bluedroid was put into Android 4.2 over a year ago, reports only started commonly showing up recently.  Today, some folks report that the dialog appears so frequently when doing Bluetooth LE scans, that the technology is effectively unusable.   What changed?
 
@@ -18,13 +18,11 @@ The good news is that we have a solution.  It’s not a fix precisely, because t
 
 The solution involves tracking the number of Bluetooth devices detected, and when it gets large enough, forcing a flush of Bluedroid’s internal list.  Commanding a direct flush requires system-level access, something that Android’s security restrictions don’t allow.  But we can command a Bluedroid "discovery" process, something that just so happens to pare down the list of recently seen devices to the most recent 256.  There are some other technical details, but the end result is that this can prevent the crashes from ever happening in the first place.  And if a crash does happen, our software module can detect it and clear out the list so it doesn’t happen again.
 
-This module has already been integrated into the [Android iBeacon Library version 0.7.6](http://developer.radiusnetworks.com/ibeacon/android/download.html) as well as our widely-used [iBeacon Locate](https://play.google.com/store/apps/details?id=com.radiusnetworks.ibeaconlocate) Android app.  We’re also releasing it as open source so authors of other Bluetooth LE apps and other iBeacon frameworks can use it as well.  
-
 The module isn’t a perfect solution.  It relies on Bluedroid’s discovery process, which consumers a lot of power and can terminate established Bluetooth connections.  But these side effects are preferable to the service crashing entirely (which terminates Bluetooth connections anyway.)  And the additional battery drain should be minor unless you hang around doing a constant scan in the presence of the photographed beacon all day, behavior which would cause your battery to go dead even without this module.   
 
 The module is still a bit experimental, so we will be refining it based on feedback and suggestions from folks like you.  But even with these caveats, it finally makes it possible to live with bug #67272 until it is fixed in a future release of Android.
 
-For those of you who have a device in this condition now, you have two ways to clear the condition.  First, if you are using Locate for iBeacon, upgrading and using the latest copy should solve the problem so you don’t get crashes anymore when using that app.
+For those of you who have a device in this condition now, you have two ways to clear the condition.  First, if you are using our Beacon Locate app, upgrading and using the latest copy should solve the problem so you don’t get crashes anymore when using that app.
 
 If you are using other apps that do Bluetooth LE scans, you can download our standalone [BLE Crash Resolver](https://play.google.com/store/apps/details?id=com.radiusnetworks.bluetoothcrashresolver) app.  It won’t completely prevent crashes -- that is only possible by embedding our module inside an app itself.  But the standalone app will watch for crashes and clear the condition as soon as one happens, so that the next crash will be as far in the future as possible. 
 
