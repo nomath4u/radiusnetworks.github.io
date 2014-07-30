@@ -16,7 +16,7 @@ To verify the PiBeacon is transmitting, use a beacon test tool like Radius Netwo
 
 # PiBeacon Flexibility
 
-The PiBeacon is the ultimate BLE beacon tool, it has the ability to transmit with both the iBeacon and AltBeacon standards with fully customizable identifiers and transmit frequency.  In addition, it can scan for other nearby beacons of both standards.  For more information on AltBeacon (the open and interoperable proximity beacon specification) visit [AltBeacon.org](altbeacon.org).
+The PiBeacon is the ultimate BLE beacon tool, it has the ability to transmit with both the iBeacon and AltBeacon standards with fully customizable identifiers and transmit frequency.  In addition, it can scan for other nearby beacons of both standards.  For more information on AltBeacon (the open and interoperable proximity beacon specification) visit [AltBeacon.org](http://altbeacon.org).
 
 # Initial PiBeacon Configuration
 
