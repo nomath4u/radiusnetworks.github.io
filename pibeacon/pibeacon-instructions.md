@@ -1,5 +1,5 @@
 ---
-layout: ibeacon
+layout: default
 ---
 
 # PiBeacon Instructions (Version 4.0)
