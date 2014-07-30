@@ -6,7 +6,7 @@ layout: content
 
 ##Getting Started
 
-The PiBeacon consists of a Raspberry Pi computer, Bluetooth Low Energy (BLE) USB adapter, and an SD card preloaded with the BLE beacon utility software.  It requires a standard 5V power supply with a micro USB connector.  There is no power switch for the PiBeacon.  As soon as it is plugged in, it will boot up and begin transmitting automatically after about a minute.
+The PiBeacon consists of a Raspberry Pi computer, Bluetooth Low Energy (BLE) USB adapter, and an SD card preloaded with BLE beacon utility software.  It requires a standard 5V power supply with a micro USB connector.  There is no power switch for the PiBeacon.  As soon as it is plugged in, it will boot up and begin transmitting automatically after about a minute.
 
 Note: The Raspberry Pi can be sensitive to poorly performing chargers. If your PiBeacon doesn’t boot properly (you should see a red LED illuminated and a green LED that flashes intermittently) try a different charger.
 
