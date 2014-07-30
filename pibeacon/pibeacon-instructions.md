@@ -20,7 +20,7 @@ The PiBeacon is the ultimate BLE beacon tool, it has the ability to transmit wit
 
 # Initial PiBeacon Configuration
 
-The PiBeacon will begin transmitting at boot with the default identifiers, these initial parameters can be easily configured by editing the `/boot/beacon.conf` file on the PiBeacon.  This can be done easily by removing the SD card and placing it in your computer’s card reader slot.  Alternatively, you can edit the file directly on the Pi with either a keyboard and monitor or via SSH.  When you open this file, you should see two blocks like the one below, these give the parameters and identifiers for each transmitter (Note: changing the second set of identifiers does nothing unless you have the dual model).
+The PiBeacon will begin transmitting at boot with the default identifiers, these initial parameters can be easily configured by editing the `/boot/beacon.conf` file on the PiBeacon.  This can be done easily by removing the SD card and placing it in your computer’s card reader slot.  Alternatively, you can edit the file directly on the Pi with either a keyboard and monitor or via SSH (see section below).  When you open this file, you should see two blocks like the one below, these give the parameters and identifiers for each transmitter (Note: changing the second set of identifiers does nothing unless you have the dual model).
 
 ```    
 export BEACON_TYPE_1=iBeacon
@@ -62,11 +62,11 @@ This command will simply stop the PiBeacon from transmitting as a BLE beacon.  U
 
 ## Scan
 
-Using the scan command, the PiBeacon will scan for other nearby BLE beacons and list the information of every transmission it receives.  You can select which type of beacon to scan for (it will scan for both AltBeacon and iBeacon standards by default) as well as set the duration of the scan (if desired).  In addition, you can select the output format to easily parse the scan data in another program.
+Using the scan command, the PiBeacon will scan for other nearby BLE beacons and list the information of every transmission it receives.  You can select which type of beacon to scan for (it will scan for both AltBeacon and iBeacon standards by default) as well as set the duration of the scan (if desired).  In addition, you specify an output format to easily parse the scan data in another program.
 
 ## BlueZ
 
-The BLE beacon tool uses BlueZ, the official Linux Bluetooth protocol stack, to communicate with the Bluetooth adapter.  There are a couple BlueZ commands that are useful when diagnosing problems with the PiBeacon.  First the `hciconfig` command will list the information and status of any attached Bluetooth devices.  A device must be in the “up” state to execute any Bluetooth commands.  To bring a device up use the following command (device “hci0” in this case):
+The `beacon` command uses BlueZ, the official Linux Bluetooth protocol stack, to communicate with the Bluetooth adapter.  There are a couple BlueZ commands that are useful when diagnosing problems with the PiBeacon.  First the `hciconfig` command will list the information and status of any attached Bluetooth devices.  A device must be in the “up” state to execute any Bluetooth commands.  To bring a device up use the following command (device “hci0” in this case):
 
 ```
 sudo hciconfig hci0 up
@@ -98,7 +98,7 @@ Step 1. Using an ethernet cable, plug one end into the ethernet port on the Rasp
 
 Step 2. Power on the PiBeacon.
 
-Step 3. Using a computer, go to your router’s administration page and determine the IP address of the PiBeacon.  It should show up on your router’s attached devices list as “pibeacon”
+Step 3. Using a computer, go to your router’s administration page and determine the IP address of the PiBeacon.  It should show up on your router’s attached devices list as “pibeacon”.
 
 Step 4. On your computer connected to the same router, open up a ssh client and connect to the PiBeacon, logging in with username: pi, password: raspberry.  For example, on a Linux or OS X machine use the ssh command (substitute your PiBeacon’s IP address):
 
@@ -108,7 +108,7 @@ ssh pi@192.168.1.10
 
 # Next Steps
 
-Now you can have the tools to start developing a proximity aware mobile app or use the power of the Raspberry Pi for proximity aware automation. Visit our website to check out tools and other products and check out our developer blog for more tutorials with the Raspberry Pi.
+Now you can have the tools to start developing a proximity aware mobile app or use the power of the Raspberry Pi for proximity aware automation. Visit our [website](www.radiusnetworks.com) to check out tools and other products and check out our [developer blog](http://developer.radiusnetworks.com/blog/) for more tutorials with the Raspberry Pi.
 
 # Getting Help 
 
