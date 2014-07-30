@@ -2,9 +2,9 @@
 layout: content
 ---
 
-# **PiBeacon Instructions (Version 4.0)**
+# PiBeacon Instructions (Version 4.0)
 
-====
+<hr>
 
 #Getting Started
 
