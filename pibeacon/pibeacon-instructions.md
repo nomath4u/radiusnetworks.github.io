@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 ---
 
 # PiBeacon Instructions (Version 4.0)
