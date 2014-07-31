@@ -33,7 +33,7 @@ downloaded disk image file and write it onto the SD card. For Windows systems th
 
 
        ```	
-        $ diskutil list
+       $ diskutil list
        /dev/disk0
           #:                       TYPE NAME                    SIZE       IDENTIFIER
           0:      GUID_partition_scheme                        *500.1 GB   disk0
@@ -49,7 +49,7 @@ downloaded disk image file and write it onto the SD card. For Windows systems th
 
 2. Now use the `dd` command combined with the `gzip` command (see below) to unzip and write the disk image to the SD card.  You will need the full path to the disk image file and you should use `/dev/rdiskX` instead of `/dev/diskX`. <div style="color: red;">**IMPORTANT: it is CRITICAL that you enter the correct disk into this command, otherwise you could corrupt your computer’s hard disk.  Be sure to double check the disk before you press enter!**</div>
 
-        `gzip -dc /path/to/IDK.gz | sudo dd of=/dev/rdiskX bs=1m`
+         `gzip -dc /path/to/IDK.gz | sudo dd of=/dev/rdiskX bs=1m`
 
 3. It should take a while for the command to finish, when it’s done you’ll see the command prompt return.  After it finishes, eject the SD card and re-insert it into your Raspberry Pi. Now you’re upgraded to the latest version!
 
