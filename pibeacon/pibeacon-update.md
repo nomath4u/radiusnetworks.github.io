@@ -29,7 +29,8 @@ downloaded disk image file and write it onto the SD card. For Windows systems th
 
 ## OS X
 
-1. Open terminal and run the `diskutil list` command to identify your SD card, you should see something like this.
+1. Open terminal and run the `diskutil list` command to identify your SD card, you should see something like this.    In this example, `/dev/disk1` is the 8GB SD card (note the 'Linux' partition).  
+
 
   ```	
   $ diskutil list
@@ -45,8 +46,6 @@ downloaded disk image file and write it onto the SD card. For Windows systems th
      1:             Windows_FAT_32                         58.7 MB    disk1s1
      2:                      Linux                         7.9 GB     disk1s2
   ```
-
- In this example, `/dev/disk1` is the 8GB SD card (note the 'Linux' partition).  
 
 2. Now use the `dd` command combined with the `gzip` command (see below) to unzip and write the disk image to the SD card.  You will need the full path to the disk image file and you should use `/dev/rdiskX` instead of `/dev/diskX`. <div style="color: red;">**IMPORTANT: it is CRITICAL that you enter the correct disk into this command, otherwise you could corrupt your computer’s hard disk.  Be sure to double check the disk before you press enter!**</div>
 
