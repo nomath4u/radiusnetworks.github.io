@@ -11,7 +11,7 @@ Next, insert the old SD card into your computer. Now you will need to uncompress
 downloaded disk image file and write it onto the SD card. For Windows systems this can be accomplished with 
 [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/).  For OSX and Linux you can use command line tools. Instructions for these are given below.
 
-<a class="btn" href="">Download Disk Image</a>
+<a class="btn" href="https://s3.amazonaws.com/s3.radiusnetworks.com/Public/PiBeacon-4.0.gz">Download Disk Image</a>
 
 
 ## Windows
