@@ -47,7 +47,7 @@ downloaded disk image file and write it onto the SD card. For Windows systems th
           2:                      Linux                         7.9 GB     disk1s2
        ```
 
-2. Now use the `dd` command combined with the `gzip` command (see below) to unzip and write the disk image to the SD card.  You will need the full path to the disk image file and you should use `/dev/rdiskX` instead of `/dev/diskX`. <div style="color: red;">**IMPORTANT: it is CRITICAL that you enter the correct disk into this command, otherwise you could corrupt your computer’s hard disk.  Be sure to double check the disk before you press enter!**</div>
+2. Now use the `dd` command combined with the `gzip` command (see below) to unzip and write the disk image to the SD card.  You will need the full path to the disk image file and you should use `/dev/rdiskX` instead of `/dev/diskX`. If you get a "Resource busy" error you need to unmount any partitions on the SD card.  <div style="color: red;">**IMPORTANT: it is CRITICAL that you enter the correct disk into this command, otherwise you could corrupt your computer’s hard disk.  Be sure to double check the disk before you press enter!**</div>
 
        ```    
        gzip -dc /path/to/PiBeacon-4.0.gz | sudo dd of=/dev/rdiskX bs=1m
