@@ -4,7 +4,7 @@ layout: ibeacon
 
 #Beacon Development Kit Instructions (Version 3.1)
 
-Note: These instructions are for a previous version of the Beacon Development Kit (3.1). Instructions for [Version 3.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version3.html), [Version 2.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version2.html), and [Version 1.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version1.html) are also available.
+Note: These instructions are for a previous version of the Beacon Development Kit (3.1). Instructions for [Version 3.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version3.html), [Version 2.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version2.html), and [Version 1.0](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions-version1.html) are also available.  Instructions for the latest version can be found [here](http://developer.radiusnetworks.com/pibeacon/pibeacon-instructions.html).
 
 ##Getting Started
 
