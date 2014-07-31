@@ -4,7 +4,7 @@ layout: ibeacon
 
 #Beacon Development Kit Instructions (Version 2.0)
 
-Note: These instructions are for a previous version of the Beacon Development Kit (shipped Feb. 2014 - Apr. 2014). For instructions on the latest version (shipping May, 2014) [click here](http://developer.radiusnetworks.com/ibeacon/ibeacon-development-kit-instructions.html).
+Note: These instructions are for a previous version of the Beacon Development Kit (shipped Feb. 2014 - Apr. 2014). For instructions on the latest version [click here](http://developer.radiusnetworks.com/pibeacon/pibeacon-instructions.html).
 
 ##Getting Started
 
