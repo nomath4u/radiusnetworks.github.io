@@ -9,7 +9,7 @@ bluetooth dongle, and a spare SD card, we’ve made the PiBeacon software availa
 image, downloadable for free. To upgrade, download the disk image for the latest version below (currently Version 4.0). 
 Next, insert the old SD card into your computer. Now you will need to uncompress the 
 downloaded disk image file and write it onto the SD card. For Windows systems this can be accomplished with 
-[Win32DiskImager](http://sourceforge.net/projects/win32diskimager/).  For OSX and Linux you can use command line tools. Instructions for these are given below.
+[Win32DiskImager](http://sourceforge.net/projects/win32diskimager/).  For OS X and Linux you can use command line tools. Instructions for these are given below.
 
 <a class="btn" href="https://s3.amazonaws.com/s3.radiusnetworks.com/Public/PiBeacon-4.0.gz">Download Disk Image</a>
 
