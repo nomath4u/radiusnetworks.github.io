@@ -4,7 +4,7 @@ layout: content
 
 # Updating Your PiBeacon
 
-If you’ve purchased a previous version of the PiBeacon, it's precursor the Beacon Development Kit, or if you already have your own Raspberry Pi, 
+If you’ve purchased a previous version of the PiBeacon, its precursor the Beacon Development Kit, or if you already have your own Raspberry Pi, 
 bluetooth dongle, and a spare SD card, we’ve made the PiBeacon software available as a Raspberry Pi disk 
 image, downloadable for free. To upgrade, download the disk image for the latest version below (currently Version 4.0). 
 Next, insert the old SD card into your computer. Now you will need to uncompress the 
