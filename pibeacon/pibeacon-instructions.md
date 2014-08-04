@@ -120,7 +120,7 @@ ssh pi@192.168.1.10
 
 # Next Steps
 
-Now you can have the tools to start developing a proximity aware mobile app or use the power of the Raspberry Pi for proximity-aware automation. Visit our [website](http://radiusnetworks.com) to check out tools and other products and check out our [developer blog](http://developer.radiusnetworks.com/blog/) for more tutorials with the Raspberry Pi.
+Now you can have the tools to start developing a proximity aware mobile app or use the power of the Raspberry Pi for proximity-aware automation. Visit our [website](http://radiusnetworks.com) for more tools and beacon products and check out our [developer blog](http://developer.radiusnetworks.com/blog/) for more tutorials with the Raspberry Pi.
 
 # Getting Help 
 
