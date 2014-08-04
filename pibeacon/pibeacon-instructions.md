@@ -20,7 +20,7 @@ The PiBeacon is the ultimate BLE beacon tool.  It is designed to work with multi
 
 # Initial PiBeacon Configuration
 
-The PiBeacon will begin transmitting at boot with the default identifiers, these initial parameters can be easily configured by editing the `/boot/beacon.conf` file on the PiBeacon.  This can be done by removing the SD card and placing it in your computer’s card reader slot.  Alternatively, you can edit the file directly on the Pi with either a keyboard and monitor or via SSH (see section below).  When you open this file, you should see two blocks like the one below, these give the parameters and identifiers for each transmitter (Note: changing the second set of identifiers does nothing unless you have the dual model).
+The PiBeacon will begin transmitting at boot with the default identifiers.  These initial parameters can be easily configured by editing the `/boot/beacon.conf` file on the PiBeacon.  This can be done by removing the SD card and placing it in your computer’s card reader slot.  Alternatively, you can edit the file directly on the Pi with either a keyboard and monitor or via SSH (see section below).  When you open this file, you should see two blocks like the one below, these give the parameters and identifiers for each transmitter (Note: changing the second set of identifiers does nothing unless you have the dual model).
 
 ```    
 export BEACON_TYPE_1=iBeacon
