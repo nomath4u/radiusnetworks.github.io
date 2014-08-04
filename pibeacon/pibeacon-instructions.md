@@ -74,7 +74,7 @@ This command will simply stop the PiBeacon from transmitting as a BLE beacon.  U
 beacon scan
 ```
 
-Using the scan command, the PiBeacon will scan for other nearby BLE beacons and list the information of every transmission it receives.  You can select which type of beacon to scan for (it will scan for beacons using AltBeacon or iBeacon technology by default) as well as set the duration of the scan (if desired).  In addition, you can specify an output format to easily export scan data for use in any application
+Using the scan command, the PiBeacon will scan for other nearby BLE beacons and list the information of every transmission it receives.  You can select which type of beacon to scan for (it will scan for beacons using AltBeacon or iBeacon technology by default) as well as set the duration of the scan (if desired).  In addition, you can specify an output format to easily export scan data for use in any application.
 
 ## BlueZ
 
