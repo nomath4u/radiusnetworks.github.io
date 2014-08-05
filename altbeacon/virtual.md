@@ -28,11 +28,11 @@ Create a VM that transmits as a proximity beacon with [AltBeacon](http://altbeac
 
 7. Now you can use the Virtual AltBeacon manually by calling the altbeacon scripts in the command prompt and pressing enter.
 
-```
-altbeacon_transmit
- altbeacon_stop
- altbeacon_receive
-```
+    ```
+    altbeacon_transmit
+     altbeacon_stop
+     altbeacon_receive
+    ```
 
 ## How to tell if it is working
 
