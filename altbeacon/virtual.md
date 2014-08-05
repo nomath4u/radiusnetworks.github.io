@@ -24,7 +24,7 @@ Create a VM that transmits as a proximity beacon with [AltBeacon](http://altbeac
 6. If you receive a message in the virtual machine that no bluetooth device has been detected,  make sure the virtual machine has captured the device.  In the VirtualBox menu, select Devices -> USB Devices -> then select your BLE USB device in the drop-down menu so that there is a checkmark by it.
      *  If you receive an error message like the one below trying to capture your bluetooth device, a quick solution to this problem is outlined in a [section below](#USBERROR).
 
-        <img style="height: 125px; margin: 30px 30px 20px 0; border: 2px solid #f5f5f5; border-radius: 7px;"             src='http://i.imgur.com/qzMirYi.png'>
+        <img style="height: 125px; margin: 30px 15px 15px 0; border: 2px solid #f5f5f5; border-radius: 7px;"             src='http://i.imgur.com/qzMirYi.png'>
 
 7. Now you can use the Virtual AltBeacon manually by calling the altbeacon scripts in the command prompt and pressing enter.
 
