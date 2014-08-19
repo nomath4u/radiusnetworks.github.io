@@ -45,7 +45,7 @@ You may want to create another set of images for high density displays, but this
 If you don't have a [ProximityKit](http://www.proximitykit.com) account already, create one.  You can use the free service license if you expect to have 100 people or fewer playing your scavenger hunt.  See plans for details.
 
 Create a new Kit, then define one beacon for each scavenger hunt target.  For each one, you'll need to enter the three-part beacon identifier along wtih two key/value pairs.  The first key/value pair
-has a key of "hunt_id" and a value of your target number.  Put "1" for your first target, "2" for your second target, etc.  The second key/value pair is for your "image_url" of your badge image for that target.  You only need to
+has a key of "hunt\_id" and a value of your target number.  Put "1" for your first target, "2" for your second target, etc.  The second key/value pair is for your "image_url" of your badge image for that target.  You only need to
 specify the "image_url" for the basic image, because the variants will all be discovered by following the filename conventions described in this document.
 
 When you are done, your setup should look like this for a single target:
