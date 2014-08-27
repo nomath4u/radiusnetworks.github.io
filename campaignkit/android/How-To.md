@@ -19,7 +19,7 @@ Requirements for use:
 
 1. Download the .aar library file
 
- * here
+    * here
  
 
 2. Add the library as a dependency to your project
