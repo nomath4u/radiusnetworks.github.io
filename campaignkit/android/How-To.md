@@ -17,12 +17,12 @@ Requirements for use:
 ##If Using Android Studio (we recommend Android Studio v0.5.2 with gradle 1.10):
 
 
-1. Download the .aar library file
+1) Download the .aar library file
 
     * here
  
 
-2. Add the library as a dependency to your project
+2) Add the library as a dependency to your project
 
  * Drag and drop the .aar file into your Android Studio Project's "libs" folder. This should be next to your "src" folder. If there is no "libs" folder, create one. 
 
@@ -45,7 +45,7 @@ Requirements for use:
  * On the top bar of Android Studio click the "Build" drop down, and select "Rebuild project".
 
 
-3. Implement CampaignKitNotifier and CampaignKitManager
+3) Implement CampaignKitNotifier and CampaignKitManager
 
  * Open the Application class in your project. If you don't have one, create a class that extends Application.
 
@@ -63,7 +63,7 @@ Requirements for use:
 		_ckManager.setNotifier(this);
 ``` 
 
-4. Handle campaignKit:didFindCampaign callback in AppDelegate.m
+4) Handle campaignKit:didFindCampaign callback in AppDelegate.m
 
 ```java
 
@@ -86,11 +86,11 @@ Requirements for use:
 
 ##If Using the Eclipse IDE:
 
-1. Download the .tar.gz library file
+1) Download the .tar.gz library file
 
  * here
  
-2. Add the library as a dependency to your project
+2) Add the library as a dependency to your project
 
  * Double click the .tar.gz file, this will produce a folder containing the library.
 
@@ -109,7 +109,7 @@ Requirements for use:
  * Add the campaignkit-android as a library.
  
 
-3. Implement CampaignKitNotifier and CampaignKitManager
+3) Implement CampaignKitNotifier and CampaignKitManager
 
  * Create/Open the Application class in your project.
 
@@ -128,7 +128,7 @@ Requirements for use:
 	_ckManager.setNotifier(this);
 ``` 
 
-4. Handle campaignKit:didFindCampaign callback in AppDelegate.m
+4) Handle campaignKit:didFindCampaign callback in AppDelegate.m
 
 ```java
 
@@ -158,14 +158,14 @@ Since geofence support is relatively new, it is disabled by default. Below are
 the steps necessary to configure a sample app to use geofences through
 Campaign Kit.
 
-1. Install Google Play services. Due to the differences between Eclipse and
+1) Install Google Play services. Due to the differences between Eclipse and
    Android Studio please refer to the [Google Setup docs](https://developer.android.com/google/play-services/setup.html)
    for the proper IDE instructions.
 
 
    - Android SDK Manager > Extras > Google Play services
 
-2. If using Android Studio, Include the Google Play services as a dependency in `app/build.gradle`:
+2) If using Android Studio, Include the Google Play services as a dependency in `app/build.gradle`:
 
 ```groovy
   // PROJECT_ROOT/app/build.gradle
@@ -177,7 +177,7 @@ Campaign Kit.
   }
 ```
 
-3. Declare the Google Play service in the app's `AndroidManifest.xml` under the
+3) Declare the Google Play service in the app's `AndroidManifest.xml` under the
    `<application>` section:
 
 ```xml
@@ -186,7 +186,7 @@ Campaign Kit.
       android:value="@integer/google_play_services_version" />
 ```
 
-4. Declare that the app needs to request `ACCESS_FINE_LOCATION`. To request
+4) Declare that the app needs to request `ACCESS_FINE_LOCATION`. To request
    this permission, add the following element as a child element of the
    `<manifest>` element:
 
@@ -194,7 +194,7 @@ Campaign Kit.
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 ```
 
-5. Check for Google Play support. For the most recent suggestions by Google,
+5) Check for Google Play support. For the most recent suggestions by Google,
    please refer to the [Android documentation on checking for Google Play
    services support](https://developer.android.com/google/play-services/setup.html#ensure).
 
@@ -291,7 +291,7 @@ Campaign Kit.
 
 ```
 
-6. If Google Play is available, enable geofences for Campaign Kit.
+6) If Google Play is available, enable geofences for Campaign Kit.
 
 ```java
 
