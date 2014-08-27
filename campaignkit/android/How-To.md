@@ -1,36 +1,34 @@
-campaignkit-android
-===================
+---
+layout: campaignkit
+---
 
-Campaign Kit Library for Android Client
+#Campaign Kit Library for Android Client
 
 Requirements for use: 
 
-• Android API Level 18 or higher
+* Android API Level 18 or higher
 
-• Google Play Services library set as a dependency if using Geofencing features.
-
-
+* Google Play Services library set as a dependency if using Geofencing features.
 
 
 
-==================================================================
-If Using Android Studio (we recommend Android Studio v0.5.2 with gradle 1.10):
-==================================================================
+
+
+##If Using Android Studio (we recommend Android Studio v0.5.2 with gradle 1.10):
 
 
 1. Download the .aar library file
-==================================================================
 
- • here
+ * here
  
 
 2. Add the library as a dependency to your project
-==================================================================
 
- • Drag and drop the .aar file into your Android Studio Project's "libs" folder. This should be next to your "src" folder. If there is no "libs" folder, create one. 
+ * Drag and drop the .aar file into your Android Studio Project's "libs" folder. This should be next to your "src" folder. If there is no "libs" folder, create one. 
 
- • Next to your "src" and "libs" folder, there should be a build.gradle file. Open that and include the following:
+ * Next to your "src" and "libs" folder, there should be a build.gradle file. Open that and include the following:
 
+```java
 	dependencies {
 	    compile fileTree(dir: 'libs', include: ['*.jar'])
 	    compile 'com.radiusnetworks:campaignkit-android:1+@aar'
@@ -42,30 +40,32 @@ If Using Android Studio (we recommend Android Studio v0.5.2 with gradle 1.10):
 	        dirs 'libs'
 	    }
 	}
+```
 
- • On the top bar of Android Studio click the "Build" drop down, and select "Rebuild project".
+ * On the top bar of Android Studio click the "Build" drop down, and select "Rebuild project".
 
 
 3. Implement CampaignKitNotifier and CampaignKitManager
-==================================================================
 
- • Open the Application class in your project. If you don't have one, create a class that extends Application.
+ * Open the Application class in your project. If you don't have one, create a class that extends Application.
 
- • Type 'extends Application implements CampaignKitNotifier" after the class name in its declaration.
+ * Type 'extends Application implements CampaignKitNotifier" after the class name in its declaration.
 
- • Add all required methods for the CampaignKitNotifier. Quick-fix can do this for you.
+ * Add all required methods for the CampaignKitNotifier. Quick-fix can do this for you.
 
- • Create an instance of the CampaignKitManager (i.e. CampaignKitManager _ckManager;).
+ * Create an instance of the CampaignKitManager (i.e. CampaignKitManager _ckManager;).
 
- • In the Application class's onCreate() method, add the following code:
- 
+ * In the Application class's onCreate() method, add the following code:
+
+```java 
  		_ckManager = CampaignKitManager.getInstanceForApplication(this);
 		_ckManager.start();
 		_ckManager.setNotifier(this);
- 
+``` 
 
 4. Handle campaignKit:didFindCampaign callback in AppDelegate.m
-===============================================================
+
+```java
 
 	@Override
 	public void didFindCampaign(Campaign campaign) {
@@ -82,58 +82,55 @@ If Using Android Studio (we recommend Android Studio v0.5.2 with gradle 1.10):
 	public void showCampaign(Campaign campaign){
 		// TODO: write custom code or use code from the Campaign Kit reference app
 	}
- 
+```
 
-
-==================================================================
-==================================================================
-If Using the Eclipse IDE:
-==================================================================
+##If Using the Eclipse IDE:
 
 1. Download the .tar.gz library file
-==================================================================
- • here
+
+ * here
  
 2. Add the library as a dependency to your project
-==================================================================
 
- • Double click the .tar.gz file, this will produce a folder containing the library.
+ * Double click the .tar.gz file, this will produce a folder containing the library.
 
- • Import the library as an Android Project to your workspace.
+ * Import the library as an Android Project to your workspace.
 
- • Right-click the library and open the Properties menu.
+ * Right-click the library and open the Properties menu.
 
- • Select the Android tab on the left side of the window.
+ * Select the Android tab on the left side of the window.
 
- • Make sure the library has the "is Library" checkbox checked.
+ * Make sure the library has the "is Library" checkbox checked.
 
- • Right-click your project and open the Properties menu.
+ * Right-click your project and open the Properties menu.
 
- • Select the Android tab on the left side of the window.
+ * Select the Android tab on the left side of the window.
 
- • Add the campaignkit-android as a library.
+ * Add the campaignkit-android as a library.
  
 
 3. Implement CampaignKitNotifier and CampaignKitManager
-==================================================================
 
- • Create/Open the Application class in your project.
+ * Create/Open the Application class in your project.
 
- • Type 'extends Application implements CampaignKitNotifier" in the class declaration.
+ * Type 'extends Application implements CampaignKitNotifier" in the class declaration.
 
- • Add all required methods. Quick-fix can do this for you.
+ * Add all required methods. Quick-fix can do this for you.
 
- • Create an instance of the CampaignKitManager (i.e. CampaignKitManager _ckManager;).
+ * Create an instance of the CampaignKitManager (i.e. CampaignKitManager _ckManager;).
 
- • In the Application class's onCreate() method, add the following code:
+ * In the Application class's onCreate() method, add the following code:
+
+```java
  
  	_ckManager = CampaignKitManager.getInstanceForApplication(this);
 	_ckManager.start();
 	_ckManager.setNotifier(this);
- 
+``` 
 
 4. Handle campaignKit:didFindCampaign callback in AppDelegate.m
-===============================================================
+
+```java
 
 	@Override
 	public void didFindCampaign(Campaign campaign) {
@@ -150,14 +147,12 @@ If Using the Eclipse IDE:
 	public void showCampaign(Campaign campaign){
 		// TODO: write custom code or use code from the Campaign Kit reference app
 	}
- 
+``` 
 
 
 
 
-===============================================================
- Adding Geofence Support
-===============================================================
+##Adding Geofence Support
 
 Since geofence support is relatively new, it is disabled by default. Below are
 the steps necessary to configure a sample app to use geofences through
@@ -172,7 +167,7 @@ Campaign Kit.
 
 2. If using Android Studio, Include the Google Play services as a dependency in `app/build.gradle`:
 
-  ```groovy
+```groovy
   // PROJECT_ROOT/app/build.gradle
   dependencies {
       compile 'com.android.support:appcompat-v7:+'
@@ -180,24 +175,24 @@ Campaign Kit.
       compile fileTree(dir: 'libs', include: ['*.jar'])
       compile project(":campaignkit-android")
   }
-  ```
+```
 
 3. Declare the Google Play service in the app's `AndroidManifest.xml` under the
    `<application>` section:
 
-  ```xml
+```xml
   <meta-data
       android:name="com.google.android.gms.version"
       android:value="@integer/google_play_services_version" />
-  ```
+```
 
 4. Declare that the app needs to request `ACCESS_FINE_LOCATION`. To request
    this permission, add the following element as a child element of the
    `<manifest>` element:
 
-  ```groovy
+```groovy
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-  ```
+```
 
 5. Check for Google Play support. For the most recent suggestions by Google,
    please refer to the [Android documentation on checking for Google Play
@@ -222,7 +217,9 @@ Campaign Kit.
   > appropriate message about the error and provides an action that takes the
   > user to Google Play Store to install the update.
 
-  ```java
+
+```java
+
   /**
    * Verify that Google Play services is available before making a request.
    *
@@ -291,11 +288,13 @@ Campaign Kit.
           return mDialog;
       }
   }
-  ```
+
+```
 
 6. If Google Play is available, enable geofences for Campaign Kit.
 
-  ```java
+```java
+
   ckManager = CampaignKitManager.getInstanceForApplication(this);
   if (servicesConnected()) {
       try {
@@ -306,5 +305,6 @@ Campaign Kit.
   }
   ckManager.setNotifier(this);
   ckManager.start()
-  ```
+
+```
 
