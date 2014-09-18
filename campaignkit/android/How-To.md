@@ -129,7 +129,7 @@ Campaign Kit Library for Android Client
   _ckManager.setNotifier(this);
 ``` 
 
-4) Handle campaignKit:didFindCampaign callback in AppDelegate.m
+4) Handle didFindCampaign callback from CampaignKitNotifier
 
 ```java
 
