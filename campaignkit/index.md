@@ -38,7 +38,7 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
   <tr>
     <td>Getting Started</td>
     <td><a href='ios/AppleDocs/docs/Docs/How-To.html'>How To</a></td>
-    <td><a href='android/How-To.md'>How To</a></td>
+    <td><a href='android/How-To.html'>How To</a></td>
   </tr> 
   <tr>
     <td>
@@ -49,10 +49,8 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
   </tr> 
   <tr>
     <td>Multiple Notifications</td>
-    <td>
-      <a href='ios/suppressing-multiple-campaigns.html'>Suppressing Multiple Campaigns</a>
-    </td>
-    <td></td>
+    <td><a href='ios/suppressing-multiple-campaigns.html'>Suppressing Multiple Campaigns</a></td>
+    <td><a href='ios/suppressing-multiple-campaigns.html'>Suppressing Multiple Campaigns</a></td>
   </tr>
    <tr>
     <td>Binaries</td>
