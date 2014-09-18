@@ -33,7 +33,7 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
   <tr>
     <td>Release Notes</td>
     <td><a href='ios/AppleDocs/docs/Docs/release-notes.html'>0.0.3</a></td>
-    <td>0.0.1</td>
+    <td>0.0.2</td>
   </tr>
   <tr>
     <td>Getting Started</td>
