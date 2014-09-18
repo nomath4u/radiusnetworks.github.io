@@ -50,7 +50,7 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
   <tr>
     <td>Multiple Notifications</td>
     <td><a href='ios/suppressing-multiple-campaigns.html'>Suppressing Multiple Campaigns</a></td>
-    <td><a href='ios/suppressing-multiple-campaigns.html'>Suppressing Multiple Campaigns</a></td>
+    <td><a href='android/suppressing-multiple-campaigns.html'>Suppressing Multiple Campaigns</a></td>
   </tr>
    <tr>
     <td>Binaries</td>
