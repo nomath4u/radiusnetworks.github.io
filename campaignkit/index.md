@@ -32,7 +32,8 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
   </tr>
   <tr>
     <td>Release Notes</td>
-    <td><a href='ios/AppleDocs/docs/Docs/release-notes.html'>0.0.3</a></td><td>0.0.1</td>
+    <td><a href='ios/AppleDocs/docs/Docs/release-notes.html'>0.0.3</a></td>
+    <td>0.0.1</td>
   </tr>
   <tr>
     <td>Getting Started</td>
@@ -41,7 +42,9 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
   </tr> 
   <tr>
     <td>
-    SDK Documentation</td><td><a href='ios/AppleDocs/index.html'>AppleDocs</a></td><td><a href='android/javadocs/index.html'>JavaDocs</a>
+    SDK Documentation</td>
+    <td><a href='ios/AppleDocs/index.html'>AppleDocs</a></td>
+    <td><a href='android/javadocs/index.html'>JavaDocs</a>
     </td>
   </tr> 
   <tr>
@@ -50,6 +53,14 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
       <a href='ios/suppressing-multiple-campaigns.html'>Suppressing Multiple Campaigns</a>
     </td>
     <td></td>
+  </tr>
+   <tr>
+    <td>Binaries</td>
+    <td></td>
+    <td>
+      <a href='https://s3.amazonaws.com/campaignkit-android/campaignkit-android-0.0.2.aar'>Android Studio</a>
+      <a href='https://s3.amazonaws.com/campaignkit-android/campaignkit-android-0.0.2.tar.gz'>Eclipse</a>
+    </td>
   </tr>
 </table>
 
