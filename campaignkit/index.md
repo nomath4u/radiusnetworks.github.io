@@ -55,8 +55,8 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
    <tr>
     <td>Binaries</td>
     <td>
-      <a href="http://s3.amazonaws.com/s3.campaignkit.com/campaignkit.zip">Xcode 6+ (dynamic framework)</a>
-      <a href="http://s3.amazonaws.com/s3.campaignkit.com/campaignkit-static.zip">Xcode 5.x (static framework)</a>
+      <a href="http://s3.amazonaws.com/s3.campaignkit.com/CampaignKit.zip">Xcode 6+ (dynamic framework)</a>
+      <a href="http://s3.amazonaws.com/s3.campaignkit.com/CampaignKit-static.zip">Xcode 5.x (static framework)</a>
     </td>
     <td>
       <a href='https://s3.amazonaws.com/campaignkit-android/campaignkit-android-0.0.2.aar'>Android Studio</a>
