@@ -32,7 +32,7 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
   </tr>
   <tr>
     <td>Release Notes</td>
-    <td><a href='ios/AppleDocs/docs/Docs/release-notes.html'>0.0.3</a></td>
+    <td><a href='ios/AppleDocs/docs/Docs/release-notes.html'>0.0.7</a></td>
     <td>0.0.2</td>
   </tr>
   <tr>
@@ -54,7 +54,10 @@ Campaign Kit is a cloud based service coupled with mobile SDKs that allows users
   </tr>
    <tr>
     <td>Binaries</td>
-    <td></td>
+    <td>
+      <a href="http://s3.amazonaws.com/s3.campaignkit.com/campaignkit.zip">Xcode 6+ (dynamic framework)</a>
+      <a href="http://s3.amazonaws.com/s3.campaignkit.com/campaignkit-static.zip">Xcode 5.x (static framework)</a>
+    </td>
     <td>
       <a href='https://s3.amazonaws.com/campaignkit-android/campaignkit-android-0.0.2.aar'>Android Studio</a>
       <a href='https://s3.amazonaws.com/campaignkit-android/campaignkit-android-0.0.2.tar.gz'>Eclipse</a>
