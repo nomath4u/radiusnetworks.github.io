@@ -1,6 +1,11 @@
 _site/
-_bundle/
 .DS_Store
 *.swp
 .ruby-gemset
 .ruby-version
+
+# Ignore bundler config.
+/.bundle
+/vendor/bundle
+_bundle/
+/bin
