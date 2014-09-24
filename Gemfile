@@ -1,2 +1,4 @@
 source 'https://rubygems.org'
-gem 'github-pages'
+
+# For supported versions see https://pages.github.com/versions/
+gem 'github-pages', '~> 27'
