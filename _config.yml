@@ -6,3 +6,5 @@ redcarpet:
   extensions: ["tables"]
 poole:
   default_layout: post
+gems:
+  - jekyll-redirect-from
