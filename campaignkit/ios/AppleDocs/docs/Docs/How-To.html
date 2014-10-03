@@ -39,12 +39,16 @@
 
 <p>This text is displayed when your app asks for permission to access location services.</p>
 
-<h1>4. Add <a href="../../Protocols/CKManagerDelegate.html">CKManagerDelegate</a> protocol to AppDelegate</h1>
+<h1>4. Import the CampaignKit header file into your <code>AppDelegate</code> header file:</h1>
+
+<pre><code>#import &lt;CampaignKit/CampaignKit.h&gt;</code></pre>
+
+<h1>5. Add <a href="../../Protocols/CKManagerDelegate.html">CKManagerDelegate</a> protocol to AppDelegate</h1>
 
 <pre><code>@interface AppDelegate : UIResponder &lt;UIApplicationDelegate, CKManagerDelegate
 </code></pre>
 
-<h1>5. Add <a href="../../Classes/CKManager.html">CKManager</a> to the AppDelegate.h</h1>
+<h1>6. Add <a href="../../Classes/CKManager.html">CKManager</a> to the AppDelegate.h</h1>
 
 <pre><code>@interface AppDelegate : UIResponder &lt;UIApplicationDelegate, CKManagerDelegate
 
@@ -57,7 +61,7 @@
 @end
 </code></pre>
 
-<h1>6. Initialize campaignKitManager in AppDelegate.m</h1>
+<h1>7. Initialize campaignKitManager in AppDelegate.m</h1>
 
 <pre><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -65,7 +69,7 @@
 #ifdef __IPHONE_8_0
     if ([UIUserNotificationSettings class]) {
         // register to be allowed to notify user (for iOS 8)
-        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForType:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert) categories:nil];
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert) categories:nil];
         [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     }
 #endif
@@ -76,7 +80,7 @@
 }
 </code></pre>
 
-<h1>7. Handle campaignKit:didFindCampaign callback in AppDelegate.m</h1>
+<h1>8. Handle campaignKit:didFindCampaign callback in AppDelegate.m</h1>
 
 <pre><code>- (void)campaignKit:(CKManager *)manager didFindCampaign:(CKCampaign *)campaign
 {
@@ -94,13 +98,13 @@
     }
 }
 
-- (void)showCampaign(CKCampaign*)campaign
+- (void)showCampaign:(CKCampaign*)campaign
 {
     // TODO: write custom code or use code from the Campaign Kit reference app
 }
 </code></pre>
 
-<h1>8. Respond to swiped local notifications in AppDelegate.m</h1>
+<h1>9. Respond to swiped local notifications in AppDelegate.m</h1>
 
 <pre><code>// for iOS 8...
 - (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandle
@@ -120,7 +124,7 @@
 }
 </code></pre>
 
-<h1>9. Allow background syncs</h1>
+<h1>10. Allow background syncs</h1>
 
 <p>See: <a href="../../Classes/CKManager.html#//api/name/syncWithCompletionHandler:">[CKManager syncWithCompletionHandler:]</a></p>
 				</div>
