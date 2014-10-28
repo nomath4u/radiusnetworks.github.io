@@ -1,3 +1,6 @@
+---
+layout: campaignkit
+---
 
 #Campaign Kit Library for Android Client
 
