@@ -56,7 +56,7 @@ Once I enabled the beacon, waited a couple seconds and iOS dutifully started the
 
 This little trick has been extremely handy in tracking down some changes in the way iOS 8 handles permissions.
 
-Pro-tip: You need to use [NSFileProtectionNone](https://developer.apple.com/library/ios/documentation/Cocoa/Reference/Foundation/Classes/NSFileManager_Class/index.html#//apple_ref/swift/data/NSFileProtectionNone) if you have to load a file cache while in the background.
+Pro-tip: You need to use [NSFileProtectionNone](https://developer.apple.com/library/ios/documentation/Cocoa/Reference/Foundation/Classes/NSFileManager_Class/index.html#//apple_ref/swift/data/NSFileProtectionNone) if you have to load a file cache while the phone is locked.
 
 
 
