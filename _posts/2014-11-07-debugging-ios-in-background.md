@@ -4,7 +4,7 @@ title: Debugging iOS Apps in the Background
 author: Christopher Sexton and Scott Yoder
 ---
 
-Most mobile developers know that iOS will wake up their app in some cases and notify it of some event, things like geofence or beacon regions can cause this to happen. What's interesting is that iOS not only notify an app that is sleeping in the background, but also apps that have been explicitly by the user, or never restarted after a reboot of the phone.
+Most mobile developers know that iOS will wake up their app in some cases and notify it of some event, things like geofence or beacon regions can cause this to happen. What's interesting is that iOS not only notify an app that is sleeping in the background, but also apps that have been explicitly terminated by the user, or never restarted after a reboot of the phone.
 
 This is all good until you need to debug your app in this state. Turns out it is pretty straightforward, but required a little trick or two to get Xcode to attach the debugger to the process.
 
