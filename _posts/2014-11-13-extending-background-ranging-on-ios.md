@@ -72,7 +72,7 @@ You can see an example of how to set this up in the code block below.  The metho
 }
 ```
 
-You can see a full reference application that demonstrates this functionality [here.](https://github.com/RadiusNetworks/ibeacon-background-demo/blob/background-task) The README file for this application shows log output from test runs, demonstrating that the app is able to range in the background for thee minutes after each beacon detection.
+You can see a full reference application that demonstrates this functionality [here.](https://github.com/RadiusNetworks/ibeacon-background-demo/tree/background-task) The README file for this application shows log output from test runs, demonstrating that the app is able to range in the background for thee minutes after each beacon detection.
 
 When setting this up, it is very important that you stop the background task when the expirationHandler is called by iOS, otherwise your app will crash when the background running time reaches zero.  If this happens, your app won’t be detecting any more beacons until the user manually launches the app the next time.
 
