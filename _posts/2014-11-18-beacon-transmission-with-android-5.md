@@ -22,7 +22,7 @@ Beacon beacon = new Beacon.Builder()
        	.setId1(“2f234454-cf6d-4a0f-adf2-f4911ba9ffa6”)
        	.setId2(“1”)
        	.setId3(“2”)
-       	.setManufacturer(0x004C)
+       	.setManufacturer(0x0118)
         .setTxPower(-59)
         .setDataFields(Arrays.asList(new Long[] {0l}))
         .build();
