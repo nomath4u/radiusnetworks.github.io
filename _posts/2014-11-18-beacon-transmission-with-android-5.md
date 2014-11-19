@@ -4,7 +4,7 @@ title: Beacon Transmission With Android 5.0
 author: David G. Young
 ---
 
-One of the most exciting new features of Android 5.0 is the support for Bluetooth LE peripheral mode, which makes it possible to turn an Android device to a beacon transmitter.  Radius Networks is proud to release the new QuickBeacon app for Android 5.0, which creates a configurable beacon supporting both the AltBeacon and Apple iBeacon&trademark;  formats.  This app is available for free for a limited time only in the [Google Play Store](https://play.google.com/store/apps/details?id=com.radiusnetworks.quickbeacon&hl=en), and works with the new Nexus 6 phone and Nexus 9 tablet.
+One of the most exciting new features of Android 5.0 is the support for Bluetooth LE peripheral mode, which makes it possible to turn an Android device to a beacon transmitter.  Radius Networks is proud to release the new QuickBeacon app for Android 5.0, which creates a configurable beacon supporting both the AltBeacon and Apple iBeacon&#8482;   formats.  This app is available for free for a limited time only in the [Google Play Store](https://play.google.com/store/apps/details?id=com.radiusnetworks.quickbeacon&hl=en), and works with the new Nexus 6 phone and Nexus 9 tablet.
 
 <img style="margin:10px; height: 400px; border: thin solid #333;float:right;" src='../img/quickbeacon.png'>
 
