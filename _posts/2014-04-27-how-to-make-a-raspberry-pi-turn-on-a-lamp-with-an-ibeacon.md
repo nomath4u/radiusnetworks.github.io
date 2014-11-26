@@ -11,7 +11,7 @@ iBeacon™ proximity technology is an exciting tool already being used by retail
 
 ###Parts list:
 
-1. [Beacon Development Kit](http://store.radiusnetworks.com/collections/all/products/beacon-development-kit) (alternately, you can supply your own Raspberry Pi, bluetooth LE dongle, and SD card)
+1. [Beacon Development Kit](http://store.radiusnetworks.com/collections/all/products/pibeacon) (alternately, you can supply your own Raspberry Pi, bluetooth LE dongle, and SD card)
 2. Standard micro-USB 5V cell phone charger
 3. [PowerSwitch Tail II](http://www.amazon.com/POWERSWITCHTAIL-COM-PowerSwitch-Tail-II/dp/B00B888VHM/ref=sr_sp-atf_title_1_1?ie=UTF8&qid=1398462203&sr=8-1&keywords=powerswitch+tail)
 4. [Jumper wires](http://www.robotmesh.com/jumper-wires-7-8-f-m-10-pack) (recommended) or household wire
