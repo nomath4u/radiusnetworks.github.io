@@ -15,6 +15,17 @@ The app also allows you to configure the transmitter power, allowing you to adju
 
 It is important to note that not all devices with Android 5.0 can send beacon transmissions.  The Android device must have Bluetooth LE hardware and it must have peripheral mode enabled by the device manufacturer.   Google surprised many people when it [disabled peripheral mode for their Nexus 5 and Nexus 7 devices](https://code.google.com/p/android-developer-preview/issues/detail?id=1570), meaning these devices cannot transmit beacon advertisements using QuickBeacon or other software.  This can be confusing for folks using the Google Play store, because it does not have a capabilities filter for BLE peripheral mode.  As a result, QuickBeacon must be installed and tested on each Android 5.0 model before it is known whether or not the app is compatible with that model.  If the Android model does not support BLE peripheral mode, the app will tell you right away.
 
+**EDIT:** The following list shows which Android 5.0 builds are known to support or not support BLE advertising and QuickBeacon:
+```
+Nexus 6 build LRX21O - YES
+Nexus 9 build LRX21R - YES
+Nexus 9 build LRX21L - YES
+Nexus 5 build LPX13 - NO
+Nexus 7 build LRX21P - NO
+Samsung Galaxy S3 build LRX21T - NO
+OnePlus A0001 build LRX21V - NO
+```
+
 The engine that supports transmitting as a beacon is included in the open source Android Beacon Library 2.0.  This library allows for configuring flexible beacon formats using the `BeaconParser` class.  The library version that powers beacon transmission is still in pre-release form on the android-l-apis branch [here](https://github.com/AltBeacon/android-beacon-library/tree/android-l-apis).  Using this software, setting up a beacon transmitter is as simple as:
 
 ```java
