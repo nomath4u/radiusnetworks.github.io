@@ -53,7 +53,7 @@ The advantage of this approach is that the distance estimates are much more accu
 
 A 20 second sampling period is similar to what is done by iOS.  The graph below shows how the `CLBeacon` accuracy field changes over time when an iPhone 4S is quickly moved from a distance of 0.5 meters to 3 meters away (red line).  As you can see, it takes about 20 seconds for the distance estimate (blue line) to stabilize after the device is moved. 
 
-<img style="margin:10px; border: thin solid #333;" src='../img/ranging-averaging.png'>
+<img style="margin:10px; border: thin solid #333;" src='/img/ranging-averaging.png'>
 
 ##Device Variations
 
