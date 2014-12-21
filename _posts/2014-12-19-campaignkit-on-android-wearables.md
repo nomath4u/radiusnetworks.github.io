@@ -38,12 +38,12 @@ then sends it. This is most naturally placed in your `didFindCampaign(Campaign c
 
 	Intent viewIntent = new Intent(this, MainActivity.class);
 	PendingIntent viewPendingIntent = PendingIntent.getActivity(this, 0, viewIntent, 0);
-	NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
+	NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(getApplicationContext())
 	        .setSmallIcon(R.drawable.ic_launcher)
 	        .setContentTitle(c.getTitle())
 	        .setContentText(c.getMessage())
 	        .setContentIntent(viewPendingIntent);
-	NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+	NotificationManagerCompat notificationManager = getSystemService(Context.NOTIFICATION_SERVICE);
 	notificationManager.notify(001, notificationBuilder.build());
 
 The viewIntent subsequently use in viewPendingIntent is where you can decide
@@ -95,7 +95,11 @@ Finally we need to build our notification to send. This should be included in
         i.putExtra("notificationData", notificationData);
         sendBroadcast(i);
 
-This type of notification can only be dismissed. However, the recent Pebble Beta
+This type of notification can only be dismissed. ~~However, the recent Pebble Beta
 claims to support Android Wear type notifications. As the beta continues 
 surely we will see more information on how to generate that kind of notification 
-on Pebble.
+on Pebble.~~ The recent Pebble Beta supports Android Wear style notifications
+following the same procedure as for the Android Wear device. Keep in mind
+when testing that pebble does not display duplicate messages. So everytime you
+send a test notification to the pebble make sure to change the **ContentText** in
+order for the notification to actually appear.
