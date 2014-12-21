@@ -7,34 +7,32 @@ author: Christopher Harper
 Smartwatches have grown in popularity in the past year, originating with the
 Pebble smartwatch on Kickstarter. Then Android followed suit over this
 summer with Android Wear. These devices with their portable and quick nature
-lend themselves to CampaignKit fantastically, displaying a nice little chunk of
-information, the same that you would have in a push notification. The following 
-will show you how to get campaigns information to show up on Android Wear
-devices and the Pebble in Android.
+lend themselves well to CampaignKit, displaying a nice little chunk of
+information in a manner similar to a push notification. The following 
+will show you how to pop campaign information on Android Wear
+devices and the Pebble.
 
-It is assumed you are familiar with CampaignKit, and Android Studio, and have an
-active Campaign to display.
+It is assumed you are familiar with CampaignKit and Android Studio, and you have an
+active campaign to display.
 
 ##Setup
 
 First you are going to need the Android Studio CampaignKit reference app provided
 [here](https://github.com/RadiusNetworks/campaignkit-reference-android-studio).
-Follow the instructions provided there and make sure that you can watch your
-campaign trigger on the app before continuing.
+Follow the instructions there and make sure that your
+campaign triggers in the app before continuing.
 
 
 ##Android Wear
 
-First off, unless you already have an Android Wear device you are going to need
-to set up an emulator. This can then be used as a device to send CampaignKit 
-information to. Documentation for setting up an emulator can be found [here](https://developer.android.com/training/wearables/apps/creating.html) Documentation for setting up an emulator can be found [here](https://developer.android.com/training/wearables/apps/creating.html).
-
-Once all of that is setup it is time to send the campaign information to the device.
+Unless you already have an Android Wear device you are going to need
+to set up an emulator to receive the CampaignKit 
+message. Documentation for setting up an emulator can be found [here](https://developer.android.com/training/wearables/apps/creating.html).
 
 ![CampaignKit on Wear Emulator](../img/wearkit.png)
 
 The following code builds a notification to send to the Android Wear device and
-then sends it. This is most naturally placed in your `didFindCampaign(Campaign c)`
+then sends it. This is most naturally placed in your `didFindCampaign(Campaign c)` method.
 
 	Intent viewIntent = new Intent(this, MainActivity.class);
 	PendingIntent viewPendingIntent = PendingIntent.getActivity(this, 0, viewIntent, 0);
@@ -46,7 +44,7 @@ then sends it. This is most naturally placed in your `didFindCampaign(Campaign c
 	NotificationManagerCompat notificationManager = getSystemService(Context.NOTIFICATION_SERVICE);
 	notificationManager.notify(001, notificationBuilder.build());
 
-The viewIntent subsequently use in viewPendingIntent is where you can decide
+The `viewIntent` used in `viewPendingIntent` is where you can decide
 what kind of interaction you want the user to be able to have with the notification.
 Perhaps you would like a promotion to be opened on the phone? In this case we
 reopen the reference app. If you simply want the notification to be dismissed
@@ -58,7 +56,7 @@ upon reading, the intent is unnecessary.
 
 ![CampaignKit on Pebble](../img/pebblekit.png)
 
-Because Pebble is not specific to android it has a separate framework. More
+Because Pebble is not specific to Android it has a separate framework. More
 documentation can be found at developer.getpebble.com. In order to get a 
 notification to the Pebble we need the following.
 
@@ -100,6 +98,6 @@ claims to support Android Wear type notifications. As the beta continues
 surely we will see more information on how to generate that kind of notification 
 on Pebble.~~ The recent Pebble Beta supports Android Wear style notifications
 following the same procedure as for the Android Wear device. Keep in mind
-when testing that pebble does not display duplicate messages. So everytime you
-send a test notification to the pebble make sure to change the **ContentText** in
+when testing that Pebble does not display duplicate messages. So everytime you
+send a test notification to the Pebble make sure to change the **ContentText** in
 order for the notification to actually appear.
