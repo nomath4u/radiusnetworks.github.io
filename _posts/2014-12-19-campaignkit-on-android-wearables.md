@@ -24,6 +24,7 @@ campaign triggers in the app before continuing.
 
 
 ##Android Wear
+Requires Android 4.3
 
 Unless you already have an Android Wear device you are going to need
 to set up an emulator to receive the CampaignKit 
@@ -52,7 +53,7 @@ upon reading, the intent is unnecessary.
 
 
 ##Pebble
-
+Requires Android 4.0
 
 ![CampaignKit on Pebble](../img/pebblekit.png)
 
