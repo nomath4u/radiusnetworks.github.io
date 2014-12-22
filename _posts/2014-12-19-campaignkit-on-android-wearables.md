@@ -94,10 +94,7 @@ Finally we need to build our notification to send. This should be included in
         i.putExtra("notificationData", notificationData);
         sendBroadcast(i);
 
-This type of notification can only be dismissed. ~~However, the recent Pebble Beta
-claims to support Android Wear type notifications. As the beta continues 
-surely we will see more information on how to generate that kind of notification 
-on Pebble.~~ The recent Pebble Beta supports Android Wear style notifications
+This type of notification can only be dismissed. The recent Pebble Beta supports Android Wear style notifications
 following the same procedure as for the Android Wear device. Keep in mind
 when testing that Pebble does not display duplicate messages. So everytime you
 send a test notification to the Pebble make sure to change the **ContentText** in
