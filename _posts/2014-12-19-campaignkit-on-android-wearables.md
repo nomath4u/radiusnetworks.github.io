@@ -12,7 +12,14 @@ information in a manner similar to a push notification. The following
 will show you how to pop campaign information on Android Wear
 devices and the Pebble.
 
-It is assumed you are familiar with CampaignKit and Android Studio, and you have an
+Campaign Kit is a cloud based service coupled with mobile SDKs that allow one to
+deliver targeted messaging - campaigns to mobile devices within proximity of any
+place and time of your choosing. Campaign Kit provides an advanced interface to
+create or upload rich content to be be delivered to your customer’s mobile
+devices around specific campaign criteria (ex. proximity far (geofence), near
+(beacon), time, schedule, etc.  
+
+It is assumed you are familiar with Android Studio, and you have an
 active campaign to display.
 
 ##Setup
